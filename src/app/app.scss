@@ -1,0 +1,45 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-layout {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden; // Prevents double scrollbars
+}
+
+.content-area {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.finish-chat-container, .back-to-pdf-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+
+  .finish-btn, .back-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #26a69a;
+    color: white;
+    
+    &:hover {
+      background-color: #00897b;
+    }
+  }
+
+  .back-btn {
+    background-color: #78909c;
+    &:hover {
+      background-color: #546e7a;
+    }
+  }
+}

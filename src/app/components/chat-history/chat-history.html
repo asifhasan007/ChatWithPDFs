@@ -1,0 +1,50 @@
+<!-- Use the async pipe at the top level to subscribe to the sessions$ observable -->
+<div *ngIf="sessions$ | async as sessions; else loading">
+  <div class="history-container">
+    
+    <!-- Detail View: Shows when a session is selected -->
+    <div *ngIf="selectedSession; else listView">
+      <div class="detail-header">
+        <button class="back-btn" (click)="backToList()">← Back to List</button>
+        <h2>Chat from {{ selectedSession.startTime | date:'medium' }}</h2>
+      </div>
+      <div class="messages-log">
+        <div *ngFor="let msg of selectedSession.messages" class="log-entry" [ngClass]="msg.sender">
+          <p class="msg-text">{{ msg.text }}</p>
+          <span class="msg-timestamp">{{ msg.timestamp | date:'shortTime' }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- List View: Shows by default, but now uses the 'sessions' variable from the top-level *ngIf -->
+    <ng-template #listView>
+      <h2>Chat History</h2>
+      <div *ngIf="sessions.length > 0; else noHistory">
+        <div class="session-list">
+          <div *ngFor="let session of sessions" class="session-item" (click)="viewSessionDetails(session)">
+            <div class="session-details">
+              <p class="session-preview">
+                <strong>User:</strong> {{ session.messages.length > 0 ? session.messages[0].text : 'Empty chat' }}
+              </p>
+              <span class="session-timestamp">{{ session.startTime | date:'medium' }}</span>
+            </div>
+            <div class="session-actions">
+              <button class="delete-btn" (click)="$event.stopPropagation(); deleteSession(session.id)">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+
+    <!-- No History Template: Also uses the 'sessions' variable -->
+    <ng-template #noHistory>
+      <p>No chat history found for this folder.</p>
+    </ng-template>
+
+  </div>
+</div>
+
+<!-- Loading Template: Shown while waiting for the observable to emit -->
+<ng-template #loading>
+  <p>Loading chat history...</p>
+</ng-template>
