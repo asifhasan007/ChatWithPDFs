@@ -1,6 +1,7 @@
 import os
 import logging
-from langchain.vectorstores import FAISS
+from langchain.chains import LLMChain
+from langchain_community.vectorstores import FAISS
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
@@ -10,6 +11,17 @@ from models import llm, embeddings
 from config import VECTOR_STORES_FOLDER, SIMILARITY_THRESHOLD, RETRIEVER_K
 
 logger = logging.getLogger(__name__)
+
+def get_general_ai_chain():
+    logger.info("Creating general-purpose AI chain.")
+    template = """You are a helpful and friendly AI assistant. Answer the following question.
+                Question: {question}
+                Answer:"""
+    
+    prompt = PromptTemplate(template=template, input_variables=["question"])
+    chain = LLMChain(llm=llm, prompt=prompt)
+    
+    return chain
 
 def get_conversational_chain(category):
 
@@ -42,7 +54,7 @@ def get_conversational_chain(category):
     #Create the Convo Chain
     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True, output_key='answer')
     
-    template = """<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+    template = """<|start_header_id|>system<|end_header_id|>
                     Use the following context to answer the user's question. The answer must be found exclusively within the provided context. If the context does not contain the answer, say "I cannot answer this from the provided text." Do not use outside knowledge.
                     <|eot_id|><|start_header_id|>user<|end_header_id|>
                     Context: {context}

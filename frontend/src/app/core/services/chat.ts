@@ -1,195 +1,137 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, of } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { BehaviorSubject, Observable, throwError } from 'rxjs';
+import { tap, catchError, map } from 'rxjs/operators';
+import { ApiService } from './api';
 import { Category, PDF } from '../models/category.model';
-import { ChatMessage, ChatSession, ChatSource } from '../models/chat.model';
-
+import { ChatMessage, ChatSession } from '../models/chat.model';
+ 
 @Injectable({
   providedIn: 'root'
 })
 export class ChatService {
-  private categoriesSubject: BehaviorSubject<Category[]>;
-  private chatHistorySubject: BehaviorSubject<Record<string, ChatSession[]>>;
-
-  public categories$: Observable<Category[]>;
-
-  constructor() {
-    // A "reviver" function to correctly parse date strings from JSON
-    const dateReviver = (key: string, value: any) => {
-      const isDateString = typeof value === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z$/.test(value);
-      if (isDateString) {
-        return new Date(value);
-      }
-      return value;
-    };
-
-    // Load initial data from localStorage or use defaults
-    const storedCategories = localStorage.getItem('smartpdf_categories');
-    const storedHistory = localStorage.getItem('smartpdf_chathistory');
-
-    // Default data if nothing is in storage
-    const defaultCategories: Category[] = [
-      {
-        id: 'cat1',
-        name: 'Project Alpha',
-        pdfs: [{ id: 'pdf1', name: 'requirements.pdf', uploadDate: new Date() }]
-      }
-    ];
-
-    const defaultHistory: Record<string, ChatSession[]> = {
-      'cat1': [
-        { 
-          id: 'sess1', 
-          startTime: new Date(Date.now() - 86400000), // 1 day ago
-          messages: [
-            { sender: 'ai', text: 'Welcome to the chat for Project Alpha!', timestamp: new Date() }
-          ]
-        }
-      ]
-    };
-    
-    // Use the reviver function when parsing stored data
-    const initialCategories = storedCategories ? JSON.parse(storedCategories, dateReviver) : defaultCategories;
-    const initialHistory = storedHistory ? JSON.parse(storedHistory, dateReviver) : defaultHistory;
-
-    this.categoriesSubject = new BehaviorSubject<Category[]>(initialCategories);
-    this.chatHistorySubject = new BehaviorSubject<Record<string, ChatSession[]>>(initialHistory);
-    
-    this.categories$ = this.categoriesSubject.asObservable();
+  private categoriesSubject = new BehaviorSubject<Category[]>([]);
+  public categories$ = this.categoriesSubject.asObservable();
+  private readonly STORAGE_KEY = 'chat_app_state';
+ 
+  constructor(private apiService: ApiService) {
+    this.loadStateFromStorage();
   }
-
-  // --- Private Helper Methods for Persistence ---
-
-  private saveCategories(categories: Category[]): void {
-    this.categoriesSubject.next(categories);
-    localStorage.setItem('smartpdf_categories', JSON.stringify(categories));
-  }
-
-  private saveHistory(history: Record<string, ChatSession[]>): void {
-    this.chatHistorySubject.next(history);
-    localStorage.setItem('smartpdf_chathistory', JSON.stringify(history));
-  }
-
-  // --- Public Methods ---
-
-  addCategory(name: string): void {
-    const currentCategories = this.categoriesSubject.getValue();
-    const newCategory: Category = {
-      id: `cat${Date.now()}`,
-      name: name,
-      pdfs: []
-    };
-    this.saveCategories([...currentCategories, newCategory]);
-  }
-
-    deleteCategory(id: string): void {
-    // Remove the category from the categories list
-    let categories = this.categoriesSubject.getValue();
-    categories = categories.filter(cat => cat.id !== id);
-    this.saveCategories(categories);
-    
-    // Also, delete all chat history associated with this category
-    const allHistory = this.chatHistorySubject.getValue();
-    if (allHistory[id]) {
-      delete allHistory[id];
-      this.saveHistory(allHistory);
+ 
+  private loadStateFromStorage(): void {
+    const savedState = localStorage.getItem(this.STORAGE_KEY);
+    if (savedState) {
+      const parsedState: Category[] = JSON.parse(savedState);
+      this.categoriesSubject.next(parsedState);
+    } else {
+      this.loadInitialDataFromServer();
     }
   }
-
+ 
+  private saveStateToStorage(): void {
+    const currentState = this.categoriesSubject.getValue();
+    localStorage.setItem(this.STORAGE_KEY, JSON.stringify(currentState));
+  }
+ 
+  private loadInitialDataFromServer(): void {
+    this.apiService.getCategories().subscribe({
+      next: (categoryNames: string[]) => {
+        const categories: Category[] = categoryNames.map(name => ({
+          id: name, name: name, pdfs: []
+        }));
+        this.categoriesSubject.next(categories);
+        this.saveStateToStorage();
+      },
+      error: (err: any) => console.error('Failed to load categories', err)
+    });
+  }
+ 
+  addCategory(name: string): void {
+    this.apiService.createCategory(name).pipe(
+      tap(() => {
+        const newCategory: Category = { id: name, name: name, pdfs: [] };
+        const currentCategories = this.categoriesSubject.getValue();
+        this.categoriesSubject.next([...currentCategories, newCategory]);
+        this.saveStateToStorage();
+      }),
+   
+      catchError((err: any) => {
+        console.error('Failed to create category:', err);
+        alert('Error: Could not create folder on the server.');
+        return throwError(() => err); // Re-throw the error to be handled by the subscriber if needed
+      })
+    ).subscribe();
+  }
+ 
+  deleteCategory(categoryId: string): void {
+    this.apiService.deleteCategory(categoryId).pipe(
+      tap(() => {
+        const current = this.categoriesSubject.getValue();
+        this.categoriesSubject.next(current.filter(c => c.id !== categoryId));
+        this.saveStateToStorage();
+      }),
+      
+      catchError((err: any) => {
+        console.error('Failed to delete category:', err);
+        alert('Error: Could not delete folder on the server.');
+        return throwError(() => err); // Re-throw the error
+      })
+    ).subscribe();
+  }
+ 
   uploadPdf(categoryId: string, file: File): void {
     const categories = this.categoriesSubject.getValue();
     const categoryIndex = categories.findIndex(c => c.id === categoryId);
-
-    if (categoryIndex > -1) {
-      categories[categoryIndex].isUploading = true;
-      this.categoriesSubject.next([...categories]);
-
-      setTimeout(() => {
-        const newPdf: PDF = {
-          id: `pdf${Date.now()}`,
-          name: file.name,
-          uploadDate: new Date()
-        };
+    if (categoryIndex === -1) return;
+ 
+    categories[categoryIndex].isUploading = true;
+    this.categoriesSubject.next([...categories]);
+ 
+    this.apiService.uploadPdf(categoryId, file).subscribe({
+      next: (response) => {
+        const newPdf: PDF = { id: file.name, name: file.name, uploadDate: new Date() };
         categories[categoryIndex].pdfs.push(newPdf);
         categories[categoryIndex].isUploading = false;
-        this.saveCategories(categories);
-      }, 1500);
-    }
+        this.categoriesSubject.next([...categories]);
+        this.saveStateToStorage();
+      },
+      error: (err: any) => {
+        console.error('Upload failed:', err);
+        categories[categoryIndex].isUploading = false;
+        this.categoriesSubject.next([...categories]);
+        alert('Upload failed. Please try again.');
+      }
+    });
   }
-
+  // --- These methods call the API but do not modify the local state directly, so they are simpler ---
+ 
   getPdfChatResponse(message: string, categoryId: string): Observable<ChatMessage> {
-    const category = this.categoriesSubject.getValue().find(c => c.id === categoryId);
-    let response: ChatMessage;
-
-    if (category && category.pdfs.length > 0) {
-      const sourcePdf = category.pdfs[0];
-      response = {
+    return this.apiService.sendChatMessage(message, categoryId).pipe(
+      map(response => ({
         sender: 'ai',
-        text: `Based on "${sourcePdf.name}", here is a mock answer regarding "${message}".`,
+        text: response.answer,
         timestamp: new Date(),
-        source: {
-          pdfId: sourcePdf.id,
-          pdfName: sourcePdf.name,
-          pageNumber: Math.floor(Math.random() * 20) + 1
-        }
-      };
-    } else {
-      response = {
-        sender: 'ai',
-        text: 'Please select a category that contains PDFs to get a sourced answer.',
-        timestamp: new Date()
-      };
-    }
-    return of(response);
-  }
-  
-  getAiSolutionResponse(message: string): Observable<string> {
-    const responses = [
-      `Here is a general AI solution for your query: "${message}".`,
-      `Regarding "${message}", an effective approach would be...`
-    ];
-    return of(responses[Math.floor(Math.random() * responses.length)]);
-  }
-
-  // --- NEW METHOD TO SAVE A CHAT SESSION ---
-  saveChatSession(categoryId: string, messages: ChatMessage[]): void {
-    if (!categoryId || messages.length === 0) {
-      return; // Don't save empty or un-categorized sessions
-    }
-
-    const allHistory = this.chatHistorySubject.getValue();
-    
-    // Initialize history for the category if it's the first time
-    if (!allHistory[categoryId]) {
-      allHistory[categoryId] = [];
-    }
-
-    // Create the new session
-    const newSession: ChatSession = {
-      id: `sess${Date.now()}`,
-      startTime: messages[0].timestamp, // Use the first message's timestamp as the start time
-      messages: messages
-    };
-
-    // Add the new session to the beginning of the array
-    allHistory[categoryId].unshift(newSession);
-
-    this.saveHistory(allHistory);
-  }
-
-  // --- Chat History Methods ---
-
-  getChatHistory(categoryId: string): Observable<ChatSession[]> {
-    return this.chatHistorySubject.asObservable().pipe(
-      map(history => history[categoryId] || [])
+        source: { pdfName: response.sources.join(', '), pdfId: '', pageNumber: 0 }
+      } as ChatMessage))
     );
   }
-
-  deleteChatSession(categoryId: string, sessionId: string): void {
-    const allHistory = this.chatHistorySubject.getValue();
-    if (allHistory[categoryId]) {
-      allHistory[categoryId] = allHistory[categoryId].filter(session => session.id !== sessionId);
-      this.saveHistory(allHistory);
-    }
+ 
+  getAiSolutionResponse(message: string): Observable<string> {
+    return this.apiService.getAiSolution(message).pipe(
+      map(response => response.answer)
+    );
+  }
+  getChatHistory(categoryId: string): Observable<ChatSession[]> {
+    return this.apiService.getChatHistory(categoryId);
+  }
+ 
+  saveChatSession(categoryId: string, messages: ChatMessage[]): void {
+    this.apiService.saveChatSession(categoryId, messages).subscribe({
+      next: () => console.log('Chat session saved successfully.'),
+      error: (err: any) => console.error('Failed to save chat session', err)
+    });
+  }
+ 
+  deleteChatSession(sessionId: string): Observable<void> {
+    return this.apiService.deleteChatSession(sessionId);
   }
 }

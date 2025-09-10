@@ -1,0 +1,415 @@
+2025-09-09 18:40:57,988 - INFO - Starting Flask application...
+2025-09-09 18:40:58,089 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-09 18:40:58,089 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-09 18:40:58,093 - INFO -  * Restarting with stat
+2025-09-09 18:41:11,543 - INFO - Starting Flask application...
+2025-09-09 18:41:11,549 - WARNING -  * Debugger is active!
+2025-09-09 18:41:11,553 - INFO -  * Debugger PIN: 111-558-880
+2025-09-09 19:21:16,517 - INFO - Starting Flask application...
+2025-09-09 19:21:16,533 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-09 19:21:16,533 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-09 19:21:16,535 - INFO -  * Restarting with stat
+2025-09-09 19:21:30,077 - INFO - Starting Flask application...
+2025-09-09 19:21:30,093 - WARNING -  * Debugger is active!
+2025-09-09 19:21:30,096 - INFO -  * Debugger PIN: 111-558-880
+2025-09-09 19:45:48,441 - INFO - Starting Flask application...
+2025-09-09 19:45:48,458 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-09 19:45:48,458 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-09 19:45:48,460 - INFO -  * Restarting with stat
+2025-09-09 19:46:01,851 - INFO - Starting Flask application...
+2025-09-09 19:46:01,864 - WARNING -  * Debugger is active!
+2025-09-09 19:46:01,868 - INFO -  * Debugger PIN: 111-558-880
+2025-09-09 19:49:42,046 - INFO -  * Detected change in 'C:\\Users\\BS 23- Desktop-00014\\Documents\\ChatWithPDFs\\backend\\rag_chain.py', reloading
+2025-09-09 19:49:43,205 - INFO -  * Restarting with stat
+2025-09-09 19:49:56,264 - INFO - Starting Flask application...
+2025-09-09 19:49:56,264 - WARNING -  * Debugger is active!
+2025-09-09 19:49:56,283 - INFO -  * Debugger PIN: 111-558-880
+2025-09-09 19:50:54,387 - INFO - Starting Flask application...
+2025-09-09 19:50:54,407 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-09 19:50:54,407 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-09 19:50:54,407 - INFO -  * Restarting with stat
+2025-09-09 19:51:07,430 - INFO - Starting Flask application...
+2025-09-09 19:51:07,437 - WARNING -  * Debugger is active!
+2025-09-09 19:51:07,442 - INFO -  * Debugger PIN: 111-558-880
+2025-09-10 15:17:53,223 - INFO - Starting Flask application...
+2025-09-10 15:17:53,319 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-10 15:17:53,319 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-10 15:17:53,327 - INFO -  * Restarting with stat
+2025-09-10 15:18:06,370 - INFO - Starting Flask application...
+2025-09-10 15:18:06,370 - WARNING -  * Debugger is active!
+2025-09-10 15:18:06,370 - INFO -  * Debugger PIN: 138-917-874
+2025-09-10 15:29:59,148 - INFO - Request received for listing categories.
+2025-09-10 15:29:59,156 - INFO - 127.0.0.1 - - [10/Sep/2025 15:29:59] "GET /categories HTTP/1.1" 200 -
+2025-09-10 15:30:14,905 - INFO - 127.0.0.1 - - [10/Sep/2025 15:30:14] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-10 15:30:14,908 - INFO - Request to create category: 'Ashar'
+2025-09-10 15:30:14,909 - INFO - 127.0.0.1 - - [10/Sep/2025 15:30:14] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-10 15:30:40,323 - WARNING - Upload attempt with no files part.
+2025-09-10 15:30:40,326 - INFO - 127.0.0.1 - - [10/Sep/2025 15:30:40] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2025-09-10 15:31:33,400 - INFO - 127.0.0.1 - - [10/Sep/2025 15:31:33] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-10 15:31:33,400 - INFO - Request to create category: 'Asif'
+2025-09-10 15:31:33,405 - INFO - 127.0.0.1 - - [10/Sep/2025 15:31:33] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-10 15:31:36,904 - WARNING - Upload attempt with no files part.
+2025-09-10 15:31:36,904 - INFO - 127.0.0.1 - - [10/Sep/2025 15:31:36] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2025-09-10 15:36:05,104 - INFO - 127.0.0.1 - - [10/Sep/2025 15:36:05] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-10 15:36:05,106 - INFO - Request to create category: 'Emtiuz'
+2025-09-10 15:36:05,108 - INFO - 127.0.0.1 - - [10/Sep/2025 15:36:05] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-10 15:36:49,314 - INFO - 127.0.0.1 - - [10/Sep/2025 15:36:49] "OPTIONS /categories/Emtiuz HTTP/1.1" 200 -
+2025-09-10 15:36:49,316 - INFO - Request to delete category: 'Emtiuz'
+2025-09-10 15:36:49,317 - INFO - Successfully deleted category 'Emtiuz'.
+2025-09-10 15:36:49,317 - INFO - 127.0.0.1 - - [10/Sep/2025 15:36:49] "DELETE /categories/Emtiuz HTTP/1.1" 200 -
+2025-09-10 15:37:09,305 - INFO - 127.0.0.1 - - [10/Sep/2025 15:37:09] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 15:37:09,307 - INFO - Chat request for category 'Ashar'.
+2025-09-10 15:37:09,307 - WARNING - No documents found in category 'Ashar'.
+2025-09-10 15:37:09,307 - INFO - 127.0.0.1 - - [10/Sep/2025 15:37:09] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-10 15:37:25,911 - INFO - 127.0.0.1 - - [10/Sep/2025 15:37:25] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 15:37:25,911 - INFO - Chat request for category 'Asif'.
+2025-09-10 15:37:25,911 - WARNING - No documents found in category 'Asif'.
+2025-09-10 15:37:25,911 - INFO - 127.0.0.1 - - [10/Sep/2025 15:37:25] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-10 15:37:34,512 - INFO - 127.0.0.1 - - [10/Sep/2025 15:37:34] "OPTIONS /chat/history HTTP/1.1" 200 -
+2025-09-10 15:37:34,514 - INFO - Placeholder: Request to save chat session for category 'Asif'.
+2025-09-10 15:37:34,515 - INFO - 127.0.0.1 - - [10/Sep/2025 15:37:34] "[35m[1mPOST /chat/history HTTP/1.1[0m" 201 -
+2025-09-10 15:37:39,904 - INFO - 127.0.0.1 - - [10/Sep/2025 15:37:39] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-10 15:37:39,904 - INFO - General AI request: 'hey...'
+2025-09-10 15:37:39,904 - INFO - Creating general-purpose AI chain.
+2025-09-10 15:37:42,532 - INFO - Successfully generated general AI response.
+2025-09-10 15:37:42,532 - INFO - 127.0.0.1 - - [10/Sep/2025 15:37:42] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-10 15:37:47,304 - INFO - 127.0.0.1 - - [10/Sep/2025 15:37:47] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-10 15:37:47,304 - INFO - General AI request: 'hello...'
+2025-09-10 15:37:47,304 - INFO - Creating general-purpose AI chain.
+2025-09-10 15:37:50,328 - INFO - Successfully generated general AI response.
+2025-09-10 15:37:50,328 - INFO - 127.0.0.1 - - [10/Sep/2025 15:37:50] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-10 15:38:03,344 - INFO - 127.0.0.1 - - [10/Sep/2025 15:38:03] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-10 15:38:03,344 - INFO - General AI request: 'what is the color of the sky...'
+2025-09-10 15:38:03,344 - INFO - Creating general-purpose AI chain.
+2025-09-10 15:38:12,607 - INFO - Successfully generated general AI response.
+2025-09-10 15:38:12,608 - INFO - 127.0.0.1 - - [10/Sep/2025 15:38:12] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-10 15:38:32,191 - INFO - 127.0.0.1 - - [10/Sep/2025 15:38:32] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-10 15:38:32,194 - INFO - General AI request: 'who is ashar...'
+2025-09-10 15:38:32,194 - INFO - Creating general-purpose AI chain.
+2025-09-10 15:38:45,361 - INFO - Successfully generated general AI response.
+2025-09-10 15:38:45,361 - INFO - 127.0.0.1 - - [10/Sep/2025 15:38:45] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-10 15:39:29,416 - INFO - 127.0.0.1 - - [10/Sep/2025 15:39:29] "OPTIONS /chat/history HTTP/1.1" 200 -
+2025-09-10 15:39:29,419 - INFO - Placeholder: Request to save chat session for category ''.
+2025-09-10 15:39:29,419 - INFO - 127.0.0.1 - - [10/Sep/2025 15:39:29] "[35m[1mPOST /chat/history HTTP/1.1[0m" 201 -
+2025-09-10 15:40:51,832 - INFO - 127.0.0.1 - - [10/Sep/2025 15:40:51] "[31m[1mGET /upload HTTP/1.1[0m" 405 -
+2025-09-10 15:40:51,853 - INFO - 127.0.0.1 - - [10/Sep/2025 15:40:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-10 15:41:36,272 - INFO - 127.0.0.1 - - [10/Sep/2025 15:41:36] "OPTIONS /chat/history HTTP/1.1" 200 -
+2025-09-10 15:41:36,274 - INFO - Placeholder: Request to save chat session for category ''.
+2025-09-10 15:41:36,274 - INFO - 127.0.0.1 - - [10/Sep/2025 15:41:36] "[35m[1mPOST /chat/history HTTP/1.1[0m" 201 -
+2025-09-10 15:41:41,240 - INFO - 127.0.0.1 - - [10/Sep/2025 15:41:41] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-10 15:41:41,240 - INFO - General AI request: 'who are you ?...'
+2025-09-10 15:41:41,240 - INFO - Creating general-purpose AI chain.
+2025-09-10 15:42:20,094 - INFO - Successfully generated general AI response.
+2025-09-10 15:42:20,094 - INFO - 127.0.0.1 - - [10/Sep/2025 15:42:20] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-10 15:42:36,296 - INFO - 127.0.0.1 - - [10/Sep/2025 15:42:36] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-10 15:42:36,296 - INFO - General AI request: 'what is your verison?...'
+2025-09-10 15:42:36,296 - INFO - Creating general-purpose AI chain.
+2025-09-10 15:42:43,110 - INFO - Successfully generated general AI response.
+2025-09-10 15:42:43,110 - INFO - 127.0.0.1 - - [10/Sep/2025 15:42:43] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-10 15:43:03,784 - INFO - 127.0.0.1 - - [10/Sep/2025 15:43:03] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-10 15:43:03,784 - INFO - General AI request: 'you are lama model 3 right ?...'
+2025-09-10 15:43:03,784 - INFO - Creating general-purpose AI chain.
+2025-09-10 15:43:11,030 - INFO - Successfully generated general AI response.
+2025-09-10 15:43:11,030 - INFO - 127.0.0.1 - - [10/Sep/2025 15:43:11] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-10 17:00:38,721 - INFO - Starting Flask application...
+2025-09-10 17:00:38,736 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-10 17:00:38,736 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-10 17:00:38,736 - INFO -  * Restarting with stat
+2025-09-10 17:00:53,074 - INFO - Starting Flask application...
+2025-09-10 17:00:53,074 - WARNING -  * Debugger is active!
+2025-09-10 17:00:53,090 - INFO -  * Debugger PIN: 138-917-874
+2025-09-10 17:01:15,154 - INFO - Request received for listing categories.
+2025-09-10 17:01:15,155 - INFO - 127.0.0.1 - - [10/Sep/2025 17:01:15] "GET /categories HTTP/1.1" 200 -
+2025-09-10 17:01:26,250 - INFO - Received 1 file(s) for category 'Ashar'.
+2025-09-10 17:01:26,251 - INFO - Processing 'Case Study AI Quiz Generator Platform' for category 'Ashar'...
+2025-09-10 17:01:26,870 - INFO - Loading faiss with AVX2 support.
+2025-09-10 17:01:26,925 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-10 17:01:26,961 - INFO - Saved vector store for 'Case Study AI Quiz Generator Platform'.
+2025-09-10 17:01:26,961 - INFO - 127.0.0.1 - - [10/Sep/2025 17:01:26] "POST /upload HTTP/1.1" 200 -
+2025-09-10 17:02:00,362 - INFO - 127.0.0.1 - - [10/Sep/2025 17:02:00] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 17:02:00,366 - INFO - Chat request for category 'Ashar'.
+2025-09-10 17:02:00,367 - INFO - Loading and merging 1 vector store(s) for category 'Ashar'.
+2025-09-10 17:02:06,337 - INFO - Successfully generated response.
+2025-09-10 17:02:06,337 - INFO - 127.0.0.1 - - [10/Sep/2025 17:02:06] "POST /chat HTTP/1.1" 200 -
+2025-09-10 17:02:30,483 - INFO - 127.0.0.1 - - [10/Sep/2025 17:02:30] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 17:02:30,483 - INFO - Chat request for category 'Ashar'.
+2025-09-10 17:02:30,483 - INFO - Loading and merging 1 vector store(s) for category 'Ashar'.
+2025-09-10 17:02:32,166 - INFO - Successfully generated response.
+2025-09-10 17:02:32,166 - INFO - 127.0.0.1 - - [10/Sep/2025 17:02:32] "POST /chat HTTP/1.1" 200 -
+2025-09-10 17:03:01,362 - INFO - 127.0.0.1 - - [10/Sep/2025 17:03:01] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 17:03:01,365 - INFO - Chat request for category 'Ashar'.
+2025-09-10 17:03:01,366 - INFO - Loading and merging 1 vector store(s) for category 'Ashar'.
+2025-09-10 17:03:05,997 - INFO - Successfully generated response.
+2025-09-10 17:03:05,997 - INFO - 127.0.0.1 - - [10/Sep/2025 17:03:05] "POST /chat HTTP/1.1" 200 -
+2025-09-10 17:03:45,442 - INFO - 127.0.0.1 - - [10/Sep/2025 17:03:45] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 17:03:45,445 - INFO - Chat request for category 'Ashar'.
+2025-09-10 17:03:45,445 - INFO - Loading and merging 1 vector store(s) for category 'Ashar'.
+2025-09-10 17:03:47,354 - INFO - Successfully generated response.
+2025-09-10 17:03:47,355 - INFO - 127.0.0.1 - - [10/Sep/2025 17:03:47] "POST /chat HTTP/1.1" 200 -
+2025-09-10 17:06:02,964 - INFO - 127.0.0.1 - - [10/Sep/2025 17:06:02] "OPTIONS /chat/history HTTP/1.1" 200 -
+2025-09-10 17:06:02,967 - INFO - Placeholder: Request to save chat session for category 'Ashar'.
+2025-09-10 17:06:02,967 - INFO - 127.0.0.1 - - [10/Sep/2025 17:06:02] "[35m[1mPOST /chat/history HTTP/1.1[0m" 201 -
+2025-09-10 17:08:00,278 - INFO -  * Detected change in 'C:\\Users\\BS 23- Desktop-00014\\Documents\\ChatWithPDFs\\backend\\rag_chain.py', reloading
+2025-09-10 17:08:01,796 - INFO -  * Restarting with stat
+2025-09-10 17:08:15,143 - INFO - Starting Flask application...
+2025-09-10 17:08:15,158 - WARNING -  * Debugger is active!
+2025-09-10 17:08:15,163 - INFO -  * Debugger PIN: 138-917-874
+2025-09-10 17:08:46,846 - INFO -  * Detected change in 'C:\\Users\\BS 23- Desktop-00014\\Documents\\ChatWithPDFs\\backend\\config.py', reloading
+2025-09-10 17:08:47,948 - INFO -  * Restarting with stat
+2025-09-10 17:09:01,578 - INFO - Starting Flask application...
+2025-09-10 17:09:01,593 - WARNING -  * Debugger is active!
+2025-09-10 17:09:01,604 - INFO -  * Debugger PIN: 138-917-874
+2025-09-10 17:09:13,386 - INFO - Request received for listing categories.
+2025-09-10 17:09:13,387 - INFO - 127.0.0.1 - - [10/Sep/2025 17:09:13] "GET /categories HTTP/1.1" 200 -
+2025-09-10 17:09:18,105 - INFO - Request received for listing categories.
+2025-09-10 17:09:18,106 - INFO - 127.0.0.1 - - [10/Sep/2025 17:09:18] "GET /categories HTTP/1.1" 200 -
+2025-09-10 17:09:18,932 - INFO - Request received for listing categories.
+2025-09-10 17:09:18,933 - INFO - 127.0.0.1 - - [10/Sep/2025 17:09:18] "GET /categories HTTP/1.1" 200 -
+2025-09-10 17:09:34,731 - INFO - 127.0.0.1 - - [10/Sep/2025 17:09:34] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 17:09:34,733 - INFO - Chat request for category 'Ashar'.
+2025-09-10 17:09:34,734 - INFO - Loading and merging 1 vector store(s) for category 'Ashar'.
+2025-09-10 17:09:34,735 - INFO - Loading faiss with AVX2 support.
+2025-09-10 17:09:34,760 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-10 17:09:40,813 - INFO - Successfully generated response.
+2025-09-10 17:09:40,813 - INFO - 127.0.0.1 - - [10/Sep/2025 17:09:40] "POST /chat HTTP/1.1" 200 -
+2025-09-10 17:12:13,284 - INFO -  * Detected change in 'C:\\Users\\BS 23- Desktop-00014\\Documents\\ChatWithPDFs\\backend\\app.py', reloading
+2025-09-10 17:12:14,572 - INFO -  * Restarting with stat
+2025-09-10 17:12:27,516 - INFO - Starting Flask application...
+2025-09-10 17:12:27,532 - WARNING -  * Debugger is active!
+2025-09-10 17:12:27,541 - INFO -  * Debugger PIN: 138-917-874
+2025-09-10 17:12:40,468 - INFO - Request received for listing categories.
+2025-09-10 17:12:40,469 - INFO - 127.0.0.1 - - [10/Sep/2025 17:12:40] "GET /categories HTTP/1.1" 200 -
+2025-09-10 17:13:02,170 - INFO - 127.0.0.1 - - [10/Sep/2025 17:13:02] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 17:13:02,172 - INFO - Chat request for category 'Ashar'.
+2025-09-10 17:13:02,173 - INFO - Loading and merging 1 vector store(s) for category 'Ashar'.
+2025-09-10 17:13:02,175 - INFO - Loading faiss with AVX2 support.
+2025-09-10 17:13:02,200 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-10 17:13:09,230 - INFO - Successfully generated response.
+2025-09-10 17:13:09,230 - INFO - AI: 
+
+Based on the provided context, I would answer:
+
+The case study is about "Google's Innovation Time Off (ITO)".
+2025-09-10 17:13:09,230 - INFO - 127.0.0.1 - - [10/Sep/2025 17:13:09] "POST /chat HTTP/1.1" 200 -
+2025-09-10 17:13:52,024 - INFO - Received 1 file(s) for category 'Ashar'.
+2025-09-10 17:13:52,025 - INFO - Vector store for 'Case Study AI Quiz Generator Platform' already exists. Skipping.
+2025-09-10 17:13:52,025 - INFO - 127.0.0.1 - - [10/Sep/2025 17:13:52] "POST /upload HTTP/1.1" 200 -
+2025-09-10 17:14:07,297 - INFO - 127.0.0.1 - - [10/Sep/2025 17:14:07] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 17:14:07,302 - INFO - Chat request for category 'Asif'.
+2025-09-10 17:14:07,302 - WARNING - No documents found in category 'Asif'.
+2025-09-10 17:14:07,302 - INFO - 127.0.0.1 - - [10/Sep/2025 17:14:07] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-10 17:14:34,721 - INFO - 127.0.0.1 - - [10/Sep/2025 17:14:34] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 17:14:34,724 - INFO - Chat request for category 'Ashar'.
+2025-09-10 17:14:34,725 - INFO - Loading and merging 1 vector store(s) for category 'Ashar'.
+2025-09-10 17:14:38,688 - INFO - Successfully generated response.
+2025-09-10 17:14:38,688 - INFO - AI: 
+
+Based on the provided context, I would answer:
+
+The case study is not mentioned in "about".
+2025-09-10 17:14:38,688 - INFO - 127.0.0.1 - - [10/Sep/2025 17:14:38] "POST /chat HTTP/1.1" 200 -
+2025-09-10 17:15:07,369 - INFO - 127.0.0.1 - - [10/Sep/2025 17:15:07] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 17:15:07,372 - INFO - Chat request for category 'Ashar'.
+2025-09-10 17:15:07,372 - INFO - Loading and merging 1 vector store(s) for category 'Ashar'.
+2025-09-10 17:15:37,377 - INFO - Successfully generated response.
+2025-09-10 17:15:37,377 - INFO - AI: 
+**ai quiz generator is a Web Application.**
+
+Explanation:
+An ai quiz generator is a type of web application that uses artificial intelligence (AI) and machine learning algorithms to generate quizzes based on user input, in this case, the quiz content.
+2025-09-10 17:15:37,377 - INFO - 127.0.0.1 - - [10/Sep/2025 17:15:37] "POST /chat HTTP/1.1" 200 -
+2025-09-10 17:17:14,318 - INFO - Starting Flask application...
+2025-09-10 17:17:14,330 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-10 17:17:14,330 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-10 17:17:14,333 - INFO -  * Restarting with stat
+2025-09-10 17:17:27,232 - INFO - Starting Flask application...
+2025-09-10 17:17:27,241 - WARNING -  * Debugger is active!
+2025-09-10 17:17:27,247 - INFO -  * Debugger PIN: 138-917-874
+2025-09-10 17:17:32,034 - INFO - Request received for listing categories.
+2025-09-10 17:17:32,035 - INFO - 127.0.0.1 - - [10/Sep/2025 17:17:32] "GET /categories HTTP/1.1" 200 -
+2025-09-10 17:18:15,703 - INFO - Received 1 file(s) for category 'Asif'.
+2025-09-10 17:18:15,703 - INFO - Processing 'Case Study AI Quiz Generator Platform' for category 'Asif'...
+2025-09-10 17:18:16,004 - INFO - Loading faiss with AVX2 support.
+2025-09-10 17:18:16,024 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-10 17:18:16,031 - INFO - Saved vector store for 'Case Study AI Quiz Generator Platform'.
+2025-09-10 17:18:16,031 - INFO - 127.0.0.1 - - [10/Sep/2025 17:18:16] "POST /upload HTTP/1.1" 200 -
+2025-09-10 17:18:37,474 - INFO - 127.0.0.1 - - [10/Sep/2025 17:18:37] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 17:18:37,474 - INFO - Chat request for category 'Asif'.
+2025-09-10 17:18:37,474 - INFO - Loading and merging 1 vector store(s) for category 'Asif'.
+2025-09-10 17:18:46,362 - INFO - Successfully generated response.
+2025-09-10 17:18:46,362 - INFO - AI: 
+
+According to the provided context, there is no mention of a project lead. Therefore, I cannot answer this question from the provided text.
+
+I cannot answer this from the provided text.
+2025-09-10 17:18:46,364 - INFO - 127.0.0.1 - - [10/Sep/2025 17:18:46] "POST /chat HTTP/1.1" 200 -
+2025-09-10 17:32:40,898 - INFO -  * Detected change in 'C:\\Users\\BS 23- Desktop-00014\\Documents\\ChatWithPDFs\\backend\\config.py', reloading
+2025-09-10 17:32:42,256 - INFO -  * Restarting with stat
+2025-09-10 17:32:57,101 - INFO - Starting Flask application...
+2025-09-10 17:32:57,115 - WARNING -  * Debugger is active!
+2025-09-10 17:32:57,121 - INFO -  * Debugger PIN: 138-917-874
+2025-09-10 17:33:04,616 - INFO - Request received for listing categories.
+2025-09-10 17:33:04,617 - INFO - 127.0.0.1 - - [10/Sep/2025 17:33:04] "GET /categories HTTP/1.1" 200 -
+2025-09-10 17:33:38,306 - INFO - Received 1 file(s) for category 'Asif'.
+2025-09-10 17:33:38,306 - INFO - Processing 'Case Study AI Quiz Generator Platform' for category 'Asif'...
+2025-09-10 17:33:38,608 - INFO - Loading faiss with AVX2 support.
+2025-09-10 17:33:38,641 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-10 17:33:38,650 - INFO - Saved vector store for 'Case Study AI Quiz Generator Platform'.
+2025-09-10 17:33:38,650 - INFO - 127.0.0.1 - - [10/Sep/2025 17:33:38] "POST /upload HTTP/1.1" 200 -
+2025-09-10 17:34:00,169 - INFO - 127.0.0.1 - - [10/Sep/2025 17:34:00] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 17:34:00,171 - INFO - Chat request for category 'Asif'.
+2025-09-10 17:34:00,172 - INFO - Loading and merging 1 vector store(s) for category 'Asif'.
+2025-09-10 17:34:24,802 - INFO - Successfully generated response.
+2025-09-10 17:34:24,803 - INFO - AI: 
+
+The answer is: Md. Asif Hasan
+2025-09-10 17:34:24,803 - INFO - 127.0.0.1 - - [10/Sep/2025 17:34:24] "POST /chat HTTP/1.1" 200 -
+2025-09-10 17:34:55,993 - INFO - 127.0.0.1 - - [10/Sep/2025 17:34:55] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 17:34:55,994 - INFO - Chat request for category 'Asif'.
+2025-09-10 17:34:55,996 - INFO - Loading and merging 1 vector store(s) for category 'Asif'.
+2025-09-10 17:35:11,996 - INFO - Successfully generated response.
+2025-09-10 17:35:11,996 - INFO - AI: 
+
+Based on the provided context, I would answer:
+
+"The case study is about a five-stage AI pipeline used to extract text from PDFs and videos."
+
+Let me know if you have any further questions or if there's anything else I can help with!
+2025-09-10 17:35:11,997 - INFO - 127.0.0.1 - - [10/Sep/2025 17:35:11] "POST /chat HTTP/1.1" 200 -
+2025-09-10 18:06:37,178 - INFO - Request received for listing categories.
+2025-09-10 18:06:37,179 - INFO - 127.0.0.1 - - [10/Sep/2025 18:06:37] "GET /categories HTTP/1.1" 200 -
+2025-09-10 18:06:55,478 - INFO - Received 1 file(s) for category 'Ashar'.
+2025-09-10 18:06:55,478 - INFO - Processing 'Case Study AI Quiz Generator Platform' for category 'Ashar'...
+2025-09-10 18:06:55,636 - INFO - Saved vector store for 'Case Study AI Quiz Generator Platform'.
+2025-09-10 18:06:55,636 - INFO - 127.0.0.1 - - [10/Sep/2025 18:06:55] "POST /upload HTTP/1.1" 200 -
+2025-09-10 18:08:05,680 - INFO - 127.0.0.1 - - [10/Sep/2025 18:08:05] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 18:08:05,683 - INFO - Chat request for category 'Ashar'.
+2025-09-10 18:08:05,683 - INFO - Loading and merging 1 vector store(s) for category 'Ashar'.
+2025-09-10 18:08:28,094 - INFO - Successfully generated response.
+2025-09-10 18:08:28,094 - INFO - AI: 
+
+Based on the provided text, this case study appears to be based on the development of an intelligent quiz generation system using artificial intelligence (AI) and natural language processing (NLP).
+2025-09-10 18:08:28,095 - INFO - 127.0.0.1 - - [10/Sep/2025 18:08:28] "POST /chat HTTP/1.1" 200 -
+2025-09-10 18:09:04,023 - INFO - 127.0.0.1 - - [10/Sep/2025 18:09:04] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 18:09:04,024 - INFO - Chat request for category 'Ashar'.
+2025-09-10 18:09:04,024 - INFO - Loading and merging 1 vector store(s) for category 'Ashar'.
+2025-09-10 18:09:33,700 - INFO - Successfully generated response.
+2025-09-10 18:09:33,700 - INFO - AI: 
+
+The key function of this project is to develop an AI-powered quiz generator that can automatically create educational quizzes from a variety of content sources, including YouTube videos, local video/PDF files, and OS paths.
+2025-09-10 18:09:33,700 - INFO - 127.0.0.1 - - [10/Sep/2025 18:09:33] "POST /chat HTTP/1.1" 200 -
+2025-09-10 18:09:33,720 - INFO - Received 1 file(s) for category 'Asif'.
+2025-09-10 18:09:33,721 - INFO - Vector store for 'Case Study AI Quiz Generator Platform' already exists. Skipping.
+2025-09-10 18:09:33,722 - INFO - 127.0.0.1 - - [10/Sep/2025 18:09:33] "POST /upload HTTP/1.1" 200 -
+2025-09-10 18:09:39,608 - INFO - 127.0.0.1 - - [10/Sep/2025 18:09:39] "OPTIONS /categories/Asif HTTP/1.1" 200 -
+2025-09-10 18:09:39,611 - INFO - Request to delete category: 'Asif'
+2025-09-10 18:09:39,613 - INFO - Successfully deleted category 'Asif'.
+2025-09-10 18:09:39,613 - INFO - 127.0.0.1 - - [10/Sep/2025 18:09:39] "DELETE /categories/Asif HTTP/1.1" 200 -
+2025-09-10 18:10:00,820 - INFO - Received 1 file(s) for category 'Ashar'.
+2025-09-10 18:10:00,820 - INFO - Processing 'test2' for category 'Ashar'...
+2025-09-10 18:10:00,971 - INFO - Saved vector store for 'test2'.
+2025-09-10 18:10:00,971 - INFO - 127.0.0.1 - - [10/Sep/2025 18:10:00] "POST /upload HTTP/1.1" 200 -
+2025-09-10 18:13:45,959 - INFO - 127.0.0.1 - - [10/Sep/2025 18:13:45] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 18:13:45,959 - INFO - Chat request for category 'Ashar'.
+2025-09-10 18:13:45,959 - INFO - Loading and merging 2 vector store(s) for category 'Ashar'.
+2025-09-10 18:14:25,789 - INFO - Successfully generated response.
+2025-09-10 18:14:25,789 - INFO - AI: 
+
+Based on the provided context, here's a breakdown of the case study:
+
+**Background:** The case study appears to be about optimizing a police budget. The budget is broken down into various sectors, including buildings and transport, technological sector, and others.
+
+**Key Findings:**
+
+1. **Decomposition of Budget:** The case study highlights the decomposition of the police budget into various sectors.
+2. **Sector-wise Analysis:** The analysis reveals that the technological sector has increased rapidly from 8% to 14%, which is a significant change in the budget allocation.
+3. **Impact on Time and Effort:** The introduction of technology has reduced the time and effort required to prepare educational resources.
+
+**Conclusion:**
+
+The case study highlights the importance of decomposing the police budget into various sectors, and analyzing each sector's performance. The introduction of technology has significantly impacted the time and effort required to prepare educational resources.
+2025-09-10 18:14:25,790 - INFO - 127.0.0.1 - - [10/Sep/2025 18:14:25] "POST /chat HTTP/1.1" 200 -
+2025-09-10 18:15:15,005 - INFO - 127.0.0.1 - - [10/Sep/2025 18:15:15] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 18:15:15,005 - INFO - Chat request for category 'Ashar'.
+2025-09-10 18:15:15,005 - INFO - Loading and merging 2 vector store(s) for category 'Ashar'.
+2025-09-10 18:15:28,217 - INFO - Successfully generated response.
+2025-09-10 18:15:28,218 - INFO - AI: 
+
+I cannot find any information on the author of this text.
+2025-09-10 18:15:28,218 - INFO - 127.0.0.1 - - [10/Sep/2025 18:15:28] "POST /chat HTTP/1.1" 200 -
+2025-09-10 18:15:53,358 - INFO - 127.0.0.1 - - [10/Sep/2025 18:15:53] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 18:15:53,358 - INFO - Chat request for category 'Ashar'.
+2025-09-10 18:15:53,358 - INFO - Loading and merging 2 vector store(s) for category 'Ashar'.
+2025-09-10 18:16:15,534 - INFO - Successfully generated response.
+2025-09-10 18:16:15,534 - INFO - AI: 
+
+Md. Asif Hasan
+2025-09-10 18:16:15,535 - INFO - 127.0.0.1 - - [10/Sep/2025 18:16:15] "POST /chat HTTP/1.1" 200 -
+2025-09-10 18:17:17,686 - INFO - 127.0.0.1 - - [10/Sep/2025 18:17:17] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 18:17:17,689 - INFO - Chat request for category 'Ashar'.
+2025-09-10 18:17:17,690 - INFO - Loading and merging 2 vector store(s) for category 'Ashar'.
+2025-09-10 18:17:30,009 - INFO - Successfully generated response.
+2025-09-10 18:17:30,011 - INFO - AI: 
+
+According to the table, the total police budget in Britain in 2017 was 175.5 million pounds.
+2025-09-10 18:17:30,011 - INFO - 127.0.0.1 - - [10/Sep/2025 18:17:30] "POST /chat HTTP/1.1" 200 -
+2025-09-10 18:18:17,687 - INFO - 127.0.0.1 - - [10/Sep/2025 18:18:17] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 18:18:17,687 - INFO - Chat request for category 'Ashar'.
+2025-09-10 18:18:17,687 - INFO - Loading and merging 2 vector store(s) for category 'Ashar'.
+2025-09-10 18:18:35,059 - INFO - Successfully generated response.
+2025-09-10 18:18:35,059 - INFO - AI: 
+
+Based on the provided context, it appears that the method used in the recycling process of plastic bottles is a mechanical process.
+
+The steps involved in this process include collecting and sorting the plastic bottles by hand, then crushing them into small pieces, washing them with a liquid, and finally producing pellets from the washed components.
+2025-09-10 18:18:35,060 - INFO - 127.0.0.1 - - [10/Sep/2025 18:18:35] "POST /chat HTTP/1.1" 200 -
+2025-09-10 18:19:10,624 - INFO - 127.0.0.1 - - [10/Sep/2025 18:19:10] "OPTIONS /chat/history HTTP/1.1" 200 -
+2025-09-10 18:19:10,627 - INFO - Placeholder: Request to save chat session for category 'Ashar'.
+2025-09-10 18:19:10,628 - INFO - 127.0.0.1 - - [10/Sep/2025 18:19:10] "[35m[1mPOST /chat/history HTTP/1.1[0m" 201 -
+2025-09-10 18:19:39,415 - INFO - 127.0.0.1 - - [10/Sep/2025 18:19:39] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-10 18:19:39,415 - INFO - General AI request: 'capital of bangladesh...'
+2025-09-10 18:19:39,415 - INFO - Creating general-purpose AI chain.
+2025-09-10 18:20:25,799 - INFO - Successfully generated general AI response.
+2025-09-10 18:20:25,799 - INFO - 127.0.0.1 - - [10/Sep/2025 18:20:25] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-10 18:23:09,998 - INFO - 127.0.0.1 - - [10/Sep/2025 18:23:09] "OPTIONS /chat/history HTTP/1.1" 200 -
+2025-09-10 18:23:10,000 - INFO - Placeholder: Request to save chat session for category ''.
+2025-09-10 18:23:10,000 - INFO - 127.0.0.1 - - [10/Sep/2025 18:23:10] "[35m[1mPOST /chat/history HTTP/1.1[0m" 201 -
+2025-09-10 18:28:40,150 - INFO - 127.0.0.1 - - [10/Sep/2025 18:28:40] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-10 18:28:40,150 - INFO - Chat request for category 'Ashar'.
+2025-09-10 18:28:40,153 - INFO - Loading and merging 2 vector store(s) for category 'Ashar'.
+2025-09-10 18:29:23,171 - INFO - Successfully generated response.
+2025-09-10 18:29:23,171 - INFO - AI: 
+`` in the provided context and a question can'tsufficiently the problem  you to the following that 
+    the following the following the 3rd by a user'ss an "text the answer the following a question, a user's enough from the "the provided to your example from 
+ 
+
+                    text the "    
+        
+                
+        
+                    
+                                 
+
+       
+2025-09-10 18:29:23,172 - INFO - 127.0.0.1 - - [10/Sep/2025 18:29:23] "POST /chat HTTP/1.1" 200 -

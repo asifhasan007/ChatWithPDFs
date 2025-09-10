@@ -1,5 +1,5 @@
 import logging
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.llms import LlamaCpp
 from config import EMBEDDING_MODEL_NAME, MODEL_PATH
 
@@ -21,9 +21,11 @@ def load_models():
             n_ctx=2048, 
             verbose=False
         )
-        logger.info("✅ Models loaded successfully.")
+
+        logger.info("Models loaded successfully.")
         return embeddings, llm
+    
     except Exception as e:
-        logger.error(f"❌ Failed to load models. Error: {e}")
+        logger.error(f"Failed to load models. Error: {e}")
         exit()
 embeddings, llm = load_models()

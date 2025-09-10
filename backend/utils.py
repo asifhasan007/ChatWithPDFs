@@ -1,8 +1,8 @@
 import os
 import logging
-from langchain.document_loaders import PyMuPDFLoader
+from langchain_community.document_loaders import PyMuPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from models import embeddings
 from config import VECTOR_STORES_FOLDER
 
