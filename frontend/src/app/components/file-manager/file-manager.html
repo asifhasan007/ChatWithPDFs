@@ -35,15 +35,18 @@
           <button class="icon-btn delete" (click)="deleteFolder(category.id)" title="Delete Folder">🗑️</button>
         </div>
       </div>
-      <ul class="pdf-list">
-        <li *ngFor="let pdf of category.pdfs" class="pdf-item">
-          <span>{{ pdf.name }}</span>
-          <button class="delete-btn" (click)="deletePdf(category.id, pdf.id)" title="Delete PDF">×</button>
-        </li>
-        <li *ngIf="category.pdfs.length === 0" class="no-pdfs">
-          No PDFs in this folder.
-        </li>
-      </ul>
+        <ul class="pdf-list">
+          <li *ngFor="let pdf of category.pdfs" class="pdf-item">
+            <span>{{ pdf.name }}</span>
+            <button class="delete-btn" (click)="deletePdf($event, category.id, pdf.id)">
+              &times; <!-- Use the HTML entity for a multiplication sign, which looks like a nice 'x' -->
+            </button>
+          
+          </li>
+          <li *ngIf="category.pdfs.length === 0" class="no-pdfs">
+            No PDFs in this folder.
+          </li>
+        </ul>
     </div>
   </div>
 </div>

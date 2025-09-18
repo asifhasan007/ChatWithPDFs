@@ -24,6 +24,11 @@ interface BackendUploadResponse {
 interface BackendAiSolutionResponse {
  answer: string; }
  
+ interface BackendStartSessionResponse {
+  message: string;
+  session_id: string;
+}
+ 
 @Injectable({
   providedIn: 'root'
 })
@@ -59,7 +64,9 @@ export class ApiService {
  
     return this.http.post<BackendUploadResponse>(`${this.baseUrl}/upload`, formData);
   }
- 
+     deletePdf(category: string, filename: string): Observable<void> {
+    return this.http.delete<void>(`${this.baseUrl}/categories/${category}/documents/${filename}`);
+  }
  
     // --- Ai Chat Method ---
  
@@ -70,8 +77,12 @@ export class ApiService {
  
   // --- Chat API Method ---
  
-  sendChatMessage(question: string, category: string): Observable<BackendChatResponse> {
-    const payload = { question, category };
+  startChatSession(category: string): Observable<BackendStartSessionResponse> {
+    return this.http.post<BackendStartSessionResponse>(`${this.baseUrl}/chat/start`, { category });
+  }
+ 
+  sendChatMessage(sessionId: string, question: string): Observable<BackendChatResponse> {
+    const payload = { session_id: sessionId, question: question };
     return this.http.post<BackendChatResponse>(`${this.baseUrl}/chat`, payload);
   }
  
@@ -92,3 +103,5 @@ export class ApiService {
  
  
 }
+ 
+ 

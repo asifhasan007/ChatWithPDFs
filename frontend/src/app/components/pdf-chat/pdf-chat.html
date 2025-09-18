@@ -1,38 +1,51 @@
 <div class="chat-section-container">
-  <h2>Chat with your PDFs</h2>
-  
+  <h2>Chat With Your PDFs</h2>
+ 
   <!-- Category Selector -->
   <div class="category-selector">
     <label for="category">Select a Folder to Chat With:</label>
-    <select id="category" [(ngModel)]="selectedCategoryId">
+    <select id="category" [(ngModel)]="selectedCategoryId" (change)="onCategoryChange()">
       <option value="" disabled>-- Choose a Folder --</option>
       <option *ngFor="let category of categories$ | async" [value]="category.id">
         {{ category.name }}
       </option>
     </select>
   </div>
-
+ 
   <!-- Chat UI -->
   <div class="chat-window">
     <div class="chat-messages">
-      <div *ngFor="let msg of messages" class="message-container">
+     
+      <!-- Existing loop for displaying messages -->
+      <div *ngFor="let msg of messages" class="message-container" [ngClass]="msg.sender">
         <div class="message" [ngClass]="{'user-message': msg.sender === 'user', 'ai-message': msg.sender === 'ai'}">
           <p>{{ msg.text }}</p>
-
           <button *ngIf="msg.sender === 'ai' && msg.source" class="source-btn" (click)="viewSource(msg.source)">
             View Source
           </button>
         </div>
       </div>
+ 
+      <!-- **** THIS IS THE NEW PART **** -->
+      <!-- Typing Indicator shown when isAiThinking is true -->
+      <div *ngIf="isAiThinking" class="typing-indicator-container">
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+      </div>
+      <!-- **** END OF NEW PART **** -->
+ 
     </div>
     <div class="chat-input-area">
-      <input 
-        type="text" 
-        [(ngModel)]="userMessage" 
-        (keyup.enter)="sendMessage()" 
+      <input
+        type="text"
+        [(ngModel)]="userMessage"
+        (keyup.enter)="sendMessage()"
         placeholder="Ask a question about the PDFs in the selected folder..."
       />
       <button (click)="sendMessage()">Send</button>
     </div>
   </div>
 </div>
+ 
+ 

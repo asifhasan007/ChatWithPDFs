@@ -20,7 +20,7 @@ def process_and_index_pdf(pdf_path, category):
         logger.info(f"Processing '{pdf_name}' for category '{category}'...")
         loader = PyMuPDFLoader(pdf_path)
         documents = loader.load()        
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=150)
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
         chunks = text_splitter.split_documents(documents)        
         vector_store = FAISS.from_documents(chunks, embeddings)
         os.makedirs(vector_store_path, exist_ok=True)

@@ -61,10 +61,9 @@ export class FileManager implements OnInit {
   }
  
  
-  deletePdf(categoryId: string, pdfId: string): void {
-    console.log(`Request to delete PDF: ${pdfId} from category: ${categoryId}`);
-    alert('Delete PDF functionality is not yet implemented in the service.');
-    // When ready, the call would be: this.chatService.deletePdf(categoryId, pdfId);
+   deletePdf(event: MouseEvent, categoryId: string, pdfId: string): void  {
+    event.stopPropagation();
+    this.chatService.deletePdf(categoryId, pdfId);
   }
  
  

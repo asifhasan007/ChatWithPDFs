@@ -15,11 +15,26 @@ def load_models():
         
         logger.info("Initializing LLM...")
         llm = LlamaCpp(
-            model_path=MODEL_PATH, 
-            n_gpu_layers=-1, 
-            n_batch=512, 
-            n_ctx=2048, 
-            verbose=False
+            model_path=MODEL_PATH,
+            n_gpu_layers=-1,
+            temperature=0.1,  
+            max_tokens=200,   
+            top_p=0.95,
+            n_ctx=4096,
+            stop=[
+                "\n\n",      
+                "\nYou:",    
+                "\nQuestion:", 
+                "You:",
+                "User:",
+                "Human:",
+                "Assistant:",
+                "---",
+                "Note:",
+                "<|eot_id|>",
+                "<|end|>",     
+            ],
+            verbose=True
         )
 
         logger.info("Models loaded successfully.")
