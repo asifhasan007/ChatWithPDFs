@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, throwError } from 'rxjs';
+import { BehaviorSubject, Observable, of, throwError } from 'rxjs';
 import { tap, catchError, map } from 'rxjs/operators';
 import { ApiService } from './api';
  
@@ -10,6 +10,9 @@ import { ChatMessage, ChatSession } from '../models/chat.model';
   providedIn: 'root'
 })
 export class ChatService {
+  saveChatSession(categoryIdToSave: string, messagesToSave: ChatMessage[]) {
+    throw new Error('Method not implemented.');
+  }
   private categoriesSubject = new BehaviorSubject<Category[]>([]);
   public categories$ = this.categoriesSubject.asObservable();
  
@@ -73,10 +76,10 @@ export class ChatService {
         this.categoriesSubject.next([...currentCategories, newCategory]);
         this.saveStateToStorage();
       }),
-      catchError((err: any) => { /* ... error handling ... */ return throwError(() => err); })
+      catchError((err: any) => { return throwError(() => err); })
     ).subscribe();
   }
- 
+
   deleteCategory(categoryId: string): void {
     this.apiService.deleteCategory(categoryId).pipe(
       tap(() => {
@@ -84,7 +87,7 @@ export class ChatService {
         this.categoriesSubject.next(current.filter(c => c.id !== categoryId));
         this.saveStateToStorage();
       }),
-      catchError((err: any) => { /* ... error handling ... */ return throwError(() => err); })
+      catchError((err: any) => { return throwError(() => err); })
     ).subscribe();
   }
  
@@ -151,14 +154,22 @@ export class ChatService {
     if (!sessionId) {
       return throwError(() => new Error('No active PDF chat session.'));
     }
- 
+
     return this.apiService.sendChatMessage(sessionId, message).pipe(
-      map((response: any) => ({
-        sender: 'ai',
-        text: response.answer,
-        timestamp: new Date(),
-        source: { pdfName: response.sources.join(', '), pdfId: '', pageNumber: 0 }
-      } as ChatMessage))
+      map(response => {
+        // Transform backend source format to frontend ChatSource format
+        const sourcesText = response.sources.map(s => `${s.source} (p. ${s.page})`).join(', ');
+        return {
+          sender: 'ai',
+          text: response.answer,
+          timestamp: new Date(),
+          source: {
+            pdfName: sourcesText,
+            pdfId: '', // pdfId may need to be derived differently if required
+            pageNumber: 0 // Page number is now part of the text string
+          }
+        } as ChatMessage;
+      })
     );
   }
  
@@ -176,18 +187,36 @@ export class ChatService {
  
   // --- Chat history methods ---
  
-  getChatHistory(categoryId: string): Observable<ChatSession[]> {
-    return this.apiService.getChatHistory(categoryId);
+getChatHistory(categoryId: string): Observable<ChatSession[]> {
+    return this.apiService.getChatHistory(categoryId).pipe(
+      map(rawMessages => {
+        if (!rawMessages || rawMessages.length === 0) {
+          return [];
+        }
+        
+        // FIX: Manually map each message object to the ChatMessage interface
+        const formattedMessages: ChatMessage[] = rawMessages.map(msg => ({
+          sender: msg.sender,
+          text: msg.message, // Map 'message' from backend to 'text' for frontend
+          timestamp: new Date(msg.timestamp)
+        }));
+
+        const session: ChatSession = {
+          id: categoryId,
+          startTime: formattedMessages[0].timestamp,
+          messages: formattedMessages
+        };
+        return [session];
+      }),
+      catchError(err => {
+          console.error(`Failed to get chat history for ${categoryId}`, err);
+          return of([]);
+      })
+    );
   }
- 
-  saveChatSession(categoryId: string, messages: ChatMessage[]): void {
-    this.apiService.saveChatSession(categoryId, messages).subscribe({
-      next: () => console.log('Chat session saved successfully via API.'),
-      error: (err: any) => console.error('Failed to save chat session via API', err)
-    });
-  }
- 
-  deleteChatSession(sessionId: string): Observable<void> {
-    return this.apiService.deleteChatSession(sessionId);
+
+  // FIX 4: Call the corrected delete method in the API service.
+  deleteChatHistory(categoryId: string): Observable<void> {
+    return this.apiService.deleteChatHistory(categoryId);
   }
 }

@@ -1,9 +1,12 @@
+<!-- Your Modal component remains the same -->
 <app-modal [isVisible]="isHistoryModalVisible" (close)="closeHistoryModal()">
   <app-chat-history *ngIf="selectedCategoryIdForHistory" [categoryId]="selectedCategoryIdForHistory"></app-chat-history>
 </app-modal>
 
+
 <div class="file-manager-container">
   <h2>My Folders</h2>
+
 
   <!-- Input to create a new folder -->
   <div class="add-category-form">
@@ -16,37 +19,39 @@
     <button (click)="createFolder()">Create Folder</button>
   </div>
 
+
   <!-- List of existing folders -->
   <div class="category-list">
-    <div *ngFor="let category of categories$ | async" class="category-item">
+    <!-- FIX 1: Added click handler and active class binding -->
+    <div *ngFor="let category of categories$ | async" 
+         class="category-item"
+         (click)="selectCategory(category.id)"
+         [class.active]="activeCategoryId === category.id">
+         
       <div class="category-header">
         <div class="category-name-wrapper">
           <h3>{{ category.name }}</h3>
-          <!-- Loading spinner shown during upload -->
           <div *ngIf="category.isUploading" class="spinner"></div>
         </div>
         <div class="category-actions">
-          <!-- Hidden file input triggered by the button -->
           <input type="file" #fileInput (change)="onFileSelected($event, category.id)" hidden accept=".pdf">
-          <button class="icon-btn" (click)="fileInput.click()" [disabled]="category.isUploading" title="Upload PDF">📁+</button>
-          <button class="icon-btn" (click)="openHistoryModal(category.id)" title="View Previous Chats">📜</button>
-          
-          <!-- **** THIS IS THE NEWLY ADDED BUTTON **** -->
-          <button class="icon-btn delete" (click)="deleteFolder(category.id)" title="Delete Folder">🗑️</button>
+          <!-- FIX 2: Added $event.stopPropagation() to all button clicks -->
+          <button class="icon-btn" (click)="fileInput.click(); $event.stopPropagation()" [disabled]="category.isUploading" title="Upload PDF">📁+</button>
+          <button class="icon-btn" (click)="openHistoryModal($event, category.id)" title="View Previous Chats">📜</button>
+          <button class="icon-btn delete" (click)="deleteFolder($event, category.id)" title="Delete Folder">🗑️</button>
         </div>
       </div>
-        <ul class="pdf-list">
-          <li *ngFor="let pdf of category.pdfs" class="pdf-item">
-            <span>{{ pdf.name }}</span>
-            <button class="delete-btn" (click)="deletePdf($event, category.id, pdf.id)">
-              &times; <!-- Use the HTML entity for a multiplication sign, which looks like a nice 'x' -->
-            </button>
-          
-          </li>
-          <li *ngIf="category.pdfs.length === 0" class="no-pdfs">
-            No PDFs in this folder.
-          </li>
-        </ul>
+      <ul class="pdf-list">
+        <li *ngFor="let pdf of category.pdfs" class="pdf-item">
+          <span>{{ pdf.name }}</span>
+          <button class="delete-btn" (click)="deletePdf($event, category.id, pdf.id)">
+            &times;
+          </button>
+        </li>
+        <li *ngIf="category.pdfs.length === 0" class="no-pdfs">
+          No PDFs in this folder.
+        </li>
+      </ul>
     </div>
   </div>
 </div>

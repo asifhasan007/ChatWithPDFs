@@ -5,7 +5,8 @@ import { Observable, Subscription } from 'rxjs';
 import { Category } from '../../core/models/category.model';
 import { ChatMessage, ChatSource } from '../../core/models/chat.model';
 import { ChatService } from '../../core/services/chat';
- 
+import Swal from 'sweetalert2';
+
 @Component({
   selector: 'app-pdf-chat',
   standalone: true,
@@ -14,72 +15,77 @@ import { ChatService } from '../../core/services/chat';
   styleUrls: ['./pdf-chat.scss']
 })
 export class PdfChat implements OnInit, OnDestroy {
+  loadChatForCategory(categoryId: string) {
+    throw new Error('Method not implemented.');
+  }
   categories$!: Observable<Category[]>;
-  selectedCategoryId: string = '';
-  isSessionStarting = false;
+  selectedCategoryId: string = ''; // Bound to the dropdown's ngModel
+  isLoading = false; // Consolidated loading state
   isSessionActive$!: Observable<boolean>;
-  isAiThinking: boolean = false;
- 
+  
   messages: ChatMessage[] = [];
-  userMessage: string = '';
- 
+  userInput: string = ''; // Changed from userMessage for consistency
+
   private chatSub?: Subscription;
- 
+
   constructor(private chatService: ChatService) {}
- 
+
   ngOnInit(): void {
     this.categories$ = this.chatService.categories$;
     this.isSessionActive$ = this.chatService.isPdfSessionActive$;
   }
- 
-  /**
-   * Called when the user selects a new folder from the dropdown.
-   * This clears old messages and starts a new session on the backend.
-   */
-  onCategoryChange(): void {
+
+
+    onCategoryChange(): void {
     if (!this.selectedCategoryId) return;
-   
-    this.isSessionStarting = true;
-    this.messages = [];
- 
-    this.chatService.startNewPdfChat(this.selectedCategoryId).subscribe({
-      next: () => {
-        this.isSessionStarting = false;
-        // Provide a welcome message to the user
-        this.messages.push({
-          sender: 'ai',
-          text: `Session started for folder: ${this.selectedCategoryId}. You can now ask questions about its content.`,
-          timestamp: new Date()
-        });
+    
+    this.isLoading = true;
+    this.messages = []; 
+
+
+    this.chatSub = this.chatService.getChatHistory(this.selectedCategoryId).subscribe({
+      next: (sessions) => {
+        if (sessions && sessions.length > 0) {
+          // If history exists, populate the messages array
+          this.messages = sessions[0].messages;
+        } else {
+          // If no history, provide a welcome message
+          this.messages.push({
+            sender: 'ai',
+            text: `This is a new chat for ${this.selectedCategoryId}. Ask me anything about its content!`,
+            timestamp: new Date()
+          });
+        }
+        
+
+        this.chatService.startNewPdfChat(this.selectedCategoryId).subscribe();
+        
+        this.isLoading = false;
       },
       error: (err) => {
-        this.isSessionStarting = false;
-        alert('Could not start chat session. Please check the console and try again.');
+        this.isLoading = false;
+        alert('Could not load chat history. Please try again.');
         console.error(err);
       }
     });
   }
- 
-  /**
-   * Sends the user's message to the currently active session.
-   * It no longer needs the categoryId.
-   */
+
   sendMessage(): void {
-    if (!this.userMessage.trim()) return;
- 
-    const userMsg: ChatMessage = { sender: 'user', text: this.userMessage, timestamp: new Date() };
+    if (!this.userInput.trim() || !this.selectedCategoryId) return;
+
+    const userMsg: ChatMessage = { sender: 'user', text: this.userInput, timestamp: new Date() };
     this.messages.push(userMsg);
-    this.isAiThinking = true;
- 
+    this.isLoading = true;
+
     // Call the service with only the message
-    this.chatSub = this.chatService.getPdfChatResponse(this.userMessage).subscribe({
+    this.chatSub = this.chatService.getPdfChatResponse(this.userInput).subscribe({
       next: (aiMsg) => {
         this.messages.push(aiMsg);
-        this.isAiThinking = false;
+        this.isLoading = false;
       },
       error: (err) => {
         console.error("Error getting AI response:", err);
-         this.isAiThinking = false;
+        this.isLoading = false;
         this.messages.push({
           sender: 'ai',
           text: 'Sorry, I encountered an error trying to get a response. Please try again.',
@@ -87,29 +93,43 @@ export class PdfChat implements OnInit, OnDestroy {
         });
       }
     });
- 
-    this.userMessage = ''; // Reset the input field
+
+    this.userInput = ''; 
   }
- 
-  /**
-   * A placeholder for viewing the source of an AI's answer.
-   */
-  viewSource(source: ChatSource): void {
-    alert(`Source: "${source.pdfName}" on page ${source.pageNumber}.`);
+
+ viewSource(source: ChatSource | undefined): void {
+    if (source) {
+      Swal.fire({
+        title: 'Source Document',
+        icon: 'info',
+        html: `
+          <div style="text-align: left; padding: 0 1rem;">
+            <p>The information was found in the following document:</p>
+            <hr>
+            <p><strong>File:</strong> ${source.pdfName}</p>
+          </div>
+        `,
+        confirmButtonText: 'Got it!',
+        confirmButtonColor: '#4CAF50' 
+      });
+    } else {
+      Swal.fire({
+        title: 'No Source Available',
+        text: 'Source information could not be retrieved for this message.',
+        icon: 'warning',
+        confirmButtonText: 'Close'
+      });
+    }
   }
- 
-  /**
-   * A public method that can be called from parent components to reset the chat.
-   */
+
+
   public clearSession(): void {
     this.messages = [];
     this.selectedCategoryId = '';
     this.chatService.clearPdfSession();
   }
- 
-  /**
-   * Unsubscribe from any active subscriptions when the component is destroyed.
-   */
+
+
   ngOnDestroy(): void {
     if (this.chatSub) {
       this.chatSub.unsubscribe();

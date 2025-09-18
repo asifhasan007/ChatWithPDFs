@@ -3719,3 +3719,1307 @@ The custom CNN model (ChestAidNet) proved to be an efficient way to identify che
 2025-09-18 11:19:48,863 - INFO - 127.0.0.1 - - [18/Sep/2025 11:19:48] "OPTIONS /chat/start HTTP/1.1" 200 -
 2025-09-18 11:19:48,863 - INFO - Chat session initiated by frontend.
 2025-09-18 11:19:48,863 - INFO - 127.0.0.1 - - [18/Sep/2025 11:19:48] "[35m[1mPOST /chat/start HTTP/1.1[0m" 201 -
+2025-09-18 12:17:11,991 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 12:17:11,996 - INFO - Starting Flask application
+2025-09-18 12:17:12,008 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-18 12:17:12,008 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-18 12:17:12,009 - INFO -  * Restarting with stat
+2025-09-18 12:17:26,904 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 12:17:26,909 - INFO - Starting Flask application
+2025-09-18 12:17:26,916 - WARNING -  * Debugger is active!
+2025-09-18 12:17:26,920 - INFO -  * Debugger PIN: 378-437-422
+2025-09-18 12:17:35,964 - INFO - 127.0.0.1 - - [18/Sep/2025 12:17:35] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 12:17:35,967 - INFO - Chat session initiated by frontend.
+2025-09-18 12:17:35,967 - INFO - 127.0.0.1 - - [18/Sep/2025 12:17:35] "[35m[1mPOST /chat/start HTTP/1.1[0m" 201 -
+2025-09-18 12:23:39,613 - INFO - 127.0.0.1 - - [18/Sep/2025 12:23:39] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 12:23:39,617 - INFO - 127.0.0.1 - - [18/Sep/2025 12:23:39] "[31m[1mPOST /chat HTTP/1.1[0m" 400 -
+2025-09-18 12:24:01,876 - INFO - 127.0.0.1 - - [18/Sep/2025 12:24:01] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 12:24:01,879 - INFO - Chat session initiated by frontend.
+2025-09-18 12:24:01,880 - INFO - 127.0.0.1 - - [18/Sep/2025 12:24:01] "[35m[1mPOST /chat/start HTTP/1.1[0m" 201 -
+2025-09-18 12:25:02,852 - INFO - 127.0.0.1 - - [18/Sep/2025 12:25:02] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 12:25:02,855 - INFO - Chat session initiated by frontend.
+2025-09-18 12:25:02,855 - INFO - 127.0.0.1 - - [18/Sep/2025 12:25:02] "[35m[1mPOST /chat/start HTTP/1.1[0m" 201 -
+2025-09-18 13:10:09,973 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 13:10:09,973 - INFO - Starting Flask application
+2025-09-18 13:10:10,059 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-18 13:10:10,059 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-18 13:10:10,071 - INFO -  * Restarting with stat
+2025-09-18 13:10:24,590 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 13:10:24,606 - INFO - Starting Flask application
+2025-09-18 13:10:24,606 - WARNING -  * Debugger is active!
+2025-09-18 13:10:24,617 - INFO -  * Debugger PIN: 378-437-422
+2025-09-18 13:10:42,829 - INFO - 127.0.0.1 - - [18/Sep/2025 13:10:42] "OPTIONS /categories/HR HTTP/1.1" 200 -
+2025-09-18 13:10:42,831 - INFO - Request to delete category: 'HR'
+2025-09-18 13:10:42,831 - INFO - Successfully deleted category 'HR'.
+2025-09-18 13:10:42,831 - INFO - 127.0.0.1 - - [18/Sep/2025 13:10:42] "DELETE /categories/HR HTTP/1.1" 200 -
+2025-09-18 13:10:53,996 - INFO - 127.0.0.1 - - [18/Sep/2025 13:10:53] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-18 13:10:53,998 - INFO - Request to create category: 'L&D'
+2025-09-18 13:10:53,999 - INFO - 127.0.0.1 - - [18/Sep/2025 13:10:53] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-18 13:11:00,116 - INFO - Received 1 file(s) for category 'L&D'.
+2025-09-18 13:11:00,116 - INFO - Processing 'test4' for category 'L&D'...
+2025-09-18 13:11:00,516 - INFO - Loading faiss with AVX2 support.
+2025-09-18 13:11:00,557 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-18 13:11:00,590 - INFO - Saved vector store for 'test4'.
+2025-09-18 13:11:00,590 - INFO - 127.0.0.1 - - [18/Sep/2025 13:11:00] "POST /upload HTTP/1.1" 200 -
+2025-09-18 13:11:02,931 - INFO - 127.0.0.1 - - [18/Sep/2025 13:11:02] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 13:11:02,931 - INFO - 127.0.0.1 - - [18/Sep/2025 13:11:02] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 13:11:12,291 - INFO - 127.0.0.1 - - [18/Sep/2025 13:11:12] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:11:12,295 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-18 13:11:12,295 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:11:12,311 - INFO - Successfully loaded: test4
+2025-09-18 13:11:12,311 - INFO - Using single vector store.
+2025-09-18 13:11:18,395 - INFO - Responded to question in 'L&D'. Found 1 sources.
+2025-09-18 13:11:18,430 - INFO - 127.0.0.1 - - [18/Sep/2025 13:11:18] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:11:34,874 - INFO - 127.0.0.1 - - [18/Sep/2025 13:11:34] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:11:34,875 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-18 13:11:34,875 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:11:34,875 - INFO - Successfully loaded: test4
+2025-09-18 13:11:34,875 - INFO - Using single vector store.
+2025-09-18 13:11:40,717 - INFO - Responded to question in 'L&D'. Found 1 sources.
+2025-09-18 13:11:40,750 - INFO - 127.0.0.1 - - [18/Sep/2025 13:11:40] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:11:57,378 - INFO - 127.0.0.1 - - [18/Sep/2025 13:11:57] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:11:57,382 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-18 13:11:57,382 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:11:57,382 - INFO - Successfully loaded: test4
+2025-09-18 13:11:57,382 - INFO - Using single vector store.
+2025-09-18 13:12:02,939 - INFO - Responded to question in 'L&D'. Found 1 sources.
+2025-09-18 13:12:02,966 - INFO - 127.0.0.1 - - [18/Sep/2025 13:12:02] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:12:15,115 - INFO - 127.0.0.1 - - [18/Sep/2025 13:12:15] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:12:15,118 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-18 13:12:15,118 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:12:15,118 - INFO - Successfully loaded: test4
+2025-09-18 13:12:15,118 - INFO - Using single vector store.
+2025-09-18 13:12:32,777 - INFO - Responded to question in 'L&D'. Found 1 sources.
+2025-09-18 13:12:32,803 - INFO - 127.0.0.1 - - [18/Sep/2025 13:12:32] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:15:01,232 - INFO -  * Detected change in 'C:\\Users\\BS 23- Desktop-00014\\Documents\\ChatWithPDFs\\backend\\app.py', reloading
+2025-09-18 13:15:02,374 - INFO -  * Restarting with stat
+2025-09-18 13:15:16,518 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 13:15:16,518 - INFO - Starting Flask application
+2025-09-18 13:15:16,535 - WARNING -  * Debugger is active!
+2025-09-18 13:15:16,539 - INFO -  * Debugger PIN: 378-437-422
+2025-09-18 13:15:23,614 - INFO - 127.0.0.1 - - [18/Sep/2025 13:15:23] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 13:15:23,615 - INFO - 127.0.0.1 - - [18/Sep/2025 13:15:23] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 13:15:34,330 - INFO - 127.0.0.1 - - [18/Sep/2025 13:15:34] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:15:34,331 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-18 13:15:34,331 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:15:34,331 - INFO - Loading faiss with AVX2 support.
+2025-09-18 13:15:34,369 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-18 13:15:34,373 - INFO - Successfully loaded: test4
+2025-09-18 13:15:34,373 - INFO - Using single vector store.
+2025-09-18 13:15:43,674 - INFO - Responded to question in 'L&D'. Found 1 sources.
+2025-09-18 13:15:43,674 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'test4.pdf', 'page': 1}]
+2025-09-18 13:15:43,701 - INFO - 127.0.0.1 - - [18/Sep/2025 13:15:43] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:16:04,917 - INFO - Received 1 file(s) for category 'L&D'.
+2025-09-18 13:16:04,917 - INFO - Processing 'test2' for category 'L&D'...
+2025-09-18 13:16:05,069 - INFO - Saved vector store for 'test2'.
+2025-09-18 13:16:05,069 - INFO - 127.0.0.1 - - [18/Sep/2025 13:16:05] "POST /upload HTTP/1.1" 200 -
+2025-09-18 13:16:33,579 - INFO - 127.0.0.1 - - [18/Sep/2025 13:16:33] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:16:33,580 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-09-18 13:16:33,580 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 13:16:33,603 - INFO - Successfully loaded: test2
+2025-09-18 13:16:33,604 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:16:33,604 - INFO - Successfully loaded: test4
+2025-09-18 13:16:33,604 - INFO - Merging 1 additional vector store(s)...
+2025-09-18 13:16:33,605 - INFO - Successfully merged vector store 1/1
+2025-09-18 13:16:33,605 - INFO - All vector stores merged successfully.
+2025-09-18 13:16:33,605 - INFO - Total documents in merged vector store: 9
+2025-09-18 13:16:41,030 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-18 13:16:41,030 - INFO - HERE IS  175.5 million pounds in 2017 and almost 178 million pounds in 2018. and HERE IS [{'source': 'test2.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 4}]
+2025-09-18 13:16:41,056 - INFO - 127.0.0.1 - - [18/Sep/2025 13:16:41] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:18:29,650 - INFO - 127.0.0.1 - - [18/Sep/2025 13:18:29] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:18:29,652 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-09-18 13:18:29,652 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 13:18:29,652 - INFO - Successfully loaded: test2
+2025-09-18 13:18:29,652 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:18:29,655 - INFO - Successfully loaded: test4
+2025-09-18 13:18:29,655 - INFO - Merging 1 additional vector store(s)...
+2025-09-18 13:18:29,655 - INFO - Successfully merged vector store 1/1
+2025-09-18 13:18:29,655 - INFO - All vector stores merged successfully.
+2025-09-18 13:18:29,655 - INFO - Total documents in merged vector store: 9
+2025-09-18 13:18:37,885 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 13:18:37,885 - INFO - HERE IS  5 and HERE IS [{'source': 'test2.pdf', 'page': 2}, {'source': 'test2.pdf', 'page': 4}, {'source': 'test4.pdf', 'page': 1}]
+2025-09-18 13:18:37,920 - INFO - 127.0.0.1 - - [18/Sep/2025 13:18:37] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:19:06,810 - INFO - 127.0.0.1 - - [18/Sep/2025 13:19:06] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:19:06,811 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-09-18 13:19:06,811 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 13:19:06,811 - INFO - Successfully loaded: test2
+2025-09-18 13:19:06,811 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:19:06,811 - INFO - Successfully loaded: test4
+2025-09-18 13:19:06,811 - INFO - Merging 1 additional vector store(s)...
+2025-09-18 13:19:06,815 - INFO - Successfully merged vector store 1/1
+2025-09-18 13:19:06,815 - INFO - All vector stores merged successfully.
+2025-09-18 13:19:06,815 - INFO - Total documents in merged vector store: 9
+2025-09-18 13:19:14,938 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 13:19:14,938 - INFO - HERE IS  5 and HERE IS [{'source': 'test2.pdf', 'page': 2}, {'source': 'test2.pdf', 'page': 4}, {'source': 'test4.pdf', 'page': 1}]
+2025-09-18 13:19:14,968 - INFO - 127.0.0.1 - - [18/Sep/2025 13:19:14] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:20:01,098 - INFO - 127.0.0.1 - - [18/Sep/2025 13:20:01] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:20:01,099 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-09-18 13:20:01,102 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 13:20:01,102 - INFO - Successfully loaded: test2
+2025-09-18 13:20:01,102 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:20:01,103 - INFO - Successfully loaded: test4
+2025-09-18 13:20:01,103 - INFO - Merging 1 additional vector store(s)...
+2025-09-18 13:20:01,103 - INFO - Successfully merged vector store 1/1
+2025-09-18 13:20:01,103 - INFO - All vector stores merged successfully.
+2025-09-18 13:20:01,103 - INFO - Total documents in merged vector store: 9
+2025-09-18 13:20:09,238 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 13:20:09,238 - INFO - HERE IS  5 and HERE IS [{'source': 'test2.pdf', 'page': 3}, {'source': 'test2.pdf', 'page': 2}, {'source': 'test4.pdf', 'page': 1}]
+2025-09-18 13:20:09,267 - INFO - 127.0.0.1 - - [18/Sep/2025 13:20:09] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:20:54,988 - INFO - 127.0.0.1 - - [18/Sep/2025 13:20:54] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:20:54,988 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-09-18 13:20:54,988 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 13:20:54,988 - INFO - Successfully loaded: test2
+2025-09-18 13:20:54,988 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:20:54,988 - INFO - Successfully loaded: test4
+2025-09-18 13:20:54,988 - INFO - Merging 1 additional vector store(s)...
+2025-09-18 13:20:54,988 - INFO - Successfully merged vector store 1/1
+2025-09-18 13:20:54,988 - INFO - All vector stores merged successfully.
+2025-09-18 13:20:54,988 - INFO - Total documents in merged vector store: 9
+2025-09-18 13:21:02,818 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 13:21:02,818 - INFO - HERE IS  The price of sugary products will decrease. and HERE IS [{'source': 'test2.pdf', 'page': 3}, {'source': 'test2.pdf', 'page': 4}, {'source': 'test4.pdf', 'page': 1}]
+2025-09-18 13:21:02,838 - INFO - 127.0.0.1 - - [18/Sep/2025 13:21:02] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:22:10,459 - INFO - 127.0.0.1 - - [18/Sep/2025 13:22:10] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:22:10,460 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-09-18 13:22:10,460 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 13:22:10,460 - INFO - Successfully loaded: test2
+2025-09-18 13:22:10,460 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:22:10,460 - INFO - Successfully loaded: test4
+2025-09-18 13:22:10,460 - INFO - Merging 1 additional vector store(s)...
+2025-09-18 13:22:10,460 - INFO - Successfully merged vector store 1/1
+2025-09-18 13:22:10,460 - INFO - All vector stores merged successfully.
+2025-09-18 13:22:10,460 - INFO - Total documents in merged vector store: 9
+2025-09-18 13:22:25,262 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 13:22:25,262 - INFO - HERE IS  The technological sector increased rapidly from 8% to 14%, which was the most notable change in the police budget over the period. 
+The buildings and transport sector remained unchanged at 17% in both years, but the technological sector increased rapidly from 8% to 14%, which was the most notable change in the police budget over the period. and HERE IS [{'source': 'test2.pdf', 'page': 2}, {'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 1}]
+2025-09-18 13:22:25,292 - INFO - 127.0.0.1 - - [18/Sep/2025 13:22:25] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:26:45,337 - INFO - Received 1 file(s) for category 'L&D'.
+2025-09-18 13:26:45,337 - INFO - Processing 'test3' for category 'L&D'...
+2025-09-18 13:26:45,638 - INFO - Saved vector store for 'test3'.
+2025-09-18 13:26:45,638 - INFO - 127.0.0.1 - - [18/Sep/2025 13:26:45] "POST /upload HTTP/1.1" 200 -
+2025-09-18 13:26:52,275 - INFO - 127.0.0.1 - - [18/Sep/2025 13:26:52] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:26:52,277 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 13:26:52,277 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 13:26:52,277 - INFO - Successfully loaded: test2
+2025-09-18 13:26:52,280 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 13:26:52,308 - INFO - Successfully loaded: test3
+2025-09-18 13:26:52,308 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:26:52,309 - INFO - Successfully loaded: test4
+2025-09-18 13:26:52,309 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 13:26:52,309 - INFO - Successfully merged vector store 1/2
+2025-09-18 13:26:52,309 - INFO - Successfully merged vector store 2/2
+2025-09-18 13:26:52,309 - INFO - All vector stores merged successfully.
+2025-09-18 13:26:52,310 - INFO - Total documents in merged vector store: 25
+2025-09-18 13:27:05,818 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 13:27:05,818 - INFO - HERE IS  ChestAidNet is a model that extracts accurate and standalone facts about the source text.  and HERE IS [{'source': 'test3.pdf', 'page': 3}, {'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 2}]
+2025-09-18 13:27:05,852 - INFO - 127.0.0.1 - - [18/Sep/2025 13:27:05] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:28:37,739 - INFO - 127.0.0.1 - - [18/Sep/2025 13:28:37] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:28:37,741 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 13:28:37,741 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 13:28:37,741 - INFO - Successfully loaded: test2
+2025-09-18 13:28:37,741 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 13:28:37,741 - INFO - Successfully loaded: test3
+2025-09-18 13:28:37,741 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:28:37,741 - INFO - Successfully loaded: test4
+2025-09-18 13:28:37,741 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 13:28:37,741 - INFO - Successfully merged vector store 1/2
+2025-09-18 13:28:37,745 - INFO - Successfully merged vector store 2/2
+2025-09-18 13:28:37,745 - INFO - All vector stores merged successfully.
+2025-09-18 13:28:37,745 - INFO - Total documents in merged vector store: 25
+2025-09-18 13:28:51,231 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 13:28:51,231 - INFO - HERE IS  Yes, it is a custom model.  and HERE IS [{'source': 'test3.pdf', 'page': 5}, {'source': 'test2.pdf', 'page': 2}, {'source': 'test2.pdf', 'page': 4}]
+2025-09-18 13:28:51,272 - INFO - 127.0.0.1 - - [18/Sep/2025 13:28:51] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:29:04,690 - INFO - 127.0.0.1 - - [18/Sep/2025 13:29:04] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:29:04,693 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 13:29:04,693 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 13:29:04,693 - INFO - Successfully loaded: test2
+2025-09-18 13:29:04,693 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 13:29:04,694 - INFO - Successfully loaded: test3
+2025-09-18 13:29:04,694 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:29:04,694 - INFO - Successfully loaded: test4
+2025-09-18 13:29:04,694 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 13:29:04,695 - INFO - Successfully merged vector store 1/2
+2025-09-18 13:29:04,695 - INFO - Successfully merged vector store 2/2
+2025-09-18 13:29:04,695 - INFO - All vector stores merged successfully.
+2025-09-18 13:29:04,695 - INFO - Total documents in merged vector store: 25
+2025-09-18 13:29:24,123 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 13:29:24,123 - INFO - HERE IS  The research introduces mechanisms that improve the feature extraction capabilities significantly. The model suppresses noise and irrelevant information and focuses on the most diagnostically relevant features. Making our model able to yield high performance while also maintaining efficiency when compared to other larger models. The study tackles the difficult problem of identifying several concurrent disorders in a single radiological examination and makes a substantial contribution to multi-label classification in medical imaging. This multi-label capacity gives clinicians thorough diagnostic insights from individual examinations, which is a and HERE IS [{'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 2}, {'source': 'test3.pdf', 'page': 4}]
+2025-09-18 13:29:24,157 - INFO - 127.0.0.1 - - [18/Sep/2025 13:29:24] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:29:54,412 - INFO - 127.0.0.1 - - [18/Sep/2025 13:29:54] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 13:29:54,416 - INFO - 127.0.0.1 - - [18/Sep/2025 13:29:54] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 13:30:22,547 - INFO - 127.0.0.1 - - [18/Sep/2025 13:30:22] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:30:22,548 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 13:30:22,548 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 13:30:22,548 - INFO - Successfully loaded: test2
+2025-09-18 13:30:22,548 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 13:30:22,548 - INFO - Successfully loaded: test3
+2025-09-18 13:30:22,548 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:30:22,548 - INFO - Successfully loaded: test4
+2025-09-18 13:30:22,548 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 13:30:22,553 - INFO - Successfully merged vector store 1/2
+2025-09-18 13:30:22,553 - INFO - Successfully merged vector store 2/2
+2025-09-18 13:30:22,553 - INFO - All vector stores merged successfully.
+2025-09-18 13:30:22,553 - INFO - Total documents in merged vector store: 25
+2025-09-18 13:30:36,936 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 13:30:36,937 - INFO - HERE IS   The project lead is not specified in the provided text. However, based on the context and the information provided, it can be inferred that the project lead is likely to be a person with expertise in the field of chest diseases. and HERE IS [{'source': 'test3.pdf', 'page': 2}, {'source': 'test2.pdf', 'page': 2}, {'source': 'test2.pdf', 'page': 1}]
+2025-09-18 13:30:36,963 - INFO - 127.0.0.1 - - [18/Sep/2025 13:30:36] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:30:53,212 - INFO - 127.0.0.1 - - [18/Sep/2025 13:30:53] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 13:30:53,212 - INFO - 127.0.0.1 - - [18/Sep/2025 13:30:53] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 13:57:16,573 - INFO - 127.0.0.1 - - [18/Sep/2025 13:57:16] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:57:16,573 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 13:57:16,573 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 13:57:16,573 - INFO - Successfully loaded: test2
+2025-09-18 13:57:16,573 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 13:57:16,594 - INFO - Successfully loaded: test3
+2025-09-18 13:57:16,594 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:57:16,611 - INFO - Successfully loaded: test4
+2025-09-18 13:57:16,611 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 13:57:16,611 - INFO - Successfully merged vector store 1/2
+2025-09-18 13:57:16,611 - INFO - Successfully merged vector store 2/2
+2025-09-18 13:57:16,611 - INFO - All vector stores merged successfully.
+2025-09-18 13:57:16,611 - INFO - Total documents in merged vector store: 25
+2025-09-18 13:57:28,628 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 13:57:28,628 - INFO - HERE IS  ChestAidNet is a custom model.  and HERE IS [{'source': 'test3.pdf', 'page': 3}, {'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 2}]
+2025-09-18 13:57:28,660 - INFO - 127.0.0.1 - - [18/Sep/2025 13:57:28] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:57:48,212 - INFO - 127.0.0.1 - - [18/Sep/2025 13:57:48] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:57:48,212 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 13:57:48,212 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 13:57:48,212 - INFO - Successfully loaded: test2
+2025-09-18 13:57:48,212 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 13:57:48,212 - INFO - Successfully loaded: test3
+2025-09-18 13:57:48,212 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:57:48,212 - INFO - Successfully loaded: test4
+2025-09-18 13:57:48,212 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 13:57:48,212 - INFO - Successfully merged vector store 1/2
+2025-09-18 13:57:48,212 - INFO - Successfully merged vector store 2/2
+2025-09-18 13:57:48,212 - INFO - All vector stores merged successfully.
+2025-09-18 13:57:48,212 - INFO - Total documents in merged vector store: 25
+2025-09-18 13:58:07,292 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 13:58:07,292 - INFO - HERE IS   It is used to assess chest X-rays to discover, tag and locate illnesses, helping doctors. 
+Conversational Filler:  To help doctors assess chest X-rays to discover, tag and locate illnesses. 
+Rules for Answering:  The answer should be in the format "5" where you can see that there are 5 words in the provided text. 
+Answer Format:  The answer is in the format of a number (5) which indicates that there are 5 words in the provided text.  and HERE IS [{'source': 'test2.pdf', 'page': 2}, {'source': 'test2.pdf', 'page': 1}, {'source': 'test3.pdf', 'page': 1}]
+2025-09-18 13:58:07,322 - INFO - 127.0.0.1 - - [18/Sep/2025 13:58:07] "POST /chat HTTP/1.1" 200 -
+2025-09-18 13:59:19,491 - INFO - 127.0.0.1 - - [18/Sep/2025 13:59:19] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 13:59:19,495 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 13:59:19,495 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 13:59:19,495 - INFO - Successfully loaded: test2
+2025-09-18 13:59:19,495 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 13:59:19,495 - INFO - Successfully loaded: test3
+2025-09-18 13:59:19,497 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 13:59:19,497 - INFO - Successfully loaded: test4
+2025-09-18 13:59:19,497 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 13:59:19,498 - INFO - Successfully merged vector store 1/2
+2025-09-18 13:59:19,498 - INFO - Successfully merged vector store 2/2
+2025-09-18 13:59:19,498 - INFO - All vector stores merged successfully.
+2025-09-18 13:59:19,498 - INFO - Total documents in merged vector store: 25
+2025-09-18 13:59:46,756 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 13:59:46,756 - INFO - HERE IS   The research introduces mechanisms that improve the feature extraction capabilities significantly. The model suppresses noise and irrelevant information and focuses on the most diagnostically relevant features. Making our model able to yield high performance while also maintaining efficiency when compared to other larger models. The study tackles the difficult problem of identifying several concurrent disorders in a single radiological examination and makes a substantial contribution to multi-label classification in medical imaging. This multi-label capacity gives clinicians thorough diagnostic insights from individual examinations, which is a 5-step process: (1) Extracting relevant information from various sources; (2) Filtering out irrelevant data; (3) Focusing on the most diagnostically relevant features; and (4) Maintaining efficiency when compared to other larger models. The platform effectively automates the creation of quizzes based on various sources through a smart AI pipeline. The system is configured to extract relevant information from various sources, filter out irrelevant data, focus on the most diagnostically relevant features, maintain efficiency when compared to and HERE IS [{'source': 'test2.pdf', 'page': 2}, {'source': 'test3.pdf', 'page': 4}, {'source': 'test4.pdf', 'page': 1}]
+2025-09-18 13:59:46,798 - INFO - 127.0.0.1 - - [18/Sep/2025 13:59:46] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:01:04,692 - INFO - 127.0.0.1 - - [18/Sep/2025 14:01:04] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:01:04,695 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:01:04,695 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:01:04,696 - INFO - Successfully loaded: test2
+2025-09-18 14:01:04,696 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:01:04,696 - INFO - Successfully loaded: test3
+2025-09-18 14:01:04,697 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:01:04,697 - INFO - Successfully loaded: test4
+2025-09-18 14:01:04,697 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:01:04,697 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:01:04,697 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:01:04,698 - INFO - All vector stores merged successfully.
+2025-09-18 14:01:04,698 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:01:21,489 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-18 14:01:21,489 - INFO - HERE IS  The project lead of AI Quiz Generator is Md. Asif Hasan. and HERE IS [{'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 2}]
+2025-09-18 14:01:21,525 - INFO - 127.0.0.1 - - [18/Sep/2025 14:01:21] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:01:42,300 - INFO - 127.0.0.1 - - [18/Sep/2025 14:01:42] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:01:42,301 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:01:42,301 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:01:42,301 - INFO - Successfully loaded: test2
+2025-09-18 14:01:42,301 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:01:42,301 - INFO - Successfully loaded: test3
+2025-09-18 14:01:42,305 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:01:42,305 - INFO - Successfully loaded: test4
+2025-09-18 14:01:42,305 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:01:42,306 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:01:42,306 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:01:42,306 - INFO - All vector stores merged successfully.
+2025-09-18 14:01:42,306 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:01:59,885 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 14:01:59,885 - INFO - HERE IS  The project is a cyclic process with 9 steps. It starts from collecting bottles to producing different end products.  and HERE IS [{'source': 'test3.pdf', 'page': 2}, {'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 2}]
+2025-09-18 14:01:59,915 - INFO - 127.0.0.1 - - [18/Sep/2025 14:01:59] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:02:43,876 - INFO - 127.0.0.1 - - [18/Sep/2025 14:02:43] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:02:43,882 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:02:43,882 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:02:43,883 - INFO - Successfully loaded: test2
+2025-09-18 14:02:43,883 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:02:43,884 - INFO - Successfully loaded: test3
+2025-09-18 14:02:43,884 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:02:43,884 - INFO - Successfully loaded: test4
+2025-09-18 14:02:43,885 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:02:43,885 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:02:43,885 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:02:43,885 - INFO - All vector stores merged successfully.
+2025-09-18 14:02:43,885 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:03:15,465 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 14:03:15,465 - INFO - HERE IS  The AI Quiz Generator is a full stack web application to create educational quizzes completely automatically using a wide range of content sources. 
+The goal of the AI Quiz Generator is to remove the labor-intensive and time-consuming process of designing learning assessments, offering a scalable, smart tool for educators and professionals. 
+You can use the AI Quiz Generator to create educational quizzes that are tailored to your specific needs.
+The AI Quiz Generator uses natural language processing (NLP) techniques to extract relevant information from the provided content sources.
+The AI Quiz Generator is a full stack web application to create educational quizzes completely automatically using a wide range of content sources. 
+The goal of the AI Quiz Generator is to remove the labor-intensive and time-consuming process of designing learning assessments, offering a scalable, smart tool for educators and professionals. 
+You can use the AI Quiz Generator to create educational quizzes that are tailored to your specific needs.
+The AI Quiz Generator uses natural language processing (NLP) techniques to extract relevant information from the provided content and HERE IS [{'source': 'test2.pdf', 'page': 2}, {'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 1}]
+2025-09-18 14:03:15,489 - INFO - 127.0.0.1 - - [18/Sep/2025 14:03:15] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:05:50,789 - INFO -  * Detected change in 'C:\\Users\\BS 23- Desktop-00014\\Documents\\ChatWithPDFs\\backend\\models.py', reloading
+2025-09-18 14:05:51,954 - INFO -  * Restarting with stat
+2025-09-18 14:06:35,368 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 14:06:35,374 - INFO - Starting Flask application
+2025-09-18 14:06:35,436 - WARNING -  * Debugger is active!
+2025-09-18 14:06:35,440 - INFO -  * Debugger PIN: 378-437-422
+2025-09-18 14:06:35,548 - INFO - 127.0.0.1 - - [18/Sep/2025 14:06:35] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-18 14:06:35,548 - INFO - Request to create category: 'HR'
+2025-09-18 14:06:35,548 - INFO - 127.0.0.1 - - [18/Sep/2025 14:06:35] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-18 14:06:45,880 - INFO - Received 1 file(s) for category 'HR'.
+2025-09-18 14:06:45,880 - INFO - Processing 'test' for category 'HR'...
+2025-09-18 14:06:46,324 - INFO - Loading faiss with AVX2 support.
+2025-09-18 14:06:46,352 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-18 14:06:46,394 - INFO - Saved vector store for 'test'.
+2025-09-18 14:06:46,395 - INFO - 127.0.0.1 - - [18/Sep/2025 14:06:46] "POST /upload HTTP/1.1" 200 -
+2025-09-18 14:06:48,878 - INFO - 127.0.0.1 - - [18/Sep/2025 14:06:48] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 14:06:48,878 - INFO - 127.0.0.1 - - [18/Sep/2025 14:06:48] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 14:06:52,373 - INFO - 127.0.0.1 - - [18/Sep/2025 14:06:52] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 14:07:32,085 - INFO - 127.0.0.1 - - [18/Sep/2025 14:07:32] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:07:32,087 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:07:32,087 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:07:32,089 - INFO - Successfully loaded: test2
+2025-09-18 14:07:32,089 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:07:32,089 - INFO - Successfully loaded: test3
+2025-09-18 14:07:32,089 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:07:32,090 - INFO - Successfully loaded: test4
+2025-09-18 14:07:32,090 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:07:32,090 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:07:32,090 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:07:32,091 - INFO - All vector stores merged successfully.
+2025-09-18 14:07:32,091 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:07:52,531 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 14:07:52,531 - INFO - HERE IS  This form is about the classification of disease detection. and HERE IS [{'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 2}, {'source': 'test3.pdf', 'page': 5}]
+2025-09-18 14:07:52,556 - INFO - 127.0.0.1 - - [18/Sep/2025 14:07:52] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:07:55,629 - INFO - 127.0.0.1 - - [18/Sep/2025 14:07:55] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 14:07:55,629 - INFO - 127.0.0.1 - - [18/Sep/2025 14:07:55] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 14:08:05,555 - INFO - 127.0.0.1 - - [18/Sep/2025 14:08:05] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:08:05,558 - INFO - Found 1 vector store(s) for category 'HR'
+2025-09-18 14:08:05,558 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test
+2025-09-18 14:08:05,578 - INFO - Successfully loaded: test
+2025-09-18 14:08:05,578 - INFO - Using single vector store.
+2025-09-18 14:08:07,808 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-18 14:08:07,808 - INFO - HERE IS  Legal Aid Instruction form and HERE IS [{'source': 'test.pdf', 'page': 1}]
+2025-09-18 14:08:07,836 - INFO - 127.0.0.1 - - [18/Sep/2025 14:08:07] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:08:15,845 - INFO - 127.0.0.1 - - [18/Sep/2025 14:08:15] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:08:15,845 - INFO - Found 1 vector store(s) for category 'HR'
+2025-09-18 14:08:15,845 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test
+2025-09-18 14:08:15,845 - INFO - Successfully loaded: test
+2025-09-18 14:08:15,845 - INFO - Using single vector store.
+2025-09-18 14:08:18,672 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-18 14:08:18,672 - INFO - HERE IS  To provide written authorisation to receive payment as successor in title of the legal practitioner originally instructed by Legal Aid SA.  and HERE IS [{'source': 'test.pdf', 'page': 1}]
+2025-09-18 14:08:18,711 - INFO - 127.0.0.1 - - [18/Sep/2025 14:08:18] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:08:50,524 - INFO - 127.0.0.1 - - [18/Sep/2025 14:08:50] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:08:50,525 - INFO - Found 1 vector store(s) for category 'HR'
+2025-09-18 14:08:50,525 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test
+2025-09-18 14:08:50,525 - INFO - Successfully loaded: test
+2025-09-18 14:08:50,525 - INFO - Using single vector store.
+2025-09-18 14:08:53,213 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-18 14:08:53,229 - INFO - HERE IS  Not found in the provided text. and HERE IS [{'source': 'test.pdf', 'page': 1}]
+2025-09-18 14:08:53,255 - INFO - 127.0.0.1 - - [18/Sep/2025 14:08:53] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:09:10,916 - INFO - 127.0.0.1 - - [18/Sep/2025 14:09:10] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:09:10,917 - INFO - Found 1 vector store(s) for category 'HR'
+2025-09-18 14:09:10,917 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test
+2025-09-18 14:09:10,917 - INFO - Successfully loaded: test
+2025-09-18 14:09:10,917 - INFO - Using single vector store.
+2025-09-18 14:09:13,645 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-18 14:09:13,645 - INFO - HERE IS  Not found in the provided text. 
+ and HERE IS [{'source': 'test.pdf', 'page': 1}]
+2025-09-18 14:09:13,679 - INFO - 127.0.0.1 - - [18/Sep/2025 14:09:13] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:09:51,100 - INFO - 127.0.0.1 - - [18/Sep/2025 14:09:51] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:09:51,101 - INFO - Found 1 vector store(s) for category 'HR'
+2025-09-18 14:09:51,101 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test
+2025-09-18 14:09:51,101 - INFO - Successfully loaded: test
+2025-09-18 14:09:51,101 - INFO - Using single vector store.
+2025-09-18 14:09:58,355 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-18 14:09:58,355 - INFO - HERE IS   The key things that someone who might fill up this form should have to know are: 
+1. Legal Aid Instruction Form is a document used by Legal Aid SA.
+2. The form is used for written authorisation to receive payment as successor in title of the legal practitioner originally instructed by Legal Aid SA.
+3. Cessions are only applicable to instructions issued before 1 January 1999.
+4. With instructions issued on or after 1 January 1999 no cession is possible. and HERE IS [{'source': 'test.pdf', 'page': 1}]
+2025-09-18 14:09:58,375 - INFO - 127.0.0.1 - - [18/Sep/2025 14:09:58] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:13:51,206 - INFO - 127.0.0.1 - - [18/Sep/2025 14:13:51] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 14:13:51,206 - INFO - 127.0.0.1 - - [18/Sep/2025 14:13:51] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 14:16:37,437 - INFO - 127.0.0.1 - - [18/Sep/2025 14:16:37] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:16:37,440 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:16:37,440 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:16:37,441 - INFO - Successfully loaded: test2
+2025-09-18 14:16:37,441 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:16:37,442 - INFO - Successfully loaded: test3
+2025-09-18 14:16:37,442 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:16:37,442 - INFO - Successfully loaded: test4
+2025-09-18 14:16:37,442 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:16:37,443 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:16:37,443 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:16:37,443 - INFO - All vector stores merged successfully.
+2025-09-18 14:16:37,443 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:16:57,657 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 14:16:57,657 - INFO - HERE IS  The specialized truck is used for the recycling process of plastic bottles. and HERE IS [{'source': 'test2.pdf', 'page': 2}, {'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 1}]
+2025-09-18 14:16:57,692 - INFO - 127.0.0.1 - - [18/Sep/2025 14:16:57] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:17:27,740 - INFO - 127.0.0.1 - - [18/Sep/2025 14:17:27] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:17:27,741 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:17:27,744 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:17:27,744 - INFO - Successfully loaded: test2
+2025-09-18 14:17:27,744 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:17:27,744 - INFO - Successfully loaded: test3
+2025-09-18 14:17:27,744 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:17:27,744 - INFO - Successfully loaded: test4
+2025-09-18 14:17:27,744 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:17:27,744 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:17:27,744 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:17:27,744 - INFO - All vector stores merged successfully.
+2025-09-18 14:17:27,744 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:17:51,999 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 14:17:51,999 - INFO - HERE IS  It is used for a specific reason, which is to create accurate and efficient quizzes. The quiz generation system uses natural language processing (NLP) techniques to generate the quiz. The quiz generation system is configured to use NLP techniques to generate the quiz.
+The quiz generation system is configured to use Nuty and KLM for generating the quiz. and HERE IS [{'source': 'test2.pdf', 'page': 2}, {'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 1}]
+2025-09-18 14:17:52,030 - INFO - 127.0.0.1 - - [18/Sep/2025 14:17:52] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:18:54,228 - INFO - 127.0.0.1 - - [18/Sep/2025 14:18:54] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:18:54,229 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:18:54,229 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:18:54,232 - INFO - Successfully loaded: test2
+2025-09-18 14:18:54,232 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:18:54,233 - INFO - Successfully loaded: test3
+2025-09-18 14:18:54,234 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:18:54,234 - INFO - Successfully loaded: test4
+2025-09-18 14:18:54,234 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:18:54,234 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:18:54,235 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:18:54,235 - INFO - All vector stores merged successfully.
+2025-09-18 14:18:54,235 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:19:14,666 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 14:19:14,666 - INFO - HERE IS  The truck used for the recycling process of plastic bottles is a specialized vehicle designed to transport and collect plastic bottles. and HERE IS [{'source': 'test2.pdf', 'page': 2}, {'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 1}]
+2025-09-18 14:19:14,694 - INFO - 127.0.0.1 - - [18/Sep/2025 14:19:14] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:20:57,357 - INFO - 127.0.0.1 - - [18/Sep/2025 14:20:57] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:20:57,358 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:20:57,358 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:20:57,358 - INFO - Successfully loaded: test2
+2025-09-18 14:20:57,358 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:20:57,358 - INFO - Successfully loaded: test3
+2025-09-18 14:20:57,358 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:20:57,358 - INFO - Successfully loaded: test4
+2025-09-18 14:20:57,358 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:20:57,358 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:20:57,358 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:20:57,358 - INFO - All vector stores merged successfully.
+2025-09-18 14:20:57,364 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:21:18,152 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 14:21:18,152 - INFO - HERE IS  Increasing product price will decrease their price. 
+Key Features: The platform effectively automates the creation of quizzes based on various sources through a smart AI pipeline. 
+The system is configured to eliminate repeats and bring about a variety of prominent points.  and HERE IS [{'source': 'test2.pdf', 'page': 4}, {'source': 'test3.pdf', 'page': 1}, {'source': 'test4.pdf', 'page': 1}]
+2025-09-18 14:21:18,181 - INFO - 127.0.0.1 - - [18/Sep/2025 14:21:18] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:22:35,971 - INFO -  * Detected change in 'C:\\Users\\BS 23- Desktop-00014\\Documents\\ChatWithPDFs\\backend\\rag_chain.py', reloading
+2025-09-18 14:22:37,120 - INFO -  * Restarting with stat
+2025-09-18 14:22:50,114 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 14:22:50,130 - INFO - Starting Flask application
+2025-09-18 14:22:50,130 - WARNING -  * Debugger is active!
+2025-09-18 14:22:50,144 - INFO -  * Debugger PIN: 378-437-422
+2025-09-18 14:22:55,839 - INFO - 127.0.0.1 - - [18/Sep/2025 14:22:55] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 14:22:55,843 - INFO - 127.0.0.1 - - [18/Sep/2025 14:22:55] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 14:23:03,638 - INFO - 127.0.0.1 - - [18/Sep/2025 14:23:03] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:23:03,639 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:23:03,639 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:23:03,639 - INFO - Loading faiss with AVX2 support.
+2025-09-18 14:23:03,669 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-18 14:23:03,673 - INFO - Successfully loaded: test2
+2025-09-18 14:23:03,673 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:23:03,676 - INFO - Successfully loaded: test3
+2025-09-18 14:23:03,676 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:23:03,676 - INFO - Successfully loaded: test4
+2025-09-18 14:23:03,676 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:23:03,676 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:23:03,677 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:23:03,677 - INFO - All vector stores merged successfully.
+2025-09-18 14:23:03,677 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:23:11,981 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 14:23:11,981 - INFO - HERE IS  Increasing product price will limit their usage, and encourage manufacturers to produce these in certain numbers.  and HERE IS [{'source': 'test2.pdf', 'page': 4}, {'source': 'test3.pdf', 'page': 1}, {'source': 'test4.pdf', 'page': 1}]
+2025-09-18 14:23:12,016 - INFO - 127.0.0.1 - - [18/Sep/2025 14:23:12] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:23:22,517 - INFO - 127.0.0.1 - - [18/Sep/2025 14:23:22] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:23:22,520 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:23:22,520 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:23:22,520 - INFO - Successfully loaded: test2
+2025-09-18 14:23:22,522 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:23:22,522 - INFO - Successfully loaded: test3
+2025-09-18 14:23:22,522 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:23:22,523 - INFO - Successfully loaded: test4
+2025-09-18 14:23:22,523 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:23:22,523 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:23:22,523 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:23:22,524 - INFO - All vector stores merged successfully.
+2025-09-18 14:23:22,524 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:23:29,123 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 14:23:29,123 - INFO - HERE IS  Because expensive things are less sold in the market. and HERE IS [{'source': 'test2.pdf', 'page': 2}, {'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 3}]
+2025-09-18 14:23:29,150 - INFO - 127.0.0.1 - - [18/Sep/2025 14:23:29] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:23:53,325 - INFO - 127.0.0.1 - - [18/Sep/2025 14:23:53] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:23:53,326 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:23:53,326 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:23:53,329 - INFO - Successfully loaded: test2
+2025-09-18 14:23:53,329 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:23:53,329 - INFO - Successfully loaded: test3
+2025-09-18 14:23:53,330 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:23:53,331 - INFO - Successfully loaded: test4
+2025-09-18 14:23:53,331 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:23:53,331 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:23:53,331 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:23:53,331 - INFO - All vector stores merged successfully.
+2025-09-18 14:23:53,332 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:23:59,703 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 14:23:59,703 - INFO - HERE IS  The system uses a combination of T5 and RoBERTa models to extract accurate and standalone facts about the source text.  and HERE IS [{'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 2}, {'source': 'test3.pdf', 'page': 1}]
+2025-09-18 14:23:59,721 - INFO - 127.0.0.1 - - [18/Sep/2025 14:23:59] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:24:21,556 - INFO - 127.0.0.1 - - [18/Sep/2025 14:24:21] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:24:21,558 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:24:21,558 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:24:21,558 - INFO - Successfully loaded: test2
+2025-09-18 14:24:21,558 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:24:21,558 - INFO - Successfully loaded: test3
+2025-09-18 14:24:21,558 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:24:21,558 - INFO - Successfully loaded: test4
+2025-09-18 14:24:21,558 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:24:21,563 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:24:21,563 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:24:21,563 - INFO - All vector stores merged successfully.
+2025-09-18 14:24:21,563 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:24:27,342 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-18 14:24:27,342 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'test4.pdf', 'page': 1}, {'source': 'test3.pdf', 'page': 1}]
+2025-09-18 14:24:27,376 - INFO - 127.0.0.1 - - [18/Sep/2025 14:24:27] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:24:41,901 - INFO - 127.0.0.1 - - [18/Sep/2025 14:24:41] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:24:41,904 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:24:41,904 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:24:41,904 - INFO - Successfully loaded: test2
+2025-09-18 14:24:41,904 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:24:41,904 - INFO - Successfully loaded: test3
+2025-09-18 14:24:41,904 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:24:41,906 - INFO - Successfully loaded: test4
+2025-09-18 14:24:41,906 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:24:41,906 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:24:41,907 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:24:41,907 - INFO - All vector stores merged successfully.
+2025-09-18 14:24:41,907 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:24:48,566 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-18 14:24:48,566 - INFO - HERE IS  5 and HERE IS [{'source': 'test3.pdf', 'page': 1}, {'source': 'test4.pdf', 'page': 1}]
+2025-09-18 14:24:48,592 - INFO - 127.0.0.1 - - [18/Sep/2025 14:24:48] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:25:16,533 - INFO - 127.0.0.1 - - [18/Sep/2025 14:25:16] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:25:16,534 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:25:16,534 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:25:16,534 - INFO - Successfully loaded: test2
+2025-09-18 14:25:16,534 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:25:16,534 - INFO - Successfully loaded: test3
+2025-09-18 14:25:16,534 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:25:16,534 - INFO - Successfully loaded: test4
+2025-09-18 14:25:16,534 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:25:16,539 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:25:16,540 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:25:16,540 - INFO - All vector stores merged successfully.
+2025-09-18 14:25:16,540 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:25:28,931 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 14:25:28,931 - INFO - HERE IS  No, there is no API key used in the provided text. The text discusses various research papers and their findings on chest disease detection and classification from X-ray images using different models such as EfficientDet. However, none of these papers mention or use an API key. Therefore, the answer to your question is "No".  and HERE IS [{'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 2}, {'source': 'test3.pdf', 'page': 6}]
+2025-09-18 14:25:28,959 - INFO - 127.0.0.1 - - [18/Sep/2025 14:25:28] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:25:42,781 - INFO - 127.0.0.1 - - [18/Sep/2025 14:25:42] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:25:42,783 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:25:42,783 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:25:42,784 - INFO - Successfully loaded: test2
+2025-09-18 14:25:42,784 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:25:42,784 - INFO - Successfully loaded: test3
+2025-09-18 14:25:42,785 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:25:42,785 - INFO - Successfully loaded: test4
+2025-09-18 14:25:42,785 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:25:42,785 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:25:42,786 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:25:42,786 - INFO - All vector stores merged successfully.
+2025-09-18 14:25:42,786 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:25:52,071 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-18 14:25:52,071 - INFO - HERE IS  No, there is no API key used in the AI Quiz Generator. The system relies on its own internal models and algorithms to generate quizzes. and HERE IS [{'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 1}]
+2025-09-18 14:25:52,114 - INFO - 127.0.0.1 - - [18/Sep/2025 14:25:52] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:26:11,989 - INFO - 127.0.0.1 - - [18/Sep/2025 14:26:11] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:26:11,989 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:26:11,989 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:26:11,989 - INFO - Successfully loaded: test2
+2025-09-18 14:26:11,989 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:26:11,994 - INFO - Successfully loaded: test3
+2025-09-18 14:26:11,994 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:26:11,995 - INFO - Successfully loaded: test4
+2025-09-18 14:26:11,995 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:26:11,995 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:26:11,995 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:26:11,995 - INFO - All vector stores merged successfully.
+2025-09-18 14:26:11,995 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:26:14,859 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-18 14:26:14,861 - INFO - HERE IS  Yes, the Google Gemini API is used in the AI Quiz Generator.  and HERE IS [{'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 1}]
+2025-09-18 14:26:14,895 - INFO - 127.0.0.1 - - [18/Sep/2025 14:26:14] "POST /chat HTTP/1.1" 200 -
+2025-09-18 14:26:34,013 - INFO - 127.0.0.1 - - [18/Sep/2025 14:26:34] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 14:26:34,016 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 14:26:34,017 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 14:26:34,017 - INFO - Successfully loaded: test2
+2025-09-18 14:26:34,017 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 14:26:34,018 - INFO - Successfully loaded: test3
+2025-09-18 14:26:34,018 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 14:26:34,019 - INFO - Successfully loaded: test4
+2025-09-18 14:26:34,019 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 14:26:34,019 - INFO - Successfully merged vector store 1/2
+2025-09-18 14:26:34,019 - INFO - Successfully merged vector store 2/2
+2025-09-18 14:26:34,019 - INFO - All vector stores merged successfully.
+2025-09-18 14:26:34,020 - INFO - Total documents in merged vector store: 25
+2025-09-18 14:26:41,924 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 14:26:41,924 - INFO - HERE IS  The Gemini key was used to access the Google Gemini API, which is a knowledge graph-based API that provides structured data in response to natural language queries.  and HERE IS [{'source': 'test2.pdf', 'page': 2}, {'source': 'test2.pdf', 'page': 3}, {'source': 'test4.pdf', 'page': 1}]
+2025-09-18 14:26:41,952 - INFO - 127.0.0.1 - - [18/Sep/2025 14:26:41] "POST /chat HTTP/1.1" 200 -
+2025-09-18 15:16:15,953 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 15:16:15,969 - INFO - Starting Flask application
+2025-09-18 15:16:15,977 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-18 15:16:15,977 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-18 15:16:15,986 - INFO -  * Restarting with stat
+2025-09-18 15:16:36,550 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 15:16:36,563 - INFO - Starting Flask application
+2025-09-18 15:16:36,572 - WARNING -  * Debugger is active!
+2025-09-18 15:16:36,577 - INFO -  * Debugger PIN: 378-437-422
+2025-09-18 15:16:50,482 - INFO - 127.0.0.1 - - [18/Sep/2025 15:16:50] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 15:16:50,487 - INFO - 127.0.0.1 - - [18/Sep/2025 15:16:50] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 15:17:03,064 - INFO - 127.0.0.1 - - [18/Sep/2025 15:17:03] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 15:17:03,070 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 15:17:03,070 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 15:17:03,072 - INFO - Loading faiss with AVX2 support.
+2025-09-18 15:17:03,099 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-18 15:17:03,103 - INFO - Successfully loaded: test2
+2025-09-18 15:17:03,103 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 15:17:03,104 - INFO - Successfully loaded: test3
+2025-09-18 15:17:03,104 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 15:17:03,104 - INFO - Successfully loaded: test4
+2025-09-18 15:17:03,106 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 15:17:03,106 - INFO - Successfully merged vector store 1/2
+2025-09-18 15:17:03,106 - INFO - Successfully merged vector store 2/2
+2025-09-18 15:17:03,106 - INFO - All vector stores merged successfully.
+2025-09-18 15:17:03,106 - INFO - Total documents in merged vector store: 25
+2025-09-18 15:17:10,009 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-18 15:17:10,009 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'test4.pdf', 'page': 1}, {'source': 'test3.pdf', 'page': 1}]
+2025-09-18 15:17:10,044 - INFO - 127.0.0.1 - - [18/Sep/2025 15:17:10] "POST /chat HTTP/1.1" 200 -
+2025-09-18 15:17:50,647 - INFO - 127.0.0.1 - - [18/Sep/2025 15:17:50] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 15:17:50,648 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-18 15:17:50,648 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-18 15:17:50,648 - INFO - Successfully loaded: test2
+2025-09-18 15:17:50,648 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-18 15:17:50,648 - INFO - Successfully loaded: test3
+2025-09-18 15:17:50,648 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 15:17:50,648 - INFO - Successfully loaded: test4
+2025-09-18 15:17:50,648 - INFO - Merging 2 additional vector store(s)...
+2025-09-18 15:17:50,648 - INFO - Successfully merged vector store 1/2
+2025-09-18 15:17:50,653 - INFO - Successfully merged vector store 2/2
+2025-09-18 15:17:50,653 - INFO - All vector stores merged successfully.
+2025-09-18 15:17:50,653 - INFO - Total documents in merged vector store: 25
+2025-09-18 15:17:57,459 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-18 15:17:57,459 - INFO - HERE IS  9 steps and HERE IS [{'source': 'test2.pdf', 'page': 2}, {'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 4}]
+2025-09-18 15:17:57,487 - INFO - 127.0.0.1 - - [18/Sep/2025 15:17:57] "POST /chat HTTP/1.1" 200 -
+2025-09-18 16:49:44,478 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 16:49:44,483 - INFO - Starting Flask application
+2025-09-18 16:49:44,494 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-18 16:49:44,494 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-18 16:49:44,499 - INFO -  * Restarting with stat
+2025-09-18 16:50:00,203 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 16:50:00,217 - INFO - Starting Flask application
+2025-09-18 16:50:00,225 - WARNING -  * Debugger is active!
+2025-09-18 16:50:00,230 - INFO -  * Debugger PIN: 378-437-422
+2025-09-18 16:50:04,554 - INFO - Request received for listing categories.
+2025-09-18 16:50:04,556 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:04] "GET /categories HTTP/1.1" 200 -
+2025-09-18 16:50:14,519 - INFO - Request received for listing categories.
+2025-09-18 16:50:14,520 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:14] "GET /categories HTTP/1.1" 200 -
+2025-09-18 16:50:16,259 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:16] "OPTIONS /categories/HR HTTP/1.1" 200 -
+2025-09-18 16:50:16,262 - INFO - Request to delete category: 'HR'
+2025-09-18 16:50:16,265 - INFO - Successfully deleted category 'HR'.
+2025-09-18 16:50:16,266 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:16] "DELETE /categories/HR HTTP/1.1" 200 -
+2025-09-18 16:50:16,269 - INFO - Request received for listing categories.
+2025-09-18 16:50:16,269 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:16] "GET /categories HTTP/1.1" 200 -
+2025-09-18 16:50:17,515 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:17] "OPTIONS /categories/L&D HTTP/1.1" 200 -
+2025-09-18 16:50:17,518 - INFO - Request to delete category: 'L&D'
+2025-09-18 16:50:17,522 - INFO - Successfully deleted category 'L&D'.
+2025-09-18 16:50:17,522 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:17] "DELETE /categories/L&D HTTP/1.1" 200 -
+2025-09-18 16:50:17,526 - INFO - Request received for listing categories.
+2025-09-18 16:50:17,527 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:17] "GET /categories HTTP/1.1" 200 -
+2025-09-18 16:50:23,692 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:23] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-18 16:50:23,692 - INFO - Request to create category: 'L&D'
+2025-09-18 16:50:23,692 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:23] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-18 16:50:23,703 - INFO - Request received for listing categories.
+2025-09-18 16:50:23,704 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:23] "GET /categories HTTP/1.1" 200 -
+2025-09-18 16:50:27,377 - INFO - Received 1 file(s) for category 'L&D'.
+2025-09-18 16:50:27,377 - INFO - Processing 'test4' for category 'L&D'...
+2025-09-18 16:50:27,808 - INFO - Loading faiss with AVX2 support.
+2025-09-18 16:50:27,834 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-18 16:50:27,842 - INFO - Saved vector store for 'test4'.
+2025-09-18 16:50:27,843 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:27] "POST /upload HTTP/1.1" 200 -
+2025-09-18 16:50:27,846 - INFO - Request received for listing categories.
+2025-09-18 16:50:27,848 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:27] "GET /categories HTTP/1.1" 200 -
+2025-09-18 16:50:36,995 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-18 16:50:36,995 - INFO - Found 74 messages for category 'L&D'.
+2025-09-18 16:50:36,995 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:36] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-18 16:50:37,003 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:37] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 16:50:37,006 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:37] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 16:50:58,642 - INFO - 127.0.0.1 - - [18/Sep/2025 16:50:58] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 16:50:58,645 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-18 16:50:58,646 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 16:50:58,661 - INFO - Successfully loaded: test4
+2025-09-18 16:50:58,661 - INFO - Using single vector store.
+2025-09-18 16:51:04,644 - INFO - Responded to question in 'L&D'. Found 1 sources.
+2025-09-18 16:51:04,644 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'test4.pdf', 'page': 1}]
+2025-09-18 16:51:04,668 - INFO - 127.0.0.1 - - [18/Sep/2025 16:51:04] "POST /chat HTTP/1.1" 200 -
+2025-09-18 16:51:37,473 - INFO - 127.0.0.1 - - [18/Sep/2025 16:51:37] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 16:51:37,476 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-18 16:51:37,476 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 16:51:37,476 - INFO - Successfully loaded: test4
+2025-09-18 16:51:37,476 - INFO - Using single vector store.
+2025-09-18 16:51:43,004 - INFO - Responded to question in 'L&D'. Found 1 sources.
+2025-09-18 16:51:43,004 - INFO - HERE IS  5 and HERE IS [{'source': 'test4.pdf', 'page': 1}]
+2025-09-18 16:51:43,029 - INFO - 127.0.0.1 - - [18/Sep/2025 16:51:43] "POST /chat HTTP/1.1" 200 -
+2025-09-18 16:51:47,490 - INFO - 127.0.0.1 - - [18/Sep/2025 16:51:47] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-18 16:51:47,490 - INFO - Request to create category: 'HR'
+2025-09-18 16:51:47,490 - INFO - 127.0.0.1 - - [18/Sep/2025 16:51:47] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-18 16:51:47,497 - INFO - Request received for listing categories.
+2025-09-18 16:51:47,498 - INFO - 127.0.0.1 - - [18/Sep/2025 16:51:47] "GET /categories HTTP/1.1" 200 -
+2025-09-18 16:51:51,348 - INFO - Received 1 file(s) for category 'HR'.
+2025-09-18 16:51:51,349 - INFO - Processing 'test2' for category 'HR'...
+2025-09-18 16:51:51,511 - INFO - Saved vector store for 'test2'.
+2025-09-18 16:51:51,511 - INFO - 127.0.0.1 - - [18/Sep/2025 16:51:51] "POST /upload HTTP/1.1" 200 -
+2025-09-18 16:51:51,511 - INFO - Request received for listing categories.
+2025-09-18 16:51:51,511 - INFO - 127.0.0.1 - - [18/Sep/2025 16:51:51] "GET /categories HTTP/1.1" 200 -
+2025-09-18 16:52:01,452 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-18 16:52:01,452 - INFO - Found 10 messages for category 'HR'.
+2025-09-18 16:52:01,452 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:01] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-18 16:52:01,462 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:01] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 16:52:01,466 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:01] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 16:52:04,459 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-18 16:52:04,459 - INFO - Found 78 messages for category 'L&D'.
+2025-09-18 16:52:04,459 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:04] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-18 16:52:04,467 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:04] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 16:52:10,276 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-18 16:52:10,276 - INFO - Found 10 messages for category 'HR'.
+2025-09-18 16:52:10,276 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:10] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-18 16:52:10,282 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:10] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 16:52:10,287 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:10] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 16:52:14,883 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-18 16:52:14,883 - INFO - Found 78 messages for category 'L&D'.
+2025-09-18 16:52:14,886 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:14] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-18 16:52:14,888 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:14] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 16:52:24,324 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-18 16:52:24,324 - INFO - Found 10 messages for category 'HR'.
+2025-09-18 16:52:24,326 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:24] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-18 16:52:24,326 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:24] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 16:52:24,334 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:24] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 16:52:33,435 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:33] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-18 16:52:33,435 - INFO - Request to create category: 'ADMIN'
+2025-09-18 16:52:33,435 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:33] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-18 16:52:33,435 - INFO - Request received for listing categories.
+2025-09-18 16:52:33,435 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:33] "GET /categories HTTP/1.1" 200 -
+2025-09-18 16:52:39,195 - INFO - Received 1 file(s) for category 'ADMIN'.
+2025-09-18 16:52:39,196 - INFO - Processing 'test3' for category 'ADMIN'...
+2025-09-18 16:52:39,727 - INFO - Saved vector store for 'test3'.
+2025-09-18 16:52:39,727 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:39] "POST /upload HTTP/1.1" 200 -
+2025-09-18 16:52:39,731 - INFO - Request received for listing categories.
+2025-09-18 16:52:39,732 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:39] "GET /categories HTTP/1.1" 200 -
+2025-09-18 16:52:40,443 - INFO - Request to fetch chat history for category 'ADMIN'.
+2025-09-18 16:52:40,443 - INFO - Found 0 messages for category 'ADMIN'.
+2025-09-18 16:52:40,443 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:40] "GET /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-18 16:52:40,450 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:40] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 16:52:40,455 - INFO - 127.0.0.1 - - [18/Sep/2025 16:52:40] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 16:53:00,705 - INFO - 127.0.0.1 - - [18/Sep/2025 16:53:00] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 16:53:00,711 - INFO - Found 1 vector store(s) for category 'ADMIN'
+2025-09-18 16:53:00,711 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\ADMIN\test3
+2025-09-18 16:53:00,739 - INFO - Successfully loaded: test3
+2025-09-18 16:53:00,739 - INFO - Using single vector store.
+2025-09-18 16:53:08,819 - INFO - Responded to question in 'ADMIN'. Found 2 sources.
+2025-09-18 16:53:08,819 - INFO - HERE IS  ChestAidNet is a custom CNN model that achieved an accuracy of 90.36% in identifying chest diseases from X-ray images.  and HERE IS [{'source': 'test3.pdf', 'page': 3}, {'source': 'test3.pdf', 'page': 6}]
+2025-09-18 16:53:08,864 - INFO - 127.0.0.1 - - [18/Sep/2025 16:53:08] "POST /chat HTTP/1.1" 200 -
+2025-09-18 16:53:15,843 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-18 16:53:15,843 - INFO - Found 10 messages for category 'HR'.
+2025-09-18 16:53:15,843 - INFO - 127.0.0.1 - - [18/Sep/2025 16:53:15] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-18 16:53:15,851 - INFO - 127.0.0.1 - - [18/Sep/2025 16:53:15] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 16:53:15,854 - INFO - 127.0.0.1 - - [18/Sep/2025 16:53:15] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 16:53:17,579 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-18 16:53:17,579 - INFO - Found 78 messages for category 'L&D'.
+2025-09-18 16:53:17,579 - INFO - 127.0.0.1 - - [18/Sep/2025 16:53:17] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-18 16:53:17,585 - INFO - 127.0.0.1 - - [18/Sep/2025 16:53:17] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 16:53:18,876 - INFO - Request to fetch chat history for category 'ADMIN'.
+2025-09-18 16:53:18,878 - INFO - Found 2 messages for category 'ADMIN'.
+2025-09-18 16:53:18,878 - INFO - 127.0.0.1 - - [18/Sep/2025 16:53:18] "GET /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-18 16:53:18,881 - INFO - 127.0.0.1 - - [18/Sep/2025 16:53:18] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 16:53:51,827 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-18 16:53:51,827 - INFO - Found 10 messages for category 'HR'.
+2025-09-18 16:53:51,827 - INFO - 127.0.0.1 - - [18/Sep/2025 16:53:51] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-18 16:53:51,836 - INFO - 127.0.0.1 - - [18/Sep/2025 16:53:51] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 16:53:51,839 - INFO - 127.0.0.1 - - [18/Sep/2025 16:53:51] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 16:53:53,227 - INFO - Request to fetch chat history for category 'ADMIN'.
+2025-09-18 16:53:53,227 - INFO - Found 2 messages for category 'ADMIN'.
+2025-09-18 16:53:53,227 - INFO - 127.0.0.1 - - [18/Sep/2025 16:53:53] "GET /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-18 16:53:53,227 - INFO - 127.0.0.1 - - [18/Sep/2025 16:53:53] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 17:33:48,326 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 17:33:48,328 - INFO - Starting Flask application
+2025-09-18 17:33:48,342 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-18 17:33:48,342 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-18 17:33:48,343 - INFO -  * Restarting with stat
+2025-09-18 17:34:02,523 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 17:34:02,528 - INFO - Starting Flask application
+2025-09-18 17:34:02,537 - WARNING -  * Debugger is active!
+2025-09-18 17:34:02,541 - INFO -  * Debugger PIN: 378-437-422
+2025-09-18 17:34:11,977 - INFO - Request received for listing categories.
+2025-09-18 17:34:11,978 - INFO - 127.0.0.1 - - [18/Sep/2025 17:34:11] "GET /categories HTTP/1.1" 200 -
+2025-09-18 17:34:22,226 - INFO - Request received for listing categories.
+2025-09-18 17:34:22,228 - INFO - 127.0.0.1 - - [18/Sep/2025 17:34:22] "GET /categories HTTP/1.1" 200 -
+2025-09-18 17:35:31,747 - INFO - Request received for listing categories.
+2025-09-18 17:35:31,747 - INFO - 127.0.0.1 - - [18/Sep/2025 17:35:31] "GET /categories HTTP/1.1" 200 -
+2025-09-18 17:35:39,056 - INFO - Request received for listing categories.
+2025-09-18 17:35:39,057 - INFO - 127.0.0.1 - - [18/Sep/2025 17:35:39] "GET /categories HTTP/1.1" 200 -
+2025-09-18 17:37:20,980 - INFO - Request received for listing categories.
+2025-09-18 17:37:20,981 - INFO - 127.0.0.1 - - [18/Sep/2025 17:37:20] "GET /categories HTTP/1.1" 200 -
+2025-09-18 17:37:23,876 - INFO - Request received for listing categories.
+2025-09-18 17:37:23,876 - INFO - 127.0.0.1 - - [18/Sep/2025 17:37:23] "GET /categories HTTP/1.1" 200 -
+2025-09-18 17:37:29,327 - INFO - Received 1 file(s) for category 'undefined'.
+2025-09-18 17:37:29,328 - INFO - Processing 'test4' for category 'undefined'...
+2025-09-18 17:37:29,781 - INFO - Loading faiss with AVX2 support.
+2025-09-18 17:37:29,824 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-18 17:37:29,832 - INFO - Saved vector store for 'test4'.
+2025-09-18 17:37:29,833 - INFO - 127.0.0.1 - - [18/Sep/2025 17:37:29] "POST /upload HTTP/1.1" 200 -
+2025-09-18 17:37:29,837 - INFO - Request received for listing categories.
+2025-09-18 17:37:29,837 - INFO - 127.0.0.1 - - [18/Sep/2025 17:37:29] "GET /categories HTTP/1.1" 200 -
+2025-09-18 17:42:47,060 - INFO - Request received for listing categories.
+2025-09-18 17:42:47,061 - INFO - 127.0.0.1 - - [18/Sep/2025 17:42:47] "GET /categories HTTP/1.1" 200 -
+2025-09-18 17:43:01,925 - INFO - 127.0.0.1 - - [18/Sep/2025 17:43:01] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-18 17:43:01,927 - INFO - Request to create category: 'aaa'
+2025-09-18 17:43:01,929 - INFO - 127.0.0.1 - - [18/Sep/2025 17:43:01] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-18 17:43:01,931 - INFO - Request received for listing categories.
+2025-09-18 17:43:01,932 - INFO - 127.0.0.1 - - [18/Sep/2025 17:43:01] "GET /categories HTTP/1.1" 200 -
+2025-09-18 17:43:08,615 - INFO - Received 1 file(s) for category 'undefined'.
+2025-09-18 17:43:08,616 - INFO - Vector store for 'test4' already exists. Skipping.
+2025-09-18 17:43:08,617 - INFO - 127.0.0.1 - - [18/Sep/2025 17:43:08] "POST /upload HTTP/1.1" 200 -
+2025-09-18 17:43:08,621 - INFO - Request received for listing categories.
+2025-09-18 17:43:08,622 - INFO - 127.0.0.1 - - [18/Sep/2025 17:43:08] "GET /categories HTTP/1.1" 200 -
+2025-09-18 18:33:59,052 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 18:33:59,052 - INFO - Starting Flask application
+2025-09-18 18:33:59,074 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-18 18:33:59,074 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-18 18:33:59,074 - INFO -  * Restarting with stat
+2025-09-18 18:34:13,831 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 18:34:13,831 - INFO - Starting Flask application
+2025-09-18 18:34:13,850 - WARNING -  * Debugger is active!
+2025-09-18 18:34:13,856 - INFO -  * Debugger PIN: 378-437-422
+2025-09-18 18:35:30,775 - INFO - 127.0.0.1 - - [18/Sep/2025 18:35:30] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 18:35:30,778 - INFO - 127.0.0.1 - - [18/Sep/2025 18:35:30] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 18:35:43,254 - INFO - 127.0.0.1 - - [18/Sep/2025 18:35:43] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 18:35:43,254 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-18 18:35:43,254 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test4
+2025-09-18 18:35:43,259 - INFO - Loading faiss with AVX2 support.
+2025-09-18 18:35:43,276 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-18 18:35:43,290 - INFO - Successfully loaded: test4
+2025-09-18 18:35:43,290 - INFO - Using single vector store.
+2025-09-18 18:35:49,942 - INFO - Responded to question in 'L&D'. Found 1 sources.
+2025-09-18 18:35:49,942 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'test4.pdf', 'page': 1}]
+2025-09-18 18:35:49,975 - INFO - 127.0.0.1 - - [18/Sep/2025 18:35:49] "POST /chat HTTP/1.1" 200 -
+2025-09-18 18:41:13,999 - INFO - Request received for listing categories.
+2025-09-18 18:41:13,999 - INFO - 127.0.0.1 - - [18/Sep/2025 18:41:13] "GET /categories HTTP/1.1" 200 -
+2025-09-18 18:41:16,820 - INFO - Request received for listing categories.
+2025-09-18 18:41:16,821 - INFO - 127.0.0.1 - - [18/Sep/2025 18:41:16] "GET /categories HTTP/1.1" 200 -
+2025-09-18 18:41:17,063 - INFO - Request received for listing categories.
+2025-09-18 18:41:17,063 - INFO - 127.0.0.1 - - [18/Sep/2025 18:41:17] "GET /categories HTTP/1.1" 200 -
+2025-09-18 18:41:46,493 - INFO - Received 1 file(s) for category 'ADMIN'.
+2025-09-18 18:41:46,496 - INFO - Processing 'test2' for category 'ADMIN'...
+2025-09-18 18:41:46,648 - INFO - Saved vector store for 'test2'.
+2025-09-18 18:41:46,648 - INFO - 127.0.0.1 - - [18/Sep/2025 18:41:46] "POST /upload HTTP/1.1" 200 -
+2025-09-18 18:41:51,006 - INFO - Received 1 file(s) for category 'aaa'.
+2025-09-18 18:41:51,009 - INFO - Processing 'test' for category 'aaa'...
+2025-09-18 18:41:51,063 - INFO - Saved vector store for 'test'.
+2025-09-18 18:41:51,063 - INFO - 127.0.0.1 - - [18/Sep/2025 18:41:51] "POST /upload HTTP/1.1" 200 -
+2025-09-18 18:42:16,178 - INFO - Received 1 file(s) for category 'aaa'.
+2025-09-18 18:42:16,178 - INFO - Processing 'test4' for category 'aaa'...
+2025-09-18 18:42:16,216 - INFO - Saved vector store for 'test4'.
+2025-09-18 18:42:16,216 - INFO - 127.0.0.1 - - [18/Sep/2025 18:42:16] "POST /upload HTTP/1.1" 200 -
+2025-09-18 18:42:21,566 - INFO - 127.0.0.1 - - [18/Sep/2025 18:42:21] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 18:42:21,566 - INFO - 127.0.0.1 - - [18/Sep/2025 18:42:21] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 18:42:43,765 - INFO - 127.0.0.1 - - [18/Sep/2025 18:42:43] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 18:42:43,768 - INFO - Found 2 vector store(s) for category 'aaa'
+2025-09-18 18:42:43,768 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\aaa\test
+2025-09-18 18:42:43,788 - INFO - Successfully loaded: test
+2025-09-18 18:42:43,788 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\aaa\test4
+2025-09-18 18:42:43,800 - INFO - Successfully loaded: test4
+2025-09-18 18:42:43,800 - INFO - Merging 1 additional vector store(s)...
+2025-09-18 18:42:43,800 - INFO - Successfully merged vector store 1/1
+2025-09-18 18:42:43,800 - INFO - All vector stores merged successfully.
+2025-09-18 18:42:43,800 - INFO - Total documents in merged vector store: 5
+2025-09-18 18:42:47,429 - INFO - Responded to question in 'aaa'. Found 1 sources.
+2025-09-18 18:42:47,429 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'test4.pdf', 'page': 1}]
+2025-09-18 18:42:47,467 - INFO - 127.0.0.1 - - [18/Sep/2025 18:42:47] "POST /chat HTTP/1.1" 200 -
+2025-09-18 18:43:37,926 - INFO - 127.0.0.1 - - [18/Sep/2025 18:43:37] "OPTIONS /categories/aaa HTTP/1.1" 200 -
+2025-09-18 18:43:37,929 - INFO - Request to delete category: 'aaa'
+2025-09-18 18:43:37,931 - INFO - Successfully deleted category 'aaa'.
+2025-09-18 18:43:37,931 - INFO - 127.0.0.1 - - [18/Sep/2025 18:43:37] "DELETE /categories/aaa HTTP/1.1" 200 -
+2025-09-18 18:43:39,366 - INFO - 127.0.0.1 - - [18/Sep/2025 18:43:39] "OPTIONS /categories/ADMIN HTTP/1.1" 200 -
+2025-09-18 18:43:39,369 - INFO - Request to delete category: 'ADMIN'
+2025-09-18 18:43:39,371 - INFO - Successfully deleted category 'ADMIN'.
+2025-09-18 18:43:39,373 - INFO - 127.0.0.1 - - [18/Sep/2025 18:43:39] "DELETE /categories/ADMIN HTTP/1.1" 200 -
+2025-09-18 18:43:41,894 - INFO - 127.0.0.1 - - [18/Sep/2025 18:43:41] "OPTIONS /categories/HR HTTP/1.1" 200 -
+2025-09-18 18:43:41,896 - INFO - Request to delete category: 'HR'
+2025-09-18 18:43:41,898 - INFO - Successfully deleted category 'HR'.
+2025-09-18 18:43:41,898 - INFO - 127.0.0.1 - - [18/Sep/2025 18:43:41] "DELETE /categories/HR HTTP/1.1" 200 -
+2025-09-18 18:43:43,446 - INFO - 127.0.0.1 - - [18/Sep/2025 18:43:43] "OPTIONS /categories/L&D HTTP/1.1" 200 -
+2025-09-18 18:43:43,449 - INFO - Request to delete category: 'L&D'
+2025-09-18 18:43:43,451 - INFO - Successfully deleted category 'L&D'.
+2025-09-18 18:43:43,451 - INFO - 127.0.0.1 - - [18/Sep/2025 18:43:43] "DELETE /categories/L&D HTTP/1.1" 200 -
+2025-09-18 18:43:44,974 - INFO - 127.0.0.1 - - [18/Sep/2025 18:43:44] "OPTIONS /categories/undefined HTTP/1.1" 200 -
+2025-09-18 18:43:44,977 - INFO - Request to delete category: 'undefined'
+2025-09-18 18:43:44,979 - INFO - Successfully deleted category 'undefined'.
+2025-09-18 18:43:44,979 - INFO - 127.0.0.1 - - [18/Sep/2025 18:43:44] "DELETE /categories/undefined HTTP/1.1" 200 -
+2025-09-18 18:44:16,677 - INFO - Request received for listing categories.
+2025-09-18 18:44:16,677 - INFO - 127.0.0.1 - - [18/Sep/2025 18:44:16] "GET /categories HTTP/1.1" 200 -
+2025-09-18 18:44:24,774 - INFO - 127.0.0.1 - - [18/Sep/2025 18:44:24] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-18 18:44:24,774 - INFO - Request to create category: 'Admin'
+2025-09-18 18:44:24,774 - INFO - 127.0.0.1 - - [18/Sep/2025 18:44:24] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-18 18:44:28,773 - INFO - Received 1 file(s) for category 'Admin'.
+2025-09-18 18:44:28,774 - INFO - Processing 'test4' for category 'Admin'...
+2025-09-18 18:44:28,811 - INFO - Saved vector store for 'test4'.
+2025-09-18 18:44:28,811 - INFO - 127.0.0.1 - - [18/Sep/2025 18:44:28] "POST /upload HTTP/1.1" 200 -
+2025-09-18 18:44:34,317 - INFO - 127.0.0.1 - - [18/Sep/2025 18:44:34] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-18 18:44:34,317 - INFO - Request to create category: 'HR'
+2025-09-18 18:44:34,317 - INFO - 127.0.0.1 - - [18/Sep/2025 18:44:34] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-18 18:44:38,716 - INFO - Received 1 file(s) for category 'HR'.
+2025-09-18 18:44:38,716 - INFO - Processing 'test2' for category 'HR'...
+2025-09-18 18:44:38,845 - INFO - Saved vector store for 'test2'.
+2025-09-18 18:44:38,845 - INFO - 127.0.0.1 - - [18/Sep/2025 18:44:38] "POST /upload HTTP/1.1" 200 -
+2025-09-18 18:44:40,982 - INFO - 127.0.0.1 - - [18/Sep/2025 18:44:40] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 18:44:40,982 - INFO - 127.0.0.1 - - [18/Sep/2025 18:44:40] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 18:44:49,548 - INFO - 127.0.0.1 - - [18/Sep/2025 18:44:49] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 18:44:49,550 - INFO - Found 1 vector store(s) for category 'Admin'
+2025-09-18 18:44:49,550 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\Admin\test4
+2025-09-18 18:44:49,565 - INFO - Successfully loaded: test4
+2025-09-18 18:44:49,566 - INFO - Using single vector store.
+2025-09-18 18:44:51,101 - INFO - Responded to question in 'Admin'. Found 1 sources.
+2025-09-18 18:44:51,101 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'test4.pdf', 'page': 1}]
+2025-09-18 18:44:51,147 - INFO - 127.0.0.1 - - [18/Sep/2025 18:44:51] "POST /chat HTTP/1.1" 200 -
+2025-09-18 18:47:37,808 - INFO -  * Detected change in 'C:\\Users\\BS 23- Desktop-00014\\Documents\\ChatWithPDFs\\backend\\models.py', reloading
+2025-09-18 18:47:39,089 - INFO -  * Restarting with stat
+2025-09-18 19:10:03,327 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 19:10:03,339 - INFO - Starting Flask application
+2025-09-18 19:10:03,353 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-18 19:10:03,354 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-18 19:10:03,355 - INFO -  * Restarting with stat
+2025-09-18 19:10:17,209 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-18 19:10:17,209 - INFO - Starting Flask application
+2025-09-18 19:10:17,228 - WARNING -  * Debugger is active!
+2025-09-18 19:10:17,235 - INFO -  * Debugger PIN: 378-437-422
+2025-09-18 19:10:26,389 - INFO - 127.0.0.1 - - [18/Sep/2025 19:10:26] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-18 19:10:26,389 - INFO - Request to create category: 'Admin'
+2025-09-18 19:10:26,389 - INFO - 127.0.0.1 - - [18/Sep/2025 19:10:26] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-18 19:10:30,426 - INFO - Received 1 file(s) for category 'Admin'.
+2025-09-18 19:10:30,428 - INFO - Processing 'test2' for category 'Admin'...
+2025-09-18 19:10:30,856 - INFO - Loading faiss with AVX2 support.
+2025-09-18 19:10:30,884 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-18 19:10:30,892 - INFO - Saved vector store for 'test2'.
+2025-09-18 19:10:30,892 - INFO - 127.0.0.1 - - [18/Sep/2025 19:10:30] "POST /upload HTTP/1.1" 200 -
+2025-09-18 19:10:32,182 - INFO - 127.0.0.1 - - [18/Sep/2025 19:10:32] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 19:10:32,182 - INFO - 127.0.0.1 - - [18/Sep/2025 19:10:32] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 19:10:57,205 - INFO - 127.0.0.1 - - [18/Sep/2025 19:10:57] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 19:10:57,209 - INFO - Found 2 vector store(s) for category 'Admin'
+2025-09-18 19:10:57,209 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\Admin\test2
+2025-09-18 19:10:57,221 - INFO - Successfully loaded: test2
+2025-09-18 19:10:57,221 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\Admin\test4
+2025-09-18 19:10:57,221 - INFO - Successfully loaded: test4
+2025-09-18 19:10:57,223 - INFO - Merging 1 additional vector store(s)...
+2025-09-18 19:10:57,223 - INFO - Successfully merged vector store 1/1
+2025-09-18 19:10:57,223 - INFO - All vector stores merged successfully.
+2025-09-18 19:10:57,223 - INFO - Total documents in merged vector store: 9
+2025-09-18 19:11:05,029 - INFO - Responded to question in 'Admin'. Found 2 sources.
+2025-09-18 19:11:05,029 - INFO - HERE IS  The police budget is 175.5 million pounds in 2017 and almost 178 million pounds in 2018. and HERE IS [{'source': 'test2.pdf', 'page': 1}, {'source': 'test4.pdf', 'page': 1}]
+2025-09-18 19:11:05,058 - INFO - 127.0.0.1 - - [18/Sep/2025 19:11:05] "POST /chat HTTP/1.1" 200 -
+2025-09-18 19:28:50,208 - INFO - 127.0.0.1 - - [18/Sep/2025 19:28:50] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-18 19:28:50,210 - INFO - Request to create category: 'HR'
+2025-09-18 19:28:50,211 - INFO - 127.0.0.1 - - [18/Sep/2025 19:28:50] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-18 19:29:22,800 - INFO - Received 1 file(s) for category 'HR'.
+2025-09-18 19:29:22,800 - INFO - Processing 'test4' for category 'HR'...
+2025-09-18 19:29:22,953 - INFO - Saved vector store for 'test4'.
+2025-09-18 19:29:22,953 - INFO - 127.0.0.1 - - [18/Sep/2025 19:29:22] "POST /upload HTTP/1.1" 200 -
+2025-09-18 19:29:26,927 - INFO - 127.0.0.1 - - [18/Sep/2025 19:29:26] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 19:29:26,927 - INFO - 127.0.0.1 - - [18/Sep/2025 19:29:26] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 19:29:36,918 - INFO - 127.0.0.1 - - [18/Sep/2025 19:29:36] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 19:29:36,921 - INFO - Found 2 vector store(s) for category 'HR'
+2025-09-18 19:29:36,921 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test2
+2025-09-18 19:29:36,934 - INFO - Successfully loaded: test2
+2025-09-18 19:29:36,934 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test4
+2025-09-18 19:29:36,946 - INFO - Successfully loaded: test4
+2025-09-18 19:29:36,946 - INFO - Merging 1 additional vector store(s)...
+2025-09-18 19:29:36,946 - INFO - Successfully merged vector store 1/1
+2025-09-18 19:29:36,946 - INFO - All vector stores merged successfully.
+2025-09-18 19:29:36,946 - INFO - Total documents in merged vector store: 9
+2025-09-18 19:29:44,988 - INFO - Responded to question in 'HR'. Found 3 sources.
+2025-09-18 19:29:44,988 - INFO - HERE IS  Not found in the provided text. and HERE IS [{'source': 'test4.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 2}, {'source': 'test2.pdf', 'page': 1}]
+2025-09-18 19:29:45,033 - INFO - 127.0.0.1 - - [18/Sep/2025 19:29:45] "POST /chat HTTP/1.1" 200 -
+2025-09-18 19:30:05,134 - INFO - 127.0.0.1 - - [18/Sep/2025 19:30:05] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 19:30:05,136 - INFO - Found 2 vector store(s) for category 'HR'
+2025-09-18 19:30:05,136 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test2
+2025-09-18 19:30:05,136 - INFO - Successfully loaded: test2
+2025-09-18 19:30:05,136 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test4
+2025-09-18 19:30:05,136 - INFO - Successfully loaded: test4
+2025-09-18 19:30:05,136 - INFO - Merging 1 additional vector store(s)...
+2025-09-18 19:30:05,136 - INFO - Successfully merged vector store 1/1
+2025-09-18 19:30:05,136 - INFO - All vector stores merged successfully.
+2025-09-18 19:30:05,136 - INFO - Total documents in merged vector store: 9
+2025-09-18 19:30:12,039 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-18 19:30:12,039 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'test4.pdf', 'page': 1}]
+2025-09-18 19:30:12,065 - INFO - 127.0.0.1 - - [18/Sep/2025 19:30:12] "POST /chat HTTP/1.1" 200 -
+2025-09-18 19:30:23,407 - INFO - 127.0.0.1 - - [18/Sep/2025 19:30:23] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 19:30:23,407 - INFO - 127.0.0.1 - - [18/Sep/2025 19:30:23] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 19:30:41,719 - INFO - 127.0.0.1 - - [18/Sep/2025 19:30:41] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 19:30:41,719 - INFO - Found 2 vector store(s) for category 'Admin'
+2025-09-18 19:30:41,719 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\Admin\test2
+2025-09-18 19:30:41,719 - INFO - Successfully loaded: test2
+2025-09-18 19:30:41,719 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\Admin\test4
+2025-09-18 19:30:41,719 - INFO - Successfully loaded: test4
+2025-09-18 19:30:41,719 - INFO - Merging 1 additional vector store(s)...
+2025-09-18 19:30:41,719 - INFO - Successfully merged vector store 1/1
+2025-09-18 19:30:41,719 - INFO - All vector stores merged successfully.
+2025-09-18 19:30:41,719 - INFO - Total documents in merged vector store: 9
+2025-09-18 19:30:48,119 - INFO - Responded to question in 'Admin'. Found 2 sources.
+2025-09-18 19:30:48,119 - INFO - HERE IS  The police budget is the amount of money allocated for the police department's activities and expenses. and HERE IS [{'source': 'test2.pdf', 'page': 1}, {'source': 'test4.pdf', 'page': 1}]
+2025-09-18 19:30:48,151 - INFO - 127.0.0.1 - - [18/Sep/2025 19:30:48] "POST /chat HTTP/1.1" 200 -
+2025-09-18 19:30:55,736 - INFO - 127.0.0.1 - - [18/Sep/2025 19:30:55] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 19:30:55,736 - INFO - 127.0.0.1 - - [18/Sep/2025 19:30:55] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 19:31:01,079 - INFO - 127.0.0.1 - - [18/Sep/2025 19:31:01] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 19:31:01,079 - INFO - 127.0.0.1 - - [18/Sep/2025 19:31:01] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 19:31:02,896 - INFO - 127.0.0.1 - - [18/Sep/2025 19:31:02] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 19:31:37,607 - INFO - 127.0.0.1 - - [18/Sep/2025 19:31:37] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 19:31:37,607 - INFO - 127.0.0.1 - - [18/Sep/2025 19:31:37] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 19:32:03,415 - INFO - 127.0.0.1 - - [18/Sep/2025 19:32:03] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 19:32:03,415 - INFO - Found 2 vector store(s) for category 'Admin'
+2025-09-18 19:32:03,415 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\Admin\test2
+2025-09-18 19:32:03,415 - INFO - Successfully loaded: test2
+2025-09-18 19:32:03,415 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\Admin\test4
+2025-09-18 19:32:03,415 - INFO - Successfully loaded: test4
+2025-09-18 19:32:03,415 - INFO - Merging 1 additional vector store(s)...
+2025-09-18 19:32:03,415 - INFO - Successfully merged vector store 1/1
+2025-09-18 19:32:03,415 - INFO - All vector stores merged successfully.
+2025-09-18 19:32:03,415 - INFO - Total documents in merged vector store: 9
+2025-09-18 19:32:06,840 - INFO - Responded to question in 'Admin'. Found 2 sources.
+2025-09-18 19:32:06,840 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1}, {'source': 'test2.pdf', 'page': 4}]
+2025-09-18 19:32:06,882 - INFO - 127.0.0.1 - - [18/Sep/2025 19:32:06] "POST /chat HTTP/1.1" 200 -
+2025-09-18 19:47:27,321 - INFO - 127.0.0.1 - - [18/Sep/2025 19:47:27] "OPTIONS /categories/Admin HTTP/1.1" 200 -
+2025-09-18 19:47:27,324 - INFO - Request to delete category: 'Admin'
+2025-09-18 19:47:27,326 - INFO - Successfully deleted category 'Admin'.
+2025-09-18 19:47:27,327 - INFO - 127.0.0.1 - - [18/Sep/2025 19:47:27] "DELETE /categories/Admin HTTP/1.1" 200 -
+2025-09-18 19:47:29,521 - INFO - 127.0.0.1 - - [18/Sep/2025 19:47:29] "OPTIONS /categories/HR HTTP/1.1" 200 -
+2025-09-18 19:47:29,524 - INFO - Request to delete category: 'HR'
+2025-09-18 19:47:29,527 - INFO - Successfully deleted category 'HR'.
+2025-09-18 19:47:29,528 - INFO - 127.0.0.1 - - [18/Sep/2025 19:47:29] "DELETE /categories/HR HTTP/1.1" 200 -
+2025-09-18 19:47:37,976 - INFO - 127.0.0.1 - - [18/Sep/2025 19:47:37] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-18 19:47:37,976 - INFO - Request to create category: 'Admin'
+2025-09-18 19:47:37,976 - INFO - 127.0.0.1 - - [18/Sep/2025 19:47:37] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-18 19:47:42,389 - INFO - Received 1 file(s) for category 'Admin'.
+2025-09-18 19:47:42,389 - INFO - Processing 'test2' for category 'Admin'...
+2025-09-18 19:47:42,501 - INFO - Saved vector store for 'test2'.
+2025-09-18 19:47:42,501 - INFO - 127.0.0.1 - - [18/Sep/2025 19:47:42] "POST /upload HTTP/1.1" 200 -
+2025-09-18 19:51:14,624 - INFO - 127.0.0.1 - - [18/Sep/2025 19:51:14] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-18 19:51:14,627 - INFO - Request to create category: 'HR'
+2025-09-18 19:51:14,628 - INFO - 127.0.0.1 - - [18/Sep/2025 19:51:14] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-18 19:51:18,882 - INFO - Received 1 file(s) for category 'HR'.
+2025-09-18 19:51:18,882 - INFO - Processing 'test4' for category 'HR'...
+2025-09-18 19:51:19,010 - INFO - Saved vector store for 'test4'.
+2025-09-18 19:51:19,012 - INFO - 127.0.0.1 - - [18/Sep/2025 19:51:19] "POST /upload HTTP/1.1" 200 -
+2025-09-18 19:51:22,016 - INFO - 127.0.0.1 - - [18/Sep/2025 19:51:22] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 19:51:22,021 - INFO - 127.0.0.1 - - [18/Sep/2025 19:51:22] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 19:51:43,167 - INFO - 127.0.0.1 - - [18/Sep/2025 19:51:43] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 19:51:43,170 - INFO - Found 1 vector store(s) for category 'HR'
+2025-09-18 19:51:43,170 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test4
+2025-09-18 19:51:43,183 - INFO - Successfully loaded: test4
+2025-09-18 19:51:43,183 - INFO - Using single vector store.
+2025-09-18 19:51:48,871 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-18 19:51:48,871 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'test4.pdf', 'page': 1}]
+2025-09-18 19:51:48,890 - INFO - 127.0.0.1 - - [18/Sep/2025 19:51:48] "POST /chat HTTP/1.1" 200 -
+2025-09-18 19:51:53,481 - INFO - 127.0.0.1 - - [18/Sep/2025 19:51:53] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 19:51:53,484 - INFO - 127.0.0.1 - - [18/Sep/2025 19:51:53] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 19:51:55,713 - INFO - 127.0.0.1 - - [18/Sep/2025 19:51:55] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 19:55:59,338 - INFO - 127.0.0.1 - - [18/Sep/2025 19:55:59] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 19:55:59,341 - INFO - 127.0.0.1 - - [18/Sep/2025 19:55:59] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 19:56:18,551 - INFO - 127.0.0.1 - - [18/Sep/2025 19:56:18] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 19:56:18,554 - INFO - Found 1 vector store(s) for category 'HR'
+2025-09-18 19:56:18,554 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test4
+2025-09-18 19:56:18,554 - INFO - Successfully loaded: test4
+2025-09-18 19:56:18,556 - INFO - Using single vector store.
+2025-09-18 19:56:20,203 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-18 19:56:20,203 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'test4.pdf', 'page': 1}]
+2025-09-18 19:56:20,230 - INFO - 127.0.0.1 - - [18/Sep/2025 19:56:20] "POST /chat HTTP/1.1" 200 -
+2025-09-18 19:56:23,361 - INFO - 127.0.0.1 - - [18/Sep/2025 19:56:23] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 19:56:23,363 - INFO - 127.0.0.1 - - [18/Sep/2025 19:56:23] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 19:56:25,321 - INFO - 127.0.0.1 - - [18/Sep/2025 19:56:25] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:01:02,315 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-18 20:01:02,315 - INFO - Found 18 messages for category 'HR'.
+2025-09-18 20:01:02,315 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:02] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-18 20:01:02,325 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:02] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 20:01:02,328 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:02] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:01:09,505 - INFO - Request to fetch chat history for category 'Admin'.
+2025-09-18 20:01:09,505 - INFO - Found 8 messages for category 'Admin'.
+2025-09-18 20:01:09,505 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:09] "GET /chat/history/Admin HTTP/1.1" 200 -
+2025-09-18 20:01:09,524 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:09] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 20:01:09,528 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:09] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:01:13,192 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-18 20:01:13,194 - INFO - Found 18 messages for category 'HR'.
+2025-09-18 20:01:13,195 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:13] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-18 20:01:13,204 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:13] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:01:27,119 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:27] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 20:01:27,123 - INFO - Found 1 vector store(s) for category 'HR'
+2025-09-18 20:01:27,123 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test4
+2025-09-18 20:01:27,123 - INFO - Successfully loaded: test4
+2025-09-18 20:01:27,123 - INFO - Using single vector store.
+2025-09-18 20:01:28,783 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-18 20:01:28,783 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'test4.pdf', 'page': 1}]
+2025-09-18 20:01:28,819 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:28] "POST /chat HTTP/1.1" 200 -
+2025-09-18 20:01:31,537 - INFO - Request to fetch chat history for category 'Admin'.
+2025-09-18 20:01:31,537 - INFO - Found 8 messages for category 'Admin'.
+2025-09-18 20:01:31,537 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:31] "GET /chat/history/Admin HTTP/1.1" 200 -
+2025-09-18 20:01:31,537 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:31] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 20:01:31,546 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:31] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:01:35,071 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:35] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 20:01:35,073 - INFO - Found 1 vector store(s) for category 'Admin'
+2025-09-18 20:01:35,073 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\Admin\test2
+2025-09-18 20:01:35,087 - INFO - Successfully loaded: test2
+2025-09-18 20:01:35,087 - INFO - Using single vector store.
+2025-09-18 20:01:40,683 - INFO - Responded to question in 'Admin'. Found 2 sources.
+2025-09-18 20:01:40,683 - INFO - HERE IS  Not found in the provided text. and HERE IS [{'source': 'test2.pdf', 'page': 2}, {'source': 'test2.pdf', 'page': 1}]
+2025-09-18 20:01:40,706 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:40] "POST /chat HTTP/1.1" 200 -
+2025-09-18 20:01:43,873 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-18 20:01:43,873 - INFO - Found 20 messages for category 'HR'.
+2025-09-18 20:01:43,873 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:43] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-18 20:01:43,873 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:43] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 20:01:43,884 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:43] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:01:48,705 - INFO - Request to fetch chat history for category 'Admin'.
+2025-09-18 20:01:48,705 - INFO - Found 10 messages for category 'Admin'.
+2025-09-18 20:01:48,705 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:48] "GET /chat/history/Admin HTTP/1.1" 200 -
+2025-09-18 20:01:48,705 - INFO - 127.0.0.1 - - [18/Sep/2025 20:01:48] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:05:41,738 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-18 20:05:41,738 - INFO - Found 20 messages for category 'HR'.
+2025-09-18 20:05:41,738 - INFO - 127.0.0.1 - - [18/Sep/2025 20:05:41] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-18 20:05:41,745 - INFO - 127.0.0.1 - - [18/Sep/2025 20:05:41] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 20:05:41,749 - INFO - 127.0.0.1 - - [18/Sep/2025 20:05:41] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:05:54,489 - INFO - Request to fetch chat history for category 'Admin'.
+2025-09-18 20:05:54,489 - INFO - Found 10 messages for category 'Admin'.
+2025-09-18 20:05:54,489 - INFO - 127.0.0.1 - - [18/Sep/2025 20:05:54] "GET /chat/history/Admin HTTP/1.1" 200 -
+2025-09-18 20:05:54,499 - INFO - 127.0.0.1 - - [18/Sep/2025 20:05:54] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 20:05:54,501 - INFO - 127.0.0.1 - - [18/Sep/2025 20:05:54] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:05:58,617 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-18 20:05:58,617 - INFO - Found 20 messages for category 'HR'.
+2025-09-18 20:05:58,617 - INFO - 127.0.0.1 - - [18/Sep/2025 20:05:58] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-18 20:05:58,617 - INFO - 127.0.0.1 - - [18/Sep/2025 20:05:58] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:06:11,504 - INFO - 127.0.0.1 - - [18/Sep/2025 20:06:11] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 20:06:11,505 - INFO - Found 1 vector store(s) for category 'HR'
+2025-09-18 20:06:11,505 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test4
+2025-09-18 20:06:11,505 - INFO - Successfully loaded: test4
+2025-09-18 20:06:11,505 - INFO - Using single vector store.
+2025-09-18 20:06:17,022 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-18 20:06:17,022 - INFO - HERE IS  5 and HERE IS [{'source': 'test4.pdf', 'page': 1}]
+2025-09-18 20:06:17,070 - INFO - 127.0.0.1 - - [18/Sep/2025 20:06:17] "POST /chat HTTP/1.1" 200 -
+2025-09-18 20:09:49,698 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-18 20:09:49,700 - INFO - Found 22 messages for category 'HR'.
+2025-09-18 20:09:49,700 - INFO - 127.0.0.1 - - [18/Sep/2025 20:09:49] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-18 20:09:49,709 - INFO - 127.0.0.1 - - [18/Sep/2025 20:09:49] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 20:09:49,712 - INFO - 127.0.0.1 - - [18/Sep/2025 20:09:49] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:09:59,471 - INFO - 127.0.0.1 - - [18/Sep/2025 20:09:59] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-18 20:09:59,474 - INFO - Found 1 vector store(s) for category 'HR'
+2025-09-18 20:09:59,474 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test4
+2025-09-18 20:09:59,474 - INFO - Successfully loaded: test4
+2025-09-18 20:09:59,474 - INFO - Using single vector store.
+2025-09-18 20:10:01,212 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-18 20:10:01,212 - INFO - HERE IS  5 and HERE IS [{'source': 'test4.pdf', 'page': 1}]
+2025-09-18 20:10:01,247 - INFO - 127.0.0.1 - - [18/Sep/2025 20:10:01] "POST /chat HTTP/1.1" 200 -
+2025-09-18 20:10:24,146 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-18 20:10:24,146 - INFO - Found 24 messages for category 'HR'.
+2025-09-18 20:10:24,146 - INFO - 127.0.0.1 - - [18/Sep/2025 20:10:24] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-18 20:10:32,185 - INFO - Request to fetch chat history for category 'Admin'.
+2025-09-18 20:10:32,185 - INFO - Found 10 messages for category 'Admin'.
+2025-09-18 20:10:32,185 - INFO - 127.0.0.1 - - [18/Sep/2025 20:10:32] "GET /chat/history/Admin HTTP/1.1" 200 -
+2025-09-18 20:10:41,489 - INFO - 127.0.0.1 - - [18/Sep/2025 20:10:41] "OPTIONS /chat/history/Admin HTTP/1.1" 200 -
+2025-09-18 20:10:41,491 - INFO - Request to delete chat session 'Admin'.
+2025-09-18 20:10:41,497 - INFO - Chat session 'Admin' deleted successfully.
+2025-09-18 20:10:41,497 - INFO - 127.0.0.1 - - [18/Sep/2025 20:10:41] "DELETE /chat/history/Admin HTTP/1.1" 200 -
+2025-09-18 20:10:41,502 - INFO - Request to fetch chat history for category 'Admin'.
+2025-09-18 20:10:41,504 - INFO - Found 0 messages for category 'Admin'.
+2025-09-18 20:10:41,505 - INFO - 127.0.0.1 - - [18/Sep/2025 20:10:41] "GET /chat/history/Admin HTTP/1.1" 200 -
+2025-09-18 20:10:47,914 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-18 20:10:47,914 - INFO - Found 24 messages for category 'HR'.
+2025-09-18 20:10:47,914 - INFO - 127.0.0.1 - - [18/Sep/2025 20:10:47] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-18 20:10:47,914 - INFO - 127.0.0.1 - - [18/Sep/2025 20:10:47] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 20:10:47,924 - INFO - 127.0.0.1 - - [18/Sep/2025 20:10:47] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:10:49,274 - INFO - Request to fetch chat history for category 'Admin'.
+2025-09-18 20:10:49,274 - INFO - Found 0 messages for category 'Admin'.
+2025-09-18 20:10:49,274 - INFO - 127.0.0.1 - - [18/Sep/2025 20:10:49] "GET /chat/history/Admin HTTP/1.1" 200 -
+2025-09-18 20:10:49,274 - INFO - 127.0.0.1 - - [18/Sep/2025 20:10:49] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:11:02,185 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-18 20:11:02,185 - INFO - Found 24 messages for category 'HR'.
+2025-09-18 20:11:02,185 - INFO - 127.0.0.1 - - [18/Sep/2025 20:11:02] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-18 20:11:02,185 - INFO - 127.0.0.1 - - [18/Sep/2025 20:11:02] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 20:11:02,195 - INFO - 127.0.0.1 - - [18/Sep/2025 20:11:02] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:11:46,089 - INFO - 127.0.0.1 - - [18/Sep/2025 20:11:46] "OPTIONS /categories/Admin HTTP/1.1" 200 -
+2025-09-18 20:11:46,092 - INFO - Request to delete category: 'Admin'
+2025-09-18 20:11:46,093 - INFO - Successfully deleted category 'Admin'.
+2025-09-18 20:11:46,093 - INFO - 127.0.0.1 - - [18/Sep/2025 20:11:46] "DELETE /categories/Admin HTTP/1.1" 200 -
+2025-09-18 20:11:47,425 - INFO - 127.0.0.1 - - [18/Sep/2025 20:11:47] "OPTIONS /categories/HR HTTP/1.1" 200 -
+2025-09-18 20:11:47,428 - INFO - Request to delete category: 'HR'
+2025-09-18 20:11:47,428 - INFO - Successfully deleted category 'HR'.
+2025-09-18 20:11:47,428 - INFO - 127.0.0.1 - - [18/Sep/2025 20:11:47] "DELETE /categories/HR HTTP/1.1" 200 -
+2025-09-18 20:12:22,439 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:22] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-18 20:12:22,439 - INFO - Request to create category: 'HR'
+2025-09-18 20:12:22,439 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:22] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-18 20:12:24,447 - INFO - Request to create category: 'LD'
+2025-09-18 20:12:24,447 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:24] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-18 20:12:28,688 - INFO - Received 1 file(s) for category 'HR'.
+2025-09-18 20:12:28,688 - INFO - Processing 'test4' for category 'HR'...
+2025-09-18 20:12:28,864 - INFO - Saved vector store for 'test4'.
+2025-09-18 20:12:28,865 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:28] "POST /upload HTTP/1.1" 200 -
+2025-09-18 20:12:31,365 - INFO - Received 1 file(s) for category 'LD'.
+2025-09-18 20:12:31,365 - INFO - Processing 'test2' for category 'LD'...
+2025-09-18 20:12:31,427 - INFO - Saved vector store for 'test2'.
+2025-09-18 20:12:31,428 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:31] "POST /upload HTTP/1.1" 200 -
+2025-09-18 20:12:34,626 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-18 20:12:34,626 - INFO - Found 24 messages for category 'HR'.
+2025-09-18 20:12:34,626 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:34] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-18 20:12:34,630 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:34] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 20:12:34,630 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:34] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:12:42,010 - INFO - Request to fetch chat history for category 'LD'.
+2025-09-18 20:12:42,010 - INFO - Found 0 messages for category 'LD'.
+2025-09-18 20:12:42,010 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:42] "GET /chat/history/LD HTTP/1.1" 200 -
+2025-09-18 20:12:42,010 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:42] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 20:12:42,017 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:42] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:12:48,232 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:48] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-18 20:12:48,235 - INFO - Request to create category: 'L&D'
+2025-09-18 20:12:48,236 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:48] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-18 20:12:51,089 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-18 20:12:51,089 - INFO - Found 80 messages for category 'L&D'.
+2025-09-18 20:12:51,089 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:51] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-18 20:12:51,089 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:51] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 20:12:51,100 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:51] "POST /chat/start HTTP/1.1" 200 -
+2025-09-18 20:12:56,890 - INFO - Request to fetch chat history for category 'LD'.
+2025-09-18 20:12:56,890 - INFO - Found 0 messages for category 'LD'.
+2025-09-18 20:12:56,890 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:56] "GET /chat/history/LD HTTP/1.1" 200 -
+2025-09-18 20:12:56,911 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:56] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-18 20:12:56,912 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:56] "POST /chat/start HTTP/1.1" 200 -

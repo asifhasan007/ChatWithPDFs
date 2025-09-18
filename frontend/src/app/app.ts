@@ -4,7 +4,6 @@ import { Header} from './components/header/header';
 import { PdfChat } from './components/pdf-chat/pdf-chat';
 import { AiChat } from './components/ai-chat/ai-chat';
 import { FileManager } from './components/file-manager/file-manager';
-import { ChatService } from './core/services/chat'
 
 @Component({
   selector: 'app-root',
@@ -19,18 +18,20 @@ export class App {
   title = 'SmartPDF-Chat';
   isAiChatActive = false;
 
-  constructor(private chatService: ChatService) {} // Inject ChatService
+  constructor() {} // Inject ChatService
+  
+    onCategorySelected(categoryId: string): void {
+    if (this.pdfChatComponent) {
+      // Switch to PDF chat if not already active
+      this.isAiChatActive = false;
+      // Call the method on the child component to load its history
+      this.pdfChatComponent.loadChatForCategory(categoryId);
+    }
+  }
 
   switchToAiChat(isActive: boolean): void {
     if (isActive) {
-      // --- THIS IS THE NEW LOGIC ---
-      // Before switching to the AI chat, save the current session
-      const messagesToSave = this.pdfChatComponent.messages;
-      const categoryIdToSave = this.pdfChatComponent.selectedCategoryId;
-      
-      this.chatService.saveChatSession(categoryIdToSave, messagesToSave);
-
-      // Optional: Clear the messages in the PDF chat component for the next session
+     
       this.pdfChatComponent.clearSession();
     }
     

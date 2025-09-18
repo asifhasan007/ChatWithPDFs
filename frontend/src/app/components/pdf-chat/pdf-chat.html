@@ -1,6 +1,6 @@
 <div class="chat-section-container">
   <h2>Chat With Your PDFs</h2>
- 
+
   <!-- Category Selector -->
   <div class="category-selector">
     <label for="category">Select a Folder to Chat With:</label>
@@ -11,11 +11,11 @@
       </option>
     </select>
   </div>
- 
+
   <!-- Chat UI -->
   <div class="chat-window">
     <div class="chat-messages">
-     
+      
       <!-- Existing loop for displaying messages -->
       <div *ngFor="let msg of messages" class="message-container" [ngClass]="msg.sender">
         <div class="message" [ngClass]="{'user-message': msg.sender === 'user', 'ai-message': msg.sender === 'ai'}">
@@ -25,27 +25,28 @@
           </button>
         </div>
       </div>
- 
-      <!-- **** THIS IS THE NEW PART **** -->
-      <!-- Typing Indicator shown when isAiThinking is true -->
-      <div *ngIf="isAiThinking" class="typing-indicator-container">
+
+      <!-- 
+        FIX 1: Changed 'isAiThinking' to 'isLoading'.
+        This now correctly shows the indicator when fetching history or waiting for the AI.
+      -->
+      <div *ngIf="isLoading" class="typing-indicator-container">
         <div class="typing-dot"></div>
         <div class="typing-dot"></div>
         <div class="typing-dot"></div>
       </div>
-      <!-- **** END OF NEW PART **** -->
- 
+
     </div>
     <div class="chat-input-area">
+      <!-- FIX 2: Changed ngModel from 'userMessage' to 'userInput' to match the TypeScript file -->
       <input
         type="text"
-        [(ngModel)]="userMessage"
+        [(ngModel)]="userInput"
         (keyup.enter)="sendMessage()"
         placeholder="Ask a question about the PDFs in the selected folder..."
+        [disabled]="isLoading"
       />
-      <button (click)="sendMessage()">Send</button>
+      <button (click)="sendMessage()" [disabled]="isLoading || !userInput.trim()">Send</button>
     </div>
   </div>
 </div>
- 
- 

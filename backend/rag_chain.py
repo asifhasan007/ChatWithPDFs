@@ -113,7 +113,7 @@ def get_conversational_chain(category):
         2. Extract the direct answer from the 'Text' provided.
         3. If the answer is not in the text, say "Not found in the provided text."
         4. Output ONLY the answer. Do not add conversational filler."""),
-        MessagesPlaceholder(variable_name="chat_history"),
+        #MessagesPlaceholder(variable_name="chat_history"),
         ("user", "Text: {context}\n\nQuestion: {question}\n\nDirect Answer:"),])
 
     def log_retrieved_docs(docs):

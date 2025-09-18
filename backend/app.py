@@ -10,13 +10,14 @@ from rag_chain import get_conversational_chain,  get_general_ai_chain
 from langchain.memory import ConversationBufferMemory
 from langchain_core.messages import HumanMessage, AIMessage
 from database import init_db, DATABASE_NAME
+import uuid
 
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[logging.FileHandler("app.log"), logging.StreamHandler()]
 )
-
+SESSIONS = {}
 init_db()
 logger = logging.getLogger(__name__)
 app = Flask(__name__)
@@ -159,19 +160,28 @@ def delete_category_handler(category_id):
     
 #Initialize chat API endpoint
 @app.route('/chat/start', methods=['POST'])
-def start_chat_session():
-    logger.info("Chat session initiated by frontend.")
-    return jsonify({"message": "Chat session ready"}), 201
+def start_chat_handler():
+    data = request.json
+    category = data.get('category')
+    if not category:
+        return jsonify({"error": "A 'category' is required."}), 400
+    session_id = str(uuid.uuid4())
+    SESSIONS[session_id] = {'category': category}
+    return jsonify({"message": "Session started successfully", "session_id": session_id}), 200
 
 #chat flow API endpoint
 @app.route('/chat', methods=['POST'])
 def chat_handler():
     data = request.json
     question = data.get('question')
-    category = data.get('category') 
-
-    if not question or not category:
-        return jsonify({"error": "A 'question' and 'category' are required."}), 400
+    session_id = data.get('session_id')
+    if not question or not session_id:
+        return jsonify({"error": "A 'question' and 'session_id' are required."}), 400
+ 
+    session_info = SESSIONS.get(session_id)
+    if not session_info:
+        return jsonify({"error": "Invalid or expired session ID."}), 404
+    category = session_info.get('category')
 
     try:
         # start rag chain
@@ -232,6 +242,7 @@ def chat_handler():
         sources = list(unique_sources.values())
         
         logger.info(f"Responded to question in '{category}'. Found {len(sources)} sources.")
+        logger.info(f"HERE IS {answer} and HERE IS {sources}")
         return jsonify({"answer": answer, "sources": sources})
 
     except Exception as e:

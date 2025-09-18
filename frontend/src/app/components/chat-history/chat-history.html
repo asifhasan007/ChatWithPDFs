@@ -29,7 +29,7 @@
               <span class="session-timestamp">{{ session.startTime | date:'medium' }}</span>
             </div>
             <div class="session-actions">
-              <button class="delete-btn" (click)="$event.stopPropagation(); deleteSession(session.id)">Delete</button>
+              <button class="delete-btn" (click)="$event.stopPropagation(); deleteHistory(session.id)">Delete</button>
             </div>
           </div>
         </div>
