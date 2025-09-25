@@ -5320,3 +5320,102 @@ The system is configured to eliminate repeats and bring about a variety of promi
 2025-09-25 18:34:00,718 - INFO - Responded to question in 'HR'. Found 1 sources.
 2025-09-25 18:34:00,718 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'Case Study AI Quiz Generator Platform.pdf', 'page': 1}]
 2025-09-25 18:34:00,754 - INFO - 127.0.0.1 - - [25/Sep/2025 18:34:00] "POST /chat HTTP/1.1" 200 -
+2025-09-25 19:23:25,729 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-25 19:23:25,733 - INFO - Starting Flask application
+2025-09-25 19:23:25,741 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-25 19:23:25,741 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-25 19:23:25,748 - INFO -  * Restarting with stat
+2025-09-25 19:23:40,244 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-25 19:23:40,262 - INFO - Starting Flask application
+2025-09-25 19:23:40,264 - WARNING -  * Debugger is active!
+2025-09-25 19:23:40,277 - INFO -  * Debugger PIN: 285-565-481
+2025-09-25 19:23:45,729 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-25 19:23:45,729 - INFO - Found 30 messages for category 'HR'.
+2025-09-25 19:23:45,729 - INFO - 127.0.0.1 - - [25/Sep/2025 19:23:45] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-25 19:23:45,739 - INFO - 127.0.0.1 - - [25/Sep/2025 19:23:45] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-25 19:23:45,742 - INFO - 127.0.0.1 - - [25/Sep/2025 19:23:45] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 19:33:55,616 - INFO - 127.0.0.1 - - [25/Sep/2025 19:33:55] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-25 19:33:55,619 - INFO - Found 2 vector store(s) for category 'HR'
+2025-09-25 19:33:55,619 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\Case Study AI Quiz Generator Platform
+2025-09-25 19:33:55,621 - INFO - Loading faiss with AVX2 support.
+2025-09-25 19:33:55,647 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-25 19:33:55,653 - INFO - Successfully loaded: Case Study AI Quiz Generator Platform
+2025-09-25 19:33:55,653 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test4
+2025-09-25 19:33:55,654 - INFO - Successfully loaded: test4
+2025-09-25 19:33:55,654 - INFO - Merging 1 additional vector store(s)...
+2025-09-25 19:33:55,655 - INFO - Successfully merged vector store 1/1
+2025-09-25 19:33:55,655 - INFO - All vector stores merged successfully.
+2025-09-25 19:33:55,655 - INFO - Total documents in merged vector store: 8
+2025-09-25 19:34:03,517 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-25 19:34:03,517 - INFO - HERE IS  Not found in the provided text.  and HERE IS [{'source': 'Case Study AI Quiz Generator Platform.pdf', 'page': 1}]
+2025-09-25 19:34:03,546 - INFO - 127.0.0.1 - - [25/Sep/2025 19:34:03] "POST /chat HTTP/1.1" 200 -
+2025-09-25 19:42:31,328 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-25 19:42:31,329 - INFO - Found 32 messages for category 'HR'.
+2025-09-25 19:42:31,330 - INFO - 127.0.0.1 - - [25/Sep/2025 19:42:31] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-25 19:42:31,334 - INFO - 127.0.0.1 - - [25/Sep/2025 19:42:31] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-25 19:42:31,337 - INFO - 127.0.0.1 - - [25/Sep/2025 19:42:31] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 19:43:32,408 - INFO - Request to fetch chat history for category 'ADMN'.
+2025-09-25 19:43:32,409 - INFO - Found 0 messages for category 'ADMN'.
+2025-09-25 19:43:32,409 - INFO - 127.0.0.1 - - [25/Sep/2025 19:43:32] "GET /chat/history/ADMN HTTP/1.1" 200 -
+2025-09-25 19:43:32,416 - INFO - 127.0.0.1 - - [25/Sep/2025 19:43:32] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-25 19:43:32,419 - INFO - 127.0.0.1 - - [25/Sep/2025 19:43:32] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 19:43:34,352 - INFO - Request to fetch chat history for category 'ADMIN'.
+2025-09-25 19:43:34,353 - INFO - Found 0 messages for category 'ADMIN'.
+2025-09-25 19:43:34,353 - INFO - 127.0.0.1 - - [25/Sep/2025 19:43:34] "GET /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-25 19:43:34,356 - INFO - 127.0.0.1 - - [25/Sep/2025 19:43:34] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 19:43:35,616 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-25 19:43:35,617 - INFO - Found 32 messages for category 'HR'.
+2025-09-25 19:43:35,618 - INFO - 127.0.0.1 - - [25/Sep/2025 19:43:35] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-25 19:43:35,622 - INFO - 127.0.0.1 - - [25/Sep/2025 19:43:35] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 19:43:36,665 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-25 19:43:36,666 - INFO - Found 80 messages for category 'L&D'.
+2025-09-25 19:43:36,667 - INFO - 127.0.0.1 - - [25/Sep/2025 19:43:36] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-25 19:43:36,671 - INFO - 127.0.0.1 - - [25/Sep/2025 19:43:36] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 19:43:49,470 - INFO - 127.0.0.1 - - [25/Sep/2025 19:43:49] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-25 19:43:49,473 - WARNING - No valid document vector stores found in category 'L&D'.
+2025-09-25 19:43:49,473 - INFO - 127.0.0.1 - - [25/Sep/2025 19:43:49] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-25 19:43:54,246 - WARNING - No valid document vector stores found in category 'L&D'.
+2025-09-25 19:43:54,246 - INFO - 127.0.0.1 - - [25/Sep/2025 19:43:54] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-25 19:44:05,661 - INFO - 127.0.0.1 - - [25/Sep/2025 19:44:05] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-25 19:44:05,664 - WARNING - No valid document vector stores found in category 'L&D'.
+2025-09-25 19:44:05,664 - INFO - 127.0.0.1 - - [25/Sep/2025 19:44:05] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-25 19:44:24,688 - INFO - Request to fetch chat history for category 'ADMIN'.
+2025-09-25 19:44:24,689 - INFO - Found 0 messages for category 'ADMIN'.
+2025-09-25 19:44:24,690 - INFO - 127.0.0.1 - - [25/Sep/2025 19:44:24] "GET /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-25 19:44:24,693 - INFO - 127.0.0.1 - - [25/Sep/2025 19:44:24] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-25 19:44:24,696 - INFO - 127.0.0.1 - - [25/Sep/2025 19:44:24] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 19:44:26,422 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-25 19:44:26,423 - INFO - Found 32 messages for category 'HR'.
+2025-09-25 19:44:26,424 - INFO - 127.0.0.1 - - [25/Sep/2025 19:44:26] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-25 19:44:26,428 - INFO - 127.0.0.1 - - [25/Sep/2025 19:44:26] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 19:44:29,965 - INFO - 127.0.0.1 - - [25/Sep/2025 19:44:29] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-25 19:44:29,967 - INFO - Found 2 vector store(s) for category 'HR'
+2025-09-25 19:44:29,967 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\Case Study AI Quiz Generator Platform
+2025-09-25 19:44:29,969 - INFO - Successfully loaded: Case Study AI Quiz Generator Platform
+2025-09-25 19:44:29,969 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test4
+2025-09-25 19:44:29,970 - INFO - Successfully loaded: test4
+2025-09-25 19:44:29,970 - INFO - Merging 1 additional vector store(s)...
+2025-09-25 19:44:29,970 - INFO - Successfully merged vector store 1/1
+2025-09-25 19:44:29,970 - INFO - All vector stores merged successfully.
+2025-09-25 19:44:29,971 - INFO - Total documents in merged vector store: 8
+2025-09-25 19:44:35,974 - INFO - Responded to question in 'HR'. Found 2 sources.
+2025-09-25 19:44:35,974 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'Case Study AI Quiz Generator Platform.pdf', 'page': 1}, {'source': 'test4.pdf', 'page': 1}]
+2025-09-25 19:44:36,000 - INFO - 127.0.0.1 - - [25/Sep/2025 19:44:36] "POST /chat HTTP/1.1" 200 -
+2025-09-25 19:46:33,063 - INFO - 127.0.0.1 - - [25/Sep/2025 19:46:33] "OPTIONS /categories/ADMN HTTP/1.1" 200 -
+2025-09-25 19:46:33,066 - INFO - Request to delete category: 'ADMN'
+2025-09-25 19:46:33,066 - INFO - Successfully deleted category 'ADMN'.
+2025-09-25 19:46:33,067 - INFO - 127.0.0.1 - - [25/Sep/2025 19:46:33] "DELETE /categories/ADMN HTTP/1.1" 200 -
+2025-09-25 19:46:55,528 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-25 19:46:55,533 - INFO - Found 80 messages for category 'L&D'.
+2025-09-25 19:46:55,534 - INFO - 127.0.0.1 - - [25/Sep/2025 19:46:55] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-25 19:46:55,539 - INFO - 127.0.0.1 - - [25/Sep/2025 19:46:55] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-25 19:46:55,541 - INFO - 127.0.0.1 - - [25/Sep/2025 19:46:55] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 19:47:36,285 - INFO - 127.0.0.1 - - [25/Sep/2025 19:47:36] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-25 19:47:36,288 - WARNING - No valid document vector stores found in category 'L&D'.
+2025-09-25 19:47:36,288 - INFO - 127.0.0.1 - - [25/Sep/2025 19:47:36] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-25 19:49:42,791 - INFO - 127.0.0.1 - - [25/Sep/2025 19:49:42] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-25 19:49:42,793 - WARNING - No valid document vector stores found in category 'L&D'.
+2025-09-25 19:49:42,794 - INFO - 127.0.0.1 - - [25/Sep/2025 19:49:42] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
