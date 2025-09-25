@@ -1,45 +1,68 @@
+/*
+ * Make the entire app container a flex column that fills the viewport height.
+ */
 .app-container {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow: hidden; /* Prevents the whole page from scrolling */
 }
 
+/*
+ * The main layout holds the sidebar and content area.
+ * It should grow to fill the remaining vertical space.
+ */
 .main-layout {
   display: flex;
   flex-grow: 1;
-
+  min-height: 0; /* A crucial property for nested flex containers */
 }
 
+/*
+ * The content area where the chat components are displayed.
+ * It needs to be a flex column to manage its children's layout.
+ */
 .content-area {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  min-width: 0; /* Helps prevent overflow in flex layouts */
+  padding: 1rem; /* Existing padding */
+  background-color: #f9f9f9; /* A light background for the content area */
 }
 
-.finish-chat-container, .back-to-pdf-container {
+/*
+ * Styles for the action buttons, ensuring they are well-defined.
+ */
+.finish-chat-container {
   display: flex;
   justify-content: center;
   padding: 1rem 0;
+  flex-shrink: 0; /* Prevents this container from shrinking */
+}
 
-  .finish-btn, .back-btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    background-color: #26a69a;
-    color: white;
-    
-    &:hover {
-      background-color: #00897b;
-    }
-  }
+.finish-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #26a69a;
+  color: white;
+  transition: background-color 0.3s;
+}
 
-  .back-btn {
-    background-color: #78909c;
-    &:hover {
-      background-color: #546e7a;
-    }
-  }
+.finish-btn:hover {
+  background-color: #00897b;
+}
+
+/*
+ * Ensure the chat components fill the space given to them.
+ * This rule targets the host elements of your Angular components.
+ */
+:host ::ng-deep app-pdf-chat,
+:host ::ng-deep app-ai-chat {
+  flex-grow: 1;
+  display: flex; /* This assumes your chat components are flex containers */
+  min-height: 0;
 }

@@ -6,17 +6,17 @@
 
     <!-- Main Content Area -->
     <main class="content-area">
-      <app-pdf-chat *ngIf="!isAiChatActive"></app-pdf-chat>
-      
-      <div *ngIf="!isAiChatActive" class="finish-chat-container">
-        <button class="finish-btn" (click)="switchToAiChat(true)">Finish PDF Chat & Start AI Chat</button>
-      </div>
+      <!-- PDF Chat View -->
+      <ng-container *ngIf="!isAiChatActive">
+        <app-pdf-chat></app-pdf-chat>
+        <div class="finish-chat-container">
+          <button class="finish-btn" (click)="switchToAiChat(true)">Finish PDF Chat & Start AI Chat</button>
+        </div>
+      </ng-container>
 
+      <!-- General AI Chat View -->
       <app-ai-chat *ngIf="isAiChatActive"></app-ai-chat>
       
-      <!-- <div *ngIf="isAiChatActive" class="back-to-pdf-container">
-          <button class="back-btn" (click)="switchToAiChat(false)">Back to PDF Chat</button>
-      </div> -->
     </main>
   </div>
 </div>

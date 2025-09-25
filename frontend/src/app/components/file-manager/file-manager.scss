@@ -1,147 +1,174 @@
-.file-manager-container {
-  background-color: #f4f4f9;
-  padding: 1.5rem;
-  border-right: 1px solid #e0e0e0;
+:host {
   height: 100%;
+}
+
+.file-manager-container {
+  background-color: #ffffff;
+  border-right: 1px solid #e9ecef;
   width: 350px;
   display: flex;
   flex-direction: column;
+  height: 100%;
+}
 
+.fm-header {
+  padding: 1.5rem 1.5rem 1rem;
+  border-bottom: 1px solid #e9ecef;
+  
   h2 {
-    margin-top: 0;
-    color: #333;
-    border-bottom: 2px solid #5c6bc0;
-    padding-bottom: 0.5rem;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000;
   }
+}
 
-  .add-category-form {
-    display: flex;
-    margin-bottom: 1.5rem;
-    input {
-      flex-grow: 1;
-      padding: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 4px 0 0 4px;
-      &:focus {
-        outline: none;
-        border-color: #5c6bc0;
-      }
-    }
-    button {
-      padding: 0.5rem 1rem;
-      border: none;
-      background-color: #5c6bc0;
-      color: white;
-      border-radius: 0 4px 4px 0;
-      cursor: pointer;
-      &:hover {
-        background-color: #3f51b5;
-      }
-    }
-  }
-
-  .category-list {
-    overflow-y: auto;
-    flex-grow: 1; // Allows the list to take up remaining space
-  }
-
-  .category-item {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-    padding: 1rem;
-  }
-
-  .category-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h3 {
-      margin: 0;
-      font-size: 1.1rem;
-    }
-  }
-
-  .category-actions {
-    display: flex;
-    align-items: center;
-  }
+/* Form for adding a new folder */
+.add-category-form {
+  display: flex;
+  padding: 1rem 1.5rem;
+  gap: 0.5rem;
   
-  // Base style for all icon buttons in the header
-  .icon-btn {
-    background: none;
+  input {
+    flex-grow: 1;
+    padding: 0.6rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 0.9rem;
+
+    &:focus {
+      outline: none;
+      border-color: #E41F26;
+      box-shadow: 0 0 0 2px rgba(228, 31, 38, 0.15);
+    }
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
     border: none;
+    background-color: #000;
+    color: white;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 1.3rem; // Slightly larger for better clicking
-    margin-left: 0.75rem;
-    padding: 0.25rem;
-    color: #555;
-    transition: color 0.2s ease-in-out;
-    
-    &:hover {
-      color: #000;
-    }
+    font-size: 1.5rem;
+    font-weight: 300;
 
-    // --- NEW MODIFIER FOR THE DELETE BUTTON ---
-    &.delete {
-      color: #ef4444; // Red for delete
-      &:hover {
-        color: #b91c1c; // Darker red on hover
-      }
-    }
+    &:hover { background-color: #333; }
+    &:disabled { background-color: #adb5bd; }
   }
+}
 
-  .pdf-list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 1rem;
-  }
+/* List of folders */
+.category-list {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #6c757d;
+}
+
+.category-item {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
   
-  .pdf-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
-    border-bottom: 1px solid #eee;
-    
-    .delete-btn { // This is for deleting individual PDFs
-      background: none;
-      border: none;
-      color: #e53935;
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 1.2rem;
-      &:hover {
-        color: #c62828;
-      }
-    }
+  &.active, &:hover {
+    border-color: #E41F26;
+    background-color: #fff5f5;
   }
+}
 
-  .no-pdfs {
-    color: #777;
-    font-style: italic;
-    padding: 0.5rem;
-  }
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
 .category-name-wrapper {
   display: flex;
   align-items: center;
+  gap: 0.75rem;
+
+  .folder-icon { font-size: 1.2rem; }
+  h3 { margin: 0; font-size: 1rem; font-weight: 500; }
+}
+
+.category-actions {
+  display: flex;
+  align-items: center;
   gap: 0.5rem;
 }
 
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #6c757d;
+  padding: 0.25rem;
+
+  svg { width: 20px; height: 20px; }
+  &:hover { color: #000; }
+  
+  &.delete {
+    color: #dc3545;
+    &:hover { color: #a4202d; }
+  }
+}
+
+/* List of PDFs within a folder */
+.pdf-list {
+  list-style: none;
+  padding: 0 1rem 0.5rem;
+  margin: 0;
+  border-top: 1px solid #e9ecef;
+}
+
+.pdf-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.25rem;
+  font-size: 0.9rem;
+
+  .delete-btn {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 1.2rem;
+    opacity: 0.6;
+    &:hover { opacity: 1; }
+  }
+}
+
+.no-pdfs-message {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6c757d;
+  border-top: 1px solid #e9ecef;
+}
+
+/* Spinner animation */
 .spinner {
   width: 16px;
   height: 16px;
   border: 2px solid #ccc;
-  border-top-color: #5c6bc0;
+  border-top-color: #E41F26;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+  to { transform: rotate(360deg); }
 }

@@ -5023,3 +5023,300 @@ The system is configured to eliminate repeats and bring about a variety of promi
 2025-09-18 20:12:56,890 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:56] "GET /chat/history/LD HTTP/1.1" 200 -
 2025-09-18 20:12:56,911 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:56] "OPTIONS /chat/start HTTP/1.1" 200 -
 2025-09-18 20:12:56,912 - INFO - 127.0.0.1 - - [18/Sep/2025 20:12:56] "POST /chat/start HTTP/1.1" 200 -
+2025-09-21 15:09:20,098 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-21 15:09:20,106 - INFO - Starting Flask application
+2025-09-21 15:09:20,128 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-21 15:09:20,128 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-21 15:09:20,132 - INFO -  * Restarting with stat
+2025-09-21 15:09:38,547 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-21 15:09:38,547 - INFO - Starting Flask application
+2025-09-21 15:09:38,561 - WARNING -  * Debugger is active!
+2025-09-21 15:09:38,564 - INFO -  * Debugger PIN: 989-297-677
+2025-09-21 15:10:02,279 - INFO - 127.0.0.1 - - [21/Sep/2025 15:10:02] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-21 15:10:02,281 - INFO - Request to create category: 'HR'
+2025-09-21 15:10:02,282 - INFO - 127.0.0.1 - - [21/Sep/2025 15:10:02] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-21 15:10:13,282 - INFO - Received 1 file(s) for category 'HR'.
+2025-09-21 15:10:13,283 - INFO - Processing 'Case Study AI Quiz Generator Platform' for category 'HR'...
+2025-09-21 15:10:13,710 - INFO - Loading faiss with AVX2 support.
+2025-09-21 15:10:13,814 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-21 15:10:13,855 - INFO - Saved vector store for 'Case Study AI Quiz Generator Platform'.
+2025-09-21 15:10:13,856 - INFO - 127.0.0.1 - - [21/Sep/2025 15:10:13] "POST /upload HTTP/1.1" 200 -
+2025-09-21 15:10:24,317 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-21 15:10:24,317 - INFO - Found 24 messages for category 'HR'.
+2025-09-21 15:10:24,317 - INFO - 127.0.0.1 - - [21/Sep/2025 15:10:24] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-21 15:10:24,325 - INFO - 127.0.0.1 - - [21/Sep/2025 15:10:24] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-21 15:10:24,330 - INFO - 127.0.0.1 - - [21/Sep/2025 15:10:24] "POST /chat/start HTTP/1.1" 200 -
+2025-09-21 15:10:43,987 - INFO - 127.0.0.1 - - [21/Sep/2025 15:10:43] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-21 15:10:43,991 - INFO - Found 2 vector store(s) for category 'HR'
+2025-09-21 15:10:43,991 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\Case Study AI Quiz Generator Platform
+2025-09-21 15:10:44,012 - INFO - Successfully loaded: Case Study AI Quiz Generator Platform
+2025-09-21 15:10:44,012 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test4
+2025-09-21 15:10:44,025 - INFO - Successfully loaded: test4
+2025-09-21 15:10:44,025 - INFO - Merging 1 additional vector store(s)...
+2025-09-21 15:10:44,025 - INFO - Successfully merged vector store 1/1
+2025-09-21 15:10:44,025 - INFO - All vector stores merged successfully.
+2025-09-21 15:10:44,025 - INFO - Total documents in merged vector store: 8
+2025-09-21 15:10:52,979 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-21 15:10:52,979 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'Case Study AI Quiz Generator Platform.pdf', 'page': 1}]
+2025-09-21 15:10:53,010 - INFO - 127.0.0.1 - - [21/Sep/2025 15:10:53] "POST /chat HTTP/1.1" 200 -
+2025-09-21 15:11:12,627 - INFO - 127.0.0.1 - - [21/Sep/2025 15:11:12] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-21 15:11:12,630 - INFO - Found 2 vector store(s) for category 'HR'
+2025-09-21 15:11:12,630 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\Case Study AI Quiz Generator Platform
+2025-09-21 15:11:12,630 - INFO - Successfully loaded: Case Study AI Quiz Generator Platform
+2025-09-21 15:11:12,631 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test4
+2025-09-21 15:11:12,631 - INFO - Successfully loaded: test4
+2025-09-21 15:11:12,631 - INFO - Merging 1 additional vector store(s)...
+2025-09-21 15:11:12,631 - INFO - Successfully merged vector store 1/1
+2025-09-21 15:11:12,632 - INFO - All vector stores merged successfully.
+2025-09-21 15:11:12,632 - INFO - Total documents in merged vector store: 8
+2025-09-21 15:11:18,383 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-21 15:11:18,383 - INFO - HERE IS  There are 5 AI pipelines in the system: 
+1. AI-Powered Transcription (Whisper) 
+2. Advanced Keypoint Extraction 
+3. Keywords & Sentence Ranking (KeyBERT, spaCy/TF-IDF) 
+4. Fact Finding (T5/RoBERTa) 
+5. Synthesis & Deduplication  and HERE IS [{'source': 'Case Study AI Quiz Generator Platform.pdf', 'page': 1}]
+2025-09-21 15:11:18,418 - INFO - 127.0.0.1 - - [21/Sep/2025 15:11:18] "POST /chat HTTP/1.1" 200 -
+2025-09-23 17:57:03,926 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-23 17:57:03,926 - INFO - Starting Flask application
+2025-09-23 17:57:03,948 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-23 17:57:03,948 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-23 17:57:03,949 - INFO -  * Restarting with stat
+2025-09-23 17:57:22,258 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-23 17:57:22,258 - INFO - Starting Flask application
+2025-09-23 17:57:22,276 - WARNING -  * Debugger is active!
+2025-09-23 17:57:22,281 - INFO -  * Debugger PIN: 285-565-481
+2025-09-23 17:58:14,227 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-23 17:58:14,229 - INFO - Found 80 messages for category 'L&D'.
+2025-09-23 17:58:14,231 - INFO - 127.0.0.1 - - [23/Sep/2025 17:58:14] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-23 17:58:17,025 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-23 17:58:17,025 - INFO - Found 28 messages for category 'HR'.
+2025-09-23 17:58:17,025 - INFO - 127.0.0.1 - - [23/Sep/2025 17:58:17] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-23 17:58:19,532 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-23 17:58:19,532 - INFO - Found 80 messages for category 'L&D'.
+2025-09-23 17:58:19,532 - INFO - 127.0.0.1 - - [23/Sep/2025 17:58:19] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-23 17:58:19,539 - INFO - 127.0.0.1 - - [23/Sep/2025 17:58:19] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-23 17:58:19,543 - INFO - 127.0.0.1 - - [23/Sep/2025 17:58:19] "POST /chat/start HTTP/1.1" 200 -
+2025-09-23 17:58:28,275 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-23 17:58:28,275 - INFO - Found 28 messages for category 'HR'.
+2025-09-23 17:58:28,275 - INFO - 127.0.0.1 - - [23/Sep/2025 17:58:28] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-23 17:58:28,293 - INFO - 127.0.0.1 - - [23/Sep/2025 17:58:28] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-23 17:58:28,297 - INFO - 127.0.0.1 - - [23/Sep/2025 17:58:28] "POST /chat/start HTTP/1.1" 200 -
+2025-09-23 17:58:36,554 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-23 17:58:36,555 - INFO - Found 80 messages for category 'L&D'.
+2025-09-23 17:58:36,555 - INFO - 127.0.0.1 - - [23/Sep/2025 17:58:36] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-23 17:58:36,577 - INFO - 127.0.0.1 - - [23/Sep/2025 17:58:36] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-23 17:58:36,581 - INFO - 127.0.0.1 - - [23/Sep/2025 17:58:36] "POST /chat/start HTTP/1.1" 200 -
+2025-09-23 17:58:53,017 - INFO - 127.0.0.1 - - [23/Sep/2025 17:58:53] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-23 17:58:53,017 - INFO - Request to create category: 'ADMIN'
+2025-09-23 17:58:53,017 - INFO - 127.0.0.1 - - [23/Sep/2025 17:58:53] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-23 18:00:30,546 - INFO - Received 1 file(s) for category 'ADMIN'.
+2025-09-23 18:00:30,546 - INFO - Processing 'CST308 Course Outline Spring 25.docx' for category 'ADMIN'...
+2025-09-23 18:00:31,200 - INFO - Loading faiss with AVX2 support.
+2025-09-23 18:00:31,360 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-23 18:00:31,414 - INFO - Saved vector store for 'CST308 Course Outline Spring 25.docx'.
+2025-09-23 18:00:31,415 - INFO - 127.0.0.1 - - [23/Sep/2025 18:00:31] "POST /upload HTTP/1.1" 200 -
+2025-09-23 18:00:33,898 - INFO - Request to fetch chat history for category 'ADMIN'.
+2025-09-23 18:00:33,899 - INFO - Found 2 messages for category 'ADMIN'.
+2025-09-23 18:00:33,899 - INFO - 127.0.0.1 - - [23/Sep/2025 18:00:33] "GET /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-23 18:00:33,907 - INFO - 127.0.0.1 - - [23/Sep/2025 18:00:33] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-23 18:00:33,910 - INFO - 127.0.0.1 - - [23/Sep/2025 18:00:33] "POST /chat/start HTTP/1.1" 200 -
+2025-09-23 18:00:40,353 - INFO - Request to fetch chat history for category 'ADMIN'.
+2025-09-23 18:00:40,353 - INFO - Found 2 messages for category 'ADMIN'.
+2025-09-23 18:00:40,353 - INFO - 127.0.0.1 - - [23/Sep/2025 18:00:40] "GET /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-23 18:00:42,547 - INFO - 127.0.0.1 - - [23/Sep/2025 18:00:42] "OPTIONS /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-23 18:00:42,550 - INFO - Request to delete chat session 'ADMIN'.
+2025-09-23 18:00:42,553 - INFO - Chat session 'ADMIN' deleted successfully.
+2025-09-23 18:00:42,553 - INFO - 127.0.0.1 - - [23/Sep/2025 18:00:42] "DELETE /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-23 18:00:42,553 - INFO - Request to fetch chat history for category 'ADMIN'.
+2025-09-23 18:00:42,562 - INFO - Found 0 messages for category 'ADMIN'.
+2025-09-23 18:00:42,562 - INFO - 127.0.0.1 - - [23/Sep/2025 18:00:42] "GET /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-23 18:00:47,115 - INFO - Request to fetch chat history for category 'ADMIN'.
+2025-09-23 18:00:47,116 - INFO - Found 0 messages for category 'ADMIN'.
+2025-09-23 18:00:47,116 - INFO - 127.0.0.1 - - [23/Sep/2025 18:00:47] "GET /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-23 18:00:47,123 - INFO - 127.0.0.1 - - [23/Sep/2025 18:00:47] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-23 18:00:47,126 - INFO - 127.0.0.1 - - [23/Sep/2025 18:00:47] "POST /chat/start HTTP/1.1" 200 -
+2025-09-23 18:01:02,272 - INFO - 127.0.0.1 - - [23/Sep/2025 18:01:02] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-23 18:01:02,274 - INFO - Found 1 vector store(s) for category 'ADMIN'
+2025-09-23 18:01:02,274 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\ADMIN\CST308 Course Outline Spring 25.docx
+2025-09-23 18:01:02,312 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-09-23 18:01:02,313 - INFO - Using single vector store.
+2025-09-23 18:01:09,388 - INFO - Responded to question in 'ADMIN'. Found 2 sources.
+2025-09-23 18:01:09,388 - INFO - HERE IS  CST 308 and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 1}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 2}]
+2025-09-23 18:01:09,428 - INFO - 127.0.0.1 - - [23/Sep/2025 18:01:09] "POST /chat HTTP/1.1" 200 -
+2025-09-23 18:02:03,672 - INFO - 127.0.0.1 - - [23/Sep/2025 18:02:03] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-23 18:02:03,675 - INFO - Found 1 vector store(s) for category 'ADMIN'
+2025-09-23 18:02:03,675 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\ADMIN\CST308 Course Outline Spring 25.docx
+2025-09-23 18:02:03,675 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-09-23 18:02:03,675 - INFO - Using single vector store.
+2025-09-23 18:02:08,824 - INFO - Responded to question in 'ADMIN'. Found 2 sources.
+2025-09-23 18:02:08,824 - INFO - HERE IS  The title is "When religions collide: paradoxes of legal dispensations, etc."  and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 4}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 1}]
+2025-09-23 18:02:08,874 - INFO - 127.0.0.1 - - [23/Sep/2025 18:02:08] "POST /chat HTTP/1.1" 200 -
+2025-09-23 18:02:37,048 - INFO - 127.0.0.1 - - [23/Sep/2025 18:02:37] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-23 18:02:37,049 - INFO - Found 1 vector store(s) for category 'ADMIN'
+2025-09-23 18:02:37,049 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\ADMIN\CST308 Course Outline Spring 25.docx
+2025-09-23 18:02:37,049 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-09-23 18:02:37,049 - INFO - Using single vector store.
+2025-09-23 18:02:42,957 - INFO - Responded to question in 'ADMIN'. Found 2 sources.
+2025-09-23 18:02:42,957 - INFO - HERE IS  Introduction to the Course and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 2}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 3}]
+2025-09-23 18:02:42,995 - INFO - 127.0.0.1 - - [23/Sep/2025 18:02:42] "POST /chat HTTP/1.1" 200 -
+2025-09-23 18:03:28,288 - INFO - 127.0.0.1 - - [23/Sep/2025 18:03:28] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-23 18:03:28,290 - INFO - Found 1 vector store(s) for category 'ADMIN'
+2025-09-23 18:03:28,292 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\ADMIN\CST308 Course Outline Spring 25.docx
+2025-09-23 18:03:28,293 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-09-23 18:03:28,293 - INFO - Using single vector store.
+2025-09-23 18:03:35,956 - INFO - Responded to question in 'ADMIN'. Found 2 sources.
+2025-09-23 18:03:35,956 - INFO - HERE IS  The course is about understanding the field of religious conflict, its theories, practices, problems, and solutions. It aims to impart knowledge of theory, practice, problems, and solutions through written and video examples and personal and institutional narratives of invited speakers.  and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 3}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 2}]
+2025-09-23 18:03:35,988 - INFO - 127.0.0.1 - - [23/Sep/2025 18:03:35] "POST /chat HTTP/1.1" 200 -
+2025-09-23 18:04:55,489 - INFO - 127.0.0.1 - - [23/Sep/2025 18:04:55] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-23 18:04:55,489 - INFO - Found 1 vector store(s) for category 'ADMIN'
+2025-09-23 18:04:55,489 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\ADMIN\CST308 Course Outline Spring 25.docx
+2025-09-23 18:04:55,489 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-09-23 18:04:55,489 - INFO - Using single vector store.
+2025-09-23 18:05:01,229 - INFO - Responded to question in 'ADMIN'. Found 2 sources.
+2025-09-23 18:05:01,229 - INFO - HERE IS  Not found in the provided text. and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 2}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 3}]
+2025-09-23 18:05:01,260 - INFO - 127.0.0.1 - - [23/Sep/2025 18:05:01] "POST /chat HTTP/1.1" 200 -
+2025-09-23 18:05:53,648 - INFO - 127.0.0.1 - - [23/Sep/2025 18:05:53] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-23 18:05:53,651 - INFO - Found 1 vector store(s) for category 'ADMIN'
+2025-09-23 18:05:53,651 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\ADMIN\CST308 Course Outline Spring 25.docx
+2025-09-23 18:05:53,652 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-09-23 18:05:53,652 - INFO - Using single vector store.
+2025-09-23 18:05:59,373 - INFO - Responded to question in 'ADMIN'. Found 2 sources.
+2025-09-23 18:05:59,373 - INFO - HERE IS  Dr. Samia Huq. and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 1}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 12}]
+2025-09-23 18:05:59,407 - INFO - 127.0.0.1 - - [23/Sep/2025 18:05:59] "POST /chat HTTP/1.1" 200 -
+2025-09-23 18:06:31,072 - INFO - 127.0.0.1 - - [23/Sep/2025 18:06:31] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-23 18:06:31,073 - INFO - Found 1 vector store(s) for category 'ADMIN'
+2025-09-23 18:06:31,073 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\ADMIN\CST308 Course Outline Spring 25.docx
+2025-09-23 18:06:31,073 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-09-23 18:06:31,073 - INFO - Using single vector store.
+2025-09-23 18:06:40,811 - INFO - Responded to question in 'ADMIN'. Found 2 sources.
+2025-09-23 18:06:40,811 - INFO - HERE IS  The grading policy of this course is based on the system specified by the Brac University Undergraduate Study and Examinations Regulations. In addition, faculty members are allowed to take into consideration factors such as the class average and standard deviation in order to ensure the grades reflect students’ actual class performance. and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 12}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 3}]
+2025-09-23 18:06:40,844 - INFO - 127.0.0.1 - - [23/Sep/2025 18:06:40] "POST /chat HTTP/1.1" 200 -
+2025-09-23 18:07:16,351 - INFO - 127.0.0.1 - - [23/Sep/2025 18:07:16] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-23 18:07:16,353 - INFO - Found 1 vector store(s) for category 'ADMIN'
+2025-09-23 18:07:16,353 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\ADMIN\CST308 Course Outline Spring 25.docx
+2025-09-23 18:07:16,353 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-09-23 18:07:16,353 - INFO - Using single vector store.
+2025-09-23 18:07:20,840 - INFO - Responded to question in 'ADMIN'. Found 1 sources.
+2025-09-23 18:07:20,840 - INFO - HERE IS  Yes, there will be quizzes in the course. and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 11}]
+2025-09-23 18:07:20,873 - INFO - 127.0.0.1 - - [23/Sep/2025 18:07:20] "POST /chat HTTP/1.1" 200 -
+2025-09-23 18:07:28,031 - INFO - 127.0.0.1 - - [23/Sep/2025 18:07:28] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-23 18:07:28,034 - INFO - Found 1 vector store(s) for category 'ADMIN'
+2025-09-23 18:07:28,035 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\ADMIN\CST308 Course Outline Spring 25.docx
+2025-09-23 18:07:28,036 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-09-23 18:07:28,036 - INFO - Using single vector store.
+2025-09-23 18:07:34,395 - INFO - Responded to question in 'ADMIN'. Found 2 sources.
+2025-09-23 18:07:34,395 - INFO - HERE IS  5 and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 5}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 3}]
+2025-09-23 18:07:34,427 - INFO - 127.0.0.1 - - [23/Sep/2025 18:07:34] "POST /chat HTTP/1.1" 200 -
+2025-09-23 18:10:12,487 - INFO - 127.0.0.1 - - [23/Sep/2025 18:10:12] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-23 18:10:12,489 - INFO - Found 1 vector store(s) for category 'ADMIN'
+2025-09-23 18:10:12,489 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\ADMIN\CST308 Course Outline Spring 25.docx
+2025-09-23 18:10:12,489 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-09-23 18:10:12,489 - INFO - Using single vector store.
+2025-09-23 18:10:17,657 - INFO - Responded to question in 'ADMIN'. Found 1 sources.
+2025-09-23 18:10:17,657 - INFO - HERE IS  The text does not specify the number of quizzes. However, it mentions that "Additional quizzes may be scheduled at the instructor’s discretion." and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 11}]
+2025-09-23 18:10:17,705 - INFO - 127.0.0.1 - - [23/Sep/2025 18:10:17] "POST /chat HTTP/1.1" 200 -
+2025-09-23 18:11:22,943 - INFO - 127.0.0.1 - - [23/Sep/2025 18:11:22] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-23 18:11:22,945 - INFO - Found 1 vector store(s) for category 'ADMIN'
+2025-09-23 18:11:22,945 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\ADMIN\CST308 Course Outline Spring 25.docx
+2025-09-23 18:11:22,945 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-09-23 18:11:22,945 - INFO - Using single vector store.
+2025-09-23 18:11:28,347 - INFO - Responded to question in 'ADMIN'. Found 2 sources.
+2025-09-23 18:11:28,347 - INFO - HERE IS  The final exam will be a written test that covers all the material taught in the course. The exam will consist of multiple-choice questions, short-answer questions, and essay questions. Students will have two hours to complete the exam. and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 11}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 1}]
+2025-09-23 18:11:28,382 - INFO - 127.0.0.1 - - [23/Sep/2025 18:11:28] "POST /chat HTTP/1.1" 200 -
+2025-09-23 18:12:14,687 - INFO - 127.0.0.1 - - [23/Sep/2025 18:12:14] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-23 18:12:14,688 - INFO - Found 1 vector store(s) for category 'ADMIN'
+2025-09-23 18:12:14,688 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\ADMIN\CST308 Course Outline Spring 25.docx
+2025-09-23 18:12:14,688 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-09-23 18:12:14,688 - INFO - Using single vector store.
+2025-09-23 18:12:25,876 - INFO - Responded to question in 'ADMIN'. Found 1 sources.
+2025-09-23 18:12:25,975 - INFO - 127.0.0.1 - - [23/Sep/2025 18:12:25] "POST /chat HTTP/1.1" 200 -
+2025-09-23 18:15:15,175 - INFO - 127.0.0.1 - - [23/Sep/2025 18:15:15] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-23 18:15:15,176 - INFO - Found 1 vector store(s) for category 'ADMIN'
+2025-09-23 18:15:15,176 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\ADMIN\CST308 Course Outline Spring 25.docx
+2025-09-23 18:15:15,176 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-09-23 18:15:15,176 - INFO - Using single vector store.
+2025-09-23 18:15:22,152 - INFO - Responded to question in 'ADMIN'. Found 1 sources.
+2025-09-23 18:15:22,152 - INFO - HERE IS  The exercises will give students the opportunity to track their learning, engage in analysis, and apply insights from the course material to address empirical puzzles. Students are encouraged and expected to actively participate in online discussion sessions and on online discussion boards. Students will also take turns presenting and leading discussion or adda on relevant current events.  and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 11}]
+2025-09-23 18:15:22,182 - INFO - 127.0.0.1 - - [23/Sep/2025 18:15:22] "POST /chat HTTP/1.1" 200 -
+2025-09-25 18:32:06,123 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-25 18:32:06,128 - INFO - Starting Flask application
+2025-09-25 18:32:06,234 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-25 18:32:06,234 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-25 18:32:06,243 - INFO -  * Restarting with stat
+2025-09-25 18:32:22,269 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-25 18:32:22,273 - INFO - Starting Flask application
+2025-09-25 18:32:22,281 - WARNING -  * Debugger is active!
+2025-09-25 18:32:22,287 - INFO -  * Debugger PIN: 285-565-481
+2025-09-25 18:32:37,951 - INFO - 127.0.0.1 - - [25/Sep/2025 18:32:37] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-25 18:32:37,953 - INFO - Request to create category: 'ADMN'
+2025-09-25 18:32:37,955 - INFO - 127.0.0.1 - - [25/Sep/2025 18:32:37] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-25 18:32:53,056 - INFO - Request to fetch chat history for category 'ADMIN'.
+2025-09-25 18:32:53,058 - INFO - Found 26 messages for category 'ADMIN'.
+2025-09-25 18:32:53,058 - INFO - 127.0.0.1 - - [25/Sep/2025 18:32:53] "GET /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-25 18:32:53,066 - INFO - 127.0.0.1 - - [25/Sep/2025 18:32:53] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-25 18:32:53,072 - INFO - 127.0.0.1 - - [25/Sep/2025 18:32:53] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 18:32:57,695 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-25 18:32:57,696 - INFO - Found 80 messages for category 'L&D'.
+2025-09-25 18:32:57,698 - INFO - 127.0.0.1 - - [25/Sep/2025 18:32:57] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-25 18:32:57,705 - INFO - 127.0.0.1 - - [25/Sep/2025 18:32:57] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 18:33:07,702 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-25 18:33:07,703 - INFO - Found 28 messages for category 'HR'.
+2025-09-25 18:33:07,704 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:07] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-25 18:33:07,712 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:07] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-25 18:33:07,715 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:07] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 18:33:14,374 - INFO - Request to fetch chat history for category 'ADMN'.
+2025-09-25 18:33:14,375 - INFO - Found 0 messages for category 'ADMN'.
+2025-09-25 18:33:14,375 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:14] "GET /chat/history/ADMN HTTP/1.1" 200 -
+2025-09-25 18:33:19,438 - INFO - Request to fetch chat history for category 'ADMIN'.
+2025-09-25 18:33:19,439 - INFO - Found 26 messages for category 'ADMIN'.
+2025-09-25 18:33:19,440 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:19] "GET /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-25 18:33:24,448 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:24] "OPTIONS /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-25 18:33:24,451 - INFO - Request to delete chat session 'ADMIN'.
+2025-09-25 18:33:24,458 - INFO - Chat session 'ADMIN' deleted successfully.
+2025-09-25 18:33:24,459 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:24] "DELETE /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-25 18:33:24,464 - INFO - Request to fetch chat history for category 'ADMIN'.
+2025-09-25 18:33:24,466 - INFO - Found 0 messages for category 'ADMIN'.
+2025-09-25 18:33:24,467 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:24] "GET /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-25 18:33:29,087 - INFO - Request to fetch chat history for category 'ADMIN'.
+2025-09-25 18:33:29,088 - INFO - Found 0 messages for category 'ADMIN'.
+2025-09-25 18:33:29,088 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:29] "GET /chat/history/ADMIN HTTP/1.1" 200 -
+2025-09-25 18:33:29,092 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:29] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-25 18:33:29,095 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:29] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 18:33:32,646 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-25 18:33:32,647 - INFO - Found 28 messages for category 'HR'.
+2025-09-25 18:33:32,648 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:32] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-25 18:33:32,656 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:32] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 18:33:35,254 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-25 18:33:35,255 - INFO - Found 80 messages for category 'L&D'.
+2025-09-25 18:33:35,256 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:35] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-25 18:33:35,260 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:35] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-25 18:33:35,263 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:35] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 18:33:40,151 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-25 18:33:40,151 - INFO - Found 28 messages for category 'HR'.
+2025-09-25 18:33:40,152 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:40] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-25 18:33:40,161 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:40] "POST /chat/start HTTP/1.1" 200 -
+2025-09-25 18:33:51,413 - INFO - 127.0.0.1 - - [25/Sep/2025 18:33:51] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-25 18:33:51,416 - INFO - Found 2 vector store(s) for category 'HR'
+2025-09-25 18:33:51,416 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\Case Study AI Quiz Generator Platform
+2025-09-25 18:33:51,444 - INFO - Loading faiss with AVX2 support.
+2025-09-25 18:33:51,533 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-25 18:33:51,590 - INFO - Successfully loaded: Case Study AI Quiz Generator Platform
+2025-09-25 18:33:51,590 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test4
+2025-09-25 18:33:51,600 - INFO - Successfully loaded: test4
+2025-09-25 18:33:51,600 - INFO - Merging 1 additional vector store(s)...
+2025-09-25 18:33:51,601 - INFO - Successfully merged vector store 1/1
+2025-09-25 18:33:51,601 - INFO - All vector stores merged successfully.
+2025-09-25 18:33:51,601 - INFO - Total documents in merged vector store: 8
+2025-09-25 18:34:00,718 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-25 18:34:00,718 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'Case Study AI Quiz Generator Platform.pdf', 'page': 1}]
+2025-09-25 18:34:00,754 - INFO - 127.0.0.1 - - [25/Sep/2025 18:34:00] "POST /chat HTTP/1.1" 200 -

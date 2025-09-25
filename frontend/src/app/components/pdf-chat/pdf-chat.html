@@ -1,52 +1,58 @@
-<div class="chat-section-container">
-  <h2>Chat With Your PDFs</h2>
-
-  <!-- Category Selector -->
-  <div class="category-selector">
-    <label for="category">Select a Folder to Chat With:</label>
-    <select id="category" [(ngModel)]="selectedCategoryId" (change)="onCategoryChange()">
-      <option value="" disabled>-- Choose a Folder --</option>
-      <option *ngFor="let category of categories$ | async" [value]="category.id">
-        {{ category.name }}
-      </option>
-    </select>
+<div class="bs23-chat-container">
+  <!-- Header with Brain Station 23 Branding -->
+  <div class="chat-header">
+    <div class="header-content">
+      <div class="header-text">
+        <h2>Document Intelligence Hub</h2>
+        <p>Converse with your PDF knowledge base.</p>
+      </div>
+    </div>
+    <!-- Category Selector -->
+    <div class="category-selector">
+      <select id="category" [(ngModel)]="selectedCategoryId" (change)="onCategoryChange()">
+        <option value="" disabled>-- Select a Project Folder --</option>
+        <option *ngFor="let category of categories$ | async" [value]="category.id">
+          {{ category.name }}
+        </option>
+      </select>
+    </div>
   </div>
 
-  <!-- Chat UI -->
+  <!-- Chat Area -->
   <div class="chat-window">
-    <div class="chat-messages">
-      
-      <!-- Existing loop for displaying messages -->
-      <div *ngFor="let msg of messages" class="message-container" [ngClass]="msg.sender">
-        <div class="message" [ngClass]="{'user-message': msg.sender === 'user', 'ai-message': msg.sender === 'ai'}">
-          <p>{{ msg.text }}</p>
-          <button *ngIf="msg.sender === 'ai' && msg.source" class="source-btn" (click)="viewSource(msg.source)">
-            View Source
-          </button>
-        </div>
+    <div class="chat-messages" #chatMessagesContainer>
+      <!-- Message Loop -->
+      <div *ngFor="let msg of messages" class="message" [ngClass]="{'user-message': msg.sender === 'user', 'ai-message': msg.sender === 'ai'}">
+        <p [innerHTML]="msg.text"></p>
+        <button *ngIf="msg.sender === 'ai' && msg.source" class="source-btn" (click)="viewSource(msg.source)">
+          View Source
+        </button>
       </div>
 
-      <!-- 
-        FIX 1: Changed 'isAiThinking' to 'isLoading'.
-        This now correctly shows the indicator when fetching history or waiting for the AI.
-      -->
-      <div *ngIf="isLoading" class="typing-indicator-container">
+      <!-- Typing Indicator for when the AI is "thinking" -->
+      <div *ngIf="isLoading" class="ai-message typing-indicator-container">
         <div class="typing-dot"></div>
         <div class="typing-dot"></div>
         <div class="typing-dot"></div>
       </div>
-
     </div>
-    <div class="chat-input-area">
-      <!-- FIX 2: Changed ngModel from 'userMessage' to 'userInput' to match the TypeScript file -->
-      <input
-        type="text"
-        [(ngModel)]="userInput"
-        (keyup.enter)="sendMessage()"
-        placeholder="Ask a question about the PDFs in the selected folder..."
-        [disabled]="isLoading"
-      />
-      <button (click)="sendMessage()" [disabled]="isLoading || !userInput.trim()">Send</button>
+    
+    <!-- Input Area -->
+    <div class="chat-input-wrapper">
+      <div class="chat-input-area">
+        <input
+          type="text"
+          [(ngModel)]="userInput"
+          (keyup.enter)="sendMessage()"
+          placeholder="Ask a question about the documents..."
+          [disabled]="isLoading || !selectedCategoryId"
+        />
+        <button (click)="sendMessage()" [disabled]="isLoading || !userInput.trim()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 11L12 6L17 11M12 18V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </div>

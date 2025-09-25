@@ -1,82 +1,128 @@
-// Style the component's host element to be a flex container
+// Style the component's host element for proper layout
 :host {
   display: flex;
   flex-direction: column;
-  flex-grow: 1; // Allows it to fill the space in app.component
-  min-height: 0; // Prevents the flex item from overflowing its container
+  flex-grow: 1;
+  min-height: 0;
+  background-color: #343541; /* Dark background color */
+  color: #ECECF1;
 }
- 
-// Main container for the AI chat section
+
+// Main container for the chat section
 .chat-section-container {
   display: flex;
   flex-direction: column;
-  height: 100%; // Make it fill the host element
+  height: 100%;
 }
- 
-// The container for the actual chat window (messages + input)
+
+// Header for the chat
+.chat-header {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+}
+
+.chat-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+// Chat window containing messages
 .chat-window {
   display: flex;
   flex-direction: column;
-  flex-grow: 1; // This is crucial, it makes the window take all remaining space
-  overflow: hidden; // Important: prevents double scrollbars
+  flex-grow: 1;
+  overflow: hidden;
 }
- 
-// The area where messages are displayed
+
+// Message display area
 .chat-messages {
-  flex-grow: 1; // Makes the message area expand to fill the available space
-  overflow-y: auto; // The key to making ONLY this area scrollable
-  padding: 0 1rem;
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Space between messages */
 }
- 
-// Container for each individual message to help with alignment
+
+// Wrapper for each message to manage alignment
+.message-wrapper {
+  display: flex;
+  width: 100%;
+}
+
 .message {
-  max-width: 85%;
-  padding: 0.75rem 1.25rem;
-  border-radius: 20px;
-  line-height: 1.4;
-  margin-bottom: 1rem;
+  max-width: 80%;
+  padding: 1rem;
+  border-radius: 12px;
+  line-height: 1.5;
 }
- 
+
 .user-message {
-  background-color: #26a69a;
-  color: white;
-  align-self: flex-end; // Pushes user messages to the right
+  background-color: #4A90E2; /* A modern blue for user messages */
+  margin-left: auto; /* Pushes user messages to the right */
 }
- 
+
 .ai-message {
-  background-color: #f1f1f1;
-  color: #333;
-  align-self: flex-start; // Keeps AI messages on the left
+  background-color: #444654; /* Darker grey for AI messages */
+  margin-right: auto; /* Keeps AI messages on the left */
 }
- 
-// The area for the text input and send button
+
+// Container for the input area at the bottom
+.chat-input-container {
+  padding: 1rem 1.5rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+// The text input and send button area
 .chat-input-area {
   display: flex;
-  gap: 0.75rem; // Adds space between the input and button
-  padding: 1rem;
-  border-top: 1px solid #e0e0e0;
-  background-color: #ffffff;
-  flex-shrink: 0; // Prevents the input area from shrinking
+  align-items: center;
+  background-color: #40414F;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 0.5rem 0.75rem;
 }
- 
+
 .chat-input-area input {
   flex-grow: 1;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-}
- 
-.chat-input-area button {
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  background: transparent;
   border: none;
-  background-color: #26a69a;
-  color: white;
+  color: #ECECF1;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.chat-input-area input:focus {
+  outline: none;
+}
+
+.chat-input-area button {
+  background-color: transparent;
+  border: none;
+  color: #8E8EA0;
   cursor: pointer;
-  font-weight: bold;
- 
-  &:hover {
-    background-color: #00897b;
-  }
+  padding: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-input-area button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ECECF1;
+}
+
+.footer-text {
+  font-size: 0.75rem;
+  color: #8E8EA0;
+  text-align: center;
+  margin-top: 1rem;
 }

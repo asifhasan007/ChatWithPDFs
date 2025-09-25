@@ -1,57 +1,72 @@
-<!-- Your Modal component remains the same -->
+<!-- Modal for displaying chat history -->
 <app-modal [isVisible]="isHistoryModalVisible" (close)="closeHistoryModal()">
   <app-chat-history *ngIf="selectedCategoryIdForHistory" [categoryId]="selectedCategoryIdForHistory"></app-chat-history>
 </app-modal>
 
-
+<!-- Main File Manager Container -->
 <div class="file-manager-container">
-  <h2>My Folders</h2>
+  <div class="fm-header">
+    <h2>My Folders</h2>
+  </div>
 
-
-  <!-- Input to create a new folder -->
+  <!-- Form to create a new folder -->
   <div class="add-category-form">
     <input
       type="text"
       [(ngModel)]="newCategoryName"
-      placeholder="Enter new folder name..."
+      placeholder="Create a new folder..."
       (keyup.enter)="createFolder()"
     />
-    <button (click)="createFolder()">Create Folder</button>
+    <button (click)="createFolder()" [disabled]="!newCategoryName.trim()">
+      +
+    </button>
   </div>
 
-
-  <!-- List of existing folders -->
+  <!-- List of all folders -->
   <div class="category-list">
-    <!-- FIX 1: Added click handler and active class binding -->
-    <div *ngFor="let category of categories$ | async" 
-         class="category-item"
-         (click)="selectCategory(category.id)"
-         [class.active]="activeCategoryId === category.id">
-         
+    <div *ngIf="(categories$ | async)?.length === 0" class="empty-state">
+      <p>No folders found. Create one to get started!</p>
+    </div>
+    
+    <div 
+      *ngFor="let category of categories$ | async" 
+      class="category-item"
+      [class.active]="activeCategoryId === category.id"
+      (click)="selectCategory(category.id)"
+    >
       <div class="category-header">
         <div class="category-name-wrapper">
+          <span class="folder-icon">📁</span>
           <h3>{{ category.name }}</h3>
           <div *ngIf="category.isUploading" class="spinner"></div>
         </div>
         <div class="category-actions">
           <input type="file" #fileInput (change)="onFileSelected($event, category.id)" hidden accept=".pdf">
-          <!-- FIX 2: Added $event.stopPropagation() to all button clicks -->
-          <button class="icon-btn" (click)="fileInput.click(); $event.stopPropagation()" [disabled]="category.isUploading" title="Upload PDF">📁+</button>
-          <button class="icon-btn" (click)="openHistoryModal($event, category.id)" title="View Previous Chats">📜</button>
-          <button class="icon-btn delete" (click)="deleteFolder($event, category.id)" title="Delete Folder">🗑️</button>
+          <button class="icon-btn" (click)="fileInput.click(); $event.stopPropagation()" [disabled]="category.isUploading" title="Upload PDF">
+            <!-- SVG for Upload -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16h6v-6h4l-7-7-7 7h4v6zm-4 2h14v2H5v-2z"/></svg>
+          </button>
+          <button class="icon-btn" (click)="openHistoryModal($event, category.id)" title="View Previous Chats">
+            <!-- SVG for History -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89.07.14L9 12H6a7 7 0 0 1 7-7 7 7 0 0 1 7 7 7 7 0 0 1-7 7v2a9 9 0 0 0 9-9 9 9 0 0 0-9-9z"/><path d="M12 8v5l4.25 2.52.75-1.23-3.5-2.07V8z"/></svg>
+          </button>
+          <button class="icon-btn delete" (click)="deleteFolder($event, category.id)" title="Delete Folder">
+            <!-- SVG for Delete -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+          </button>
         </div>
       </div>
-      <ul class="pdf-list">
+      <ul class="pdf-list" *ngIf="category.pdfs && category.pdfs.length > 0">
         <li *ngFor="let pdf of category.pdfs" class="pdf-item">
-          <span>{{ pdf.name }}</span>
-          <button class="delete-btn" (click)="deletePdf($event, category.id, pdf.id)">
+          <span class="pdf-name">{{ pdf.name }}</span>
+          <button class="delete-btn" (click)="deletePdf($event, category.id, pdf.id)" title="Delete PDF">
             &times;
           </button>
         </li>
-        <li *ngIf="category.pdfs.length === 0" class="no-pdfs">
-          No PDFs in this folder.
-        </li>
       </ul>
+      <div class="no-pdfs-message" *ngIf="!category.pdfs || category.pdfs.length === 0">
+        <p>No PDFs uploaded yet.</p>
+      </div>
     </div>
   </div>
 </div>

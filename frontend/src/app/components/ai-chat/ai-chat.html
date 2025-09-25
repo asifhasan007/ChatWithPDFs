@@ -1,22 +1,36 @@
 <div class="chat-section-container">
-  <h2>General AI Assistant</h2>
-  
+  <!-- Chat Header -->
+  <div class="chat-header">
+    <h2>AI Assistant</h2>
+  </div>
+
   <!-- Chat UI -->
   <div class="chat-window">
     <div class="chat-messages">
       <!-- Loop through and display messages -->
-      <div *ngFor="let msg of messages" class="message" [ngClass]="{'user-message': msg.sender === 'user', 'ai-message': msg.sender === 'ai'}">
-        <p>{{ msg.text }}</p>
+      <div *ngFor="let msg of messages" class="message-wrapper">
+        <div class="message" [ngClass]="{'user-message': msg.sender === 'user', 'ai-message': msg.sender === 'ai'}">
+          <p>{{ msg.text }}</p>
+        </div>
       </div>
     </div>
+  </div>
+
+  <!-- Chat Input Area -->
+  <div class="chat-input-container">
     <div class="chat-input-area">
-      <input 
-        type="text" 
-        [(ngModel)]="userMessage" 
-        (keyup.enter)="sendMessage()" 
+      <input
+        type="text"
+        [(ngModel)]="userMessage"
+        (keyup.enter)="sendMessage()"
         placeholder="Ask for any solution or help you need..."
       />
-      <button (click)="sendMessage()">Send</button>
+      <button (click)="sendMessage()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+        </svg>
+      </button>
     </div>
+    <p class="footer-text">This is a custom-built AI interface inspired by ChatGPT.</p>
   </div>
 </div>
