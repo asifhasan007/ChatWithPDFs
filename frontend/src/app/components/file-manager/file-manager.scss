@@ -1,174 +1,496 @@
-:host {
-  height: 100%;
+// Brain Station 23 Brand Colors
+:root {
+  --bs23-primary: #1D9EDA; // Curious Blue
+  --bs23-secondary: #FFC44A; // Yellow/Gold
+  --bs23-success: #22C55E; // Green accent
+  --bs23-white: #FFFFFF;
+  --bs23-gray-50: #F8FAFC;
+  --bs23-gray-100: #F1F5F9;
+  --bs23-gray-200: #E2E8F0;
+  --bs23-gray-300: #CBD5E1;
+  --bs23-gray-400: #94A3B8;
+  --bs23-gray-500: #64748B;
+  --bs23-gray-600: #475569;
+  --bs23-gray-700: #334155;
+  --bs23-gray-800: #1E293B;
+  --bs23-gray-900: #0F172A;
 }
 
-.file-manager-container {
-  background-color: #ffffff;
-  border-right: 1px solid #e9ecef;
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+.bs23-file-manager {
+  height: 100vh;
+  /* Set a fixed height to the full viewport height */
+  overflow-y: auto;
+  /* Enable vertical scrolling when content overflows */
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+  background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%);
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  width: 400px;
+  padding-right: 10px;
 }
 
-.fm-header {
-  padding: 1.5rem 1.5rem 1rem;
-  border-bottom: 1px solid #e9ecef;
-  
-  h2 {
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #000;
+
+// Header Section
+.bs23-header {
+  background: var(--bs23-white);
+  border-bottom: 1px solid var(--bs23-gray-200);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+  .bs23-header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
   }
-}
 
-/* Form for adding a new folder */
-.add-category-form {
-  display: flex;
-  padding: 1rem 1.5rem;
-  gap: 0.5rem;
-  
-  input {
-    flex-grow: 1;
-    padding: 0.6rem 1rem;
-    border: 1px solid #ced4da;
-    border-radius: 8px;
-    font-size: 0.9rem;
+  .bs23-title-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 
-    &:focus {
-      outline: none;
-      border-color: #E41F26;
-      box-shadow: 0 0 0 2px rgba(228, 31, 38, 0.15);
+  .bs23-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--bs23-primary) 0%, var(--bs23-secondary) 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(29, 158, 218, 0.25);
+    cursor: pointer;
+
+    .bs23-main-icon {
+      width: 24px;
+      height: 24px;
+      color: var(--bs23-white);
     }
   }
 
-  button {
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: #000;
-    color: white;
+  .bs23-title-text h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--bs23-gray-900);
+    margin: 0;
+    line-height: 1.2;
+
+    .bs23-title-text h3 {
+      cursor: pointer;
+    }
+  }
+
+  .bs23-subtitle {
+    color: var(--bs23-gray-600);
+    font-size: 0.875rem;
+    margin: 0.25rem 0 0 0;
+    font-weight: 500;
+  }
+
+  .bs23-stats {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .bs23-stat-item {
+    background: var(--bs23-gray-100);
+    padding: 0.5rem 1rem;
     border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--bs23-gray-700);
+  }
+}
+
+// Actions Bar
+.bs23-actions-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+
+
+  .bs23-input-group {
+    display: flex;
+    gap: 1rem;
+    max-width: 500px;
+    
+  }
+
+  .bs23-input {
+    flex: 1;
+    padding-left: 20px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+    background: var(--bs23-white);
+    border: 1px dashed black;
+
+    &:focus {
+      outline: none;
+      border-color: var(--bs23-primary);
+      box-shadow: 0 0 0 3px rgba(29, 158, 218, 0.1);
+    }
+
+    &::placeholder {
+      color: var(--bs23-gray-400);
+    }
+  }
+
+  .bs23-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
     cursor: pointer;
-    font-size: 1.5rem;
-    font-weight: 300;
+    transition: all 0.2s ease;
+    text-decoration: none;
 
-    &:hover { background-color: #333; }
-    &:disabled { background-color: #adb5bd; }
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  .bs23-btn-primary {
+    background: var(--bs23-primary);
+    color: var(--bs23-white);
+
+    &:hover:not(:disabled) {
+      background: #1688C7;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(29, 158, 218, 0.25);
+    }
   }
 }
 
-/* List of folders */
-.category-list {
-  overflow-y: auto;
-  flex-grow: 1;
-  padding: 0 1rem;
+// Content Area
+.bs23-content-area {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+
 }
 
-.empty-state {
+// Empty State
+.bs23-empty-state {
   text-align: center;
-  padding: 3rem 1rem;
-  color: #6c757d;
-}
+  padding: 4rem 2rem;
 
-.category-item {
-  background: #f8f9fa;
-  border: 1px solid #e9ecef;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  
-  &.active, &:hover {
-    border-color: #E41F26;
-    background-color: #fff5f5;
+  .bs23-empty-illustration {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 2rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--bs23-gray-800);
+    margin: 0 0 0.5rem 0;
+  }
+
+  p {
+    color: var(--bs23-gray-600);
+    font-size: 0.875rem;
+    margin: 0;
   }
 }
 
-.category-header {
+// Projects Grid
+.bs23-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+// Project Card
+.bs23-project-card {
+  background: var(--bs23-white);
+  border-radius: 12px;
+  border: 2px solid var(--bs23-gray-200);
+  overflow: hidden;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin-right: 10px;
+  padding-right: 20px;
+
+  &:hover {
+    border-color: var(--bs23-primary);
+    box-shadow: 0 8px 25px rgba(29, 158, 218, 0.15);
+    transform: translateY(-2px);
+  }
+
+  &.bs23-active {
+    border-color: var(--bs23-primary);
+    box-shadow: 0 0 0 3px rgba(29, 158, 218, 0.1);
+  }
+}
+
+// Card Header
+.bs23-card-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--bs23-gray-100);
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+  align-items: flex-start;
+
+  .bs23-project-info {
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+  }
+
+  .bs23-project-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--bs23-primary) 0%, var(--bs23-secondary) 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      color: var(--bs23-white);
+    }
+  }
+
+  .bs23-project-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--bs23-gray-900);
+    margin: 0 0 0.25rem 0;
+    line-height: 1.3;
+  }
+
+  .bs23-project-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .bs23-doc-count {
+    font-size: 0.75rem;
+    color: var(--bs23-gray-500);
+    font-weight: 500;
+  }
+
+  .bs23-loading-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--bs23-primary);
+    font-weight: 500;
+  }
+
+  .bs23-card-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  .bs23-action-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--bs23-gray-300);
+    border-radius: 6px;
+    background: var(--bs23-white);
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      color: var(--bs23-gray-600);
+    }
+
+    &:hover:not(:disabled) {
+      border-color: var(--bs23-primary);
+      background: rgba(29, 158, 218, 0.05);
+
+      svg {
+        color: var(--bs23-primary);
+      }
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  .bs23-delete-btn:hover:not(:disabled) {
+    border-color: #EF4444;
+    background: rgba(239, 68, 68, 0.05);
+
+    svg {
+      color: #EF4444;
+    }
+  }
 }
 
-.category-name-wrapper {
+// Documents Section
+.bs23-documents-section {
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.bs23-documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.bs23-document-item {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  padding: 0.75rem;
+  background: var(--bs23-gray-50);
+  border-radius: 8px;
+  transition: all 0.2s ease;
 
-  .folder-icon { font-size: 1.2rem; }
-  h3 { margin: 0; font-size: 1rem; font-weight: 500; }
-}
-
-.category-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.icon-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1.2rem;
-  color: #6c757d;
-  padding: 0.25rem;
-
-  svg { width: 20px; height: 20px; }
-  &:hover { color: #000; }
-  
-  &.delete {
-    color: #dc3545;
-    &:hover { color: #a4202d; }
+  &:hover {
+    background: var(--bs23-gray-100);
   }
-}
 
-/* List of PDFs within a folder */
-.pdf-list {
-  list-style: none;
-  padding: 0 1rem 0.5rem;
-  margin: 0;
-  border-top: 1px solid #e9ecef;
-}
+  .bs23-doc-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.pdf-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.6rem 0.25rem;
-  font-size: 0.9rem;
+    svg {
+      width: 18px;
+      height: 18px;
+      color: var(--bs23-primary);
+    }
+  }
 
-  .delete-btn {
-    background: none;
+  .bs23-doc-name {
+    flex: 1;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--bs23-gray-700);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .bs23-remove-doc {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
-    color: #dc3545;
+    background: none;
     cursor: pointer;
-    font-size: 1.2rem;
-    opacity: 0.6;
-    &:hover { opacity: 1; }
+    border-radius: 4px;
+    transition: all 0.2s ease;
+
+    svg {
+      width: 14px;
+      height: 14px;
+      color: var(--bs23-gray-400);
+    }
+
+    &:hover {
+      background: rgba(239, 68, 68, 0.1);
+
+      svg {
+        color: #EF4444;
+      }
+    }
   }
 }
 
-.no-pdfs-message {
-  padding: 1rem;
+// Empty Documents State
+.bs23-empty-docs {
   text-align: center;
-  font-size: 0.85rem;
-  color: #6c757d;
-  border-top: 1px solid #e9ecef;
+  padding: 2rem 1rem;
+
+  .bs23-empty-docs-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: var(--bs23-gray-500);
+    margin: 0;
+  }
 }
 
-/* Spinner animation */
-.spinner {
-  width: 16px;
-  height: 16px;
-  border: 2px solid #ccc;
-  border-top-color: #E41F26;
+// Loading Spinner
+.bs23-spinner {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--bs23-gray-300);
+  border-top: 2px solid var(--bs23-primary);
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  animation: bs23-spin 1s linear infinite;
 }
 
-@keyframes spin {
-  to { transform: rotate(360deg); }
+@keyframes bs23-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .bs23-header .bs23-header-content {
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .bs23-actions-bar {
+    padding: 1rem;
+  }
+
+  .bs23-content-area {
+    padding: 0 1rem 2rem;
+  }
+
+  .bs23-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .bs23-card-header {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+
+    .bs23-card-actions {
+      margin-left: 0;
+      justify-content: center;
+    }
+  }
 }

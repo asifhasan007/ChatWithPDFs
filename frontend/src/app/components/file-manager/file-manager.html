@@ -3,69 +3,162 @@
   <app-chat-history *ngIf="selectedCategoryIdForHistory" [categoryId]="selectedCategoryIdForHistory"></app-chat-history>
 </app-modal>
 
-<!-- Main File Manager Container -->
-<div class="file-manager-container">
-  <div class="fm-header">
-    <h2>My Folders</h2>
-  </div>
-
-  <!-- Form to create a new folder -->
-  <div class="add-category-form">
-    <input
-      type="text"
-      [(ngModel)]="newCategoryName"
-      placeholder="Create a new folder..."
-      (keyup.enter)="createFolder()"
-    />
-    <button (click)="createFolder()" [disabled]="!newCategoryName.trim()">
-      +
-    </button>
-  </div>
-
-  <!-- List of all folders -->
-  <div class="category-list">
-    <div *ngIf="(categories$ | async)?.length === 0" class="empty-state">
-      <p>No folders found. Create one to get started!</p>
-    </div>
-    
-    <div 
-      *ngFor="let category of categories$ | async" 
-      class="category-item"
-      [class.active]="activeCategoryId === category.id"
-      (click)="selectCategory(category.id)"
-    >
-      <div class="category-header">
-        <div class="category-name-wrapper">
-          <span class="folder-icon">📁</span>
-          <h3>{{ category.name }}</h3>
-          <div *ngIf="category.isUploading" class="spinner"></div>
+<!-- Main Document Manager Container -->
+<div class="bs23-file-manager">
+  <!-- Header Section -->
+  <div class="bs23-header">
+    <div class="bs23-header-content">
+      <div class="bs23-title-section">
+        <div class="bs23-icon-wrapper">
+          <svg class="bs23-main-icon" viewBox="0 0 24 24" fill="currentColor" onclick="window.location.reload()">
+            <path d="M20 6h-2.18l-1.41-1.41c-.37-.37-.88-.59-1.41-.59H8c-.53 0-1.04.21-1.41.59L5.18 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/>
+          </svg>
         </div>
-        <div class="category-actions">
-          <input type="file" #fileInput (change)="onFileSelected($event, category.id)" hidden accept=".pdf">
-          <button class="icon-btn" (click)="fileInput.click(); $event.stopPropagation()" [disabled]="category.isUploading" title="Upload PDF">
-            <!-- SVG for Upload -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16h6v-6h4l-7-7-7 7h4v6zm-4 2h14v2H5v-2z"/></svg>
-          </button>
-          <button class="icon-btn" (click)="openHistoryModal($event, category.id)" title="View Previous Chats">
-            <!-- SVG for History -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89.07.14L9 12H6a7 7 0 0 1 7-7 7 7 0 0 1 7 7 7 7 0 0 1-7 7v2a9 9 0 0 0 9-9 9 9 0 0 0-9-9z"/><path d="M12 8v5l4.25 2.52.75-1.23-3.5-2.07V8z"/></svg>
-          </button>
-          <button class="icon-btn delete" (click)="deleteFolder($event, category.id)" title="Delete Folder">
-            <!-- SVG for Delete -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
-          </button>
+        <div class="bs23-title-text">
+          <h3 onclick="window.location.reload()" style="cursor: pointer;">File Management</h3>
         </div>
       </div>
-      <ul class="pdf-list" *ngIf="category.pdfs && category.pdfs.length > 0">
-        <li *ngFor="let pdf of category.pdfs" class="pdf-item">
-          <span class="pdf-name">{{ pdf.name }}</span>
-          <button class="delete-btn" (click)="deletePdf($event, category.id, pdf.id)" title="Delete PDF">
-            &times;
-          </button>
-        </li>
-      </ul>
-      <div class="no-pdfs-message" *ngIf="!category.pdfs || category.pdfs.length === 0">
-        <p>No PDFs uploaded yet.</p>
+      <div class="bs23-stats">
+        <span class="bs23-stat-item">{{ (categories$ | async)?.length || 0 }} Folders</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Actions Bar -->
+  <div class="bs23-actions-bar">
+    <div class="bs23-create-section">
+      <div class="bs23-input-group">
+        <input
+          type="text"
+          [(ngModel)]="newCategoryName"
+          placeholder="Create New Folder"
+          class="bs23-input"
+          (keyup.enter)="createFolder()"
+        />
+        <button 
+          class="bs23-btn bs23-btn-primary" 
+          (click)="createFolder()" 
+          [disabled]="!newCategoryName.trim()"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+          </svg>
+          Create Folder
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Grid -->
+  <div class="bs23-content-area">
+    <!-- Empty State -->
+    <div *ngIf="(categories$ | async)?.length === 0" class="bs23-empty-state">
+      <div class="bs23-empty-illustration">
+        <svg viewBox="0 0 120 120" fill="none">
+          <circle cx="60" cy="60" r="50" fill="#E8F4FD" stroke="#1D9EDA" stroke-width="2" stroke-dasharray="5,5"/>
+          <path d="M40 50h40v30H40z" fill="#FFC44A" opacity="0.3"/>
+          <path d="M35 45h50v5H35z" fill="#1D9EDA"/>
+        </svg>
+      </div>
+      <p>Create New Folder</p>
+    </div>
+    
+    <!-- Projects Grid -->
+    <div class="bs23-projects-grid">
+      <div 
+        *ngFor="let category of categories$ | async" 
+        class="bs23-project-card"
+        [class.bs23-active]="activeCategoryId === category.id"
+        (click)="selectCategory(category.id)"
+      >
+        <!-- Card Header -->
+        <div class="bs23-card-header">
+          <div class="bs23-project-info">
+            <div class="bs23-project-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+              </svg>
+            </div>
+            <div class="bs23-project-details">
+              <h3 class="bs23-project-name">{{ category.name }}</h3>
+              <div class="bs23-project-meta">
+                <span class="bs23-doc-count">{{ category.pdfs?.length || 0 }} documents</span>
+                <div *ngIf="category.isUploading" class="bs23-loading-indicator">
+                  <div class="bs23-spinner"></div>
+                  <span>Processing...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Action Buttons -->
+          <div class="bs23-card-actions">
+            <input type="file" #fileInput (change)="onFileSelected($event, category.id)" hidden accept=".pdf">
+            <button 
+              class="bs23-action-btn bs23-upload-btn" 
+              (click)="fileInput.click(); $event.stopPropagation()" 
+              [disabled]="category.isUploading" 
+              title="Upload Document"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                <path d="M12 11l-2 2h4l-2-2z"/>
+              </svg>
+            </button>
+            <button 
+              class="bs23-action-btn bs23-history-btn" 
+              (click)="openHistoryModal($event, category.id)" 
+              title="View Chat History"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm3.5 6L12 10.5 8.5 8 12 6l3.5 2z"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </button>
+            <button 
+              class="bs23-action-btn bs23-delete-btn" 
+              (click)="deleteFolder($event, category.id)" 
+              title="Delete Project"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Documents List -->
+        <div class="bs23-documents-section">
+          <div *ngIf="category.pdfs && category.pdfs.length > 0" class="bs23-documents-list">
+            <div *ngFor="let pdf of category.pdfs" class="bs23-document-item">
+              <div class="bs23-doc-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                </svg>
+              </div>
+              <span class="bs23-doc-name">{{ pdf.name }}</span>
+              <button 
+                class="bs23-remove-doc" 
+                (click)="deletePdf($event, category.id, pdf.id)" 
+                title="Remove Document"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          
+          <div *ngIf="!category.pdfs || category.pdfs.length === 0" class="bs23-empty-docs">
+            <!-- <div class="bs23-empty-docs-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M24 4L20 8H8C6.9 8 6 8.9 6 10V38C6 39.1 6.9 40 8 40H40C41.1 40 42 39.1 42 38V10C42 8.9 41.1 8 40 8H28L24 4Z" fill="#E8F4FD"/>
+                <path d="M24 20V28M20 24H28" stroke="#1D9EDA" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div> -->
+            <p>Upload your first document to get started</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

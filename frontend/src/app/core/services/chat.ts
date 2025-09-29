@@ -2,10 +2,10 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, of, throwError } from 'rxjs';
 import { tap, catchError, map } from 'rxjs/operators';
 import { ApiService } from './api';
- 
+
 import { Category, PDF } from '../models/category.model';
 import { ChatMessage, ChatSession } from '../models/chat.model';
- 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -15,18 +15,18 @@ export class ChatService {
   }
   private categoriesSubject = new BehaviorSubject<Category[]>([]);
   public categories$ = this.categoriesSubject.asObservable();
- 
+
   private currentPdfSessionId = new BehaviorSubject<string | null>(null);
   public isPdfSessionActive$ = this.currentPdfSessionId.asObservable().pipe(map(id => !!id));
- 
+
   // --- A key for storing our state in local storage ---
   private readonly STORAGE_KEY = 'chat_app_state';
- 
+
   // --- INJECT the ApiService in the constructor ---
   constructor(private apiService: ApiService) {
     this.loadStateFromStorage();
   }
- 
+
   // --- Loads state from local storage if available ---
   private loadStateFromStorage(): void {
     const savedState = localStorage.getItem(this.STORAGE_KEY);
@@ -37,16 +37,16 @@ export class ChatService {
       this.loadInitialDataFromServer();
     }
   }
- 
+
   // --- Saves the current state to local storage ---
- 
+
   private saveStateToStorage(): void {
     const currentState = this.categoriesSubject.getValue();
     localStorage.setItem(this.STORAGE_KEY, JSON.stringify(currentState));
   }
- 
+
   // --- Fetches the initial data from the server ---
- 
+
   private loadInitialDataFromServer(): void {
     this.apiService.getCategories().subscribe({
       next: (categoryNames: string[]) => {
@@ -65,9 +65,9 @@ export class ChatService {
       }
     });
   }
- 
+
   // --- Category and PDF management methods ---
- 
+
   addCategory(name: string): void {
     this.apiService.createCategory(name).pipe(
       tap(() => {
@@ -90,15 +90,15 @@ export class ChatService {
       catchError((err: any) => { return throwError(() => err); })
     ).subscribe();
   }
- 
+
   uploadPdf(categoryId: string, file: File): void {
     const categories = this.categoriesSubject.getValue();
     const categoryIndex = categories.findIndex(c => c.id === categoryId);
     if (categoryIndex === -1) return;
- 
+
     categories[categoryIndex].isUploading = true;
     this.categoriesSubject.next([...categories]);
- 
+
     this.apiService.uploadPdf(categoryId, file).subscribe({
       next: (response) => {
         const newPdf: PDF = { id: file.name, name: file.name, uploadDate: new Date() };
@@ -115,17 +115,17 @@ export class ChatService {
       }
     });
   }
-      deletePdf(categoryId: string, pdfId: string): void {
+  deletePdf(categoryId: string, pdfId: string): void {
     if (!confirm(`Are you sure you want to delete the file "${pdfId}"? This cannot be undone.`)) {
       return;
     }
- 
+
     this.apiService.deletePdf(categoryId, pdfId).subscribe({
       next: () => {
         console.log(`Successfully deleted PDF: ${pdfId}`);
         const categories = this.categoriesSubject.getValue();
         const categoryIndex = categories.findIndex(c => c.id === categoryId);
- 
+
         if (categoryIndex !== -1) {
           categories[categoryIndex].pdfs = categories[categoryIndex].pdfs.filter(pdf => pdf.id !== pdfId);
           this.categoriesSubject.next([...categories]);
@@ -138,8 +138,8 @@ export class ChatService {
       }
     });
   }
-          // --- Chat-related methods ---
- 
+  // --- Chat-related methods ---
+
   public startNewPdfChat(categoryId: string): Observable<void> {
     return this.apiService.startChatSession(categoryId).pipe(
       map((response: any) => { // Added 'any' type for now to avoid compile errors
@@ -148,7 +148,7 @@ export class ChatService {
       })
     );
   }
- 
+
   getPdfChatResponse(message: string): Observable<ChatMessage> {
     const sessionId = this.currentPdfSessionId.getValue();
     if (!sessionId) {
@@ -158,42 +158,58 @@ export class ChatService {
     return this.apiService.sendChatMessage(sessionId, message).pipe(
       map(response => {
         // Transform backend source format to frontend ChatSource format
-        const sourcesText = response.sources.map(s => `${s.source} (p. ${s.page})`).join(', ');
-        return {
-          sender: 'ai',
-          text: response.answer,
-          timestamp: new Date(),
-          source: {
-            pdfName: sourcesText,
-            pdfId: '', // pdfId may need to be derived differently if required
-            pageNumber: 0 // Page number is now part of the text string
-          }
-        } as ChatMessage;
+
+        if (response.sources && response.sources.length > 0) {
+          // Get the first source object from the array
+          const firstSource = response.sources[0];
+
+          // Create the text string using only the first source
+          const sourcesText = `${firstSource.source} (p. ${firstSource.page})`;
+
+          return {
+            sender: 'ai',
+            text: response.answer,
+            timestamp: new Date(),
+            source: {
+              pdfName: sourcesText, // This now contains only the first source info
+              pdfId: '', // pdfId may need to be derived differently if required
+              pageNumber: firstSource.page // You can also store the page number directly
+            }
+          } as ChatMessage;
+        } else {
+          // Handle the case where there are no sources
+          return {
+            sender: 'ai',
+            text: response.answer,
+            timestamp: new Date()
+            // No 'source' property if none are available
+          } as ChatMessage;
+        }
       })
     );
   }
- 
+
   public clearPdfSession(): void {
     this.currentPdfSessionId.next(null);
   }
- 
+
   // --- AI Solution methods ---
- 
+
   getAiSolutionResponse(message: string): Observable<string> {
     return this.apiService.getAiSolution(message).pipe(
       map((response: any) => response.answer)
     );
   }
- 
+
   // --- Chat history methods ---
- 
-getChatHistory(categoryId: string): Observable<ChatSession[]> {
+
+  getChatHistory(categoryId: string): Observable<ChatSession[]> {
     return this.apiService.getChatHistory(categoryId).pipe(
       map(rawMessages => {
         if (!rawMessages || rawMessages.length === 0) {
           return [];
         }
-        
+
         // FIX: Manually map each message object to the ChatMessage interface
         const formattedMessages: ChatMessage[] = rawMessages.map(msg => ({
           sender: msg.sender,
@@ -209,8 +225,8 @@ getChatHistory(categoryId: string): Observable<ChatSession[]> {
         return [session];
       }),
       catchError(err => {
-          console.error(`Failed to get chat history for ${categoryId}`, err);
-          return of([]);
+        console.error(`Failed to get chat history for ${categoryId}`, err);
+        return of([]);
       })
     );
   }

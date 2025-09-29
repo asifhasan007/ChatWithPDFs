@@ -6,15 +6,30 @@
 
   <!-- Chat UI -->
   <div class="chat-window">
-    <div class="chat-messages">
+    <div class="chat-messages" #chatMessagesContainer (scroll)="onChatScroll($event)">
       <!-- Loop through and display messages -->
       <div *ngFor="let msg of messages" class="message-wrapper">
         <div class="message" [ngClass]="{'user-message': msg.sender === 'user', 'ai-message': msg.sender === 'ai'}">
           <p>{{ msg.text }}</p>
         </div>
       </div>
+      <!-- Typing indicator while AI is responding -->
+      <div *ngIf="isLoading" class="message-wrapper">
+        <div class="message ai-message">
+          <div class="typing-indicator">
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+  <!-- Scroll to Bottom Button -->
+  <button *ngIf="showScrollToBottom" class="scroll-to-bottom-btn" (click)="scrollToBottom()" title="Scroll to latest message">
+    &darr;
+  </button>
 
   <!-- Chat Input Area -->
   <div class="chat-input-container">
@@ -23,9 +38,10 @@
         type="text"
         [(ngModel)]="userMessage"
         (keyup.enter)="sendMessage()"
+        [disabled]="isLoading"
         placeholder="Ask for any solution or help you need..."
       />
-      <button (click)="sendMessage()">
+      <button (click)="sendMessage()" [disabled]="isLoading || !userMessage.trim()">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
           <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
         </svg>
