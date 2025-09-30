@@ -11,7 +11,8 @@
       <div class="bs23-title-section">
         <div class="bs23-icon-wrapper">
           <svg class="bs23-main-icon" viewBox="0 0 24 24" fill="currentColor" onclick="window.location.reload()">
-            <path d="M20 6h-2.18l-1.41-1.41c-.37-.37-.88-.59-1.41-.59H8c-.53 0-1.04.21-1.41.59L5.18 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/>
+            <path
+              d="M20 6h-2.18l-1.41-1.41c-.37-.37-.88-.59-1.41-.59H8c-.53 0-1.04.21-1.41.59L5.18 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z" />
           </svg>
         </div>
         <div class="bs23-title-text">
@@ -28,22 +29,13 @@
   <div class="bs23-actions-bar">
     <div class="bs23-create-section">
       <div class="bs23-input-group">
-        <input
-          type="text"
-          [(ngModel)]="newCategoryName"
-          placeholder="Create New Folder"
-          class="bs23-input"
-          (keyup.enter)="createFolder()"
-        />
-        <button 
-          class="bs23-btn bs23-btn-primary" 
-          (click)="createFolder()" 
-          [disabled]="!newCategoryName.trim()"
-        >
+        <input type="text" [(ngModel)]="newCategoryName" placeholder="Create New Folder" class="bs23-input"
+          (keyup.enter)="createFolder()" />
+        <button class="bs23-btn bs23-btn-primary" (click)="createFolder()" [disabled]="!newCategoryName.trim()">
           <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+            <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
           </svg>
-          Create Folder
+          Create
         </button>
       </div>
     </div>
@@ -54,29 +46,21 @@
     <!-- Empty State -->
     <div *ngIf="(categories$ | async)?.length === 0" class="bs23-empty-state">
       <div class="bs23-empty-illustration">
-        <svg viewBox="0 0 120 120" fill="none">
-          <circle cx="60" cy="60" r="50" fill="#E8F4FD" stroke="#1D9EDA" stroke-width="2" stroke-dasharray="5,5"/>
-          <path d="M40 50h40v30H40z" fill="#FFC44A" opacity="0.3"/>
-          <path d="M35 45h50v5H35z" fill="#1D9EDA"/>
-        </svg>
+       <img src="assets/images/empty-folder.png" alt="No Folders" />
       </div>
-      <p>Create New Folder</p>
+      <p>Folder is Empty</p>
     </div>
-    
+
     <!-- Projects Grid -->
     <div class="bs23-projects-grid">
-      <div 
-        *ngFor="let category of categories$ | async" 
-        class="bs23-project-card"
-        [class.bs23-active]="activeCategoryId === category.id"
-        (click)="selectCategory(category.id)"
-      >
+      <div *ngFor="let category of categories$ | async" class="bs23-project-card"
+        [class.bs23-active]="activeCategoryId === category.id" (click)="selectCategory(category.id)">
         <!-- Card Header -->
         <div class="bs23-card-header">
           <div class="bs23-project-info">
             <div class="bs23-project-icon">
               <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+                <path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z" />
               </svg>
             </div>
             <div class="bs23-project-details">
@@ -90,38 +74,29 @@
               </div>
             </div>
           </div>
-          
+
           <!-- Action Buttons -->
           <div class="bs23-card-actions">
             <input type="file" #fileInput (change)="onFileSelected($event, category.id)" hidden accept=".pdf">
-            <button 
-              class="bs23-action-btn bs23-upload-btn" 
-              (click)="fileInput.click(); $event.stopPropagation()" 
-              [disabled]="category.isUploading" 
-              title="Upload Document"
-            >
+            <button class="bs23-action-btn bs23-upload-btn" (click)="fileInput.click(); $event.stopPropagation()"
+              [disabled]="category.isUploading" title="Upload Document">
               <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-                <path d="M12 11l-2 2h4l-2-2z"/>
+                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                <path d="M12 11l-2 2h4l-2-2z" />
               </svg>
             </button>
-            <button 
-              class="bs23-action-btn bs23-history-btn" 
-              (click)="openHistoryModal($event, category.id)" 
-              title="View Chat History"
-            >
+            <button class="bs23-action-btn bs23-history-btn" (click)="openHistoryModal($event, category.id)"
+              title="View Chat History">
               <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm3.5 6L12 10.5 8.5 8 12 6l3.5 2z"/>
-                <path d="M12 6v6l4 2"/>
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm3.5 6L12 10.5 8.5 8 12 6l3.5 2z" />
+                <path d="M12 6v6l4 2" />
               </svg>
             </button>
-            <button 
-              class="bs23-action-btn bs23-delete-btn" 
-              (click)="deleteFolder($event, category.id)" 
-              title="Delete Project"
-            >
+            <button class="bs23-action-btn bs23-delete-btn" (click)="deleteFolder($event, category.id)"
+              title="Delete Project">
               <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"/>
+                <path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
               </svg>
             </button>
           </div>
@@ -133,22 +108,19 @@
             <div *ngFor="let pdf of category.pdfs" class="bs23-document-item">
               <div class="bs23-doc-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                  <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                 </svg>
               </div>
               <span class="bs23-doc-name">{{ pdf.name }}</span>
-              <button 
-                class="bs23-remove-doc" 
-                (click)="deletePdf($event, category.id, pdf.id)" 
-                title="Remove Document"
-              >
+              <button class="bs23-remove-doc" (click)="deletePdf($event, category.id, pdf.id)" title="Remove Document">
                 <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+                  <path
+                    d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
                 </svg>
               </button>
             </div>
           </div>
-          
+
           <div *ngIf="!category.pdfs || category.pdfs.length === 0" class="bs23-empty-docs">
             <!-- <div class="bs23-empty-docs-icon">
               <svg viewBox="0 0 48 48" fill="none">
