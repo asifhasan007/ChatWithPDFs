@@ -163,17 +163,15 @@ export class ChatService {
           // Get the first source object from the array
           const firstSource = response.sources[0];
 
-          // Create the text string using only the first source
-          const sourcesText = `${firstSource.source} (p. ${firstSource.page})`;
-
           return {
             sender: 'ai',
             text: response.answer,
             timestamp: new Date(),
             source: {
-              pdfName: sourcesText, // This now contains only the first source info
-              pdfId: '', // pdfId may need to be derived differently if required
-              pageNumber: firstSource.page // You can also store the page number directly
+              pdfName: firstSource.source,
+              pdfId: firstSource.source, // Use filename as ID
+              pageNumber: parseInt(String(firstSource.page)) || 1,
+              sourceText: firstSource.text || '' // We'll need to get this from backend later
             }
           } as ChatMessage;
         } else {

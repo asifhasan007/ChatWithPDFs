@@ -3,44 +3,38 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #94A3B8;
+  background-color: #002e6d;
   color: white;
   height: 60px;
 
   .logo {
     display: flex;
-    align-items: center; /* Better vertical alignment */
   }
-
   .image img {
-    height: 40px;
+    height: 30px;
     width: auto;
     margin-right: 10px;
   }
-
-  // Container for the animated text
-  .title {
-    flex-grow: 1; /* Allows the title to take up available space */
-    overflow: hidden; /* Hides the text when it scrolls out of view */
-    white-space: nowrap; /* Keeps the text on a single line */
-  }
-
   .title h1 {
     font-size: 1.5rem;
-    margin: 6px 0 0 0;
-    color: black;
-    display: inline-block; /* Necessary for transform to work */
-    padding-left: 100%; /* Starts the animation off-screen to the right */
-    animation: marquee 15s linear infinite; /* Applies the marquee animation */
+    margin: 2px 0 0 0;
+    color: white;
   }
 }
 
-// Keyframe definition for the marquee animation
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+/* Add the button styles here */
+.finish-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #188fc6; /* Using Brain Station 23 blue */
+  color: white;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.finish-btn:hover {
+  background-color: #1782b0; /* A darker shade for hover */
 }

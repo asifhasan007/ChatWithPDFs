@@ -3,6 +3,7 @@ export interface ChatSource {
   pdfId: string;
   pdfName: string;
   pageNumber: number;
+  sourceText?: string; // The actual text content that was matched
 }
 
 // Defines the structure for a single chat message

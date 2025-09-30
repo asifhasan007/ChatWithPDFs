@@ -1,9 +1,9 @@
-<div class="bs23-chat-container" id="bs23-plc-chat-container">
+<div class="bs23-chat-container" id="bs23-plc-chat-container" (click)="onContainerClick($event)">
   <!-- Header with Brain Station 23 Branding -->
   <div class="chat-header">
     <div class="header-content">
       <div class="header-text">
-        <h2>Document Intelligence Hub</h2>
+        <h2>Chat with your PDF</h2>
         <p>Engage with your PDF knowledge base seamlessly.</p>
       </div>
     </div>
@@ -25,8 +25,11 @@
       <!-- Message Loop -->
       <div *ngFor="let msg of messages" class="message" [ngClass]="{'user-message': msg.sender === 'user', 'ai-message': msg.sender === 'ai'}">
         <p [innerHTML]="msg.text"></p>
-        <button *ngIf="msg.sender === 'ai' && msg.source" class="source-btn" (click)="viewSource(msg.source)">
-          View Source
+        <button *ngIf="msg.sender === 'ai' && msg.source" 
+                class="source-circle-btn" 
+                (click)="viewSource(msg.source)"
+                title="View Source">
+          1
         </button>
       </div>
 
@@ -44,12 +47,14 @@
     </button>
     
     <!-- Input Area -->
-    <div class="chat-input-wrapper">
+    <div class="chat-input-wrapper" (click)="onInputAreaClick($event)">
       <div class="chat-input-area">
         <input
+          #chatInput
           type="text"
           [(ngModel)]="userInput"
           (keyup.enter)="sendMessage()"
+          (click)="onInputClick($event)"
           placeholder="Ask any thing about your Project Folder..."
           [disabled]="isLoading || !selectedCategoryId"
         />
@@ -61,4 +66,13 @@
       </div>
     </div>
   </div>
+
+  <!-- PDF Viewer Modal -->
+  <app-pdf-viewer
+    *ngIf="showPdfViewer"
+    [source]="selectedSource"
+    [category]="selectedCategoryId"
+    [highlightText]="selectedSource?.sourceText || ''"
+    (close)="closePdfViewer()">
+  </app-pdf-viewer>
 </div>

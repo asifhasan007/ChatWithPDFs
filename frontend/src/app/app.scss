@@ -31,30 +31,7 @@
   background-color: #f9f9f9; /* A light background for the content area */
 }
 
-/*
- * Styles for the action buttons, ensuring they are well-defined.
- */
-.finish-chat-container {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0;
-  flex-shrink: 0; /* Prevents this container from shrinking */
-}
 
-.finish-btn {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  background-color: #26a69a;
-  color: white;
-  transition: background-color 0.3s;
-}
-
-.finish-btn:hover {
-  background-color: #00897b;
-}
 
 /*
  * Ensure the chat components fill the space given to them.

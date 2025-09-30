@@ -6012,3 +6012,1071 @@ The system is configured to eliminate repeats and bring about a variety of promi
 2025-09-29 19:30:05,102 - INFO - Request to delete category: 'LD'
 2025-09-29 19:30:05,102 - INFO - Successfully deleted category 'LD'.
 2025-09-29 19:30:05,102 - INFO - 127.0.0.1 - - [29/Sep/2025 19:30:05] "DELETE /categories/LD HTTP/1.1" 200 -
+2025-09-30 12:32:54,775 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-30 12:32:54,780 - INFO - Starting Flask application
+2025-09-30 12:32:54,882 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-30 12:32:54,882 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-30 12:32:54,890 - INFO -  * Restarting with stat
+2025-09-30 12:33:13,176 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-30 12:33:13,180 - INFO - Starting Flask application
+2025-09-30 12:33:13,187 - WARNING -  * Debugger is active!
+2025-09-30 12:33:13,192 - INFO -  * Debugger PIN: 285-565-481
+2025-09-30 12:33:23,733 - INFO - 127.0.0.1 - - [30/Sep/2025 12:33:23] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-30 12:33:23,738 - INFO - Request to create category: 'HR'
+2025-09-30 12:33:23,740 - INFO - 127.0.0.1 - - [30/Sep/2025 12:33:23] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-30 12:33:28,040 - INFO - Received 1 file(s) for category 'HR'.
+2025-09-30 12:33:28,046 - INFO - Processing 'test4' for category 'HR'...
+2025-09-30 12:33:29,153 - INFO - Loading faiss with AVX2 support.
+2025-09-30 12:33:29,240 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-30 12:33:29,280 - INFO - Saved vector store for 'test4'.
+2025-09-30 12:33:29,280 - INFO - 127.0.0.1 - - [30/Sep/2025 12:33:29] "POST /upload HTTP/1.1" 200 -
+2025-09-30 12:33:33,436 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-30 12:33:33,436 - INFO - Found 38 messages for category 'HR'.
+2025-09-30 12:33:33,436 - INFO - 127.0.0.1 - - [30/Sep/2025 12:33:33] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-30 12:33:33,436 - INFO - 127.0.0.1 - - [30/Sep/2025 12:33:33] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 12:33:33,451 - INFO - 127.0.0.1 - - [30/Sep/2025 12:33:33] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 12:33:40,746 - INFO - 127.0.0.1 - - [30/Sep/2025 12:33:40] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-30 12:33:40,746 - INFO - Request to create category: 'l&D'
+2025-09-30 12:33:40,746 - INFO - 127.0.0.1 - - [30/Sep/2025 12:33:40] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-30 12:33:44,293 - INFO - Received 1 file(s) for category 'l&D'.
+2025-09-30 12:33:44,293 - INFO - Processing 'test2' for category 'l&D'...
+2025-09-30 12:33:44,345 - INFO - Saved vector store for 'test2'.
+2025-09-30 12:33:44,346 - INFO - 127.0.0.1 - - [30/Sep/2025 12:33:44] "POST /upload HTTP/1.1" 200 -
+2025-09-30 12:33:49,072 - INFO - Received 1 file(s) for category 'l&D'.
+2025-09-30 12:33:49,072 - INFO - Processing 'test3' for category 'l&D'...
+2025-09-30 12:33:49,494 - INFO - Saved vector store for 'test3'.
+2025-09-30 12:33:49,494 - INFO - 127.0.0.1 - - [30/Sep/2025 12:33:49] "POST /upload HTTP/1.1" 200 -
+2025-09-30 12:33:52,083 - INFO - Received 1 file(s) for category 'l&D'.
+2025-09-30 12:33:52,083 - INFO - Processing 'test' for category 'l&D'...
+2025-09-30 12:33:52,156 - INFO - Saved vector store for 'test'.
+2025-09-30 12:33:52,156 - INFO - 127.0.0.1 - - [30/Sep/2025 12:33:52] "POST /upload HTTP/1.1" 200 -
+2025-09-30 12:33:53,791 - INFO - Request to fetch chat history for category 'l&D'.
+2025-09-30 12:33:53,792 - INFO - Found 0 messages for category 'l&D'.
+2025-09-30 12:33:53,792 - INFO - 127.0.0.1 - - [30/Sep/2025 12:33:53] "GET /chat/history/l&D HTTP/1.1" 200 -
+2025-09-30 12:34:01,913 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-30 12:34:01,914 - INFO - Found 38 messages for category 'HR'.
+2025-09-30 12:34:01,914 - INFO - 127.0.0.1 - - [30/Sep/2025 12:34:01] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-30 12:34:35,807 - INFO - Request to fetch chat history for category 'l&D'.
+2025-09-30 12:34:35,807 - INFO - Found 0 messages for category 'l&D'.
+2025-09-30 12:34:35,807 - INFO - 127.0.0.1 - - [30/Sep/2025 12:34:35] "GET /chat/history/l&D HTTP/1.1" 200 -
+2025-09-30 12:34:35,823 - INFO - 127.0.0.1 - - [30/Sep/2025 12:34:35] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 12:34:35,823 - INFO - 127.0.0.1 - - [30/Sep/2025 12:34:35] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 12:34:37,772 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-30 12:34:37,772 - INFO - Found 38 messages for category 'HR'.
+2025-09-30 12:34:37,772 - INFO - 127.0.0.1 - - [30/Sep/2025 12:34:37] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-30 12:34:37,781 - INFO - 127.0.0.1 - - [30/Sep/2025 12:34:37] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 12:35:43,860 - INFO - Request to fetch chat history for category 'l&D'.
+2025-09-30 12:35:43,860 - INFO - Found 0 messages for category 'l&D'.
+2025-09-30 12:35:43,860 - INFO - 127.0.0.1 - - [30/Sep/2025 12:35:43] "GET /chat/history/l&D HTTP/1.1" 200 -
+2025-09-30 12:35:43,860 - INFO - 127.0.0.1 - - [30/Sep/2025 12:35:43] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 12:35:43,871 - INFO - 127.0.0.1 - - [30/Sep/2025 12:35:43] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 12:35:46,812 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-30 12:35:46,812 - INFO - Found 38 messages for category 'HR'.
+2025-09-30 12:35:46,812 - INFO - 127.0.0.1 - - [30/Sep/2025 12:35:46] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-30 12:35:46,820 - INFO - 127.0.0.1 - - [30/Sep/2025 12:35:46] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 12:36:25,108 - INFO - Request to fetch chat history for category 'l&D'.
+2025-09-30 12:36:25,112 - INFO - Found 0 messages for category 'l&D'.
+2025-09-30 12:36:25,112 - INFO - 127.0.0.1 - - [30/Sep/2025 12:36:25] "GET /chat/history/l&D HTTP/1.1" 200 -
+2025-09-30 12:36:25,114 - INFO - 127.0.0.1 - - [30/Sep/2025 12:36:25] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 12:36:25,114 - INFO - 127.0.0.1 - - [30/Sep/2025 12:36:25] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 12:36:32,460 - INFO - 127.0.0.1 - - [30/Sep/2025 12:36:32] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 12:36:32,462 - INFO - Found 3 vector store(s) for category 'l&D'
+2025-09-30 12:36:32,462 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test
+2025-09-30 12:36:32,478 - INFO - Successfully loaded: test
+2025-09-30 12:36:32,478 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 12:36:32,494 - INFO - Successfully loaded: test2
+2025-09-30 12:36:32,494 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 12:36:32,517 - INFO - Successfully loaded: test3
+2025-09-30 12:36:32,517 - INFO - Merging 2 additional vector store(s)...
+2025-09-30 12:36:32,517 - INFO - Successfully merged vector store 1/2
+2025-09-30 12:36:32,517 - INFO - Successfully merged vector store 2/2
+2025-09-30 12:36:32,517 - INFO - All vector stores merged successfully.
+2025-09-30 12:36:32,517 - INFO - Total documents in merged vector store: 22
+2025-09-30 12:36:44,158 - INFO - Responded to question in 'l&D'. Found 3 sources.
+2025-09-30 12:36:44,158 - INFO - HERE IS  ChestAidNet is a custom CNN model used for chest disease detection and classification from X-ray images.  and HERE IS [{'source': 'test3.pdf', 'page': 3}, {'source': 'test3.pdf', 'page': 6}, {'source': 'test2.pdf', 'page': 2}]
+2025-09-30 12:36:44,203 - INFO - 127.0.0.1 - - [30/Sep/2025 12:36:44] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:16:49,532 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-30 15:16:49,537 - INFO - Starting Flask application
+2025-09-30 15:16:49,633 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-09-30 15:16:49,633 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-30 15:16:49,644 - INFO -  * Restarting with stat
+2025-09-30 15:17:05,063 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-30 15:17:05,063 - INFO - Starting Flask application
+2025-09-30 15:17:05,083 - WARNING -  * Debugger is active!
+2025-09-30 15:17:05,087 - INFO -  * Debugger PIN: 285-565-481
+2025-09-30 15:20:33,114 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-30 15:20:33,114 - INFO - Found 80 messages for category 'L&D'.
+2025-09-30 15:20:33,114 - INFO - 127.0.0.1 - - [30/Sep/2025 15:20:33] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-30 15:20:33,146 - INFO - 127.0.0.1 - - [30/Sep/2025 15:20:33] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 15:20:33,149 - INFO - 127.0.0.1 - - [30/Sep/2025 15:20:33] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 15:20:48,794 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-30 15:20:48,794 - INFO - Found 38 messages for category 'HR'.
+2025-09-30 15:20:48,794 - INFO - 127.0.0.1 - - [30/Sep/2025 15:20:48] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-30 15:20:48,794 - INFO - 127.0.0.1 - - [30/Sep/2025 15:20:48] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 15:20:48,804 - INFO - 127.0.0.1 - - [30/Sep/2025 15:20:48] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 15:20:54,890 - INFO - 127.0.0.1 - - [30/Sep/2025 15:20:54] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:20:54,890 - INFO - Found 1 vector store(s) for category 'HR'
+2025-09-30 15:20:54,893 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test4
+2025-09-30 15:20:54,915 - INFO - Loading faiss with AVX2 support.
+2025-09-30 15:20:54,961 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-30 15:20:55,016 - INFO - Successfully loaded: test4
+2025-09-30 15:20:55,016 - INFO - Using single vector store.
+2025-09-30 15:21:01,559 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-30 15:21:01,559 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'test4.pdf', 'page': 1}]
+2025-09-30 15:21:01,589 - INFO - 127.0.0.1 - - [30/Sep/2025 15:21:01] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:21:03,093 - INFO - 127.0.0.1 - - [30/Sep/2025 15:21:03] "[33mGET /pdf/HR/test4.pdf HTTP/1.1[0m" 404 -
+2025-09-30 15:24:49,141 - INFO -  * Detected change in 'C:\\Users\\BS 23- Desktop-00014\\Documents\\ChatWithPDFs\\backend\\app.py', reloading
+2025-09-30 15:24:50,401 - INFO -  * Restarting with stat
+2025-09-30 15:25:04,123 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-30 15:25:04,123 - INFO - Starting Flask application
+2025-09-30 15:25:04,123 - WARNING -  * Debugger is active!
+2025-09-30 15:25:04,140 - INFO -  * Debugger PIN: 285-565-481
+2025-09-30 15:25:19,116 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-30 15:25:19,117 - INFO - Found 40 messages for category 'HR'.
+2025-09-30 15:25:19,119 - INFO - 127.0.0.1 - - [30/Sep/2025 15:25:19] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-30 15:25:19,123 - INFO - 127.0.0.1 - - [30/Sep/2025 15:25:19] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 15:25:19,127 - INFO - 127.0.0.1 - - [30/Sep/2025 15:25:19] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 15:25:24,352 - INFO - 127.0.0.1 - - [30/Sep/2025 15:25:24] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:25:24,352 - INFO - Found 1 vector store(s) for category 'HR'
+2025-09-30 15:25:24,352 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\test4
+2025-09-30 15:25:24,352 - INFO - Loading faiss with AVX2 support.
+2025-09-30 15:25:24,384 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-30 15:25:24,389 - INFO - Successfully loaded: test4
+2025-09-30 15:25:24,389 - INFO - Using single vector store.
+2025-09-30 15:25:30,767 - INFO - Responded to question in 'HR'. Found 1 sources.
+2025-09-30 15:25:30,767 - INFO - HERE IS  Md. Asif Hasan and HERE IS [{'source': 'test4.pdf', 'page': 1}]
+2025-09-30 15:25:30,801 - INFO - 127.0.0.1 - - [30/Sep/2025 15:25:30] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:25:34,777 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\HR\test4.pdf
+2025-09-30 15:25:34,791 - INFO - 127.0.0.1 - - [30/Sep/2025 15:25:34] "GET /pdf/HR/test4.pdf HTTP/1.1" 200 -
+2025-09-30 15:26:50,321 - INFO - Request to fetch chat history for category 'LD'.
+2025-09-30 15:26:50,321 - INFO - Found 18 messages for category 'LD'.
+2025-09-30 15:26:50,321 - INFO - 127.0.0.1 - - [30/Sep/2025 15:26:50] "GET /chat/history/LD HTTP/1.1" 200 -
+2025-09-30 15:26:50,321 - INFO - 127.0.0.1 - - [30/Sep/2025 15:26:50] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 15:26:50,333 - INFO - 127.0.0.1 - - [30/Sep/2025 15:26:50] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 15:26:59,286 - INFO - 127.0.0.1 - - [30/Sep/2025 15:26:59] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:26:59,286 - ERROR - Vector store path for category 'LD' not found.
+2025-09-30 15:26:59,286 - INFO - 127.0.0.1 - - [30/Sep/2025 15:26:59] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-30 15:27:05,595 - INFO - Request to fetch chat history for category 'LD'.
+2025-09-30 15:27:05,596 - INFO - Found 18 messages for category 'LD'.
+2025-09-30 15:27:05,597 - INFO - 127.0.0.1 - - [30/Sep/2025 15:27:05] "GET /chat/history/LD HTTP/1.1" 200 -
+2025-09-30 15:27:05,601 - INFO - 127.0.0.1 - - [30/Sep/2025 15:27:05] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 15:27:05,603 - INFO - 127.0.0.1 - - [30/Sep/2025 15:27:05] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 15:27:12,231 - INFO - 127.0.0.1 - - [30/Sep/2025 15:27:12] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:27:12,231 - ERROR - Vector store path for category 'LD' not found.
+2025-09-30 15:27:12,231 - INFO - 127.0.0.1 - - [30/Sep/2025 15:27:12] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-30 15:27:22,867 - INFO - 127.0.0.1 - - [30/Sep/2025 15:27:22] "OPTIONS /categories/LD HTTP/1.1" 200 -
+2025-09-30 15:27:22,868 - INFO - Request to delete category: 'LD'
+2025-09-30 15:27:22,868 - INFO - Successfully deleted category 'LD'.
+2025-09-30 15:27:22,868 - INFO - 127.0.0.1 - - [30/Sep/2025 15:27:22] "DELETE /categories/LD HTTP/1.1" 200 -
+2025-09-30 15:27:25,337 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-30 15:27:25,337 - INFO - Found 80 messages for category 'L&D'.
+2025-09-30 15:27:25,337 - INFO - 127.0.0.1 - - [30/Sep/2025 15:27:25] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-30 15:27:25,347 - INFO - 127.0.0.1 - - [30/Sep/2025 15:27:25] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 15:27:25,350 - INFO - 127.0.0.1 - - [30/Sep/2025 15:27:25] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 15:27:35,937 - INFO - Received 1 file(s) for category 'L&D'.
+2025-09-30 15:27:35,938 - INFO - Vector store for 'test2' already exists. Skipping.
+2025-09-30 15:27:35,939 - INFO - 127.0.0.1 - - [30/Sep/2025 15:27:35] "POST /upload HTTP/1.1" 200 -
+2025-09-30 15:27:50,348 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-30 15:27:50,350 - INFO - Found 80 messages for category 'L&D'.
+2025-09-30 15:27:50,350 - INFO - 127.0.0.1 - - [30/Sep/2025 15:27:50] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-30 15:27:50,362 - INFO - 127.0.0.1 - - [30/Sep/2025 15:27:50] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 15:27:50,366 - INFO - 127.0.0.1 - - [30/Sep/2025 15:27:50] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 15:27:53,847 - INFO - 127.0.0.1 - - [30/Sep/2025 15:27:53] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:27:53,847 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-30 15:27:53,847 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test
+2025-09-30 15:27:53,869 - INFO - Successfully loaded: test
+2025-09-30 15:27:53,869 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 15:27:53,891 - INFO - Successfully loaded: test2
+2025-09-30 15:27:53,892 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-30 15:27:53,913 - INFO - Successfully loaded: test3
+2025-09-30 15:27:53,913 - INFO - Merging 2 additional vector store(s)...
+2025-09-30 15:27:53,913 - INFO - Successfully merged vector store 1/2
+2025-09-30 15:27:53,914 - INFO - Successfully merged vector store 2/2
+2025-09-30 15:27:53,914 - INFO - All vector stores merged successfully.
+2025-09-30 15:27:53,914 - INFO - Total documents in merged vector store: 22
+2025-09-30 15:28:03,583 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 15:28:03,583 - INFO - HERE IS  ChestAidNet is a custom CNN model that was developed to identify chest diseases. It achieved an accuracy of 90.36% in its performance, which was compared to other models in relation to their efficiency and ability to be used clinically.  and HERE IS [{'source': 'test3.pdf', 'page': 3}, {'source': 'test2.pdf', 'page': 2}, {'source': 'test2.pdf', 'page': 1}]
+2025-09-30 15:28:03,620 - INFO - 127.0.0.1 - - [30/Sep/2025 15:28:03] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:28:05,472 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test3.pdf
+2025-09-30 15:28:05,487 - INFO - 127.0.0.1 - - [30/Sep/2025 15:28:05] "GET /pdf/L&D/test3.pdf HTTP/1.1" 200 -
+2025-09-30 15:30:51,300 - INFO -  * Detected change in 'C:\\Users\\BS 23- Desktop-00014\\Documents\\ChatWithPDFs\\backend\\app.py', reloading
+2025-09-30 15:30:52,581 - INFO -  * Restarting with stat
+2025-09-30 15:31:05,984 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-30 15:31:05,984 - INFO - Starting Flask application
+2025-09-30 15:31:06,003 - WARNING -  * Debugger is active!
+2025-09-30 15:31:06,007 - INFO -  * Debugger PIN: 285-565-481
+2025-09-30 15:33:48,808 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-30 15:33:48,808 - INFO - Found 82 messages for category 'L&D'.
+2025-09-30 15:33:48,808 - INFO - 127.0.0.1 - - [30/Sep/2025 15:33:48] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-30 15:33:48,834 - INFO - 127.0.0.1 - - [30/Sep/2025 15:33:48] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 15:33:48,838 - INFO - 127.0.0.1 - - [30/Sep/2025 15:33:48] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 15:33:55,193 - INFO - 127.0.0.1 - - [30/Sep/2025 15:33:55] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:33:55,196 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-30 15:33:55,196 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test
+2025-09-30 15:33:55,197 - INFO - Loading faiss with AVX2 support.
+2025-09-30 15:33:55,223 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-30 15:33:55,226 - INFO - Successfully loaded: test
+2025-09-30 15:33:55,226 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 15:33:55,226 - INFO - Successfully loaded: test2
+2025-09-30 15:33:55,226 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-30 15:33:55,231 - INFO - Successfully loaded: test3
+2025-09-30 15:33:55,231 - INFO - Merging 2 additional vector store(s)...
+2025-09-30 15:33:55,231 - INFO - Successfully merged vector store 1/2
+2025-09-30 15:33:55,231 - INFO - Successfully merged vector store 2/2
+2025-09-30 15:33:55,231 - INFO - All vector stores merged successfully.
+2025-09-30 15:33:55,231 - INFO - Total documents in merged vector store: 22
+2025-09-30 15:34:06,279 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 15:34:06,279 - INFO - HERE IS  ChestAidNet is a custom CNN model that was developed to identify chest diseases. It achieved an accuracy of 90.36% in its performance, which is significantly higher than other models in the field. The model's efficiency and ability to be used clinically make it a valuable tool for medical professionals. and HERE IS [{'source': 'test3.pdf', 'page': 3, 'text': 'Experimental Evaluation \nAnalyzes the results when applying ResNet50, Xception, InceptionV3, DenseNet121 and \nChestAidNet on diseases of the chest. With just half the number of parameters, the custom model \nChestAidNet achieved an accuracy of 90.36%. \n \nDiscussion \nStudies key outcomes from our ChestAidNet model and compares it to others in relation to \nperformance, efficiency of trained parameters and ability to be used clinically. It points to the \nmodel’s usefulness in diagnostic work because'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}, {'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}]
+2025-09-30 15:34:06,317 - INFO - 127.0.0.1 - - [30/Sep/2025 15:34:06] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:34:07,726 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test3.pdf
+2025-09-30 15:34:07,727 - INFO - 127.0.0.1 - - [30/Sep/2025 15:34:07] "[36mGET /pdf/L&D/test3.pdf HTTP/1.1[0m" 304 -
+2025-09-30 15:36:17,332 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test3.pdf
+2025-09-30 15:36:17,335 - INFO - 127.0.0.1 - - [30/Sep/2025 15:36:17] "[36mGET /pdf/L&D/test3.pdf HTTP/1.1[0m" 304 -
+2025-09-30 15:36:23,720 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test3.pdf
+2025-09-30 15:36:23,720 - INFO - 127.0.0.1 - - [30/Sep/2025 15:36:23] "[36mGET /pdf/L&D/test3.pdf HTTP/1.1[0m" 304 -
+2025-09-30 15:36:56,938 - INFO - 127.0.0.1 - - [30/Sep/2025 15:36:56] "OPTIONS /categories/L&D HTTP/1.1" 200 -
+2025-09-30 15:36:56,940 - INFO - Request to delete category: 'L&D'
+2025-09-30 15:36:56,940 - INFO - Successfully deleted category 'L&D'.
+2025-09-30 15:36:56,940 - INFO - 127.0.0.1 - - [30/Sep/2025 15:36:56] "DELETE /categories/L&D HTTP/1.1" 200 -
+2025-09-30 15:36:58,642 - INFO - 127.0.0.1 - - [30/Sep/2025 15:36:58] "OPTIONS /categories/HR HTTP/1.1" 200 -
+2025-09-30 15:36:58,642 - INFO - Request to delete category: 'HR'
+2025-09-30 15:36:58,648 - INFO - Successfully deleted category 'HR'.
+2025-09-30 15:36:58,649 - INFO - 127.0.0.1 - - [30/Sep/2025 15:36:58] "DELETE /categories/HR HTTP/1.1" 200 -
+2025-09-30 15:37:10,745 - INFO - 127.0.0.1 - - [30/Sep/2025 15:37:10] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-30 15:37:10,745 - INFO - Request to create category: 'L&D'
+2025-09-30 15:37:10,757 - INFO - 127.0.0.1 - - [30/Sep/2025 15:37:10] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-30 15:37:22,341 - INFO - 127.0.0.1 - - [30/Sep/2025 15:37:22] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:37:22,341 - WARNING - No valid document vector stores found in category 'L&D'.
+2025-09-30 15:37:22,341 - INFO - 127.0.0.1 - - [30/Sep/2025 15:37:22] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-30 15:37:29,769 - INFO - Received 1 file(s) for category 'L&D'.
+2025-09-30 15:37:29,770 - INFO - Processing 'test3' for category 'L&D'...
+2025-09-30 15:37:30,311 - INFO - Saved vector store for 'test3'.
+2025-09-30 15:37:30,311 - INFO - 127.0.0.1 - - [30/Sep/2025 15:37:30] "POST /upload HTTP/1.1" 200 -
+2025-09-30 15:37:35,384 - INFO - 127.0.0.1 - - [30/Sep/2025 15:37:35] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:37:35,395 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-30 15:37:35,396 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-30 15:37:35,416 - INFO - Successfully loaded: test3
+2025-09-30 15:37:35,416 - INFO - Using single vector store.
+2025-09-30 15:37:41,822 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 15:37:41,822 - INFO - HERE IS  ChestAidNet is a custom CNN model that achieved an accuracy of 90.36% in identifying chest diseases from X-ray images. and HERE IS [{'source': 'test3.pdf', 'page': 3, 'text': 'Experimental Evaluation \nAnalyzes the results when applying ResNet50, Xception, InceptionV3, DenseNet121 and \nChestAidNet on diseases of the chest. With just half the number of parameters, the custom model \nChestAidNet achieved an accuracy of 90.36%. \n \nDiscussion \nStudies key outcomes from our ChestAidNet model and compares it to others in relation to \nperformance, efficiency of trained parameters and ability to be used clinically. It points to the \nmodel’s usefulness in diagnostic work because'}, {'source': 'test3.pdf', 'page': 6, 'text': '[1] Wang, X., Qu, J., & He, F. (2024). GANomaly-HRNet based disease detection and \nclassification of chest radiographs. In R. Jin (Ed.), Proceedings of SPIE: Vol. 13230. Third \nInternational Conference on Machine Vision, Automatic Identification, and Detection (MVAID \n2024) (132301I). SPIE. https://doi.org/10.1117/12.3035575 \n \n[2] Yu, S. N., Chiu, M. C., Chang, Y. P., Liang, C. Y., & Chen, W. (2024). Improving \nComputer-Aided Thoracic Disease Diagnosis through Comparative Analysis Using Chest X'}]
+2025-09-30 15:37:41,867 - INFO - 127.0.0.1 - - [30/Sep/2025 15:37:41] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:37:43,057 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test3.pdf
+2025-09-30 15:37:43,058 - INFO - 127.0.0.1 - - [30/Sep/2025 15:37:43] "GET /pdf/L&D/test3.pdf HTTP/1.1" 200 -
+2025-09-30 15:37:51,333 - INFO - Received 1 file(s) for category 'L&D'.
+2025-09-30 15:37:51,333 - INFO - Processing 'test2' for category 'L&D'...
+2025-09-30 15:37:51,517 - INFO - Saved vector store for 'test2'.
+2025-09-30 15:37:51,517 - INFO - 127.0.0.1 - - [30/Sep/2025 15:37:51] "POST /upload HTTP/1.1" 200 -
+2025-09-30 15:38:07,117 - INFO - 127.0.0.1 - - [30/Sep/2025 15:38:07] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:38:07,117 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-09-30 15:38:07,117 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 15:38:07,135 - INFO - Successfully loaded: test2
+2025-09-30 15:38:07,135 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-09-30 15:38:07,136 - INFO - Successfully loaded: test3
+2025-09-30 15:38:07,136 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 15:38:07,136 - INFO - Successfully merged vector store 1/1
+2025-09-30 15:38:07,136 - INFO - All vector stores merged successfully.
+2025-09-30 15:38:07,137 - INFO - Total documents in merged vector store: 21
+2025-09-30 15:38:12,993 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 15:38:12,993 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}]
+2025-09-30 15:38:13,032 - INFO - 127.0.0.1 - - [30/Sep/2025 15:38:13] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:38:14,721 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 15:38:14,721 - INFO - 127.0.0.1 - - [30/Sep/2025 15:38:14] "GET /pdf/L&D/test2.pdf HTTP/1.1" 200 -
+2025-09-30 15:41:06,545 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test3.pdf
+2025-09-30 15:41:06,546 - INFO - 127.0.0.1 - - [30/Sep/2025 15:41:06] "[36mGET /pdf/L&D/test3.pdf HTTP/1.1[0m" 304 -
+2025-09-30 15:50:22,002 - INFO - Request to fetch chat history for category 'l&D'.
+2025-09-30 15:50:22,003 - INFO - Found 2 messages for category 'l&D'.
+2025-09-30 15:50:22,003 - INFO - 127.0.0.1 - - [30/Sep/2025 15:50:22] "GET /chat/history/l&D HTTP/1.1" 200 -
+2025-09-30 15:50:22,025 - INFO - 127.0.0.1 - - [30/Sep/2025 15:50:22] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 15:50:22,030 - INFO - 127.0.0.1 - - [30/Sep/2025 15:50:22] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 15:50:27,799 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-30 15:50:27,799 - INFO - Found 42 messages for category 'HR'.
+2025-09-30 15:50:27,799 - INFO - 127.0.0.1 - - [30/Sep/2025 15:50:27] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-30 15:50:27,827 - INFO - 127.0.0.1 - - [30/Sep/2025 15:50:27] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 15:50:27,831 - INFO - 127.0.0.1 - - [30/Sep/2025 15:50:27] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 15:50:34,695 - INFO - 127.0.0.1 - - [30/Sep/2025 15:50:34] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:50:34,699 - ERROR - Vector store path for category 'HR' not found.
+2025-09-30 15:50:34,699 - INFO - 127.0.0.1 - - [30/Sep/2025 15:50:34] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-30 15:50:37,183 - INFO - Request to fetch chat history for category 'l&D'.
+2025-09-30 15:50:37,188 - INFO - Found 2 messages for category 'l&D'.
+2025-09-30 15:50:37,188 - INFO - 127.0.0.1 - - [30/Sep/2025 15:50:37] "GET /chat/history/l&D HTTP/1.1" 200 -
+2025-09-30 15:50:37,201 - INFO - 127.0.0.1 - - [30/Sep/2025 15:50:37] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 15:50:37,201 - INFO - 127.0.0.1 - - [30/Sep/2025 15:50:37] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 15:50:41,067 - INFO - 127.0.0.1 - - [30/Sep/2025 15:50:41] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:50:41,083 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 15:50:41,083 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 15:50:41,083 - INFO - Successfully loaded: test2
+2025-09-30 15:50:41,083 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 15:50:41,083 - INFO - Successfully loaded: test3
+2025-09-30 15:50:41,083 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 15:50:41,083 - INFO - Successfully merged vector store 1/1
+2025-09-30 15:50:41,083 - INFO - All vector stores merged successfully.
+2025-09-30 15:50:41,083 - INFO - Total documents in merged vector store: 21
+2025-09-30 15:50:51,229 - INFO - Responded to question in 'l&D'. Found 3 sources.
+2025-09-30 15:50:51,229 - INFO - HERE IS  ChestAidNet is a custom CNN model used for chest disease detection and classification from X-ray images.  and HERE IS [{'source': 'test3.pdf', 'page': 3, 'text': 'Experimental Evaluation \nAnalyzes the results when applying ResNet50, Xception, InceptionV3, DenseNet121 and \nChestAidNet on diseases of the chest. With just half the number of parameters, the custom model \nChestAidNet achieved an accuracy of 90.36%. \n \nDiscussion \nStudies key outcomes from our ChestAidNet model and compares it to others in relation to \nperformance, efficiency of trained parameters and ability to be used clinically. It points to the \nmodel’s usefulness in diagnostic work because'}, {'source': 'test3.pdf', 'page': 6, 'text': '[1] Wang, X., Qu, J., & He, F. (2024). GANomaly-HRNet based disease detection and \nclassification of chest radiographs. In R. Jin (Ed.), Proceedings of SPIE: Vol. 13230. Third \nInternational Conference on Machine Vision, Automatic Identification, and Detection (MVAID \n2024) (132301I). SPIE. https://doi.org/10.1117/12.3035575 \n \n[2] Yu, S. N., Chiu, M. C., Chang, Y. P., Liang, C. Y., & Chen, W. (2024). Improving \nComputer-Aided Thoracic Disease Diagnosis through Comparative Analysis Using Chest X'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 15:50:51,276 - INFO - 127.0.0.1 - - [30/Sep/2025 15:50:51] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:50:52,776 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\l&D\test3.pdf
+2025-09-30 15:50:52,777 - INFO - 127.0.0.1 - - [30/Sep/2025 15:50:52] "GET /pdf/l&D/test3.pdf HTTP/1.1" 200 -
+2025-09-30 15:50:57,365 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\l&D\test3.pdf
+2025-09-30 15:50:57,366 - INFO - 127.0.0.1 - - [30/Sep/2025 15:50:57] "[36mGET /pdf/l&D/test3.pdf HTTP/1.1[0m" 304 -
+2025-09-30 15:51:03,545 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\l&D\test3.pdf
+2025-09-30 15:51:03,547 - INFO - 127.0.0.1 - - [30/Sep/2025 15:51:03] "[36mGET /pdf/l&D/test3.pdf HTTP/1.1[0m" 304 -
+2025-09-30 15:51:21,948 - INFO - 127.0.0.1 - - [30/Sep/2025 15:51:21] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:51:21,965 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 15:51:21,965 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 15:51:21,965 - INFO - Successfully loaded: test2
+2025-09-30 15:51:21,965 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 15:51:21,965 - INFO - Successfully loaded: test3
+2025-09-30 15:51:21,965 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 15:51:21,965 - INFO - Successfully merged vector store 1/1
+2025-09-30 15:51:21,965 - INFO - All vector stores merged successfully.
+2025-09-30 15:51:21,965 - INFO - Total documents in merged vector store: 21
+2025-09-30 15:51:28,171 - INFO - Responded to question in 'l&D'. Found 2 sources.
+2025-09-30 15:51:28,171 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}]
+2025-09-30 15:51:28,219 - INFO - 127.0.0.1 - - [30/Sep/2025 15:51:28] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:51:30,960 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\l&D\test2.pdf
+2025-09-30 15:51:30,960 - INFO - 127.0.0.1 - - [30/Sep/2025 15:51:30] "GET /pdf/l&D/test2.pdf HTTP/1.1" 200 -
+2025-09-30 15:52:38,404 - INFO - 127.0.0.1 - - [30/Sep/2025 15:52:38] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:52:38,417 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 15:52:38,418 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 15:52:38,418 - INFO - Successfully loaded: test2
+2025-09-30 15:52:38,419 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 15:52:38,419 - INFO - Successfully loaded: test3
+2025-09-30 15:52:38,419 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 15:52:38,420 - INFO - Successfully merged vector store 1/1
+2025-09-30 15:52:38,420 - INFO - All vector stores merged successfully.
+2025-09-30 15:52:38,420 - INFO - Total documents in merged vector store: 21
+2025-09-30 15:52:40,311 - INFO - Responded to question in 'l&D'. Found 2 sources.
+2025-09-30 15:52:40,311 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}]
+2025-09-30 15:52:40,351 - INFO - 127.0.0.1 - - [30/Sep/2025 15:52:40] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:53:02,959 - INFO - 127.0.0.1 - - [30/Sep/2025 15:53:02] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:53:02,962 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 15:53:02,962 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 15:53:02,963 - INFO - Successfully loaded: test2
+2025-09-30 15:53:02,963 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 15:53:02,964 - INFO - Successfully loaded: test3
+2025-09-30 15:53:02,964 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 15:53:02,964 - INFO - Successfully merged vector store 1/1
+2025-09-30 15:53:02,964 - INFO - All vector stores merged successfully.
+2025-09-30 15:53:02,964 - INFO - Total documents in merged vector store: 21
+2025-09-30 15:53:04,707 - INFO - Responded to question in 'l&D'. Found 2 sources.
+2025-09-30 15:53:04,707 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}]
+2025-09-30 15:53:04,738 - INFO - 127.0.0.1 - - [30/Sep/2025 15:53:04] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:53:16,622 - INFO - 127.0.0.1 - - [30/Sep/2025 15:53:16] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:53:16,625 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 15:53:16,626 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 15:53:16,626 - INFO - Successfully loaded: test2
+2025-09-30 15:53:16,626 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 15:53:16,627 - INFO - Successfully loaded: test3
+2025-09-30 15:53:16,627 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 15:53:16,627 - INFO - Successfully merged vector store 1/1
+2025-09-30 15:53:16,627 - INFO - All vector stores merged successfully.
+2025-09-30 15:53:16,628 - INFO - Total documents in merged vector store: 21
+2025-09-30 15:53:18,168 - INFO - Responded to question in 'l&D'. Found 2 sources.
+2025-09-30 15:53:18,168 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}]
+2025-09-30 15:53:18,196 - INFO - 127.0.0.1 - - [30/Sep/2025 15:53:18] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:53:44,934 - INFO - 127.0.0.1 - - [30/Sep/2025 15:53:44] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:53:44,937 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 15:53:44,937 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 15:53:44,938 - INFO - Successfully loaded: test2
+2025-09-30 15:53:44,938 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 15:53:44,939 - INFO - Successfully loaded: test3
+2025-09-30 15:53:44,939 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 15:53:44,939 - INFO - Successfully merged vector store 1/1
+2025-09-30 15:53:44,939 - INFO - All vector stores merged successfully.
+2025-09-30 15:53:44,939 - INFO - Total documents in merged vector store: 21
+2025-09-30 15:53:46,665 - INFO - Responded to question in 'l&D'. Found 2 sources.
+2025-09-30 15:53:46,666 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}]
+2025-09-30 15:53:46,702 - INFO - 127.0.0.1 - - [30/Sep/2025 15:53:46] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:54:56,388 - INFO - 127.0.0.1 - - [30/Sep/2025 15:54:56] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:54:56,400 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 15:54:56,401 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 15:54:56,401 - INFO - Successfully loaded: test2
+2025-09-30 15:54:56,402 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 15:54:56,402 - INFO - Successfully loaded: test3
+2025-09-30 15:54:56,403 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 15:54:56,403 - INFO - Successfully merged vector store 1/1
+2025-09-30 15:54:56,404 - INFO - All vector stores merged successfully.
+2025-09-30 15:54:56,404 - INFO - Total documents in merged vector store: 21
+2025-09-30 15:55:01,831 - INFO - Responded to question in 'l&D'. Found 3 sources.
+2025-09-30 15:55:01,831 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 15:55:01,869 - INFO - 127.0.0.1 - - [30/Sep/2025 15:55:01] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:55:18,878 - INFO - 127.0.0.1 - - [30/Sep/2025 15:55:18] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:55:18,889 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 15:55:18,889 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 15:55:18,890 - INFO - Successfully loaded: test2
+2025-09-30 15:55:18,890 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 15:55:18,891 - INFO - Successfully loaded: test3
+2025-09-30 15:55:18,891 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 15:55:18,891 - INFO - Successfully merged vector store 1/1
+2025-09-30 15:55:18,891 - INFO - All vector stores merged successfully.
+2025-09-30 15:55:18,891 - INFO - Total documents in merged vector store: 21
+2025-09-30 15:55:20,782 - INFO - Responded to question in 'l&D'. Found 3 sources.
+2025-09-30 15:55:20,782 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 15:55:20,807 - INFO - 127.0.0.1 - - [30/Sep/2025 15:55:20] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:59:07,342 - INFO - Request to fetch chat history for category 'l&D'.
+2025-09-30 15:59:07,347 - INFO - Found 18 messages for category 'l&D'.
+2025-09-30 15:59:07,348 - INFO - 127.0.0.1 - - [30/Sep/2025 15:59:07] "GET /chat/history/l&D HTTP/1.1" 200 -
+2025-09-30 15:59:07,351 - INFO - 127.0.0.1 - - [30/Sep/2025 15:59:07] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 15:59:07,356 - INFO - 127.0.0.1 - - [30/Sep/2025 15:59:07] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 15:59:12,934 - INFO - 127.0.0.1 - - [30/Sep/2025 15:59:12] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:59:12,937 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 15:59:12,937 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 15:59:12,937 - INFO - Successfully loaded: test2
+2025-09-30 15:59:12,937 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 15:59:12,937 - INFO - Successfully loaded: test3
+2025-09-30 15:59:12,937 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 15:59:12,937 - INFO - Successfully merged vector store 1/1
+2025-09-30 15:59:12,937 - INFO - All vector stores merged successfully.
+2025-09-30 15:59:12,937 - INFO - Total documents in merged vector store: 21
+2025-09-30 15:59:14,575 - INFO - Responded to question in 'l&D'. Found 3 sources.
+2025-09-30 15:59:14,575 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 15:59:14,621 - INFO - 127.0.0.1 - - [30/Sep/2025 15:59:14] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:59:31,878 - INFO - 127.0.0.1 - - [30/Sep/2025 15:59:31] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:59:31,881 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 15:59:31,881 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 15:59:31,881 - INFO - Successfully loaded: test2
+2025-09-30 15:59:31,881 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 15:59:31,882 - INFO - Successfully loaded: test3
+2025-09-30 15:59:31,882 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 15:59:31,882 - INFO - Successfully merged vector store 1/1
+2025-09-30 15:59:31,882 - INFO - All vector stores merged successfully.
+2025-09-30 15:59:31,882 - INFO - Total documents in merged vector store: 21
+2025-09-30 15:59:33,653 - INFO - Responded to question in 'l&D'. Found 3 sources.
+2025-09-30 15:59:33,653 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 15:59:33,683 - INFO - 127.0.0.1 - - [30/Sep/2025 15:59:33] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:59:45,426 - INFO - 127.0.0.1 - - [30/Sep/2025 15:59:45] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:59:45,441 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 15:59:45,441 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 15:59:45,441 - INFO - Successfully loaded: test2
+2025-09-30 15:59:45,441 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 15:59:45,442 - INFO - Successfully loaded: test3
+2025-09-30 15:59:45,443 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 15:59:45,443 - INFO - Successfully merged vector store 1/1
+2025-09-30 15:59:45,443 - INFO - All vector stores merged successfully.
+2025-09-30 15:59:45,443 - INFO - Total documents in merged vector store: 21
+2025-09-30 15:59:47,415 - INFO - Responded to question in 'l&D'. Found 3 sources.
+2025-09-30 15:59:47,415 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 15:59:47,455 - INFO - 127.0.0.1 - - [30/Sep/2025 15:59:47] "POST /chat HTTP/1.1" 200 -
+2025-09-30 15:59:59,010 - INFO - 127.0.0.1 - - [30/Sep/2025 15:59:59] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 15:59:59,010 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 15:59:59,010 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 15:59:59,017 - INFO - Successfully loaded: test2
+2025-09-30 15:59:59,017 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 15:59:59,018 - INFO - Successfully loaded: test3
+2025-09-30 15:59:59,018 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 15:59:59,018 - INFO - Successfully merged vector store 1/1
+2025-09-30 15:59:59,018 - INFO - All vector stores merged successfully.
+2025-09-30 15:59:59,019 - INFO - Total documents in merged vector store: 21
+2025-09-30 16:00:00,618 - INFO - Responded to question in 'l&D'. Found 3 sources.
+2025-09-30 16:00:00,618 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 16:00:00,653 - INFO - 127.0.0.1 - - [30/Sep/2025 16:00:00] "POST /chat HTTP/1.1" 200 -
+2025-09-30 16:00:46,836 - INFO - 127.0.0.1 - - [30/Sep/2025 16:00:46] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 16:00:46,836 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 16:00:46,836 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 16:00:46,836 - INFO - Successfully loaded: test2
+2025-09-30 16:00:46,836 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 16:00:46,836 - INFO - Successfully loaded: test3
+2025-09-30 16:00:46,836 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 16:00:46,836 - INFO - Successfully merged vector store 1/1
+2025-09-30 16:00:46,836 - INFO - All vector stores merged successfully.
+2025-09-30 16:00:46,836 - INFO - Total documents in merged vector store: 21
+2025-09-30 16:00:48,720 - INFO - Responded to question in 'l&D'. Found 3 sources.
+2025-09-30 16:00:48,720 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 16:00:48,761 - INFO - 127.0.0.1 - - [30/Sep/2025 16:00:48] "POST /chat HTTP/1.1" 200 -
+2025-09-30 16:01:11,686 - INFO - 127.0.0.1 - - [30/Sep/2025 16:01:11] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 16:01:11,689 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 16:01:11,689 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 16:01:11,689 - INFO - Successfully loaded: test2
+2025-09-30 16:01:11,690 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 16:01:11,690 - INFO - Successfully loaded: test3
+2025-09-30 16:01:11,690 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 16:01:11,690 - INFO - Successfully merged vector store 1/1
+2025-09-30 16:01:11,691 - INFO - All vector stores merged successfully.
+2025-09-30 16:01:11,691 - INFO - Total documents in merged vector store: 21
+2025-09-30 16:01:13,311 - INFO - Responded to question in 'l&D'. Found 3 sources.
+2025-09-30 16:01:13,311 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 16:01:13,340 - INFO - 127.0.0.1 - - [30/Sep/2025 16:01:13] "POST /chat HTTP/1.1" 200 -
+2025-09-30 16:01:35,427 - INFO - 127.0.0.1 - - [30/Sep/2025 16:01:35] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 16:01:35,427 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 16:01:35,427 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 16:01:35,427 - INFO - Successfully loaded: test2
+2025-09-30 16:01:35,427 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 16:01:35,427 - INFO - Successfully loaded: test3
+2025-09-30 16:01:35,427 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 16:01:35,427 - INFO - Successfully merged vector store 1/1
+2025-09-30 16:01:35,427 - INFO - All vector stores merged successfully.
+2025-09-30 16:01:35,427 - INFO - Total documents in merged vector store: 21
+2025-09-30 16:01:37,242 - INFO - Responded to question in 'l&D'. Found 3 sources.
+2025-09-30 16:01:37,243 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 16:01:37,269 - INFO - 127.0.0.1 - - [30/Sep/2025 16:01:37] "POST /chat HTTP/1.1" 200 -
+2025-09-30 16:02:04,362 - INFO - 127.0.0.1 - - [30/Sep/2025 16:02:04] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 16:02:04,362 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 16:02:04,362 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 16:02:04,362 - INFO - Successfully loaded: test2
+2025-09-30 16:02:04,362 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 16:02:04,370 - INFO - Successfully loaded: test3
+2025-09-30 16:02:04,370 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 16:02:04,370 - INFO - Successfully merged vector store 1/1
+2025-09-30 16:02:04,370 - INFO - All vector stores merged successfully.
+2025-09-30 16:02:04,370 - INFO - Total documents in merged vector store: 21
+2025-09-30 16:02:06,104 - INFO - Responded to question in 'l&D'. Found 3 sources.
+2025-09-30 16:02:06,104 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 16:02:06,136 - INFO - 127.0.0.1 - - [30/Sep/2025 16:02:06] "POST /chat HTTP/1.1" 200 -
+2025-09-30 16:02:20,285 - INFO - 127.0.0.1 - - [30/Sep/2025 16:02:20] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 16:02:20,288 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 16:02:20,289 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 16:02:20,289 - INFO - Successfully loaded: test2
+2025-09-30 16:02:20,289 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 16:02:20,290 - INFO - Successfully loaded: test3
+2025-09-30 16:02:20,290 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 16:02:20,290 - INFO - Successfully merged vector store 1/1
+2025-09-30 16:02:20,290 - INFO - All vector stores merged successfully.
+2025-09-30 16:02:20,291 - INFO - Total documents in merged vector store: 21
+2025-09-30 16:02:22,030 - INFO - Responded to question in 'l&D'. Found 3 sources.
+2025-09-30 16:02:22,030 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 16:02:22,064 - INFO - 127.0.0.1 - - [30/Sep/2025 16:02:22] "POST /chat HTTP/1.1" 200 -
+2025-09-30 16:02:37,890 - INFO - 127.0.0.1 - - [30/Sep/2025 16:02:37] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 16:02:37,890 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 16:02:37,890 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 16:02:37,897 - INFO - Successfully loaded: test2
+2025-09-30 16:02:37,897 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 16:02:37,897 - INFO - Successfully loaded: test3
+2025-09-30 16:02:37,897 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 16:02:37,897 - INFO - Successfully merged vector store 1/1
+2025-09-30 16:02:37,897 - INFO - All vector stores merged successfully.
+2025-09-30 16:02:37,897 - INFO - Total documents in merged vector store: 21
+2025-09-30 16:02:39,624 - INFO - Responded to question in 'l&D'. Found 3 sources.
+2025-09-30 16:02:39,624 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 16:02:39,649 - INFO - 127.0.0.1 - - [30/Sep/2025 16:02:39] "POST /chat HTTP/1.1" 200 -
+2025-09-30 16:02:56,925 - INFO - 127.0.0.1 - - [30/Sep/2025 16:02:56] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 16:02:56,928 - INFO - Found 2 vector store(s) for category 'l&D'
+2025-09-30 16:02:56,928 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test2
+2025-09-30 16:02:56,929 - INFO - Successfully loaded: test2
+2025-09-30 16:02:56,929 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\l&D\test3
+2025-09-30 16:02:56,929 - INFO - Successfully loaded: test3
+2025-09-30 16:02:56,929 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 16:02:56,929 - INFO - Successfully merged vector store 1/1
+2025-09-30 16:02:56,930 - INFO - All vector stores merged successfully.
+2025-09-30 16:02:56,930 - INFO - Total documents in merged vector store: 21
+2025-09-30 16:02:58,757 - INFO - Responded to question in 'l&D'. Found 3 sources.
+2025-09-30 16:02:58,757 - INFO - HERE IS  175.5 million pounds and HERE IS [{'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 16:02:58,783 - INFO - 127.0.0.1 - - [30/Sep/2025 16:02:58] "POST /chat HTTP/1.1" 200 -
+2025-09-30 16:02:59,885 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\l&D\test2.pdf
+2025-09-30 16:02:59,885 - INFO - 127.0.0.1 - - [30/Sep/2025 16:02:59] "[36mGET /pdf/l&D/test2.pdf HTTP/1.1[0m" 304 -
+2025-09-30 16:18:00,207 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-30 16:18:00,209 - INFO - Found 42 messages for category 'HR'.
+2025-09-30 16:18:00,210 - INFO - 127.0.0.1 - - [30/Sep/2025 16:18:00] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-30 16:18:00,214 - INFO - 127.0.0.1 - - [30/Sep/2025 16:18:00] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 16:18:00,217 - INFO - 127.0.0.1 - - [30/Sep/2025 16:18:00] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 16:18:03,351 - INFO - Request to fetch chat history for category 'l&D'.
+2025-09-30 16:18:03,352 - INFO - Found 40 messages for category 'l&D'.
+2025-09-30 16:18:03,353 - INFO - 127.0.0.1 - - [30/Sep/2025 16:18:03] "GET /chat/history/l&D HTTP/1.1" 200 -
+2025-09-30 16:18:03,356 - INFO - 127.0.0.1 - - [30/Sep/2025 16:18:03] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 16:36:49,318 - INFO - Request to fetch chat history for category 'HR'.
+2025-09-30 16:36:49,319 - INFO - Found 42 messages for category 'HR'.
+2025-09-30 16:36:49,320 - INFO - 127.0.0.1 - - [30/Sep/2025 16:36:49] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-09-30 16:36:49,325 - INFO - 127.0.0.1 - - [30/Sep/2025 16:36:49] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 16:36:49,328 - INFO - 127.0.0.1 - - [30/Sep/2025 16:36:49] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 16:36:59,562 - INFO - 127.0.0.1 - - [30/Sep/2025 16:36:59] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 16:36:59,566 - ERROR - Vector store path for category 'HR' not found.
+2025-09-30 16:36:59,566 - INFO - 127.0.0.1 - - [30/Sep/2025 16:36:59] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-30 16:37:21,675 - INFO - 127.0.0.1 - - [30/Sep/2025 16:37:21] "OPTIONS /categories/HR HTTP/1.1" 200 -
+2025-09-30 16:37:21,680 - INFO - Request to delete category: 'HR'
+2025-09-30 16:37:21,680 - INFO - Successfully deleted category 'HR'.
+2025-09-30 16:37:21,681 - INFO - 127.0.0.1 - - [30/Sep/2025 16:37:21] "DELETE /categories/HR HTTP/1.1" 200 -
+2025-09-30 16:37:23,318 - INFO - 127.0.0.1 - - [30/Sep/2025 16:37:23] "OPTIONS /categories/l&D HTTP/1.1" 200 -
+2025-09-30 16:37:23,321 - INFO - Request to delete category: 'l&D'
+2025-09-30 16:37:23,324 - INFO - Successfully deleted category 'l&D'.
+2025-09-30 16:37:23,324 - INFO - 127.0.0.1 - - [30/Sep/2025 16:37:23] "DELETE /categories/l&D HTTP/1.1" 200 -
+2025-09-30 16:37:35,466 - INFO - 127.0.0.1 - - [30/Sep/2025 16:37:35] "OPTIONS /categories HTTP/1.1" 200 -
+2025-09-30 16:37:35,470 - INFO - Request to create category: 'L&D'
+2025-09-30 16:37:35,471 - INFO - 127.0.0.1 - - [30/Sep/2025 16:37:35] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-09-30 16:37:40,211 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-30 16:37:40,211 - INFO - Found 88 messages for category 'L&D'.
+2025-09-30 16:37:40,211 - INFO - 127.0.0.1 - - [30/Sep/2025 16:37:40] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-30 16:37:40,218 - INFO - 127.0.0.1 - - [30/Sep/2025 16:37:40] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 16:37:40,221 - INFO - 127.0.0.1 - - [30/Sep/2025 16:37:40] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 16:38:34,335 - INFO - Received 1 file(s) for category 'L&D'.
+2025-09-30 16:38:34,335 - INFO - Processing 'test2' for category 'L&D'...
+2025-09-30 16:38:34,507 - INFO - Saved vector store for 'test2'.
+2025-09-30 16:38:34,507 - INFO - 127.0.0.1 - - [30/Sep/2025 16:38:34] "POST /upload HTTP/1.1" 200 -
+2025-09-30 16:39:03,258 - INFO - 127.0.0.1 - - [30/Sep/2025 16:39:03] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 16:39:03,259 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-30 16:39:03,261 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 16:39:03,275 - INFO - Successfully loaded: test2
+2025-09-30 16:39:03,275 - INFO - Using single vector store.
+2025-09-30 16:39:07,971 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 16:39:07,971 - INFO - HERE IS  There are nine steps in the recycling process. and HERE IS [{'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 16:39:08,011 - INFO - 127.0.0.1 - - [30/Sep/2025 16:39:08] "POST /chat HTTP/1.1" 200 -
+2025-09-30 16:39:10,702 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 16:39:10,703 - INFO - 127.0.0.1 - - [30/Sep/2025 16:39:10] "GET /pdf/L&D/test2.pdf HTTP/1.1" 200 -
+2025-09-30 16:39:48,617 - INFO - 127.0.0.1 - - [30/Sep/2025 16:39:48] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 16:39:48,620 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-30 16:39:48,621 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 16:39:48,621 - INFO - Successfully loaded: test2
+2025-09-30 16:39:48,621 - INFO - Using single vector store.
+2025-09-30 16:39:53,707 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 16:39:53,707 - INFO - HERE IS  There are nine steps in the man-made cyclic process of recycling plastic bottles.  and HERE IS [{'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}]
+2025-09-30 16:39:53,734 - INFO - 127.0.0.1 - - [30/Sep/2025 16:39:53] "POST /chat HTTP/1.1" 200 -
+2025-09-30 16:39:56,674 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 16:39:56,674 - INFO - 127.0.0.1 - - [30/Sep/2025 16:39:56] "[36mGET /pdf/L&D/test2.pdf HTTP/1.1[0m" 304 -
+2025-09-30 16:40:28,850 - INFO - 127.0.0.1 - - [30/Sep/2025 16:40:28] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:40:28,850 - INFO - General AI request: 'hey...'
+2025-09-30 16:40:28,850 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:40:30,801 - INFO - Successfully generated general AI response.
+2025-09-30 16:40:30,801 - INFO - 127.0.0.1 - - [30/Sep/2025 16:40:30] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:40:49,809 - INFO - 127.0.0.1 - - [30/Sep/2025 16:40:49] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:40:49,809 - INFO - General AI request: 'hey can you explain ...'
+2025-09-30 16:40:49,809 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:40:54,223 - INFO - Successfully generated general AI response.
+2025-09-30 16:40:54,223 - INFO - 127.0.0.1 - - [30/Sep/2025 16:40:54] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:41:13,361 - INFO - 127.0.0.1 - - [30/Sep/2025 16:41:13] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:41:13,364 - INFO - General AI request: 'is this process safe...'
+2025-09-30 16:41:13,364 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:41:15,111 - INFO - Successfully generated general AI response.
+2025-09-30 16:41:15,111 - INFO - 127.0.0.1 - - [30/Sep/2025 16:41:15] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:41:46,666 - INFO - 127.0.0.1 - - [30/Sep/2025 16:41:46] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:41:46,667 - INFO - General AI request: 'what should be the p...'
+2025-09-30 16:41:46,669 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:41:48,816 - INFO - Successfully generated general AI response.
+2025-09-30 16:41:48,816 - INFO - 127.0.0.1 - - [30/Sep/2025 16:41:48] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:43:02,216 - INFO - 127.0.0.1 - - [30/Sep/2025 16:43:02] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:43:02,219 - INFO - General AI request: 'how can i easily wri...'
+2025-09-30 16:43:02,219 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:43:06,564 - INFO - Successfully generated general AI response.
+2025-09-30 16:43:06,564 - INFO - 127.0.0.1 - - [30/Sep/2025 16:43:06] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:43:32,385 - INFO - 127.0.0.1 - - [30/Sep/2025 16:43:32] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:43:32,388 - INFO - General AI request: 'write me an email fo...'
+2025-09-30 16:43:32,389 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:43:32,886 - INFO - Successfully generated general AI response.
+2025-09-30 16:43:32,886 - INFO - 127.0.0.1 - - [30/Sep/2025 16:43:32] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:43:56,746 - INFO - 127.0.0.1 - - [30/Sep/2025 16:43:56] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:43:56,747 - INFO - General AI request: 'write me an email fo...'
+2025-09-30 16:43:56,747 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:43:57,043 - INFO - Successfully generated general AI response.
+2025-09-30 16:43:57,043 - INFO - 127.0.0.1 - - [30/Sep/2025 16:43:57] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:44:52,153 - INFO -  * Detected change in 'C:\\Users\\BS 23- Desktop-00014\\Documents\\ChatWithPDFs\\backend\\models.py', reloading
+2025-09-30 16:44:53,685 - INFO -  * Restarting with stat
+2025-09-30 16:45:08,210 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-30 16:45:08,215 - INFO - Starting Flask application
+2025-09-30 16:45:08,222 - WARNING -  * Debugger is active!
+2025-09-30 16:45:08,227 - INFO -  * Debugger PIN: 285-565-481
+2025-09-30 16:45:42,707 - INFO - 127.0.0.1 - - [30/Sep/2025 16:45:42] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:45:42,707 - INFO - General AI request: 'write me an email to...'
+2025-09-30 16:45:42,707 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:45:47,290 - INFO - Successfully generated general AI response.
+2025-09-30 16:45:47,290 - INFO - 127.0.0.1 - - [30/Sep/2025 16:45:47] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:46:40,646 - INFO -  * Detected change in 'C:\\Users\\BS 23- Desktop-00014\\Documents\\ChatWithPDFs\\backend\\models.py', reloading
+2025-09-30 16:46:41,819 - INFO -  * Restarting with stat
+2025-09-30 16:46:55,409 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-09-30 16:46:55,414 - INFO - Starting Flask application
+2025-09-30 16:46:55,422 - WARNING -  * Debugger is active!
+2025-09-30 16:46:55,422 - INFO -  * Debugger PIN: 285-565-481
+2025-09-30 16:47:18,025 - INFO - 127.0.0.1 - - [30/Sep/2025 16:47:18] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:47:18,028 - INFO - General AI request: 'what is the weather ...'
+2025-09-30 16:47:18,030 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:47:20,224 - INFO - Successfully generated general AI response.
+2025-09-30 16:47:20,225 - INFO - 127.0.0.1 - - [30/Sep/2025 16:47:20] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:47:32,283 - INFO - 127.0.0.1 - - [30/Sep/2025 16:47:32] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:47:32,283 - INFO - General AI request: 'how many sheeps are ...'
+2025-09-30 16:47:32,283 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:47:33,476 - INFO - Successfully generated general AI response.
+2025-09-30 16:47:33,476 - INFO - 127.0.0.1 - - [30/Sep/2025 16:47:33] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:47:44,736 - INFO - 127.0.0.1 - - [30/Sep/2025 16:47:44] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:47:44,737 - INFO - General AI request: 'how many people are ...'
+2025-09-30 16:47:44,737 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:47:45,547 - INFO - Successfully generated general AI response.
+2025-09-30 16:47:45,547 - INFO - 127.0.0.1 - - [30/Sep/2025 16:47:45] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:47:58,680 - INFO - 127.0.0.1 - - [30/Sep/2025 16:47:58] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:47:58,683 - INFO - General AI request: 'how many cows...'
+2025-09-30 16:47:58,683 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:47:59,043 - INFO - Successfully generated general AI response.
+2025-09-30 16:47:59,043 - INFO - 127.0.0.1 - - [30/Sep/2025 16:47:59] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:51:08,137 - INFO - 127.0.0.1 - - [30/Sep/2025 16:51:08] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:51:08,139 - INFO - General AI request: 'etgretg...'
+2025-09-30 16:51:08,139 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:51:09,448 - INFO - Successfully generated general AI response.
+2025-09-30 16:51:09,448 - INFO - 127.0.0.1 - - [30/Sep/2025 16:51:09] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:51:11,000 - INFO - General AI request: 'juy...'
+2025-09-30 16:51:11,000 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:51:11,877 - INFO - Successfully generated general AI response.
+2025-09-30 16:51:11,877 - INFO - 127.0.0.1 - - [30/Sep/2025 16:51:11] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:51:13,352 - INFO - 127.0.0.1 - - [30/Sep/2025 16:51:13] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:51:13,353 - INFO - General AI request: 'gygytyr...'
+2025-09-30 16:51:13,356 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:51:13,543 - INFO - Successfully generated general AI response.
+2025-09-30 16:51:13,543 - INFO - 127.0.0.1 - - [30/Sep/2025 16:51:13] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:51:15,209 - INFO - General AI request: 'rygtyryht...'
+2025-09-30 16:51:15,209 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:51:19,292 - INFO - Successfully generated general AI response.
+2025-09-30 16:51:19,292 - INFO - 127.0.0.1 - - [30/Sep/2025 16:51:19] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:51:22,129 - INFO - 127.0.0.1 - - [30/Sep/2025 16:51:22] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:51:22,130 - INFO - General AI request: 'yhtrhtyt...'
+2025-09-30 16:51:22,130 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:51:23,191 - INFO - Successfully generated general AI response.
+2025-09-30 16:51:23,191 - INFO - 127.0.0.1 - - [30/Sep/2025 16:51:23] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:52:37,792 - INFO - 127.0.0.1 - - [30/Sep/2025 16:52:37] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:52:37,795 - INFO - General AI request: 'hi...'
+2025-09-30 16:52:37,795 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:52:38,887 - INFO - Successfully generated general AI response.
+2025-09-30 16:52:38,887 - INFO - 127.0.0.1 - - [30/Sep/2025 16:52:38] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:54:04,584 - INFO - 127.0.0.1 - - [30/Sep/2025 16:54:04] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:54:04,585 - INFO - General AI request: 'hi...'
+2025-09-30 16:54:04,585 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:54:05,608 - INFO - Successfully generated general AI response.
+2025-09-30 16:54:05,608 - INFO - 127.0.0.1 - - [30/Sep/2025 16:54:05] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:55:27,697 - INFO - 127.0.0.1 - - [30/Sep/2025 16:55:27] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:55:27,700 - INFO - General AI request: 'Hello...'
+2025-09-30 16:55:27,700 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:55:28,017 - INFO - Successfully generated general AI response.
+2025-09-30 16:55:28,017 - INFO - 127.0.0.1 - - [30/Sep/2025 16:55:28] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:55:31,127 - INFO - General AI request: 'Hi...'
+2025-09-30 16:55:31,127 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:55:31,344 - INFO - Successfully generated general AI response.
+2025-09-30 16:55:31,344 - INFO - 127.0.0.1 - - [30/Sep/2025 16:55:31] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:56:24,319 - INFO - 127.0.0.1 - - [30/Sep/2025 16:56:24] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:56:24,320 - INFO - General AI request: 'Hi...'
+2025-09-30 16:56:24,320 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:56:24,430 - INFO - Successfully generated general AI response.
+2025-09-30 16:56:24,430 - INFO - 127.0.0.1 - - [30/Sep/2025 16:56:24] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:58:13,063 - INFO - 127.0.0.1 - - [30/Sep/2025 16:58:13] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:58:13,065 - INFO - General AI request: 'Hi...'
+2025-09-30 16:58:13,065 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:58:13,386 - INFO - Successfully generated general AI response.
+2025-09-30 16:58:13,386 - INFO - 127.0.0.1 - - [30/Sep/2025 16:58:13] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:58:19,680 - INFO - 127.0.0.1 - - [30/Sep/2025 16:58:19] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:58:19,682 - INFO - General AI request: 'Hi...'
+2025-09-30 16:58:19,683 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:58:20,019 - INFO - Successfully generated general AI response.
+2025-09-30 16:58:20,019 - INFO - 127.0.0.1 - - [30/Sep/2025 16:58:20] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:58:39,671 - INFO - 127.0.0.1 - - [30/Sep/2025 16:58:39] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:58:39,672 - INFO - General AI request: 'Hi...'
+2025-09-30 16:58:39,672 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:58:40,090 - INFO - Successfully generated general AI response.
+2025-09-30 16:58:40,090 - INFO - 127.0.0.1 - - [30/Sep/2025 16:58:40] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:59:07,599 - INFO - 127.0.0.1 - - [30/Sep/2025 16:59:07] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:59:07,601 - INFO - General AI request: 'Helloo...'
+2025-09-30 16:59:07,601 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:59:08,701 - INFO - Successfully generated general AI response.
+2025-09-30 16:59:08,701 - INFO - 127.0.0.1 - - [30/Sep/2025 16:59:08] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:59:15,615 - INFO - 127.0.0.1 - - [30/Sep/2025 16:59:15] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 16:59:15,616 - INFO - General AI request: 'Hei...'
+2025-09-30 16:59:15,616 - INFO - Creating general-purpose AI chain.
+2025-09-30 16:59:16,000 - INFO - Successfully generated general AI response.
+2025-09-30 16:59:16,000 - INFO - 127.0.0.1 - - [30/Sep/2025 16:59:16] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 17:00:40,039 - INFO - 127.0.0.1 - - [30/Sep/2025 17:00:40] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 17:00:40,042 - INFO - General AI request: 'hi...'
+2025-09-30 17:00:40,043 - INFO - Creating general-purpose AI chain.
+2025-09-30 17:00:41,262 - INFO - Successfully generated general AI response.
+2025-09-30 17:00:41,262 - INFO - 127.0.0.1 - - [30/Sep/2025 17:00:41] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 17:00:49,688 - INFO - 127.0.0.1 - - [30/Sep/2025 17:00:49] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 17:00:49,691 - INFO - General AI request: 'hi...'
+2025-09-30 17:00:49,691 - INFO - Creating general-purpose AI chain.
+2025-09-30 17:00:50,902 - INFO - Successfully generated general AI response.
+2025-09-30 17:00:50,902 - INFO - 127.0.0.1 - - [30/Sep/2025 17:00:50] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 17:00:54,319 - INFO - General AI request: 'hi...'
+2025-09-30 17:00:54,319 - INFO - Creating general-purpose AI chain.
+2025-09-30 17:00:55,426 - INFO - Successfully generated general AI response.
+2025-09-30 17:00:55,426 - INFO - 127.0.0.1 - - [30/Sep/2025 17:00:55] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 17:01:00,010 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-30 17:01:00,010 - INFO - Found 92 messages for category 'L&D'.
+2025-09-30 17:01:00,010 - INFO - 127.0.0.1 - - [30/Sep/2025 17:01:00] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-30 17:01:00,018 - INFO - 127.0.0.1 - - [30/Sep/2025 17:01:00] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 17:01:00,021 - INFO - 127.0.0.1 - - [30/Sep/2025 17:01:00] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 17:01:03,800 - INFO - 127.0.0.1 - - [30/Sep/2025 17:01:03] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 17:01:03,800 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-30 17:01:03,800 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 17:01:03,800 - INFO - Loading faiss with AVX2 support.
+2025-09-30 17:01:03,831 - INFO - Successfully loaded faiss with AVX2 support.
+2025-09-30 17:01:03,832 - INFO - Successfully loaded: test2
+2025-09-30 17:01:03,832 - INFO - Using single vector store.
+2025-09-30 17:01:09,881 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 17:01:09,881 - INFO - HERE IS  Not found in the provided text. and HERE IS [{'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}, {'source': 'test2.pdf', 'page': 1, 'text': 'The table illustrates the source of money and the pie chart depicts the spending of the total \nportion of money in an area between 2017 to 2018 in Britain. \nOverall, a major amount of funds came from the national government, whereas the least amount \nwas collected from other sources over the period. While, salary was the largest sector, buildings \nand transport was the second largest in terms of spending money. \nIn the table, the national government provided the majority of the funds for the pol'}]
+2025-09-30 17:01:09,910 - INFO - 127.0.0.1 - - [30/Sep/2025 17:01:09] "POST /chat HTTP/1.1" 200 -
+2025-09-30 17:01:20,170 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 17:01:20,173 - INFO - 127.0.0.1 - - [30/Sep/2025 17:01:20] "[36mGET /pdf/L&D/test2.pdf HTTP/1.1[0m" 304 -
+2025-09-30 17:01:37,141 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 17:01:37,144 - INFO - 127.0.0.1 - - [30/Sep/2025 17:01:37] "[36mGET /pdf/L&D/test2.pdf HTTP/1.1[0m" 304 -
+2025-09-30 17:07:08,226 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-30 17:07:08,229 - INFO - Found 94 messages for category 'L&D'.
+2025-09-30 17:07:08,230 - INFO - 127.0.0.1 - - [30/Sep/2025 17:07:08] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-30 17:07:08,234 - INFO - 127.0.0.1 - - [30/Sep/2025 17:07:08] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 17:07:08,237 - INFO - 127.0.0.1 - - [30/Sep/2025 17:07:08] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 17:07:15,634 - INFO - 127.0.0.1 - - [30/Sep/2025 17:07:15] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 17:07:15,634 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-30 17:07:15,634 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 17:07:15,634 - INFO - Successfully loaded: test2
+2025-09-30 17:07:15,642 - INFO - Using single vector store.
+2025-09-30 17:07:18,897 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 17:07:18,897 - INFO - HERE IS  There are nine steps in the man-made cyclic process of recycling plastic bottles.  and HERE IS [{'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}]
+2025-09-30 17:07:18,926 - INFO - 127.0.0.1 - - [30/Sep/2025 17:07:18] "POST /chat HTTP/1.1" 200 -
+2025-09-30 17:07:25,138 - INFO - 127.0.0.1 - - [30/Sep/2025 17:07:25] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 17:07:25,153 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-30 17:07:25,153 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 17:07:25,153 - INFO - Successfully loaded: test2
+2025-09-30 17:07:25,153 - INFO - Using single vector store.
+2025-09-30 17:07:26,846 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 17:07:26,846 - INFO - HERE IS  There are nine steps in the man-made cyclic process of recycling plastic bottles.  and HERE IS [{'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}]
+2025-09-30 17:07:26,876 - INFO - 127.0.0.1 - - [30/Sep/2025 17:07:26] "POST /chat HTTP/1.1" 200 -
+2025-09-30 17:07:43,319 - INFO - 127.0.0.1 - - [30/Sep/2025 17:07:43] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 17:07:43,323 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-30 17:07:43,323 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 17:07:43,323 - INFO - Successfully loaded: test2
+2025-09-30 17:07:43,323 - INFO - Using single vector store.
+2025-09-30 17:07:45,346 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 17:07:45,346 - INFO - HERE IS  There are nine steps in the man-made cyclic recycling process of plastic bottles.  and HERE IS [{'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}]
+2025-09-30 17:07:45,375 - INFO - 127.0.0.1 - - [30/Sep/2025 17:07:45] "POST /chat HTTP/1.1" 200 -
+2025-09-30 17:09:29,478 - INFO - 127.0.0.1 - - [30/Sep/2025 17:09:29] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 17:09:29,481 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-30 17:09:29,481 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 17:09:29,485 - INFO - Successfully loaded: test2
+2025-09-30 17:09:29,486 - INFO - Using single vector store.
+2025-09-30 17:09:31,224 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 17:09:31,224 - INFO - HERE IS  There are nine steps in the man-made cyclic recycling process of plastic bottles.  and HERE IS [{'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}]
+2025-09-30 17:09:31,255 - INFO - 127.0.0.1 - - [30/Sep/2025 17:09:31] "POST /chat HTTP/1.1" 200 -
+2025-09-30 17:14:33,385 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-30 17:14:33,385 - INFO - Found 102 messages for category 'L&D'.
+2025-09-30 17:14:33,388 - INFO - 127.0.0.1 - - [30/Sep/2025 17:14:33] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-30 17:14:33,389 - INFO - 127.0.0.1 - - [30/Sep/2025 17:14:33] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 17:14:33,389 - INFO - 127.0.0.1 - - [30/Sep/2025 17:14:33] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 17:14:39,781 - INFO - 127.0.0.1 - - [30/Sep/2025 17:14:39] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 17:14:39,781 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-30 17:14:39,781 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 17:14:39,781 - INFO - Successfully loaded: test2
+2025-09-30 17:14:39,781 - INFO - Using single vector store.
+2025-09-30 17:14:41,704 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 17:14:41,704 - INFO - HERE IS  There are nine steps in the man-made cyclic recycling process of plastic bottles.  and HERE IS [{'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}]
+2025-09-30 17:14:41,737 - INFO - 127.0.0.1 - - [30/Sep/2025 17:14:41] "POST /chat HTTP/1.1" 200 -
+2025-09-30 17:14:47,878 - INFO - 127.0.0.1 - - [30/Sep/2025 17:14:47] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 17:14:47,881 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-30 17:14:47,881 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 17:14:47,881 - INFO - Successfully loaded: test2
+2025-09-30 17:14:47,881 - INFO - Using single vector store.
+2025-09-30 17:14:49,074 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 17:14:49,074 - INFO - HERE IS  9 steps and HERE IS [{'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}]
+2025-09-30 17:14:49,106 - INFO - 127.0.0.1 - - [30/Sep/2025 17:14:49] "POST /chat HTTP/1.1" 200 -
+2025-09-30 17:14:53,004 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 17:14:53,004 - INFO - 127.0.0.1 - - [30/Sep/2025 17:14:53] "[36mGET /pdf/L&D/test2.pdf HTTP/1.1[0m" 304 -
+2025-09-30 17:19:51,656 - INFO - 127.0.0.1 - - [30/Sep/2025 17:19:51] "OPTIONS /ai-solution HTTP/1.1" 200 -
+2025-09-30 17:19:51,657 - INFO - General AI request: 'hi...'
+2025-09-30 17:19:51,660 - INFO - Creating general-purpose AI chain.
+2025-09-30 17:19:53,761 - INFO - Successfully generated general AI response.
+2025-09-30 17:19:53,761 - INFO - 127.0.0.1 - - [30/Sep/2025 17:19:53] "POST /ai-solution HTTP/1.1" 200 -
+2025-09-30 17:20:21,495 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-30 17:20:21,495 - INFO - Found 106 messages for category 'L&D'.
+2025-09-30 17:20:21,495 - INFO - 127.0.0.1 - - [30/Sep/2025 17:20:21] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-30 17:20:21,504 - INFO - 127.0.0.1 - - [30/Sep/2025 17:20:21] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 17:20:21,510 - INFO - 127.0.0.1 - - [30/Sep/2025 17:20:21] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 17:20:33,141 - INFO - 127.0.0.1 - - [30/Sep/2025 17:20:33] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 17:20:33,144 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-30 17:20:33,144 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 17:20:33,145 - INFO - Successfully loaded: test2
+2025-09-30 17:20:33,145 - INFO - Using single vector store.
+2025-09-30 17:20:38,862 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 17:20:38,862 - INFO - HERE IS  There are nine steps in the man-made cyclic recycling process of plastic bottles.  and HERE IS [{'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}]
+2025-09-30 17:20:38,896 - INFO - 127.0.0.1 - - [30/Sep/2025 17:20:38] "POST /chat HTTP/1.1" 200 -
+2025-09-30 18:20:46,385 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-30 18:20:46,389 - INFO - Found 108 messages for category 'L&D'.
+2025-09-30 18:20:46,392 - INFO - 127.0.0.1 - - [30/Sep/2025 18:20:46] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-30 18:20:46,397 - INFO - 127.0.0.1 - - [30/Sep/2025 18:20:46] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 18:20:46,397 - INFO - 127.0.0.1 - - [30/Sep/2025 18:20:46] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 18:21:29,137 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-30 18:21:29,138 - INFO - Found 108 messages for category 'L&D'.
+2025-09-30 18:21:29,140 - INFO - 127.0.0.1 - - [30/Sep/2025 18:21:29] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-30 18:21:29,145 - INFO - 127.0.0.1 - - [30/Sep/2025 18:21:29] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 18:21:29,148 - INFO - 127.0.0.1 - - [30/Sep/2025 18:21:29] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 18:21:38,454 - INFO - 127.0.0.1 - - [30/Sep/2025 18:21:38] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 18:21:38,458 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-30 18:21:38,458 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 18:21:38,459 - INFO - Successfully loaded: test2
+2025-09-30 18:21:38,459 - INFO - Using single vector store.
+2025-09-30 18:21:40,592 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 18:21:40,592 - INFO - HERE IS  There are nine steps in the man-made cyclic recycling process of plastic bottles.  and HERE IS [{'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}, {'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}]
+2025-09-30 18:21:40,634 - INFO - 127.0.0.1 - - [30/Sep/2025 18:21:40] "POST /chat HTTP/1.1" 200 -
+2025-09-30 18:21:42,090 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 18:21:42,091 - INFO - 127.0.0.1 - - [30/Sep/2025 18:21:42] "[36mGET /pdf/L&D/test2.pdf HTTP/1.1[0m" 304 -
+2025-09-30 18:21:59,115 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 18:21:59,115 - INFO - 127.0.0.1 - - [30/Sep/2025 18:21:59] "[36mGET /pdf/L&D/test2.pdf HTTP/1.1[0m" 304 -
+2025-09-30 18:27:14,646 - INFO - 127.0.0.1 - - [30/Sep/2025 18:27:14] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 18:27:14,649 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-30 18:27:14,649 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 18:27:14,650 - INFO - Successfully loaded: test2
+2025-09-30 18:27:14,651 - INFO - Using single vector store.
+2025-09-30 18:27:18,533 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 18:27:18,534 - INFO - HERE IS  Decrease and HERE IS [{'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 4, 'text': 'Moreover, products that have higher prices are limited in stock. Evidently, the manufacturer will \nreduce the production that has small demand in the market, and even if they make the product \nthey will reduce the quantity compared to the other best-selling products, which will have a \nstrong impact on the overall sales. As an illustration, a company produces such products that \nhave strong customer demand and limit those which do not have enough response from the \ncustomer. \n \nIn conclusion, it'}]
+2025-09-30 18:27:18,561 - INFO - 127.0.0.1 - - [30/Sep/2025 18:27:18] "POST /chat HTTP/1.1" 200 -
+2025-09-30 18:27:21,325 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 18:27:21,325 - INFO - 127.0.0.1 - - [30/Sep/2025 18:27:21] "[36mGET /pdf/L&D/test2.pdf HTTP/1.1[0m" 304 -
+2025-09-30 18:27:59,782 - INFO - 127.0.0.1 - - [30/Sep/2025 18:27:59] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 18:27:59,785 - INFO - Found 1 vector store(s) for category 'L&D'
+2025-09-30 18:27:59,785 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 18:27:59,786 - INFO - Successfully loaded: test2
+2025-09-30 18:27:59,786 - INFO - Using single vector store.
+2025-09-30 18:28:04,439 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 18:28:04,439 - INFO - HERE IS  
+1. There are nine steps in the man-made cyclic recycling process of plastic bottles.
+2. Increasing a price of sugary products will decrease their usage. and HERE IS [{'source': 'test2.pdf', 'page': 3, 'text': 'There are many consumable goods that contain extreme sugar levels and affect the human \nbody. Many people think that increasing the price of sugary products will decrease their usage. \nThe essay agrees with the idea of making these products expensive because the less people \nwill buy them, and eventually it will be limited in quantity in the market. \n \nFirst of all, expensive things are less sold in the market. Generally, people like to buy the \nproducts, which they found within their budget. So'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 18:28:04,482 - INFO - 127.0.0.1 - - [30/Sep/2025 18:28:04] "POST /chat HTTP/1.1" 200 -
+2025-09-30 18:28:11,351 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 18:28:11,353 - INFO - 127.0.0.1 - - [30/Sep/2025 18:28:11] "[36mGET /pdf/L&D/test2.pdf HTTP/1.1[0m" 304 -
+2025-09-30 18:33:28,027 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-30 18:33:28,029 - INFO - Found 114 messages for category 'L&D'.
+2025-09-30 18:33:28,030 - INFO - 127.0.0.1 - - [30/Sep/2025 18:33:28] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-30 18:34:28,471 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 18:34:28,472 - INFO - 127.0.0.1 - - [30/Sep/2025 18:34:28] "[36mGET /pdf/L&D/test2.pdf HTTP/1.1[0m" 304 -
+2025-09-30 18:34:47,655 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 18:34:47,656 - INFO - 127.0.0.1 - - [30/Sep/2025 18:34:47] "[36mGET /pdf/L&D/test2.pdf HTTP/1.1[0m" 304 -
+2025-09-30 18:35:10,790 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 18:35:10,790 - INFO - 127.0.0.1 - - [30/Sep/2025 18:35:10] "[36mGET /pdf/L&D/test2.pdf HTTP/1.1[0m" 304 -
+2025-09-30 18:35:27,420 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 18:35:27,420 - INFO - 127.0.0.1 - - [30/Sep/2025 18:35:27] "[36mGET /pdf/L&D/test2.pdf HTTP/1.1[0m" 304 -
+2025-09-30 18:35:32,165 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 18:35:32,166 - INFO - 127.0.0.1 - - [30/Sep/2025 18:35:32] "[36mGET /pdf/L&D/test2.pdf HTTP/1.1[0m" 304 -
+2025-09-30 18:37:13,480 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-30 18:37:13,480 - INFO - Found 114 messages for category 'L&D'.
+2025-09-30 18:37:13,480 - INFO - 127.0.0.1 - - [30/Sep/2025 18:37:13] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-30 18:37:13,480 - INFO - 127.0.0.1 - - [30/Sep/2025 18:37:13] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 18:37:13,480 - INFO - 127.0.0.1 - - [30/Sep/2025 18:37:13] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 18:38:24,126 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-30 18:38:24,126 - INFO - Found 114 messages for category 'L&D'.
+2025-09-30 18:38:24,126 - INFO - 127.0.0.1 - - [30/Sep/2025 18:38:24] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-30 18:38:24,134 - INFO - 127.0.0.1 - - [30/Sep/2025 18:38:24] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 18:38:24,137 - INFO - 127.0.0.1 - - [30/Sep/2025 18:38:24] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 18:47:01,130 - INFO - Received 1 file(s) for category 'L&D'.
+2025-09-30 18:47:01,130 - INFO - Processing 'iasb-tu-2025-3-ifrs19' for category 'L&D'...
+2025-09-30 18:47:01,873 - INFO - Saved vector store for 'iasb-tu-2025-3-ifrs19'.
+2025-09-30 18:47:01,874 - INFO - 127.0.0.1 - - [30/Sep/2025 18:47:01] "POST /upload HTTP/1.1" 200 -
+2025-09-30 18:47:21,524 - INFO - 127.0.0.1 - - [30/Sep/2025 18:47:21] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 18:47:21,528 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-09-30 18:47:21,528 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 18:47:21,554 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 18:47:21,554 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 18:47:21,555 - INFO - Successfully loaded: test2
+2025-09-30 18:47:21,555 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 18:47:21,555 - INFO - Successfully merged vector store 1/1
+2025-09-30 18:47:21,555 - INFO - All vector stores merged successfully.
+2025-09-30 18:47:21,555 - INFO - Total documents in merged vector store: 128
+2025-09-30 18:47:29,533 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 18:47:29,533 - INFO - HERE IS  Categorical elements allow preparers to tag standard responses from a list of options defined in the IFRS Accounting Taxonomy.  and HERE IS [{'source': 'iasb-tu-2025-3-ifrs19.pdf', 'page': 13, 'text': 'search for the business combinations note in a set of digital financial statements.\nCategorical elements\nWhat are categorical elements?\nCategorical elements allow preparers to tag standard responses from a list of options defined in the IFRS\nAccounting Taxonomy. The objective of adding categorical elements is to help users analyse narrative disclosures\nmore efficiently. Categorical elements allow users to efficiently extract and analyse narrative information that\ncan be provided in a structured '}, {'source': 'iasb-tu-2025-3-ifrs19.pdf', 'page': 14, 'text': '(specifically, if two entities would both use ‘other’ to tag a discrete piece of entity-specific information,\nthis could convey to users that the information is comparable, which might not be the case).\n(d)\nto use categorical elements alongside parent narrative elements. This approach helps preparers tag both\ncategorical data and any related contextual information.\n(e)\nto avoid the use of ‘true-only’ Boolean elements—that is, a variant of Boolean elements that only allows\npreparers to tag a valu'}, {'source': 'iasb-tu-2025-3-ifrs19.pdf', 'page': 11, 'text': 'Appendix A—Reading this IFRS Taxonomy Update and guidance materials\nThis IFRS Taxonomy Update uses taxonomy-specific terminology. Table A1 contains brief explanations of the IFRS\nAccounting Taxonomy terms used elsewhere in this document.\nIn this document, changes to the IFRS Accounting Taxonomy elements are shown in tables. New elements are\nshaded in green. For amended element labels or references, added text is underlined and deleted text is struck\nthrough.1 Unchanged elements, which are provid'}]
+2025-09-30 18:47:29,574 - INFO - 127.0.0.1 - - [30/Sep/2025 18:47:29] "POST /chat HTTP/1.1" 200 -
+2025-09-30 18:47:33,171 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\iasb-tu-2025-3-ifrs19.pdf
+2025-09-30 18:47:33,172 - INFO - 127.0.0.1 - - [30/Sep/2025 18:47:33] "GET /pdf/L&D/iasb-tu-2025-3-ifrs19.pdf HTTP/1.1" 200 -
+2025-09-30 18:47:59,084 - INFO - 127.0.0.1 - - [30/Sep/2025 18:47:59] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 18:47:59,087 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-09-30 18:47:59,087 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 18:47:59,088 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 18:47:59,088 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 18:47:59,088 - INFO - Successfully loaded: test2
+2025-09-30 18:47:59,088 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 18:47:59,091 - INFO - Successfully merged vector store 1/1
+2025-09-30 18:47:59,091 - INFO - All vector stores merged successfully.
+2025-09-30 18:47:59,091 - INFO - Total documents in merged vector store: 128
+2025-09-30 18:48:07,640 - INFO - Responded to question in 'L&D'. Found 2 sources.
+2025-09-30 18:48:07,640 - INFO - HERE IS  To implement this on your company, you need to follow the steps outlined in the provided text. This includes identifying the relevant elements and presentation groups, as well as ensuring that all necessary disclosures are made. and HERE IS [{'source': 'iasb-tu-2025-3-ifrs19.pdf', 'page': 13, 'text': 'Appendix B—General policies for taxonomy modelling applied in this Taxonomy Update\nThis appendix includes the IFRS Foundation’s (Foundation’s) general policies for taxonomy modelling applied in\nthis Taxonomy Update:\n(a)\nfor the addition of elements to reflect requirements in IFRS Accounting Standards (paragraphs B2–B8);\n(b)\nfor the assignment of elements to presentation groups (paragraphs B9–B10);\n(c)\nfor the elements relating to comparative information reported in accordance with superseded Acc'}, {'source': 'iasb-tu-2025-3-ifrs19.pdf', 'page': 8, 'text': 'paragraph 144 of IAS 19 Employee Benefits that did not have a corresponding element. As a general improvement,\nthe IASB added a new text block element to the presentation group ‘[834480] Notes - Employee benefits’ to reflect\nthe requirement in IAS 19 to disclose significant actuarial assumptions used to determine the present value of the\ndefined benefit obligation. The IASB also restructured the common practice elements by relocating them as child\nelements of the new element (see paragraph C21).'}]
+2025-09-30 18:48:07,681 - INFO - 127.0.0.1 - - [30/Sep/2025 18:48:07] "POST /chat HTTP/1.1" 200 -
+2025-09-30 18:48:15,333 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\iasb-tu-2025-3-ifrs19.pdf
+2025-09-30 18:48:15,333 - INFO - 127.0.0.1 - - [30/Sep/2025 18:48:15] "[36mGET /pdf/L&D/iasb-tu-2025-3-ifrs19.pdf HTTP/1.1[0m" 304 -
+2025-09-30 18:48:38,916 - INFO - 127.0.0.1 - - [30/Sep/2025 18:48:38] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 18:48:38,920 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-09-30 18:48:38,920 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 18:48:38,920 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 18:48:38,920 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 18:48:38,920 - INFO - Successfully loaded: test2
+2025-09-30 18:48:38,920 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 18:48:38,920 - INFO - Successfully merged vector store 1/1
+2025-09-30 18:48:38,920 - INFO - All vector stores merged successfully.
+2025-09-30 18:48:38,920 - INFO - Total documents in merged vector store: 128
+2025-09-30 18:48:45,605 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 18:48:45,605 - INFO - HERE IS  No and HERE IS [{'source': 'iasb-tu-2025-3-ifrs19.pdf', 'page': 13, 'text': 'search for the business combinations note in a set of digital financial statements.\nCategorical elements\nWhat are categorical elements?\nCategorical elements allow preparers to tag standard responses from a list of options defined in the IFRS\nAccounting Taxonomy. The objective of adding categorical elements is to help users analyse narrative disclosures\nmore efficiently. Categorical elements allow users to efficiently extract and analyse narrative information that\ncan be provided in a structured '}, {'source': 'iasb-tu-2025-3-ifrs19.pdf', 'page': 14, 'text': '(specifically, if two entities would both use ‘other’ to tag a discrete piece of entity-specific information,\nthis could convey to users that the information is comparable, which might not be the case).\n(d)\nto use categorical elements alongside parent narrative elements. This approach helps preparers tag both\ncategorical data and any related contextual information.\n(e)\nto avoid the use of ‘true-only’ Boolean elements—that is, a variant of Boolean elements that only allows\npreparers to tag a valu'}, {'source': 'iasb-tu-2025-3-ifrs19.pdf', 'page': 12, 'text': 'my elements in a digital report.\nSupporting content—Relationships between IFRS Accounting Taxonomy elements (linkbases)\nThe IFRS Accounting Taxonomy calculation linkbase explains\nhow elements might relate mathematically to each other.\nFor example, this content includes:\n•\nsummations of elements to a total or subtotal; and\n•\nformulas to show that an element is a ratio of other\ntaxonomy elements.\nThe IFRS Accounting Taxonomy uses the presentation\nlinkbase to provide presentation views under which '}]
+2025-09-30 18:48:45,638 - INFO - 127.0.0.1 - - [30/Sep/2025 18:48:45] "POST /chat HTTP/1.1" 200 -
+2025-09-30 18:48:52,891 - INFO - 127.0.0.1 - - [30/Sep/2025 18:48:52] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 18:48:52,894 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-09-30 18:48:52,894 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 18:48:52,898 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 18:48:52,898 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 18:48:52,899 - INFO - Successfully loaded: test2
+2025-09-30 18:48:52,899 - INFO - Merging 1 additional vector store(s)...
+2025-09-30 18:48:52,899 - INFO - Successfully merged vector store 1/1
+2025-09-30 18:48:52,900 - INFO - All vector stores merged successfully.
+2025-09-30 18:48:52,900 - INFO - Total documents in merged vector store: 128
+2025-09-30 18:49:00,693 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 18:49:00,693 - INFO - HERE IS  Because the manufacturer will reduce the production that has small demand in the market, and even if they make the product they will reduce the quantity compared to the other best-selling products. and HERE IS [{'source': 'iasb-tu-2025-3-ifrs19.pdf', 'page': 18, 'text': 'terms and at the same time, the interim financial report is incomplete. The further information shall\nnormally be reported on a financial year-to-date basis, and consists of:\n...\n(g)\nthe basis for preparing and presenting information about segments, if the entity chooses to disclose\ninformation about segments. If the entity chooses to disclose information about segments that does\nnot comply with IFRS 8, it shall not describe the information as segment information.\nElement label\nET\nER\nReference\nD'}, {'source': 'iasb-tu-2025-3-ifrs19.pdf', 'page': 14, 'text': 'General policies for categorical elements\nThe Foundation’s general policies for categorical elements in the IFRS Accounting Taxonomy are:\n(a)\nto add a Boolean element if narrative disclosures can be appropriately standardised as either ‘true’ or\n‘false’.\n(b)\nto add an extensible enumeration element if an exhaustive list of options is provided in an Accounting\nStandard, for example the disclosure of an entity’s accounting policy choice.\n(c)\nto add an extensible enumeration element if an exhaustiv'}, {'source': 'test2.pdf', 'page': 4, 'text': 'Moreover, products that have higher prices are limited in stock. Evidently, the manufacturer will \nreduce the production that has small demand in the market, and even if they make the product \nthey will reduce the quantity compared to the other best-selling products, which will have a \nstrong impact on the overall sales. As an illustration, a company produces such products that \nhave strong customer demand and limit those which do not have enough response from the \ncustomer. \n \nIn conclusion, it'}]
+2025-09-30 18:49:00,719 - INFO - 127.0.0.1 - - [30/Sep/2025 18:49:00] "POST /chat HTTP/1.1" 200 -
+2025-09-30 18:49:09,237 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\iasb-tu-2025-3-ifrs19.pdf
+2025-09-30 18:49:09,239 - INFO - 127.0.0.1 - - [30/Sep/2025 18:49:09] "[36mGET /pdf/L&D/iasb-tu-2025-3-ifrs19.pdf HTTP/1.1[0m" 304 -
+2025-09-30 18:50:49,937 - INFO - Received 1 file(s) for category 'L&D'.
+2025-09-30 18:50:49,937 - INFO - Processing 'four things' for category 'L&D'...
+2025-09-30 18:50:50,167 - INFO - Saved vector store for 'four things'.
+2025-09-30 18:50:50,167 - INFO - 127.0.0.1 - - [30/Sep/2025 18:50:50] "POST /upload HTTP/1.1" 200 -
+2025-09-30 18:51:13,604 - INFO - 127.0.0.1 - - [30/Sep/2025 18:51:13] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 18:51:13,607 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-30 18:51:13,609 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-09-30 18:51:13,631 - INFO - Successfully loaded: four things
+2025-09-30 18:51:13,631 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 18:51:13,631 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 18:51:13,631 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 18:51:13,631 - INFO - Successfully loaded: test2
+2025-09-30 18:51:13,631 - INFO - Merging 2 additional vector store(s)...
+2025-09-30 18:51:13,631 - INFO - Successfully merged vector store 1/2
+2025-09-30 18:51:13,631 - INFO - Successfully merged vector store 2/2
+2025-09-30 18:51:13,631 - INFO - All vector stores merged successfully.
+2025-09-30 18:51:13,631 - INFO - Total documents in merged vector store: 194
+2025-09-30 18:51:22,435 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 18:51:22,527 - INFO - 127.0.0.1 - - [30/Sep/2025 18:51:22] "POST /chat HTTP/1.1" 200 -
+2025-09-30 18:51:38,534 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\four things.pdf
+2025-09-30 18:51:38,535 - INFO - 127.0.0.1 - - [30/Sep/2025 18:51:38] "GET /pdf/L&D/four%20things.pdf HTTP/1.1" 200 -
+2025-09-30 18:55:26,970 - INFO - 127.0.0.1 - - [30/Sep/2025 18:55:26] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 18:55:26,973 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-30 18:55:26,973 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-09-30 18:55:26,976 - INFO - Successfully loaded: four things
+2025-09-30 18:55:26,976 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 18:55:26,976 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 18:55:26,976 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 18:55:26,976 - INFO - Successfully loaded: test2
+2025-09-30 18:55:26,976 - INFO - Merging 2 additional vector store(s)...
+2025-09-30 18:55:26,980 - INFO - Successfully merged vector store 1/2
+2025-09-30 18:55:26,980 - INFO - Successfully merged vector store 2/2
+2025-09-30 18:55:26,980 - INFO - All vector stores merged successfully.
+2025-09-30 18:55:26,980 - INFO - Total documents in merged vector store: 194
+2025-09-30 18:55:36,498 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 18:55:36,540 - INFO - 127.0.0.1 - - [30/Sep/2025 18:55:36] "POST /chat HTTP/1.1" 200 -
+2025-09-30 18:56:21,554 - INFO - 127.0.0.1 - - [30/Sep/2025 18:56:21] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 18:56:21,558 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-30 18:56:21,558 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-09-30 18:56:21,559 - INFO - Successfully loaded: four things
+2025-09-30 18:56:21,559 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 18:56:21,562 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 18:56:21,562 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 18:56:21,562 - INFO - Successfully loaded: test2
+2025-09-30 18:56:21,563 - INFO - Merging 2 additional vector store(s)...
+2025-09-30 18:56:21,563 - INFO - Successfully merged vector store 1/2
+2025-09-30 18:56:21,563 - INFO - Successfully merged vector store 2/2
+2025-09-30 18:56:21,564 - INFO - All vector stores merged successfully.
+2025-09-30 18:56:21,564 - INFO - Total documents in merged vector store: 194
+2025-09-30 18:56:29,080 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 18:56:29,109 - INFO - 127.0.0.1 - - [30/Sep/2025 18:56:29] "POST /chat HTTP/1.1" 200 -
+2025-09-30 18:56:35,346 - INFO - 127.0.0.1 - - [30/Sep/2025 18:56:35] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 18:56:35,349 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-30 18:56:35,349 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-09-30 18:56:35,350 - INFO - Successfully loaded: four things
+2025-09-30 18:56:35,350 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 18:56:35,350 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 18:56:35,350 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 18:56:35,350 - INFO - Successfully loaded: test2
+2025-09-30 18:56:35,350 - INFO - Merging 2 additional vector store(s)...
+2025-09-30 18:56:35,350 - INFO - Successfully merged vector store 1/2
+2025-09-30 18:56:35,354 - INFO - Successfully merged vector store 2/2
+2025-09-30 18:56:35,354 - INFO - All vector stores merged successfully.
+2025-09-30 18:56:35,354 - INFO - Total documents in merged vector store: 194
+2025-09-30 18:56:42,578 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 18:56:42,607 - INFO - 127.0.0.1 - - [30/Sep/2025 18:56:42] "POST /chat HTTP/1.1" 200 -
+2025-09-30 18:57:19,478 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-09-30 18:57:19,480 - INFO - 127.0.0.1 - - [30/Sep/2025 18:57:19] "[36mGET /pdf/L&D/test2.pdf HTTP/1.1[0m" 304 -
+2025-09-30 18:57:27,492 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\four things.pdf
+2025-09-30 18:57:27,492 - INFO - 127.0.0.1 - - [30/Sep/2025 18:57:27] "[36mGET /pdf/L&D/four%20things.pdf HTTP/1.1[0m" 304 -

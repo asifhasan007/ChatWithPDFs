@@ -1,4 +1,4 @@
-<div class="chat-section-container">
+<div class="chat-section-container" (click)="onContainerClick($event)">
   <!-- Chat Header -->
   <div class="chat-header">
     <h2>AI Assistant</h2>
@@ -32,12 +32,14 @@
   </button>
 
   <!-- Chat Input Area -->
-  <div class="chat-input-container">
+  <div class="chat-input-container" (click)="onInputAreaClick($event)">
     <div class="chat-input-area">
       <input
+        #chatInput
         type="text"
         [(ngModel)]="userMessage"
         (keyup.enter)="sendMessage()"
+        (click)="onInputClick($event)"
         [disabled]="isLoading"
         placeholder="Ask for any solution or help you need..."
       />
@@ -47,6 +49,5 @@
         </svg>
       </button>
     </div>
-    <p class="footer-text">This is a custom-built AI interface inspired by ChatGPT.</p>
   </div>
 </div>

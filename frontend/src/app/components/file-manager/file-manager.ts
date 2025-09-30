@@ -6,12 +6,11 @@ import { FormsModule } from '@angular/forms';
 import { ChatService } from '../../core/services/chat';
 import { Modal } from '../shared/modal/modal';
 import { ChatHistory } from '../chat-history/chat-history';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-file-manager',
   standalone: true,
-  imports: [CommonModule, FormsModule, Modal, ChatHistory, RouterLink],
+  imports: [CommonModule, FormsModule, Modal, ChatHistory],
   templateUrl: './file-manager.html',
   styleUrls: ['./file-manager.scss']
 })

@@ -1,13 +1,19 @@
 <header class="app-header">
   <div class="logo">
     <div class="image">
-      <img src="../../../assets/images/chatbot.png" alt="SmartPDF Chat Logo" />
+      <img src="../../../assets/images/bs23.png" alt="SmartPDF Chat Logo" />
     </div>
     <div class="title">
-      <h1>SmartPDF Chat</h1>
+      <h1>BSmartPDF</h1>
     </div>
   </div>
   <nav class="navigation">
-    <!-- Add nav links if needed -->
+    <!-- The button is now here -->
+    <button 
+      *ngIf="isPdfChatActive"
+      class="finish-btn" 
+      (click)="onSwitchToAiChat()">
+      Switch to General AI Chat
+    </button>
   </nav>
 </header>

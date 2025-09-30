@@ -2,7 +2,7 @@ import os
 import shutil
 import logging
 import sqlite3
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 from config import UPLOADS_FOLDER, VECTOR_STORES_FOLDER
 from utils import process_and_index_pdf
@@ -238,7 +238,13 @@ def chat_handler():
             page_label = page_num + 1 if page_num != -1 else "N/A"
             source_key = f"{source_file}-p{page_label}"
             if source_key not in unique_sources:
-                unique_sources[source_key] = {"source": os.path.basename(source_file), "page": page_label}
+                     # Include the actual text content from the document for highlighting
+                source_text = doc.page_content if hasattr(doc, 'page_content') else ""
+                unique_sources[source_key] = {
+                    "source": os.path.basename(source_file),
+                    "page": page_label,
+                    "text": source_text[:500]  # Limit text length to avoid huge responses
+                }
         sources = list(unique_sources.values())
         
         logger.info(f"Responded to question in '{category}'. Found {len(sources)} sources.")
@@ -288,6 +294,27 @@ def delete_chat_session_handler(category):
     except Exception as e:
         logger.error(f"Error deleting chat session '{category}': {e}", exc_info=True)
         return jsonify({"error": "Failed to delete chat session."}), 500
+
+# PDF serving API Endpoint
+@app.route('/pdf/<string:category>/<string:filename>', methods=['GET'])
+def serve_pdf(category, filename):
+    """Serve PDF files for viewing in the frontend"""
+    try:
+        pdf_path = os.path.join(UPLOADS_FOLDER, category, filename)
+       
+        if not os.path.exists(pdf_path):
+            logger.warning(f"PDF file not found: {pdf_path}")
+            return jsonify({"error": "PDF file not found"}), 404
+           
+        if not filename.lower().endswith('.pdf'):
+            return jsonify({"error": "Invalid file type"}), 400
+           
+        logger.info(f"Serving PDF: {pdf_path}")
+        return send_file(pdf_path, mimetype='application/pdf')
+       
+    except Exception as e:
+        logger.error(f"Error serving PDF {filename} from category {category}: {e}")
+        return jsonify({"error": "Failed to serve PDF"}), 500
 
 if __name__ == '__main__':
     logger.info("Starting Flask application")

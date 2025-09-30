@@ -43,7 +43,8 @@
   padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* Space between messages */
+  gap: 1.5rem;
+  /* Space between messages */
 }
 
 // Wrapper for each message to manage alignment
@@ -60,13 +61,17 @@
 }
 
 .user-message {
-  background-color: #b5b8bd; /* A modern blue for user messages */
-  margin-left: auto; /* Pushes user messages to the right */
+  background-color: #b5b8bd;
+  /* A modern blue for user messages */
+  margin-left: auto;
+  /* Pushes user messages to the right */
 }
 
 .ai-message {
-  background-color: #CBD5E1; /* Darker grey for AI messages */
-  margin-right: auto; /* Keeps AI messages on the left */
+  background-color: #CBD5E1;
+  /* Darker grey for AI messages */
+  margin-right: auto;
+  /* Keeps AI messages on the left */
 }
 
 // Container for the input area at the bottom
@@ -89,8 +94,8 @@
   padding: 0.5rem;
   border: 1px solid transparent;
 
-&:focus-within {
-    border-color:  rgba(29, 158, 218, 0.25);
+  &:focus-within {
+    border-color: rgba(29, 158, 218, 0.25);
   }
 }
 
@@ -130,6 +135,7 @@
   text-align: center;
   margin-top: 1rem;
 }
+
 /* Add smooth scrolling to the chat container */
 .chat-messages {
   scroll-behavior: smooth;
@@ -139,31 +145,52 @@
 .typing-indicator {
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 8px 0;
+  justify-content: center;
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  background-color: transparent;
+  /* The gray circular background */
+  padding: 0;
 }
 
 .typing-dot {
-  width: 8px;
-  height: 8px;
-  background-color: rgba(0, 0, 0, 0.4);
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+  background-color: #334155;
+  /* Changed to white to be visible on the gray background */
   border-radius: 50%;
-  animation: typing-bounce 1.4s infinite ease-in-out both;
+  animation: bounce 1.4s infinite ease-in-out both;
 }
 
-.typing-dot:nth-child(1) { animation-delay: -0.32s; }
-.typing-dot:nth-child(2) { animation-delay: -0.16s; }
+.typing-dot:nth-child(1) {
+ animation-delay: -0.32s;
+}
+
+.typing-dot:nth-child(2) {
+  animation-delay: -0.16s;
+}
 
 @keyframes typing-bounce {
-  0%, 80%, 100% { transform: scale(0); }
-  40% { transform: scale(1.0); }
+
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(1.0);
+  }
 }
 
 /* Styles for the scroll-to-bottom button */
 .scroll-to-bottom-btn {
   position: absolute;
-  bottom: 170px; /* Adjust to position above the input area */
-  right: 700px;
+  bottom: 170px;
+  /* Adjust to position above the input area */
+  right: 870px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -185,4 +212,3 @@
   color: white;
   transform: scale(1.1);
 }
-

@@ -11,7 +11,7 @@ interface BackendCategoriesResponse {
 
 interface BackendChatResponse {
   answer: string;
-  sources: { source: string; page: number }[]; // Corrected sources type
+  sources: { source: string; page: number; text?: string }[]; // Corrected sources type
 }
 
 interface BackendUploadResponse {
@@ -92,4 +92,9 @@ export class ApiService {
   }
   
   // REMOVED: saveChatSession method was removed as it is not supported by the backend.
+  
+  // --- PDF Serving Method ---
+  getPdfUrl(category: string, filename: string): string {
+    return `${this.baseUrl}/pdf/${category}/${encodeURIComponent(filename)}`;
+  }
 }

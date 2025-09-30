@@ -1,5 +1,13 @@
 <div class="app-container">
-  <app-header></app-header>
+  <!-- 
+    - [isPdfChatActive] passes the chat state down to the header.
+    - (chatModeChange) listens for the button click event from the header.
+  -->
+  <app-header 
+    [isPdfChatActive]="!isAiChatActive"
+    (chatModeChange)="switchToAiChat($event)">
+  </app-header>
+
   <div class="main-layout">
     <!-- File Manager Sidebar -->
     <app-file-manager></app-file-manager>
@@ -9,9 +17,7 @@
       <!-- PDF Chat View -->
       <ng-container *ngIf="!isAiChatActive">
         <app-pdf-chat></app-pdf-chat>
-        <div class="finish-chat-container">
-          <button class="finish-btn" (click)="switchToAiChat(true)">Finish PDF Chat & Start AI Chat</button>
-        </div>
+        <!-- The button and its container have been removed from here -->
       </ng-container>
 
       <!-- General AI Chat View -->

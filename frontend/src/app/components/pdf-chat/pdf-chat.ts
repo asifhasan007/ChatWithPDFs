@@ -5,18 +5,20 @@ import { Observable, Subscription } from 'rxjs';
 import { Category } from '../../core/models/category.model';
 import { ChatMessage, ChatSource } from '../../core/models/chat.model';
 import { ChatService } from '../../core/services/chat';
+import { PdfViewerComponent } from '../shared/pdf-viewer/pdf-viewer';
 import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-pdf-chat',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, PdfViewerComponent],
   templateUrl: './pdf-chat.html',
   styleUrls: ['./pdf-chat.scss']
 })
 export class PdfChat implements OnInit, OnDestroy, AfterViewChecked {
 
   @ViewChild('chatMessagesContainer') private chatMessagesContainer!: ElementRef;
+  @ViewChild('chatInput') private chatInput!: ElementRef; // ADD THIS LINE
 
   categories$!: Observable<Category[]>;
   selectedCategoryId: string = '';
@@ -24,7 +26,9 @@ export class PdfChat implements OnInit, OnDestroy, AfterViewChecked {
   isSessionActive$!: Observable<boolean>;
   messages: ChatMessage[] = [];
   userInput: string = '';
-  showScrollToBottom: boolean = false; // Controls visibility of the scroll button
+  showScrollToBottom: boolean = false;
+  showPdfViewer: boolean = false;
+  selectedSource: ChatSource | null = null;
   private chatSub?: Subscription;
 
   constructor(private chatService: ChatService) {}
@@ -39,7 +43,6 @@ export class PdfChat implements OnInit, OnDestroy, AfterViewChecked {
   }
 
   ngAfterViewChecked(): void {
-    // Automatically scroll to the bottom after the view updates
     if (!this.showScrollToBottom) {
       this.scrollToBottom();
     }
@@ -64,9 +67,9 @@ export class PdfChat implements OnInit, OnDestroy, AfterViewChecked {
         }
         this.chatService.startNewPdfChat(this.selectedCategoryId).subscribe();
         this.isLoading = false;
-        
-        // Ensure chat scrolls to the bottom when history is loaded
         this.scrollToBottom();
+        // Focus the input field when category is selected
+        this.focusInput();
       },
       error: (err) => {
         this.isLoading = false;
@@ -83,12 +86,19 @@ export class PdfChat implements OnInit, OnDestroy, AfterViewChecked {
     this.messages.push(userMsg);
     this.isLoading = true;
     
-    // The view will update, and ngAfterViewChecked will scroll down
+    // Store the message to send, then clear the input for a faster UI response
+    const messageToSend = this.userInput;
+    this.userInput = '';
 
-    this.chatSub = this.chatService.getPdfChatResponse(this.userInput).subscribe({
+    // Keep focus on the input field immediately after clearing
+    this.focusInput();
+
+    this.chatSub = this.chatService.getPdfChatResponse(messageToSend).subscribe({
       next: (aiMsg) => {
         this.messages.push(aiMsg);
         this.isLoading = false;
+        // Maintain focus after AI response
+        this.focusInput();
       },
       error: (err) => {
         console.error("Error getting AI response:", err);
@@ -98,51 +108,74 @@ export class PdfChat implements OnInit, OnDestroy, AfterViewChecked {
           text: 'Sorry, I encountered an error trying to get a response. Please try again.',
           timestamp: new Date()
         });
+        // Maintain focus after error
+        this.focusInput();
       }
     });
+  }
 
-    this.userInput = '';
+  private focusInput(): void {
+    // Use a timeout to make sure the focus happens after the current event loop
+    setTimeout(() => {
+      if (this.chatInput && this.chatInput.nativeElement) {
+        this.chatInput.nativeElement.focus();
+      }
+    }, 50); // Slightly longer delay to ensure DOM updates are complete
+  }
+
+  onContainerClick(event: Event): void {
+    // Check if the click is outside the input area
+    const target = event.target as HTMLElement;
+    const inputWrapper = target.closest('.chat-input-wrapper');
+    
+    if (!inputWrapper && this.chatInput && this.chatInput.nativeElement) {
+      // Click is outside input area, remove focus
+      this.chatInput.nativeElement.blur();
+    }
+  }
+
+  onInputAreaClick(event: Event): void {
+    // Prevent event bubbling to container
+    event.stopPropagation();
+    // Focus the input when clicking anywhere in the input area
+    this.focusInput();
+  }
+
+  onInputClick(event: Event): void {
+    // Prevent event bubbling
+    event.stopPropagation();
   }
 
   scrollToBottom(): void {
     try {
       this.chatMessagesContainer.nativeElement.scrollTop = this.chatMessagesContainer.nativeElement.scrollHeight;
-    } catch(err) {
-      // Handle cases where the element might not be available yet
-    }
+    } catch(err) { }
   }
 
   onChatScroll(event: Event): void {
     const element = event.target as HTMLElement;
-    // Show the button if the user has scrolled up from the bottom
-    const atBottom = element.scrollHeight - element.scrollTop <= element.clientHeight + 1; // Added a small tolerance
+    const atBottom = element.scrollHeight - element.scrollTop <= element.clientHeight + 1;
     this.showScrollToBottom = !atBottom;
   }
   
   viewSource(source: ChatSource | undefined): void {
-    if (source) {
-      Swal.fire({
-        title: 'Source Document',
-        icon: 'info',
-        html: `
-          <div style="text-align: left; padding: 0 1rem;">
-            <p>The information was found in the following document:</p>
-            <hr>
-            <p><strong>File:</strong> ${source.pdfName}</p>
-          </div>
-        `,
-        confirmButtonText: 'Got it!',
-        confirmButtonColor: '#4CAF50' 
-      });
-    } else {
-      Swal.fire({
-        title: 'No Source Available',
-        text: 'Source information could not be retrieved for this message.',
-        icon: 'warning',
-        confirmButtonText: 'Close'
-      });
-    }
-  }
+    if (source) {
+      this.selectedSource = source;
+      this.showPdfViewer = true;
+    } else {
+      Swal.fire({
+        title: 'No Source Available',
+        text: 'Source information could not be retrieved for this message.',
+        icon: 'warning',
+        confirmButtonText: 'Close'
+      });
+    }
+  }
+  
+  closePdfViewer(): void {
+    this.showPdfViewer = false;
+    this.selectedSource = null;
+  }
 
   public clearSession(): void {
     this.messages = [];

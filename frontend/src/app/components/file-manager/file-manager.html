@@ -80,24 +80,15 @@
             <input type="file" #fileInput (change)="onFileSelected($event, category.id)" hidden accept=".pdf">
             <button class="bs23-action-btn bs23-upload-btn" (click)="fileInput.click(); $event.stopPropagation()"
               [disabled]="category.isUploading" title="Upload Document">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
-                <path d="M12 11l-2 2h4l-2-2z" />
-              </svg>
+              <img src="assets/images/upload-icon.png" alt="Upload Icon" />
             </button>
             <button class="bs23-action-btn bs23-history-btn" (click)="openHistoryModal($event, category.id)"
               title="View Chat History">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm3.5 6L12 10.5 8.5 8 12 6l3.5 2z" />
-                <path d="M12 6v6l4 2" />
-              </svg>
+              <img src="assets/images/history-icon.png" alt="History Icon" />
             </button>
             <button class="bs23-action-btn bs23-delete-btn" (click)="deleteFolder($event, category.id)"
               title="Delete Project">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
-              </svg>
+              <img src="assets/images/delete-icon.png" alt="Delete Icon" />
             </button>
           </div>
         </div>

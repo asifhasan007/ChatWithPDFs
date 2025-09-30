@@ -310,8 +310,8 @@
   }
 
   .bs23-action-btn {
-    width: 36px;
-    height: 36px;
+    width: 26px;
+    height: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -321,9 +321,9 @@
     cursor: pointer;
     transition: all 0.2s ease;
 
-    svg {
-      width: 16px;
-      height: 16px;
+    img {
+      width: 20px;
+      height: 20px;
       color: var(--bs23-gray-600);
     }
 
@@ -398,6 +398,12 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    
+  }
+  .bs23-doc-name:hover {
+    outline: none;
+    border-color: var(--bs23-primary);
+    box-shadow: 0 0 0 3px rgba(29, 158, 218, 0.1);
   }
 
   .bs23-remove-doc {

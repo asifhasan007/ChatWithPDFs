@@ -94,6 +94,38 @@
   color: #212529;
   border-bottom-left-radius: 4px;
   align-self: flex-start;
+
+  /* NEW: Add flex properties to align text and the source circle */
+  display: flex;
+  align-items: flex-start; /* Aligns items to the top, which is good for multi-line text */
+  gap: 0.75rem; /* Creates a nice space between the text and the circle */
+}
+.ai-message p {
+  flex-grow: 1; /* Allows the text to take up the available space */
+  margin: 0; /* Removes default paragraph margins that can cause alignment issues */
+}
+
+/* NEW: Styles for the new circular source button */
+.source-circle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #64748B; /* Using a contrasting color from your user message style */
+  color: white;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  flex-shrink: 0; /* Prevents the circle from shrinking if the text is long */
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.source-circle-btn:hover {
+  background-color: #334155; /* A darker shade on hover */
+  transform: scale(1.1);
 }
 
 /* Input Area */
@@ -143,23 +175,29 @@
 /* 
  * **** NEWLY ADDED STYLES FOR TYPING INDICATOR ****
  */
+/* This container is correct and creates the gray circle */
 .typing-indicator-container {
   display: flex;
   align-items: center;
-  padding: 0.8rem 1.3rem;
-  width: fit-content;
+  justify-content: center;
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  background-color:transparent; /* The gray circular background */
+  padding: 0;
 }
 
+/* MODIFICATION: Changed the background-color of the dots to white */
 .typing-dot {
-  width: 8px;
-  height: 8px;
-  margin: 0 3px;
-  background-color: #868e96; // A neutral gray for the dots
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+  background-color: #334155; /* Changed to white to be visible on the gray background */
   border-radius: 50%;
   animation: bounce 1.4s infinite ease-in-out both;
 }
 
-// Stagger the animation delay to create the wave effect
+/* Stagger the animation delay to create the wave effect */
 .typing-dot:nth-child(1) {
   animation-delay: -0.32s;
 }
@@ -167,6 +205,9 @@
 .typing-dot:nth-child(2) {
   animation-delay: -0.16s;
 }
+
+/* The keyframes animation remains the same */
+
 .scroll-to-bottom-btn {
   position: absolute;
   bottom: 200px; /* Adjust as needed to place it above the input area */
