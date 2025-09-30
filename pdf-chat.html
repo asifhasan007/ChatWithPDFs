@@ -1,0 +1,73 @@
+<div class="bs23-chat-container" id="bs23-plc-chat-container">
+  <!-- Header with Brain Station 23 Branding -->
+  <div class="chat-header">
+    <div class="header-content">
+      <div class="header-text">
+        <h2>Document Intelligence Hub</h2>
+        <p>Engage with your PDF knowledge base seamlessly.</p>
+      </div>
+    </div>
+    <!-- Category Selector -->
+    <div class="category-selector">
+      <select id="category" [(ngModel)]="selectedCategoryId" (change)="onCategoryChange()">
+        <option value="" disabled>--Select a Project Folder--</option>
+        <option *ngFor="let category of categories$ | async" [value]="category.id">
+          {{ category.name }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Chat Area -->
+  <div class="chat-window">
+    <!-- Chat messages container with scroll event binding -->
+    <div class="chat-messages" #chatMessagesContainer (scroll)="onChatScroll($event)">
+      <!-- Message Loop -->
+      <div *ngFor="let msg of messages" class="message" [ngClass]="{'user-message': msg.sender === 'user', 'ai-message': msg.sender === 'ai'}">
+        <p [innerHTML]="msg.text"></p>
+        <button *ngIf="msg.sender === 'ai' && msg.source" class="source-btn" (click)="viewSource(msg.source)">
+          View Source
+        </button>
+      </div>
+
+      <!-- Typing Indicator for when the AI is 'thinking' -->
+      <div *ngIf="isLoading" class="ai-message typing-indicator-container">
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+      </div>
+    </div>
+
+    <!-- Scroll to Bottom Button -->
+    <button *ngIf="showScrollToBottom" class="scroll-to-bottom-btn" (click)="scrollToBottom()" title="Scroll to latest message">
+      &darr;
+    </button>
+    
+    <!-- Input Area -->
+    <div class="chat-input-wrapper">
+      <div class="chat-input-area">
+        <input
+          type="text"
+          [(ngModel)]="userInput"
+          (keyup.enter)="sendMessage()"
+          placeholder="Ask any thing about your Project Folder..."
+          [disabled]="isLoading || !selectedCategoryId"
+        />
+        <button (click)="sendMessage()" [disabled]="isLoading || !userInput.trim()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 11L12 6L17 11M12 18V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PDF Viewer Modal -->
+  <app-pdf-viewer
+    *ngIf="showPdfViewer"
+    [source]="selectedSource"
+    [category]="selectedCategoryId"
+    [highlightText]="selectedSource?.sourceText || ''"
+    (close)="closePdfViewer()">
+  </app-pdf-viewer>
+</div>
