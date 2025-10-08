@@ -7080,3 +7080,635 @@ The system is configured to eliminate repeats and bring about a variety of promi
 2025-09-30 18:57:19,480 - INFO - 127.0.0.1 - - [30/Sep/2025 18:57:19] "[36mGET /pdf/L&D/test2.pdf HTTP/1.1[0m" 304 -
 2025-09-30 18:57:27,492 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\four things.pdf
 2025-09-30 18:57:27,492 - INFO - 127.0.0.1 - - [30/Sep/2025 18:57:27] "[36mGET /pdf/L&D/four%20things.pdf HTTP/1.1[0m" 304 -
+2025-09-30 19:50:21,805 - INFO - Request to fetch chat history for category 'L&D'.
+2025-09-30 19:50:21,809 - INFO - Found 130 messages for category 'L&D'.
+2025-09-30 19:50:21,812 - INFO - 127.0.0.1 - - [30/Sep/2025 19:50:21] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-09-30 19:50:21,821 - INFO - 127.0.0.1 - - [30/Sep/2025 19:50:21] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-09-30 19:50:21,826 - INFO - 127.0.0.1 - - [30/Sep/2025 19:50:21] "POST /chat/start HTTP/1.1" 200 -
+2025-09-30 19:50:33,574 - INFO - 127.0.0.1 - - [30/Sep/2025 19:50:33] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 19:50:33,577 - INFO - Found 3 vector store(s) for category 'L&D'
+2025-09-30 19:50:33,577 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-09-30 19:50:33,596 - INFO - Successfully loaded: four things
+2025-09-30 19:50:33,596 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 19:50:33,623 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 19:50:33,623 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 19:50:33,641 - INFO - Successfully loaded: test2
+2025-09-30 19:50:33,641 - INFO - Merging 2 additional vector store(s)...
+2025-09-30 19:50:33,641 - INFO - Successfully merged vector store 1/2
+2025-09-30 19:50:33,641 - INFO - Successfully merged vector store 2/2
+2025-09-30 19:50:33,641 - INFO - All vector stores merged successfully.
+2025-09-30 19:50:33,641 - INFO - Total documents in merged vector store: 194
+2025-09-30 19:50:41,063 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 19:50:41,063 - INFO - HERE IS  Yes, the categorical elements are important for the company. and HERE IS [{'source': 'iasb-tu-2025-3-ifrs19.pdf', 'page': 13, 'text': 'search for the business combinations note in a set of digital financial statements.\nCategorical elements\nWhat are categorical elements?\nCategorical elements allow preparers to tag standard responses from a list of options defined in the IFRS\nAccounting Taxonomy. The objective of adding categorical elements is to help users analyse narrative disclosures\nmore efficiently. Categorical elements allow users to efficiently extract and analyse narrative information that\ncan be provided in a structured '}, {'source': 'iasb-tu-2025-3-ifrs19.pdf', 'page': 14, 'text': '(specifically, if two entities would both use ‘other’ to tag a discrete piece of entity-specific information,\nthis could convey to users that the information is comparable, which might not be the case).\n(d)\nto use categorical elements alongside parent narrative elements. This approach helps preparers tag both\ncategorical data and any related contextual information.\n(e)\nto avoid the use of ‘true-only’ Boolean elements—that is, a variant of Boolean elements that only allows\npreparers to tag a valu'}, {'source': 'iasb-tu-2025-3-ifrs19.pdf', 'page': 12, 'text': 'my elements in a digital report.\nSupporting content—Relationships between IFRS Accounting Taxonomy elements (linkbases)\nThe IFRS Accounting Taxonomy calculation linkbase explains\nhow elements might relate mathematically to each other.\nFor example, this content includes:\n•\nsummations of elements to a total or subtotal; and\n•\nformulas to show that an element is a ratio of other\ntaxonomy elements.\nThe IFRS Accounting Taxonomy uses the presentation\nlinkbase to provide presentation views under which '}]
+2025-09-30 19:50:41,084 - INFO - 127.0.0.1 - - [30/Sep/2025 19:50:41] "POST /chat HTTP/1.1" 200 -
+2025-09-30 19:50:44,305 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\iasb-tu-2025-3-ifrs19.pdf
+2025-09-30 19:50:44,321 - INFO - 127.0.0.1 - - [30/Sep/2025 19:50:44] "[36mGET /pdf/L&D/iasb-tu-2025-3-ifrs19.pdf HTTP/1.1[0m" 304 -
+2025-09-30 19:51:41,857 - INFO - Received 1 file(s) for category 'L&D'.
+2025-09-30 19:51:41,860 - INFO - Processing 'html_tutorial' for category 'L&D'...
+2025-09-30 19:51:42,702 - INFO - Saved vector store for 'html_tutorial'.
+2025-09-30 19:51:42,702 - INFO - 127.0.0.1 - - [30/Sep/2025 19:51:42] "POST /upload HTTP/1.1" 200 -
+2025-09-30 19:51:52,215 - INFO - 127.0.0.1 - - [30/Sep/2025 19:51:52] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 19:51:52,217 - INFO - Found 4 vector store(s) for category 'L&D'
+2025-09-30 19:51:52,219 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-09-30 19:51:52,219 - INFO - Successfully loaded: four things
+2025-09-30 19:51:52,219 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\html_tutorial
+2025-09-30 19:51:52,243 - INFO - Successfully loaded: html_tutorial
+2025-09-30 19:51:52,243 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 19:51:52,249 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 19:51:52,249 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 19:51:52,249 - INFO - Successfully loaded: test2
+2025-09-30 19:51:52,249 - INFO - Merging 3 additional vector store(s)...
+2025-09-30 19:51:52,249 - INFO - Successfully merged vector store 1/3
+2025-09-30 19:51:52,249 - INFO - Successfully merged vector store 2/3
+2025-09-30 19:51:52,249 - INFO - Successfully merged vector store 3/3
+2025-09-30 19:51:52,249 - INFO - All vector stores merged successfully.
+2025-09-30 19:51:52,249 - INFO - Total documents in merged vector store: 327
+2025-09-30 19:51:58,715 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 19:51:58,725 - INFO - HERE IS  The <br /> tag is used to create a line break in an HTML document. and HERE IS [{'source': 'html_tutorial.pdf', 'page': 22, 'text': 'HTML \n21 \n \nLine Break Tag \nWhenever you use the <br /> element, anything following it starts from the next line. This \ntag is an example of an empty element, where you do not need opening and closing tags, as \nthere is nothing to go in between them. \nThe <br /> tag has a space between the characters br and the forward slash. If you omit this \nspace, older browsers will have trouble rendering the line break, while if you miss the forward \nslash character and just use <br> it is not valid in XHTM'}, {'source': 'html_tutorial.pdf', 'page': 19, 'text': 'The <!DOCTYPE> declaration tag is used by the web browser to understand the version of \nthe HTML used in the document. Current version of HTML is 5 and it makes use of the following \ndeclaration: \n<!DOCTYPE html> \nThere are many other declaration types which can be used in HTML document depending on \nwhat version of HTML is being used. We will see more details on this while discussing \n<!DOCTYPE...> tag along with other HTML tags.'}, {'source': 'html_tutorial.pdf', 'page': 11, 'text': 'HTML <dfn> Tag .................................................................................................................................. 194 \nHTML <dialog> tag .............................................................................................................................. 195'}]
+2025-09-30 19:51:58,757 - INFO - 127.0.0.1 - - [30/Sep/2025 19:51:58] "POST /chat HTTP/1.1" 200 -
+2025-09-30 19:52:21,628 - INFO - 127.0.0.1 - - [30/Sep/2025 19:52:21] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 19:52:21,632 - INFO - Found 4 vector store(s) for category 'L&D'
+2025-09-30 19:52:21,632 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-09-30 19:52:21,634 - INFO - Successfully loaded: four things
+2025-09-30 19:52:21,634 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\html_tutorial
+2025-09-30 19:52:21,634 - INFO - Successfully loaded: html_tutorial
+2025-09-30 19:52:21,634 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 19:52:21,634 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 19:52:21,634 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 19:52:21,634 - INFO - Successfully loaded: test2
+2025-09-30 19:52:21,634 - INFO - Merging 3 additional vector store(s)...
+2025-09-30 19:52:21,634 - INFO - Successfully merged vector store 1/3
+2025-09-30 19:52:21,634 - INFO - Successfully merged vector store 2/3
+2025-09-30 19:52:21,634 - INFO - Successfully merged vector store 3/3
+2025-09-30 19:52:21,634 - INFO - All vector stores merged successfully.
+2025-09-30 19:52:21,634 - INFO - Total documents in merged vector store: 327
+2025-09-30 19:52:31,515 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 19:52:31,546 - INFO - 127.0.0.1 - - [30/Sep/2025 19:52:31] "POST /chat HTTP/1.1" 200 -
+2025-09-30 19:52:56,420 - INFO - 127.0.0.1 - - [30/Sep/2025 19:52:56] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 19:52:56,423 - INFO - Found 4 vector store(s) for category 'L&D'
+2025-09-30 19:52:56,423 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-09-30 19:52:56,424 - INFO - Successfully loaded: four things
+2025-09-30 19:52:56,424 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\html_tutorial
+2025-09-30 19:52:56,428 - INFO - Successfully loaded: html_tutorial
+2025-09-30 19:52:56,428 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 19:52:56,430 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 19:52:56,430 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 19:52:56,431 - INFO - Successfully loaded: test2
+2025-09-30 19:52:56,431 - INFO - Merging 3 additional vector store(s)...
+2025-09-30 19:52:56,432 - INFO - Successfully merged vector store 1/3
+2025-09-30 19:52:56,432 - INFO - Successfully merged vector store 2/3
+2025-09-30 19:52:56,433 - INFO - Successfully merged vector store 3/3
+2025-09-30 19:52:56,433 - INFO - All vector stores merged successfully.
+2025-09-30 19:52:56,433 - INFO - Total documents in merged vector store: 327
+2025-09-30 19:53:05,493 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 19:53:05,493 - INFO - HERE IS  
+The HTML line break tag is used to insert a line break in the text. The syntax for this tag is <br/>.  and HERE IS [{'source': 'html_tutorial.pdf', 'page': 22, 'text': 'HTML \n21 \n \nLine Break Tag \nWhenever you use the <br /> element, anything following it starts from the next line. This \ntag is an example of an empty element, where you do not need opening and closing tags, as \nthere is nothing to go in between them. \nThe <br /> tag has a space between the characters br and the forward slash. If you omit this \nspace, older browsers will have trouble rendering the line break, while if you miss the forward \nslash character and just use <br> it is not valid in XHTM'}, {'source': 'html_tutorial.pdf', 'page': 2, 'text': 'HTML \ni \n \nAbout the Tutorial \nHTML stands for Hyper Text Markup Language, which is the most widely used language on \nWeb to develop web pages. \nHTML was created by Berners-Lee in late 1991 but "HTML 2.0" was the first standard HTML \nspecification which was published in 1995. HTML 4.01 was a major version of HTML and it \nwas published in late 1999. Though HTML 4.01 version is widely used but currently we are \nhaving HTML-5 version which is an extension to HTML 4.01, and this version was publishe'}, {'source': 'html_tutorial.pdf', 'page': 29, 'text': 'between two paragraph elements as shown below. \nExample \n<p id="html">This para explains what is HTML</p> \n<p id="css">This para explains what is Cascading Style Sheet</p> \nThe title Attribute \nThe title attribute gives a suggested title for the element. They syntax for the title attribute \nis similar as explained for id attribute: \nThe behavior of this attribute will depend upon the element that carries it, although it is often \ndisplayed as a tooltip when cursor comes over the element or while'}]
+2025-09-30 19:53:05,524 - INFO - 127.0.0.1 - - [30/Sep/2025 19:53:05] "POST /chat HTTP/1.1" 200 -
+2025-09-30 19:53:28,774 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\html_tutorial.pdf
+2025-09-30 19:53:28,775 - INFO - 127.0.0.1 - - [30/Sep/2025 19:53:28] "GET /pdf/L&D/html_tutorial.pdf HTTP/1.1" 200 -
+2025-09-30 19:53:48,802 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\html_tutorial.pdf
+2025-09-30 19:53:48,802 - INFO - 127.0.0.1 - - [30/Sep/2025 19:53:48] "[36mGET /pdf/L&D/html_tutorial.pdf HTTP/1.1[0m" 304 -
+2025-09-30 19:54:07,364 - INFO - 127.0.0.1 - - [30/Sep/2025 19:54:07] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 19:54:07,367 - INFO - Found 4 vector store(s) for category 'L&D'
+2025-09-30 19:54:07,367 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-09-30 19:54:07,368 - INFO - Successfully loaded: four things
+2025-09-30 19:54:07,368 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\html_tutorial
+2025-09-30 19:54:07,368 - INFO - Successfully loaded: html_tutorial
+2025-09-30 19:54:07,368 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 19:54:07,372 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 19:54:07,372 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 19:54:07,373 - INFO - Successfully loaded: test2
+2025-09-30 19:54:07,373 - INFO - Merging 3 additional vector store(s)...
+2025-09-30 19:54:07,373 - INFO - Successfully merged vector store 1/3
+2025-09-30 19:54:07,374 - INFO - Successfully merged vector store 2/3
+2025-09-30 19:54:07,374 - INFO - Successfully merged vector store 3/3
+2025-09-30 19:54:07,374 - INFO - All vector stores merged successfully.
+2025-09-30 19:54:07,374 - INFO - Total documents in merged vector store: 327
+2025-09-30 19:54:15,384 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 19:54:15,384 - INFO - HERE IS  The <hr> tag creates a line from the current position in the document to the right margin and breaks the line accordingly.  and HERE IS [{'source': 'html_tutorial.pdf', 'page': 23, 'text': 'HTML \n22 \n \n<title>Centring Content Example</title> \n</head> \n<body> \n<p>This text is not in the center.</p> \n<center> \n<p>This text is in the center.</p> \n</center> \n</body> \n</html> \nThis will produce the following result: \nThis text is not in the center. \nThis text is in the center. \nHorizontal Lines \nHorizontal lines are used to visually break-up sections of a document. The <hr> tag creates \na line from the current position in the document to the right margin and breaks the line \naccordingly'}, {'source': 'html_tutorial.pdf', 'page': 45, 'text': 'HTML \n44 \n \nExample \n<!DOCTYPE html> \n<html> \n<head> \n<title>Text Direction Example</title> \n</head> \n<body> \n<p>This text will go left to right.</p> \n<p><bdo dir="rtl">This text will go right to left.</bdo></p> \n</body> \n</html> \nThis will produce the following result: \nThis text will go left to right. \nThis text will go right to left. \nSpecial Terms \nThe <dfn>...</dfn> element (or HTML Definition Element) allows you to specify that you \nare introducing a special term. It\'s usage is similar to '}, {'source': 'html_tutorial.pdf', 'page': 56, 'text': 'HTML \n55 \n \nEnd of ebook preview \nIf you liked what you saw… \nBuy it from our store @ https://store.tutorialspoint.com'}]
+2025-09-30 19:54:15,429 - INFO - 127.0.0.1 - - [30/Sep/2025 19:54:15] "POST /chat HTTP/1.1" 200 -
+2025-09-30 19:54:44,204 - INFO - 127.0.0.1 - - [30/Sep/2025 19:54:44] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 19:54:44,208 - INFO - Found 4 vector store(s) for category 'L&D'
+2025-09-30 19:54:44,208 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-09-30 19:54:44,209 - INFO - Successfully loaded: four things
+2025-09-30 19:54:44,210 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\html_tutorial
+2025-09-30 19:54:44,212 - INFO - Successfully loaded: html_tutorial
+2025-09-30 19:54:44,212 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 19:54:44,214 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 19:54:44,214 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 19:54:44,214 - INFO - Successfully loaded: test2
+2025-09-30 19:54:44,215 - INFO - Merging 3 additional vector store(s)...
+2025-09-30 19:54:44,215 - INFO - Successfully merged vector store 1/3
+2025-09-30 19:54:44,215 - INFO - Successfully merged vector store 2/3
+2025-09-30 19:54:44,216 - INFO - Successfully merged vector store 3/3
+2025-09-30 19:54:44,216 - INFO - All vector stores merged successfully.
+2025-09-30 19:54:44,216 - INFO - Total documents in merged vector store: 327
+2025-09-30 19:54:52,349 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 19:54:52,349 - INFO - HERE IS  Preserve Formatting is a feature that allows you to maintain the original formatting of your text when copying and pasting it into another document or application. This feature helps preserve the layout, font styles, and other visual elements of your text. and HERE IS [{'source': 'html_tutorial.pdf', 'page': 19, 'text': 'The <!DOCTYPE> declaration tag is used by the web browser to understand the version of \nthe HTML used in the document. Current version of HTML is 5 and it makes use of the following \ndeclaration: \n<!DOCTYPE html> \nThere are many other declaration types which can be used in HTML document depending on \nwhat version of HTML is being used. We will see more details on this while discussing \n<!DOCTYPE...> tag along with other HTML tags.'}, {'source': 'four things.pdf', 'page': 13, 'text': 'here suggests why the traditional techniques\nhave proved as durable as they have and why\nthey still leave sophisticated managers want-\ning more. Much of what determines the\nhealth of a product business—the soundness\nof its offering and the management of its\npeople—is just as indispensable in a service\nbusiness and can be addressed with a similar\ntool kit. But whole new areas involving the\nroles of customers have opened up, and their\ntool kits are only now being assembled.\nReprint R0804D\nTo order'}, {'source': 'test2.pdf', 'page': 2, 'text': 'The diagram depicts the recycling process of plastic bottles. \nOverall, this is a man-made cyclic process with a total of nine steps. The process starts from \ncollecting bottles to changing into a raw material and ultimately producing different end \nproducts. \nInitially, the bottles are collected from trash bins, and transported by a specialized truck to a \nrecycling centre for sorting process, where a direct human interaction is needed. Then, all the \nbottles form a compressed block that goes i'}]
+2025-09-30 19:54:52,378 - INFO - 127.0.0.1 - - [30/Sep/2025 19:54:52] "POST /chat HTTP/1.1" 200 -
+2025-09-30 19:56:57,604 - INFO - 127.0.0.1 - - [30/Sep/2025 19:56:57] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 19:56:57,607 - INFO - Found 4 vector store(s) for category 'L&D'
+2025-09-30 19:56:57,608 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-09-30 19:56:57,608 - INFO - Successfully loaded: four things
+2025-09-30 19:56:57,608 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\html_tutorial
+2025-09-30 19:56:57,608 - INFO - Successfully loaded: html_tutorial
+2025-09-30 19:56:57,608 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 19:56:57,608 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 19:56:57,608 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 19:56:57,608 - INFO - Successfully loaded: test2
+2025-09-30 19:56:57,608 - INFO - Merging 3 additional vector store(s)...
+2025-09-30 19:56:57,608 - INFO - Successfully merged vector store 1/3
+2025-09-30 19:56:57,615 - INFO - Successfully merged vector store 2/3
+2025-09-30 19:56:57,615 - INFO - Successfully merged vector store 3/3
+2025-09-30 19:56:57,616 - INFO - All vector stores merged successfully.
+2025-09-30 19:56:57,616 - INFO - Total documents in merged vector store: 327
+2025-09-30 19:57:06,306 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 19:57:06,341 - INFO - 127.0.0.1 - - [30/Sep/2025 19:57:06] "POST /chat HTTP/1.1" 200 -
+2025-09-30 19:57:19,507 - INFO - 127.0.0.1 - - [30/Sep/2025 19:57:19] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 19:57:19,511 - INFO - Found 4 vector store(s) for category 'L&D'
+2025-09-30 19:57:19,511 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-09-30 19:57:19,512 - INFO - Successfully loaded: four things
+2025-09-30 19:57:19,514 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\html_tutorial
+2025-09-30 19:57:19,515 - INFO - Successfully loaded: html_tutorial
+2025-09-30 19:57:19,515 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 19:57:19,519 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 19:57:19,519 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 19:57:19,519 - INFO - Successfully loaded: test2
+2025-09-30 19:57:19,519 - INFO - Merging 3 additional vector store(s)...
+2025-09-30 19:57:19,519 - INFO - Successfully merged vector store 1/3
+2025-09-30 19:57:19,519 - INFO - Successfully merged vector store 2/3
+2025-09-30 19:57:19,519 - INFO - Successfully merged vector store 3/3
+2025-09-30 19:57:19,519 - INFO - All vector stores merged successfully.
+2025-09-30 19:57:19,522 - INFO - Total documents in merged vector store: 327
+2025-09-30 19:57:26,542 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 19:57:26,542 - INFO - HERE IS  Preserve Formatting is a feature in some text editors or word processors that allows the user to preserve the original formatting of a document when editing or copying and pasting content from one location to another. and HERE IS [{'source': 'html_tutorial.pdf', 'page': 2, 'text': 'you can take yourself at higher level of expertise. \nPrerequisites \nBefore proceeding with this tutorial you should have a basic working knowledge with \nWindows or Linux operating system, additionally you must be familiar with: \n\uf0b7 \nExperience with any text editor like notepad, notepad++, or Edit plus etc. \n\uf0b7 \nHow to create directories and files on your computer. \n\uf0b7 \nHow to navigate through different directories. \n\uf0b7 \nHow to type content in a file and save them on a computer. \n\uf0b7 \nUnderstanding abo'}, {'source': 'iasb-tu-2025-3-ifrs19.pdf', 'page': 12, 'text': 'Taxonomy and to explain the terms used to describe its content;\n(b)\nUsing the IFRS Taxonomy—A preparer’s guide to help preparers understand the content of the IFRS\nAccounting Taxonomy; and\n(c)\nUsing the IFRS digital taxonomies—A guide for regulators implementing the IFRS digital taxonomies in a digital filing\nsystem to help regulators and other organisations implement the IFRS digital taxonomies within a digital\nfiling system.\nThe Foundation also publishes tagged illustrative examples to show ho'}, {'source': 'html_tutorial.pdf', 'page': 19, 'text': 'The <!DOCTYPE> declaration tag is used by the web browser to understand the version of \nthe HTML used in the document. Current version of HTML is 5 and it makes use of the following \ndeclaration: \n<!DOCTYPE html> \nThere are many other declaration types which can be used in HTML document depending on \nwhat version of HTML is being used. We will see more details on this while discussing \n<!DOCTYPE...> tag along with other HTML tags.'}]
+2025-09-30 19:57:26,587 - INFO - 127.0.0.1 - - [30/Sep/2025 19:57:26] "POST /chat HTTP/1.1" 200 -
+2025-09-30 20:00:53,411 - INFO - 127.0.0.1 - - [30/Sep/2025 20:00:53] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 20:00:53,414 - INFO - Found 4 vector store(s) for category 'L&D'
+2025-09-30 20:00:53,415 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-09-30 20:00:53,418 - INFO - Successfully loaded: four things
+2025-09-30 20:00:53,418 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\html_tutorial
+2025-09-30 20:00:53,420 - INFO - Successfully loaded: html_tutorial
+2025-09-30 20:00:53,420 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 20:00:53,420 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 20:00:53,420 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 20:00:53,420 - INFO - Successfully loaded: test2
+2025-09-30 20:00:53,420 - INFO - Merging 3 additional vector store(s)...
+2025-09-30 20:00:53,420 - INFO - Successfully merged vector store 1/3
+2025-09-30 20:00:53,420 - INFO - Successfully merged vector store 2/3
+2025-09-30 20:00:53,420 - INFO - Successfully merged vector store 3/3
+2025-09-30 20:00:53,420 - INFO - All vector stores merged successfully.
+2025-09-30 20:00:53,420 - INFO - Total documents in merged vector store: 327
+2025-09-30 20:00:59,665 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 20:00:59,665 - INFO - HERE IS  Yes, it is important for the web developers to understand how cookies work and how they can be used in their web applications. and HERE IS [{'source': 'four things.pdf', 'page': 4, 'text': 'agers must undergo an important shift in\nperspective: Whereas product designers focus\non the characteristics buyers will value,\nservice designers do better to focus on the\nexperiences customers want to have. For ex-\nample, customers may attribute convenience\nor friendly interaction to your service brand.\nThey may compare your offering favorably\nwith competitors’ because of extended hours,\ncloser proximity, greater scope, or lower\nprices. Your management team must be abso-\nlutely clear about whic'}, {'source': 'html_tutorial.pdf', 'page': 2, 'text': 'any contents or a part of contents of this e-book in any manner without written consent \nof the publisher.   \nWe strive to update the contents of our website and tutorials as timely and as precisely as \npossible, however, the contents may contain inaccuracies or errors. Tutorials Point (I) Pvt. \nLtd. provides no guarantee regarding the accuracy, timeliness or completeness of our \nwebsite or its contents including this tutorial. If you discover any errors on our website or \nin this tutorial, plea'}, {'source': 'html_tutorial.pdf', 'page': 54, 'text': '</head> \n<body> \n<p>Hello HTML5!</p> \n</body> \n</html> \nSetting Cookies \nCookies are data, stored in small text files on your computer and it is exchanged between \nweb browser and web server to keep track of various information based on your web \napplication need. \nYou can use <meta> tag to store cookies on client side and later this information can be used \nby the Web Server to track a site visitor.'}]
+2025-09-30 20:00:59,687 - INFO - 127.0.0.1 - - [30/Sep/2025 20:00:59] "POST /chat HTTP/1.1" 200 -
+2025-09-30 20:01:09,263 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\four things.pdf
+2025-09-30 20:01:09,292 - INFO - 127.0.0.1 - - [30/Sep/2025 20:01:09] "[36mGET /pdf/L&D/four%20things.pdf HTTP/1.1[0m" 304 -
+2025-09-30 20:01:42,123 - INFO - 127.0.0.1 - - [30/Sep/2025 20:01:42] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 20:01:42,126 - INFO - Found 4 vector store(s) for category 'L&D'
+2025-09-30 20:01:42,126 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-09-30 20:01:42,128 - INFO - Successfully loaded: four things
+2025-09-30 20:01:42,128 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\html_tutorial
+2025-09-30 20:01:42,130 - INFO - Successfully loaded: html_tutorial
+2025-09-30 20:01:42,130 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 20:01:42,130 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 20:01:42,130 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 20:01:42,130 - INFO - Successfully loaded: test2
+2025-09-30 20:01:42,130 - INFO - Merging 3 additional vector store(s)...
+2025-09-30 20:01:42,130 - INFO - Successfully merged vector store 1/3
+2025-09-30 20:01:42,130 - INFO - Successfully merged vector store 2/3
+2025-09-30 20:01:42,130 - INFO - Successfully merged vector store 3/3
+2025-09-30 20:01:42,130 - INFO - All vector stores merged successfully.
+2025-09-30 20:01:42,130 - INFO - Total documents in merged vector store: 327
+2025-09-30 20:01:49,244 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 20:01:49,244 - INFO - HERE IS  No and HERE IS [{'source': 'html_tutorial.pdf', 'page': 24, 'text': 'formatting of the source document. \nExample \n<!DOCTYPE html> \n<html> \n<head> \n<title>Preserve Formatting Example</title> \n</head> \n<body> \n<pre> \nfunction testFunction( strText ){ \n   alert (strText) \n} \n</pre> \n</body> \n</html> \nThis will produce the following result: \nfunction testFunction( strText ){'}, {'source': 'html_tutorial.pdf', 'page': 31, 'text': "HTML \n30 \n \nSome text... \nAt this point of time, we are not learning CSS, so just let's proceed without bothering much \nabout CSS. Here, you need to understand what are HTML attributes and how they can be \nused while formatting content. \nInternationalization Attributes \nThere are three internationalization attributes, which are available for most (although not all) \nXHTML elements. \n\uf0b7 \ndir \n\uf0b7 \nlang \n\uf0b7 \nxml:lang \nThe dir Attribute \nThe dir attribute allows you to indicate to the browser about the"}, {'source': 'html_tutorial.pdf', 'page': 51, 'text': "You can add metadata to your web pages by placing <meta> tags inside the header of the \ndocument which is represented by <head> and </head> tags. A meta tag can have \nfollowing attributes in addition to core attributes: \nAttribute \nDescription \nName \nName for the property. Can be anything. Examples include, keywords, \ndescription, author, revised, generator etc. \ncontent \nSpecifies the property's value. \nscheme \nSpecifies a scheme to interpret the property's value (as declared in the \ncontent at"}]
+2025-09-30 20:01:49,276 - INFO - 127.0.0.1 - - [30/Sep/2025 20:01:49] "POST /chat HTTP/1.1" 200 -
+2025-09-30 20:02:15,811 - INFO - 127.0.0.1 - - [30/Sep/2025 20:02:15] "OPTIONS /chat HTTP/1.1" 200 -
+2025-09-30 20:02:15,814 - INFO - Found 4 vector store(s) for category 'L&D'
+2025-09-30 20:02:15,814 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-09-30 20:02:15,816 - INFO - Successfully loaded: four things
+2025-09-30 20:02:15,816 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\html_tutorial
+2025-09-30 20:02:15,818 - INFO - Successfully loaded: html_tutorial
+2025-09-30 20:02:15,818 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-09-30 20:02:15,821 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-09-30 20:02:15,821 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-09-30 20:02:15,821 - INFO - Successfully loaded: test2
+2025-09-30 20:02:15,822 - INFO - Merging 3 additional vector store(s)...
+2025-09-30 20:02:15,822 - INFO - Successfully merged vector store 1/3
+2025-09-30 20:02:15,822 - INFO - Successfully merged vector store 2/3
+2025-09-30 20:02:15,822 - INFO - Successfully merged vector store 3/3
+2025-09-30 20:02:15,822 - INFO - All vector stores merged successfully.
+2025-09-30 20:02:15,822 - INFO - Total documents in merged vector store: 327
+2025-09-30 20:02:24,261 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-09-30 20:02:24,261 - INFO - HERE IS  The concept of preserve formatting is not important for web developers because the primary goal of HTML is to structure and present content on the web, not to preserve the exact formatting of the source document. and HERE IS [{'source': 'html_tutorial.pdf', 'page': 17, 'text': 'HTML \n16 \n \nHTML stands for Hypertext Markup Language, and it is the most widely used language to \nwrite Web Pages. \n\uf0b7 \nHypertext refers to the way in which Web pages (HTML documents) are linked \ntogether. Thus, the link available on a webpage is called Hypertext. \n \n\uf0b7 \nAs its name suggests, HTML is a Markup Language which means you use HTML to \nsimply "mark-up" a text document with tags that tell a Web browser how to structure \nit to display. \nOriginally, HTML was developed with the intent of d'}, {'source': 'html_tutorial.pdf', 'page': 24, 'text': 'formatting of the source document. \nExample \n<!DOCTYPE html> \n<html> \n<head> \n<title>Preserve Formatting Example</title> \n</head> \n<body> \n<pre> \nfunction testFunction( strText ){ \n   alert (strText) \n} \n</pre> \n</body> \n</html> \nThis will produce the following result: \nfunction testFunction( strText ){'}, {'source': 'html_tutorial.pdf', 'page': 28, 'text': 'quotations. The below example shows three possible values of align attribute: left, \ncenter and right. \nAttribute names and attribute values are case-insensitive. However, the World Wide Web \nConsortium (W3C) recommends lowercase attributes/attribute values in their HTML 4 \nrecommendation. \nExample \n<!DOCTYPE html> \n<html> \n<head> \n<title>Align Attribute  Example</title> \n</head> \n<body> \n<p align="left">This is left aligned</p> \n<p align="center">This is center aligned</p> \n<p align="right">Thi'}]
+2025-09-30 20:02:24,289 - INFO - 127.0.0.1 - - [30/Sep/2025 20:02:24] "POST /chat HTTP/1.1" 200 -
+2025-09-30 20:02:42,611 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\html_tutorial.pdf
+2025-09-30 20:02:42,611 - INFO - 127.0.0.1 - - [30/Sep/2025 20:02:42] "[36mGET /pdf/L&D/html_tutorial.pdf HTTP/1.1[0m" 304 -
+2025-09-30 20:03:00,008 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\html_tutorial.pdf
+2025-09-30 20:03:00,009 - INFO - 127.0.0.1 - - [30/Sep/2025 20:03:00] "[36mGET /pdf/L&D/html_tutorial.pdf HTTP/1.1[0m" 304 -
+2025-10-06 11:12:39,748 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-10-06 11:12:39,758 - INFO - Starting Flask application
+2025-10-06 11:12:39,854 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-10-06 11:12:39,854 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-06 11:12:39,861 - INFO -  * Restarting with stat
+2025-10-06 11:13:26,361 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-10-06 11:13:26,361 - INFO - Starting Flask application
+2025-10-06 11:13:26,382 - WARNING -  * Debugger is active!
+2025-10-06 11:13:26,386 - INFO -  * Debugger PIN: 774-358-813
+2025-10-06 11:13:26,469 - INFO - Request to fetch chat history for category 'L&D'.
+2025-10-06 11:13:26,469 - INFO - Found 152 messages for category 'L&D'.
+2025-10-06 11:13:26,469 - INFO - 127.0.0.1 - - [06/Oct/2025 11:13:26] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-10-06 11:13:26,477 - INFO - 127.0.0.1 - - [06/Oct/2025 11:13:26] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-10-06 11:13:26,480 - INFO - 127.0.0.1 - - [06/Oct/2025 11:13:26] "POST /chat/start HTTP/1.1" 200 -
+2025-10-06 11:16:09,631 - INFO - 127.0.0.1 - - [06/Oct/2025 11:16:09] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-06 11:16:09,634 - INFO - Found 4 vector store(s) for category 'L&D'
+2025-10-06 11:16:09,634 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-10-06 11:16:09,654 - INFO - Loading faiss with AVX2 support.
+2025-10-06 11:16:09,729 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-06 11:16:09,782 - INFO - Successfully loaded: four things
+2025-10-06 11:16:09,782 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\html_tutorial
+2025-10-06 11:16:09,811 - INFO - Successfully loaded: html_tutorial
+2025-10-06 11:16:09,811 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-10-06 11:16:09,830 - INFO - Successfully loaded: iasb-tu-2025-3-ifrs19
+2025-10-06 11:16:09,830 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-10-06 11:16:09,847 - INFO - Successfully loaded: test2
+2025-10-06 11:16:09,847 - INFO - Merging 3 additional vector store(s)...
+2025-10-06 11:16:09,848 - INFO - Successfully merged vector store 1/3
+2025-10-06 11:16:09,849 - INFO - Successfully merged vector store 2/3
+2025-10-06 11:16:09,849 - INFO - Successfully merged vector store 3/3
+2025-10-06 11:16:09,849 - INFO - All vector stores merged successfully.
+2025-10-06 11:16:09,849 - INFO - Total documents in merged vector store: 327
+2025-10-06 11:16:20,278 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-10-06 11:16:20,278 - INFO - HERE IS  The align attribute is more important for the web developers. and HERE IS [{'source': 'html_tutorial.pdf', 'page': 2, 'text': 'HTML \ni \n \nAbout the Tutorial \nHTML stands for Hyper Text Markup Language, which is the most widely used language on \nWeb to develop web pages. \nHTML was created by Berners-Lee in late 1991 but "HTML 2.0" was the first standard HTML \nspecification which was published in 1995. HTML 4.01 was a major version of HTML and it \nwas published in late 1999. Though HTML 4.01 version is widely used but currently we are \nhaving HTML-5 version which is an extension to HTML 4.01, and this version was publishe'}, {'source': 'four things.pdf', 'page': 4, 'text': 'agers must undergo an important shift in\nperspective: Whereas product designers focus\non the characteristics buyers will value,\nservice designers do better to focus on the\nexperiences customers want to have. For ex-\nample, customers may attribute convenience\nor friendly interaction to your service brand.\nThey may compare your offering favorably\nwith competitors’ because of extended hours,\ncloser proximity, greater scope, or lower\nprices. Your management team must be abso-\nlutely clear about whic'}, {'source': 'html_tutorial.pdf', 'page': 28, 'text': 'quotations. The below example shows three possible values of align attribute: left, \ncenter and right. \nAttribute names and attribute values are case-insensitive. However, the World Wide Web \nConsortium (W3C) recommends lowercase attributes/attribute values in their HTML 4 \nrecommendation. \nExample \n<!DOCTYPE html> \n<html> \n<head> \n<title>Align Attribute  Example</title> \n</head> \n<body> \n<p align="left">This is left aligned</p> \n<p align="center">This is center aligned</p> \n<p align="right">Thi'}]
+2025-10-06 11:16:20,319 - INFO - 127.0.0.1 - - [06/Oct/2025 11:16:20] "POST /chat HTTP/1.1" 200 -
+2025-10-06 11:16:25,057 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\html_tutorial.pdf
+2025-10-06 11:16:25,476 - INFO - 127.0.0.1 - - [06/Oct/2025 11:16:25] "[36mGET /pdf/L&D/html_tutorial.pdf HTTP/1.1[0m" 304 -
+2025-10-06 13:41:08,990 - INFO - Request to fetch chat history for category 'L&D'.
+2025-10-06 13:41:08,999 - INFO - Found 154 messages for category 'L&D'.
+2025-10-06 13:41:09,002 - INFO - 127.0.0.1 - - [06/Oct/2025 13:41:09] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-10-06 14:10:21,763 - INFO - Request to fetch chat history for category 'L&D'.
+2025-10-06 14:10:21,766 - INFO - Found 154 messages for category 'L&D'.
+2025-10-06 14:10:21,767 - INFO - 127.0.0.1 - - [06/Oct/2025 14:10:21] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-10-06 14:10:21,771 - INFO - 127.0.0.1 - - [06/Oct/2025 14:10:21] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-10-06 14:10:21,771 - INFO - 127.0.0.1 - - [06/Oct/2025 14:10:21] "POST /chat/start HTTP/1.1" 200 -
+2025-10-06 14:11:08,429 - INFO - 127.0.0.1 - - [06/Oct/2025 14:11:08] "OPTIONS /categories HTTP/1.1" 200 -
+2025-10-06 14:11:08,429 - INFO - Request to create category: 'HR'
+2025-10-06 14:11:08,429 - INFO - 127.0.0.1 - - [06/Oct/2025 14:11:08] "[35m[1mPOST /categories HTTP/1.1[0m" 201 -
+2025-10-06 14:11:26,631 - INFO - Received 1 file(s) for category 'HR'.
+2025-10-06 14:11:26,633 - INFO - Processing 'CST308 Course Outline Spring 25.docx' for category 'HR'...
+2025-10-06 14:11:27,316 - INFO - Saved vector store for 'CST308 Course Outline Spring 25.docx'.
+2025-10-06 14:11:27,316 - INFO - 127.0.0.1 - - [06/Oct/2025 14:11:27] "POST /upload HTTP/1.1" 200 -
+2025-10-06 14:11:30,225 - INFO - Request to fetch chat history for category 'HR'.
+2025-10-06 14:11:30,226 - INFO - Found 42 messages for category 'HR'.
+2025-10-06 14:11:30,226 - INFO - 127.0.0.1 - - [06/Oct/2025 14:11:30] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-10-06 14:11:30,231 - INFO - 127.0.0.1 - - [06/Oct/2025 14:11:30] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-10-06 14:11:30,236 - INFO - 127.0.0.1 - - [06/Oct/2025 14:11:30] "POST /chat/start HTTP/1.1" 200 -
+2025-10-06 14:11:33,295 - INFO - Request to fetch chat history for category 'HR'.
+2025-10-06 14:11:33,296 - INFO - Found 42 messages for category 'HR'.
+2025-10-06 14:11:33,296 - INFO - 127.0.0.1 - - [06/Oct/2025 14:11:33] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-10-06 14:11:36,751 - INFO - 127.0.0.1 - - [06/Oct/2025 14:11:36] "OPTIONS /chat/history/HR HTTP/1.1" 200 -
+2025-10-06 14:11:36,753 - INFO - Request to delete chat session 'HR'.
+2025-10-06 14:11:36,759 - INFO - Chat session 'HR' deleted successfully.
+2025-10-06 14:11:36,759 - INFO - 127.0.0.1 - - [06/Oct/2025 14:11:36] "DELETE /chat/history/HR HTTP/1.1" 200 -
+2025-10-06 14:11:36,764 - INFO - Request to fetch chat history for category 'HR'.
+2025-10-06 14:11:36,766 - INFO - Found 0 messages for category 'HR'.
+2025-10-06 14:11:36,766 - INFO - 127.0.0.1 - - [06/Oct/2025 14:11:36] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-10-06 14:11:42,593 - INFO - Request to fetch chat history for category 'HR'.
+2025-10-06 14:11:42,594 - INFO - Found 0 messages for category 'HR'.
+2025-10-06 14:11:42,594 - INFO - 127.0.0.1 - - [06/Oct/2025 14:11:42] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-10-06 14:11:42,598 - INFO - 127.0.0.1 - - [06/Oct/2025 14:11:42] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-10-06 14:11:42,602 - INFO - 127.0.0.1 - - [06/Oct/2025 14:11:42] "POST /chat/start HTTP/1.1" 200 -
+2025-10-06 14:11:58,774 - INFO - 127.0.0.1 - - [06/Oct/2025 14:11:58] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-06 14:11:58,777 - INFO - Found 1 vector store(s) for category 'HR'
+2025-10-06 14:11:58,777 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\CST308 Course Outline Spring 25.docx
+2025-10-06 14:11:58,794 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-10-06 14:11:58,794 - INFO - Using single vector store.
+2025-10-06 14:12:03,809 - INFO - Responded to question in 'HR'. Found 2 sources.
+2025-10-06 14:12:03,809 - INFO - HERE IS  The CST course is about understanding religion in discussions.  and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 1, 'text': 'Course Outline \nSchool of General Education \nBrac University \n \n \nCST 308: Religious Pluralism, Religious Freedom, and Dialogue in the Modern World \nA.\u200b Course General Information: \nCourse Code: \nCST 308 \nCourse Title: \nReligious Pluralism, Religious Freedom, and Dialogue in the \nModern World  \nCredit Hours: \n3 \nContact Hours/Week: \n3 \nCategory  \nStream 4 \nType (Mandatory/Optional, \nLecture/Laboratory/Project\n…): \nOptional, elective, crosslisted with ANT 415A.   \nPrerequisites: \nNone \nCo-requisi'}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 4, 'text': 'discussions \n \n \n \nStudents are \nnotified about \nQuiz 1 taking \nplace in the next \nclass \nhttps://medium.com/@ho.musa\nvi/what-does-talal-asad-mean-b\ny-islamic-discursive-tradition-d\n811af65e1a3 \n \nAnjum, O. "Islam as a \nDiscursive Tradition: Talal \nAsad and His Interlocutors" \nComparative Studies of South \nAsia, Africa, and the Middle \nEast, vol. 27, no. 3, pp. \n656-672. 2007.  \n2-When religions collide'}]
+2025-10-06 14:12:03,841 - INFO - 127.0.0.1 - - [06/Oct/2025 14:12:03] "POST /chat HTTP/1.1" 200 -
+2025-10-06 14:12:07,889 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\HR\CST308 Course Outline Spring 25.docx.pdf
+2025-10-06 14:12:07,891 - INFO - 127.0.0.1 - - [06/Oct/2025 14:12:07] "GET /pdf/HR/CST308%20Course%20Outline%20Spring%2025.docx.pdf HTTP/1.1" 200 -
+2025-10-06 14:12:40,230 - INFO - 127.0.0.1 - - [06/Oct/2025 14:12:40] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-06 14:12:40,231 - INFO - Found 1 vector store(s) for category 'HR'
+2025-10-06 14:12:40,231 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\CST308 Course Outline Spring 25.docx
+2025-10-06 14:12:40,234 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-10-06 14:12:40,234 - INFO - Using single vector store.
+2025-10-06 14:12:46,410 - INFO - Responded to question in 'HR'. Found 2 sources.
+2025-10-06 14:12:46,490 - INFO - 127.0.0.1 - - [06/Oct/2025 14:12:46] "POST /chat HTTP/1.1" 200 -
+2025-10-06 14:13:30,893 - INFO - 127.0.0.1 - - [06/Oct/2025 14:13:30] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-06 14:13:30,896 - INFO - Found 1 vector store(s) for category 'HR'
+2025-10-06 14:13:30,896 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\CST308 Course Outline Spring 25.docx
+2025-10-06 14:13:30,897 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-10-06 14:13:30,897 - INFO - Using single vector store.
+2025-10-06 14:13:38,749 - INFO - Responded to question in 'HR'. Found 2 sources.
+2025-10-06 14:13:38,749 - INFO - HERE IS  The university can implement this course effectively by following the steps outlined in the course plan, which includes specifying content, COs, co-curricular activities (if any), teaching learning and assessment strategy mapped with COs.  and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 2, 'text': 'approaches that are mobilized as remedies or solutions, the course allows students to delve \ninto solutions of religious conflict, whether they yield positive outcomes allowing students to \nboth know the field and bring to it their own ideas.  \nD. Course Objective: \nThe course will teach a mix of sociological and anthropological theories, raise political and \nhistorical problems through cases and offer a knowledge of solutions through written and \nvideo examples and personal and institutional na'}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 3, 'text': 'PO5 Exhibit\xa0sensitive and ethical leadership through course material taught, engaged \npedagogical tools, class assignments, teamwork and exposure to real-life problems \n \nG.\u200b Mapping of Course Outcomes (COs) with Program Outcomes (POs): \nCOs  PO1 \nPO2 \nPO3 \nPO4 \nPO5 \nCO1 \n \n \n \nx \n \nCO2 \nx \n \n \nx \n \nCO3 \n \nx \nx \nx \n \nCO4 \nx \n \nx \n \nx \nCO5 \n \nx \n \nx \n \n \nH.\u200b Course plan specifying content, COs, co-curricular activities (if any), teaching \nlearning and assessment strategy mapped with COs: \nClass  '}]
+2025-10-06 14:13:38,776 - INFO - 127.0.0.1 - - [06/Oct/2025 14:13:38] "POST /chat HTTP/1.1" 200 -
+2025-10-06 14:14:08,740 - INFO - 127.0.0.1 - - [06/Oct/2025 14:14:08] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-06 14:14:08,743 - INFO - Found 1 vector store(s) for category 'HR'
+2025-10-06 14:14:08,743 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\CST308 Course Outline Spring 25.docx
+2025-10-06 14:14:08,744 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-10-06 14:14:08,744 - INFO - Using single vector store.
+2025-10-06 14:14:15,296 - INFO - Responded to question in 'HR'. Found 2 sources.
+2025-10-06 14:14:15,336 - INFO - 127.0.0.1 - - [06/Oct/2025 14:14:15] "POST /chat HTTP/1.1" 200 -
+2025-10-06 14:14:20,919 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\HR\CST308 Course Outline Spring 25.docx.pdf
+2025-10-06 14:14:20,920 - INFO - 127.0.0.1 - - [06/Oct/2025 14:14:20] "[36mGET /pdf/HR/CST308%20Course%20Outline%20Spring%2025.docx.pdf HTTP/1.1[0m" 304 -
+2025-10-06 14:15:08,967 - INFO - Request to fetch chat history for category 'L&D'.
+2025-10-06 14:15:08,971 - INFO - Found 154 messages for category 'L&D'.
+2025-10-06 14:15:08,971 - INFO - 127.0.0.1 - - [06/Oct/2025 14:15:08] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-10-06 14:15:08,971 - INFO - 127.0.0.1 - - [06/Oct/2025 14:15:08] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-10-06 14:15:08,971 - INFO - 127.0.0.1 - - [06/Oct/2025 14:15:08] "POST /chat/start HTTP/1.1" 200 -
+2025-10-06 14:15:19,216 - INFO - Request to fetch chat history for category 'HR'.
+2025-10-06 14:15:19,217 - INFO - Found 8 messages for category 'HR'.
+2025-10-06 14:15:19,218 - INFO - 127.0.0.1 - - [06/Oct/2025 14:15:19] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-10-06 14:15:19,221 - INFO - 127.0.0.1 - - [06/Oct/2025 14:15:19] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-10-06 14:15:19,224 - INFO - 127.0.0.1 - - [06/Oct/2025 14:15:19] "POST /chat/start HTTP/1.1" 200 -
+2025-10-06 16:51:49,956 - INFO - Request to fetch chat history for category 'L&D'.
+2025-10-06 16:51:49,963 - INFO - Found 154 messages for category 'L&D'.
+2025-10-06 16:51:49,963 - INFO - 127.0.0.1 - - [06/Oct/2025 16:51:49] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-10-06 16:51:49,977 - INFO - 127.0.0.1 - - [06/Oct/2025 16:51:49] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-10-06 16:51:49,977 - INFO - 127.0.0.1 - - [06/Oct/2025 16:51:49] "POST /chat/start HTTP/1.1" 200 -
+2025-10-06 16:51:55,094 - INFO - Request to fetch chat history for category 'HR'.
+2025-10-06 16:51:55,095 - INFO - Found 8 messages for category 'HR'.
+2025-10-06 16:51:55,095 - INFO - 127.0.0.1 - - [06/Oct/2025 16:51:55] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-10-06 16:51:55,100 - INFO - 127.0.0.1 - - [06/Oct/2025 16:51:55] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-10-06 16:51:55,104 - INFO - 127.0.0.1 - - [06/Oct/2025 16:51:55] "POST /chat/start HTTP/1.1" 200 -
+2025-10-07 15:58:07,586 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-10-07 15:58:07,600 - INFO - Starting Flask application
+2025-10-07 15:58:07,694 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.224.223:5000
+2025-10-07 15:58:07,694 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-07 15:58:07,708 - INFO -  * Restarting with stat
+2025-10-07 15:58:21,986 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-10-07 15:58:22,002 - INFO - Starting Flask application
+2025-10-07 15:58:22,010 - WARNING -  * Debugger is active!
+2025-10-07 15:58:22,014 - INFO -  * Debugger PIN: 774-358-813
+2025-10-07 16:04:29,024 - INFO - Request to fetch chat history for category 'HR'.
+2025-10-07 16:04:29,024 - INFO - Found 8 messages for category 'HR'.
+2025-10-07 16:04:29,024 - INFO - 127.0.0.1 - - [07/Oct/2025 16:04:29] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-10-07 16:04:29,024 - INFO - 127.0.0.1 - - [07/Oct/2025 16:04:29] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-10-07 16:04:29,034 - INFO - 127.0.0.1 - - [07/Oct/2025 16:04:29] "POST /chat/start HTTP/1.1" 200 -
+2025-10-07 16:10:17,860 - INFO - 127.0.0.1 - - [07/Oct/2025 16:10:17] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-07 16:10:17,862 - INFO - Found 1 vector store(s) for category 'HR'
+2025-10-07 16:10:17,862 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\CST308 Course Outline Spring 25.docx
+2025-10-07 16:10:17,885 - INFO - Loading faiss with AVX2 support.
+2025-10-07 16:10:17,961 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-07 16:10:18,015 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-10-07 16:10:18,016 - INFO - Using single vector store.
+2025-10-07 16:10:27,444 - INFO - Responded to question in 'HR'. Found 2 sources.
+2025-10-07 16:10:27,444 - INFO - HERE IS  The course is about teaching a mix of sociological and anthropological theories, raising political and historical problems through cases, offering a knowledge of solutions through written and video examples, and personal and institutional narratives of invited speakers.  and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 3, 'text': 'PO5 Exhibit\xa0sensitive and ethical leadership through course material taught, engaged \npedagogical tools, class assignments, teamwork and exposure to real-life problems \n \nG.\u200b Mapping of Course Outcomes (COs) with Program Outcomes (POs): \nCOs  PO1 \nPO2 \nPO3 \nPO4 \nPO5 \nCO1 \n \n \n \nx \n \nCO2 \nx \n \n \nx \n \nCO3 \n \nx \nx \nx \n \nCO4 \nx \n \nx \n \nx \nCO5 \n \nx \n \nx \n \n \nH.\u200b Course plan specifying content, COs, co-curricular activities (if any), teaching \nlearning and assessment strategy mapped with COs: \nClass  '}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 2, 'text': 'approaches that are mobilized as remedies or solutions, the course allows students to delve \ninto solutions of religious conflict, whether they yield positive outcomes allowing students to \nboth know the field and bring to it their own ideas.  \nD. Course Objective: \nThe course will teach a mix of sociological and anthropological theories, raise political and \nhistorical problems through cases and offer a knowledge of solutions through written and \nvideo examples and personal and institutional na'}]
+2025-10-07 16:10:27,481 - INFO - 127.0.0.1 - - [07/Oct/2025 16:10:27] "POST /chat HTTP/1.1" 200 -
+2025-10-07 16:10:34,944 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\HR\CST308 Course Outline Spring 25.docx.pdf
+2025-10-07 16:10:34,960 - INFO - 127.0.0.1 - - [07/Oct/2025 16:10:34] "[36mGET /pdf/HR/CST308%20Course%20Outline%20Spring%2025.docx.pdf HTTP/1.1[0m" 304 -
+2025-10-07 16:11:14,917 - INFO - Request to fetch chat history for category 'L&D'.
+2025-10-07 16:11:14,917 - INFO - Found 154 messages for category 'L&D'.
+2025-10-07 16:11:14,917 - INFO - 127.0.0.1 - - [07/Oct/2025 16:11:14] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-10-07 16:11:14,917 - INFO - 127.0.0.1 - - [07/Oct/2025 16:11:14] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-10-07 16:11:14,929 - INFO - 127.0.0.1 - - [07/Oct/2025 16:11:14] "POST /chat/start HTTP/1.1" 200 -
+2025-10-07 16:11:22,342 - INFO - Request to fetch chat history for category 'HR'.
+2025-10-07 16:11:22,343 - INFO - Found 10 messages for category 'HR'.
+2025-10-07 16:11:22,343 - INFO - 127.0.0.1 - - [07/Oct/2025 16:11:22] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-10-07 16:11:22,348 - INFO - 127.0.0.1 - - [07/Oct/2025 16:11:22] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-10-07 16:11:22,351 - INFO - 127.0.0.1 - - [07/Oct/2025 16:11:22] "POST /chat/start HTTP/1.1" 200 -
+2025-10-07 16:14:43,484 - INFO - 127.0.0.1 - - [07/Oct/2025 16:14:43] "OPTIONS /categories/L&D/documents/test2.pdf HTTP/1.1" 200 -
+2025-10-07 16:14:43,485 - INFO - Request to delete document 'test2.pdf' from category 'L&D'.
+2025-10-07 16:14:43,485 - INFO - Successfully deleted PDF file: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\test2.pdf
+2025-10-07 16:14:43,485 - INFO - Successfully deleted vector store: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test2
+2025-10-07 16:14:43,485 - INFO - 127.0.0.1 - - [07/Oct/2025 16:14:43] "DELETE /categories/L&D/documents/test2.pdf HTTP/1.1" 200 -
+2025-10-07 16:14:51,939 - INFO - 127.0.0.1 - - [07/Oct/2025 16:14:51] "OPTIONS /categories/L&D/documents/iasb-tu-2025-3-ifrs19.pdf HTTP/1.1" 200 -
+2025-10-07 16:14:51,942 - INFO - Request to delete document 'iasb-tu-2025-3-ifrs19.pdf' from category 'L&D'.
+2025-10-07 16:14:51,943 - INFO - Successfully deleted PDF file: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\iasb-tu-2025-3-ifrs19.pdf
+2025-10-07 16:14:51,944 - INFO - Successfully deleted vector store: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\iasb-tu-2025-3-ifrs19
+2025-10-07 16:14:51,945 - INFO - 127.0.0.1 - - [07/Oct/2025 16:14:51] "DELETE /categories/L&D/documents/iasb-tu-2025-3-ifrs19.pdf HTTP/1.1" 200 -
+2025-10-07 16:14:53,298 - INFO - 127.0.0.1 - - [07/Oct/2025 16:14:53] "OPTIONS /categories/L&D/documents/four%20things.pdf HTTP/1.1" 200 -
+2025-10-07 16:14:53,301 - INFO - Request to delete document 'four things.pdf' from category 'L&D'.
+2025-10-07 16:14:53,301 - INFO - Successfully deleted PDF file: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\four things.pdf
+2025-10-07 16:14:53,301 - INFO - Successfully deleted vector store: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\four things
+2025-10-07 16:14:53,301 - INFO - 127.0.0.1 - - [07/Oct/2025 16:14:53] "DELETE /categories/L&D/documents/four%20things.pdf HTTP/1.1" 200 -
+2025-10-07 16:14:55,395 - INFO - 127.0.0.1 - - [07/Oct/2025 16:14:55] "OPTIONS /categories/L&D/documents/html_tutorial.pdf HTTP/1.1" 200 -
+2025-10-07 16:14:55,395 - INFO - Request to delete document 'html_tutorial.pdf' from category 'L&D'.
+2025-10-07 16:14:55,395 - INFO - Successfully deleted PDF file: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\html_tutorial.pdf
+2025-10-07 16:14:55,408 - INFO - Successfully deleted vector store: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\html_tutorial
+2025-10-07 16:14:55,408 - INFO - 127.0.0.1 - - [07/Oct/2025 16:14:55] "DELETE /categories/L&D/documents/html_tutorial.pdf HTTP/1.1" 200 -
+2025-10-07 16:14:57,522 - INFO - 127.0.0.1 - - [07/Oct/2025 16:14:57] "OPTIONS /categories/HR/documents/CST308%20Course%20Outline%20Spring%2025.docx.pdf HTTP/1.1" 200 -
+2025-10-07 16:14:57,526 - INFO - Request to delete document 'CST308 Course Outline Spring 25.docx.pdf' from category 'HR'.
+2025-10-07 16:14:57,526 - INFO - Successfully deleted PDF file: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\HR\CST308 Course Outline Spring 25.docx.pdf
+2025-10-07 16:14:57,526 - INFO - Successfully deleted vector store: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\CST308 Course Outline Spring 25.docx
+2025-10-07 16:14:57,526 - INFO - 127.0.0.1 - - [07/Oct/2025 16:14:57] "DELETE /categories/HR/documents/CST308%20Course%20Outline%20Spring%2025.docx.pdf HTTP/1.1" 200 -
+2025-10-07 16:16:58,386 - INFO -  * Detected change in 'C:\\Users\\BS 23- Desktop-00014\\Documents\\ChatWithPDFs\\backend\\utils.py', reloading
+2025-10-07 16:16:59,588 - INFO -  * Restarting with stat
+2025-10-07 16:17:11,712 - INFO - Database 'chat_history.db' initialized and table is ready.
+2025-10-07 16:17:11,712 - INFO - Starting Flask application
+2025-10-07 16:17:11,725 - WARNING -  * Debugger is active!
+2025-10-07 16:17:11,728 - INFO -  * Debugger PIN: 774-358-813
+2025-10-07 16:18:54,657 - INFO - Received 1 file(s) for category 'L&D'.
+2025-10-07 16:18:54,657 - INFO - Processing 'test3' for category 'L&D'...
+2025-10-07 16:18:55,393 - INFO - Loading faiss with AVX2 support.
+2025-10-07 16:18:55,419 - INFO - Successfully loaded faiss with AVX2 support.
+2025-10-07 16:18:55,426 - INFO - Saved vector store for 'test3'.
+2025-10-07 16:18:55,427 - INFO - 127.0.0.1 - - [07/Oct/2025 16:18:55] "POST /upload HTTP/1.1" 200 -
+2025-10-07 16:19:01,628 - INFO - Request to fetch chat history for category 'L&D'.
+2025-10-07 16:19:01,632 - INFO - Found 154 messages for category 'L&D'.
+2025-10-07 16:19:01,632 - INFO - 127.0.0.1 - - [07/Oct/2025 16:19:01] "GET /chat/history/L&D HTTP/1.1" 200 -
+2025-10-07 16:19:01,632 - INFO - 127.0.0.1 - - [07/Oct/2025 16:19:01] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-10-07 16:19:01,641 - INFO - 127.0.0.1 - - [07/Oct/2025 16:19:01] "POST /chat/start HTTP/1.1" 200 -
+2025-10-07 16:20:54,102 - INFO - Received 1 file(s) for category 'L&D'.
+2025-10-07 16:20:54,103 - INFO - Processing 'CST308 Course Outline Spring 25.docx' for category 'L&D'...
+2025-10-07 16:20:54,233 - INFO - Saved vector store for 'CST308 Course Outline Spring 25.docx'.
+2025-10-07 16:20:54,233 - INFO - 127.0.0.1 - - [07/Oct/2025 16:20:54] "POST /upload HTTP/1.1" 200 -
+2025-10-07 16:21:47,315 - INFO - 127.0.0.1 - - [07/Oct/2025 16:21:47] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-07 16:21:47,317 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-10-07 16:21:47,318 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\CST308 Course Outline Spring 25.docx
+2025-10-07 16:21:47,337 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-10-07 16:21:47,338 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-10-07 16:21:47,353 - INFO - Successfully loaded: test3
+2025-10-07 16:21:47,353 - INFO - Merging 1 additional vector store(s)...
+2025-10-07 16:21:47,358 - INFO - Successfully merged vector store 1/1
+2025-10-07 16:21:47,358 - INFO - All vector stores merged successfully.
+2025-10-07 16:21:47,359 - INFO - Total documents in merged vector store: 24
+2025-10-07 16:21:59,418 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-10-07 16:21:59,418 - INFO - HERE IS  This course is about the CST 308, which is a course on Religious Pluralism, Freedom and Dialogue in the Modern World.  and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 1, 'text': 'Course Outline \nSchool of General Education \nBrac University \n \n \nCST 308: Religious Pluralism, Religious Freedom, and Dialogue in the Modern World \nA.\u200b Course General Information: \nCourse Code: \nCST 308 \nCourse Title: \nReligious Pluralism, Religious Freedom, and Dialogue in the \nModern World  \nCredit Hours: \n3 \nContact Hours/Week: \n3 \nCategory  \nStream 4 \nType (Mandatory/Optional, \nLecture/Laboratory/Project\n…): \nOptional, elective, crosslisted with ANT 415A.   \nPrerequisites: \nNone \nCo-requisi'}, {'source': 'test3.pdf', 'page': 5, 'text': '(2024) developed a custom model called VolxelMorph-2, which achieved an accuracy of 93% \nand an average AUC score of 0.695. Furthermore, [3] Nawaz et al.’s custom model, \nCXray-EffDet, attained an accuracy of 94.53%, precision of 90%, recall of 92.36%, and an \nF1-score of 91.16% while classifying 8 different disease classes. Lastly, [4] Nakrani et al. (2025) \ndesigned a custom model named Meta Model, which achieved an average AUC score of 0.635. \nThis demonstrates our model was able to outperfor'}, {'source': 'test3.pdf', 'page': 1, 'text': 'cross-entropy is applied as the loss function in training because it can properly assess cases with \nvarious multiple labels. \nWhen we mention CNNs with deep learning, we mean they are neural networks made to handle \nimage data. Deep learning is a field within machine learning where large networks (called deep \nneural networks) study data automatically, not needing experts to create complex features. CNNs \nare great at figuring out how the small lines in an image come together to make larger par'}]
+2025-10-07 16:21:59,457 - INFO - 127.0.0.1 - - [07/Oct/2025 16:21:59] "POST /chat HTTP/1.1" 200 -
+2025-10-07 16:22:03,103 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\CST308 Course Outline Spring 25.docx.pdf
+2025-10-07 16:22:03,105 - INFO - 127.0.0.1 - - [07/Oct/2025 16:22:03] "GET /pdf/L&D/CST308%20Course%20Outline%20Spring%2025.docx.pdf HTTP/1.1" 200 -
+2025-10-07 16:23:15,441 - INFO - 127.0.0.1 - - [07/Oct/2025 16:23:15] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-07 16:23:15,444 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-10-07 16:23:15,445 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\CST308 Course Outline Spring 25.docx
+2025-10-07 16:23:15,445 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-10-07 16:23:15,446 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-10-07 16:23:15,446 - INFO - Successfully loaded: test3
+2025-10-07 16:23:15,446 - INFO - Merging 1 additional vector store(s)...
+2025-10-07 16:23:15,446 - INFO - Successfully merged vector store 1/1
+2025-10-07 16:23:15,446 - INFO - All vector stores merged successfully.
+2025-10-07 16:23:15,446 - INFO - Total documents in merged vector store: 24
+2025-10-07 16:23:27,248 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-10-07 16:23:27,248 - INFO - HERE IS  The topics of this CST 308 course include classical definitions of religion, lectures and discussions, focused free write, and Michael Lambek's edited reader in the anthropology of religion.  and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 1, 'text': 'Course Outline \nSchool of General Education \nBrac University \n \n \nCST 308: Religious Pluralism, Religious Freedom, and Dialogue in the Modern World \nA.\u200b Course General Information: \nCourse Code: \nCST 308 \nCourse Title: \nReligious Pluralism, Religious Freedom, and Dialogue in the \nModern World  \nCredit Hours: \n3 \nContact Hours/Week: \n3 \nCategory  \nStream 4 \nType (Mandatory/Optional, \nLecture/Laboratory/Project\n…): \nOptional, elective, crosslisted with ANT 415A.   \nPrerequisites: \nNone \nCo-requisi'}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 3, 'text': 'PO5 Exhibit\xa0sensitive and ethical leadership through course material taught, engaged \npedagogical tools, class assignments, teamwork and exposure to real-life problems \n \nG.\u200b Mapping of Course Outcomes (COs) with Program Outcomes (POs): \nCOs  PO1 \nPO2 \nPO3 \nPO4 \nPO5 \nCO1 \n \n \n \nx \n \nCO2 \nx \n \n \nx \n \nCO3 \n \nx \nx \nx \n \nCO4 \nx \n \nx \n \nx \nCO5 \n \nx \n \nx \n \n \nH.\u200b Course plan specifying content, COs, co-curricular activities (if any), teaching \nlearning and assessment strategy mapped with COs: \nClass  '}, {'source': 'test3.pdf', 'page': 1, 'text': 'cross-entropy is applied as the loss function in training because it can properly assess cases with \nvarious multiple labels. \nWhen we mention CNNs with deep learning, we mean they are neural networks made to handle \nimage data. Deep learning is a field within machine learning where large networks (called deep \nneural networks) study data automatically, not needing experts to create complex features. CNNs \nare great at figuring out how the small lines in an image come together to make larger par'}]
+2025-10-07 16:23:27,279 - INFO - 127.0.0.1 - - [07/Oct/2025 16:23:27] "POST /chat HTTP/1.1" 200 -
+2025-10-07 16:23:34,178 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\CST308 Course Outline Spring 25.docx.pdf
+2025-10-07 16:23:34,180 - INFO - 127.0.0.1 - - [07/Oct/2025 16:23:34] "[36mGET /pdf/L&D/CST308%20Course%20Outline%20Spring%2025.docx.pdf HTTP/1.1[0m" 304 -
+2025-10-07 16:24:03,686 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\CST308 Course Outline Spring 25.docx.pdf
+2025-10-07 16:24:03,687 - INFO - 127.0.0.1 - - [07/Oct/2025 16:24:03] "[36mGET /pdf/L&D/CST308%20Course%20Outline%20Spring%2025.docx.pdf HTTP/1.1[0m" 304 -
+2025-10-07 16:24:36,464 - INFO - 127.0.0.1 - - [07/Oct/2025 16:24:36] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-07 16:24:36,468 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-10-07 16:24:36,468 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\CST308 Course Outline Spring 25.docx
+2025-10-07 16:24:36,469 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-10-07 16:24:36,469 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-10-07 16:24:36,469 - INFO - Successfully loaded: test3
+2025-10-07 16:24:36,469 - INFO - Merging 1 additional vector store(s)...
+2025-10-07 16:24:36,469 - INFO - Successfully merged vector store 1/1
+2025-10-07 16:24:36,469 - INFO - All vector stores merged successfully.
+2025-10-07 16:24:36,471 - INFO - Total documents in merged vector store: 24
+2025-10-07 16:25:06,017 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-10-07 16:25:06,017 - INFO - HERE IS  Yes, there are quizzes in this course. 
+Direct Answer: The quizzes will be used to assess the students' understanding of the material covered in the course. 
+Direct Answer: The quizzes will cover a range of topics related to religious pluralism and dialogue. 
+Direct Answer: The quizzes will help students track their progress and identify areas where they need more practice. 
+Direct Answer: The quizzes will also provide feedback on your performance, which can be used for further improvement. 
+Direct Answer: The quizzes will be based on the provided text and will cover a range of topics related to religious pluralism and dialogue. 
+Direct Answer: The quizzes will help you track your progress and identify areas where you need more practice.
+Direct Answer: The quizzes will provide feedback on your performance, which can be used for further improvement.
+Direct Answer: The quizzes will be based on the provided text and cover a range of topics related to religious pluralism and dialogue. 
+Direct Answer: The quizzes will help you track and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 11, 'text': '1.\xa0 Worksheets, Debates, and Exercises  in and outside the classroom): Assigned \nworksheets and exercises will give students the opportunity to track their learning, engage \nin analysis, and apply insights from the course material to address empirical puzzles. \nStudents are encouraged and expected to actively participate in online discussion sessions \nand on online discussion boards. Students will also take turns presenting and leading \ndiscussion or adda on relevant current events.\xa0 \n2.\xa0 Quizze'}, {'source': 'test3.pdf', 'page': 2, 'text': 'Introduction\u200b\nResearch Organization \n \nIntroduction \nThe focus in this chapter is to explain the reasons behind using CNNs and other deep learning \nalgorithms to spot chest diseases in X-ray images, mainly for under-resourced healthcare \nservices. It brings out the difficulties in earlier methods such as being computationally inefficient \nand replaces them with ChestAidNet. \n \nLiterature Review \nHere, we review and analyze different deep learning models used for chest disease detection, \nstudyin'}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 1, 'text': 'Course Outline \nSchool of General Education \nBrac University \n \n \nCST 308: Religious Pluralism, Religious Freedom, and Dialogue in the Modern World \nA.\u200b Course General Information: \nCourse Code: \nCST 308 \nCourse Title: \nReligious Pluralism, Religious Freedom, and Dialogue in the \nModern World  \nCredit Hours: \n3 \nContact Hours/Week: \n3 \nCategory  \nStream 4 \nType (Mandatory/Optional, \nLecture/Laboratory/Project\n…): \nOptional, elective, crosslisted with ANT 415A.   \nPrerequisites: \nNone \nCo-requisi'}]
+2025-10-07 16:25:06,062 - INFO - 127.0.0.1 - - [07/Oct/2025 16:25:06] "POST /chat HTTP/1.1" 200 -
+2025-10-07 16:26:07,511 - INFO - 127.0.0.1 - - [07/Oct/2025 16:26:07] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-07 16:26:07,513 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-10-07 16:26:07,514 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\CST308 Course Outline Spring 25.docx
+2025-10-07 16:26:07,514 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-10-07 16:26:07,514 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-10-07 16:26:07,515 - INFO - Successfully loaded: test3
+2025-10-07 16:26:07,516 - INFO - Merging 1 additional vector store(s)...
+2025-10-07 16:26:07,516 - INFO - Successfully merged vector store 1/1
+2025-10-07 16:26:07,516 - INFO - All vector stores merged successfully.
+2025-10-07 16:26:07,516 - INFO - Total documents in merged vector store: 24
+2025-10-07 16:26:37,291 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-10-07 16:26:37,291 - INFO - HERE IS  Yes, there are quizzes in this CST 308 course for the students. The quizzes will test the students' understanding of the covered topics and assigned readings. The quizzes will be scheduled at the instructor's discretion. 
+The quizzes will cover various aspects of religious pluralism and religious freedom. The quizzes will assess the student's ability to understand the topic, analyze the situation, and provide a response. 
+The quizzes will also include questions related to family law, public worship, or absence of it. 
+The quizzes are an essential part of this CST 308 course for the students. 
+The quizzes can be used as a tool for understanding the topic, analyzing the situation, and providing a response.
+The quizzes can be used as a tool for understanding the topic, analyzing the situation, and providing a response.
+The quizzes can be used to assess your knowledge on religious pluralism and religious freedom.
+The quizzes will cover various aspects of religious pluralism and religious freedom. The quizzes will also include questions related to and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 1, 'text': 'Course Outline \nSchool of General Education \nBrac University \n \n \nCST 308: Religious Pluralism, Religious Freedom, and Dialogue in the Modern World \nA.\u200b Course General Information: \nCourse Code: \nCST 308 \nCourse Title: \nReligious Pluralism, Religious Freedom, and Dialogue in the \nModern World  \nCredit Hours: \n3 \nContact Hours/Week: \n3 \nCategory  \nStream 4 \nType (Mandatory/Optional, \nLecture/Laboratory/Project\n…): \nOptional, elective, crosslisted with ANT 415A.   \nPrerequisites: \nNone \nCo-requisi'}, {'source': 'test3.pdf', 'page': 2, 'text': 'Introduction\u200b\nResearch Organization \n \nIntroduction \nThe focus in this chapter is to explain the reasons behind using CNNs and other deep learning \nalgorithms to spot chest diseases in X-ray images, mainly for under-resourced healthcare \nservices. It brings out the difficulties in earlier methods such as being computationally inefficient \nand replaces them with ChestAidNet. \n \nLiterature Review \nHere, we review and analyze different deep learning models used for chest disease detection, \nstudyin'}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 11, 'text': '1.\xa0 Worksheets, Debates, and Exercises  in and outside the classroom): Assigned \nworksheets and exercises will give students the opportunity to track their learning, engage \nin analysis, and apply insights from the course material to address empirical puzzles. \nStudents are encouraged and expected to actively participate in online discussion sessions \nand on online discussion boards. Students will also take turns presenting and leading \ndiscussion or adda on relevant current events.\xa0 \n2.\xa0 Quizze'}]
+2025-10-07 16:26:37,336 - INFO - 127.0.0.1 - - [07/Oct/2025 16:26:37] "POST /chat HTTP/1.1" 200 -
+2025-10-07 16:26:54,475 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\CST308 Course Outline Spring 25.docx.pdf
+2025-10-07 16:26:54,477 - INFO - 127.0.0.1 - - [07/Oct/2025 16:26:54] "[36mGET /pdf/L&D/CST308%20Course%20Outline%20Spring%2025.docx.pdf HTTP/1.1[0m" 304 -
+2025-10-07 16:27:26,447 - INFO - 127.0.0.1 - - [07/Oct/2025 16:27:26] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-07 16:27:26,449 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-10-07 16:27:26,449 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\CST308 Course Outline Spring 25.docx
+2025-10-07 16:27:26,450 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-10-07 16:27:26,450 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-10-07 16:27:26,452 - INFO - Successfully loaded: test3
+2025-10-07 16:27:26,452 - INFO - Merging 1 additional vector store(s)...
+2025-10-07 16:27:26,452 - INFO - Successfully merged vector store 1/1
+2025-10-07 16:27:26,452 - INFO - All vector stores merged successfully.
+2025-10-07 16:27:26,452 - INFO - Total documents in merged vector store: 24
+2025-10-07 16:27:36,916 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-10-07 16:27:36,916 - INFO - HERE IS  Dr. Samia Huq. and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 3, 'text': 'PO5 Exhibit\xa0sensitive and ethical leadership through course material taught, engaged \npedagogical tools, class assignments, teamwork and exposure to real-life problems \n \nG.\u200b Mapping of Course Outcomes (COs) with Program Outcomes (POs): \nCOs  PO1 \nPO2 \nPO3 \nPO4 \nPO5 \nCO1 \n \n \n \nx \n \nCO2 \nx \n \n \nx \n \nCO3 \n \nx \nx \nx \n \nCO4 \nx \n \nx \n \nx \nCO5 \n \nx \n \nx \n \n \nH.\u200b Course plan specifying content, COs, co-curricular activities (if any), teaching \nlearning and assessment strategy mapped with COs: \nClass  '}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 1, 'text': 'and how to assess the ethical framework within which this task is undertaken towards goals \nof building understanding and mutuality through religion for the self and community.   \nC.\u200b Rationale of the Course: \nThe course offers an interdisciplinary perspective (sociology, politics, history and \nanthropology) on religious difference- the factors that cause it, how it is maintained, \ninstruments of state and society that seek to reduce it and an analysis of their efficacy. The \ncourse’s inter-disc'}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 12, 'text': 'Grading policy (subject to change): \nStudents’ work will be graded according to the system specified by the Brac University \nUndergraduate Study and Examinations Regulations. In addition, faculty members are \nallowed to take into consideration factors such as the class average and standard deviation in \norder to ensure the grades reflect students’ actual class performance.\xa0 \n97-100 = A+ (4.0) \n90 - 96 = A (4.0) Excellent \n85 - <90 = A- (3.7) \n80 - <85 = B+ (3.3) \n75 - <80 = B (3.0) Good \n70 - <7'}]
+2025-10-07 16:27:36,954 - INFO - 127.0.0.1 - - [07/Oct/2025 16:27:36] "POST /chat HTTP/1.1" 200 -
+2025-10-07 16:27:39,394 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\CST308 Course Outline Spring 25.docx.pdf
+2025-10-07 16:27:39,394 - INFO - 127.0.0.1 - - [07/Oct/2025 16:27:39] "[36mGET /pdf/L&D/CST308%20Course%20Outline%20Spring%2025.docx.pdf HTTP/1.1[0m" 304 -
+2025-10-07 16:28:43,027 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\CST308 Course Outline Spring 25.docx.pdf
+2025-10-07 16:28:43,028 - INFO - 127.0.0.1 - - [07/Oct/2025 16:28:43] "[36mGET /pdf/L&D/CST308%20Course%20Outline%20Spring%2025.docx.pdf HTTP/1.1[0m" 304 -
+2025-10-07 16:29:00,766 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\CST308 Course Outline Spring 25.docx.pdf
+2025-10-07 16:29:00,766 - INFO - 127.0.0.1 - - [07/Oct/2025 16:29:00] "[36mGET /pdf/L&D/CST308%20Course%20Outline%20Spring%2025.docx.pdf HTTP/1.1[0m" 304 -
+2025-10-07 16:29:35,616 - INFO - 127.0.0.1 - - [07/Oct/2025 16:29:35] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-07 16:29:35,618 - INFO - Found 2 vector store(s) for category 'L&D'
+2025-10-07 16:29:35,619 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\CST308 Course Outline Spring 25.docx
+2025-10-07 16:29:35,619 - INFO - Successfully loaded: CST308 Course Outline Spring 25.docx
+2025-10-07 16:29:35,619 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\L&D\test3
+2025-10-07 16:29:35,620 - INFO - Successfully loaded: test3
+2025-10-07 16:29:35,620 - INFO - Merging 1 additional vector store(s)...
+2025-10-07 16:29:35,620 - INFO - Successfully merged vector store 1/1
+2025-10-07 16:29:35,620 - INFO - All vector stores merged successfully.
+2025-10-07 16:29:35,622 - INFO - Total documents in merged vector store: 24
+2025-10-07 16:29:46,199 - INFO - Responded to question in 'L&D'. Found 3 sources.
+2025-10-07 16:29:46,199 - INFO - HERE IS  Dr. Samia Huq. and HERE IS [{'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 1, 'text': 'Course Outline \nSchool of General Education \nBrac University \n \n \nCST 308: Religious Pluralism, Religious Freedom, and Dialogue in the Modern World \nA.\u200b Course General Information: \nCourse Code: \nCST 308 \nCourse Title: \nReligious Pluralism, Religious Freedom, and Dialogue in the \nModern World  \nCredit Hours: \n3 \nContact Hours/Week: \n3 \nCategory  \nStream 4 \nType (Mandatory/Optional, \nLecture/Laboratory/Project\n…): \nOptional, elective, crosslisted with ANT 415A.   \nPrerequisites: \nNone \nCo-requisi'}, {'source': 'test3.pdf', 'page': 7, 'text': 'Edit points compare with our model metrics like auc/accuracy \n \n1.\u200b GANomaly-HRNet was proposed for chest radiograph disease detection and \nclassification, demonstrating improved anomaly localization in medical images (Wang, \nQu, & He, 2024). \n2.\u200b Enhanced thoracic disease diagnosis was achieved by analyzing chest X-ray images taken \nat different times, improving the performance of computer-aided detection systems (Yu et \nal., 2024). \n3.\u200b The EfficientDet model was utilized for accurate chest di'}, {'source': 'CST308 Course Outline Spring 25.docx.pdf', 'page': 12, 'text': 'Grading policy (subject to change): \nStudents’ work will be graded according to the system specified by the Brac University \nUndergraduate Study and Examinations Regulations. In addition, faculty members are \nallowed to take into consideration factors such as the class average and standard deviation in \norder to ensure the grades reflect students’ actual class performance.\xa0 \n97-100 = A+ (4.0) \n90 - 96 = A (4.0) Excellent \n85 - <90 = A- (3.7) \n80 - <85 = B+ (3.3) \n75 - <80 = B (3.0) Good \n70 - <7'}]
+2025-10-07 16:29:46,246 - INFO - 127.0.0.1 - - [07/Oct/2025 16:29:46] "POST /chat HTTP/1.1" 200 -
+2025-10-07 16:29:48,129 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\L&D\CST308 Course Outline Spring 25.docx.pdf
+2025-10-07 16:29:48,129 - INFO - 127.0.0.1 - - [07/Oct/2025 16:29:48] "[36mGET /pdf/L&D/CST308%20Course%20Outline%20Spring%2025.docx.pdf HTTP/1.1[0m" 304 -
+2025-10-07 16:32:58,209 - INFO - Received 1 file(s) for category 'HR'.
+2025-10-07 16:32:58,211 - INFO - Processing 'Thesis_Final' for category 'HR'...
+2025-10-07 16:32:59,232 - INFO - Saved vector store for 'Thesis_Final'.
+2025-10-07 16:32:59,242 - INFO - 127.0.0.1 - - [07/Oct/2025 16:32:59] "POST /upload HTTP/1.1" 200 -
+2025-10-07 16:33:03,569 - INFO - Request to fetch chat history for category 'HR'.
+2025-10-07 16:33:03,570 - INFO - Found 10 messages for category 'HR'.
+2025-10-07 16:33:03,570 - INFO - 127.0.0.1 - - [07/Oct/2025 16:33:03] "GET /chat/history/HR HTTP/1.1" 200 -
+2025-10-07 16:33:03,577 - INFO - 127.0.0.1 - - [07/Oct/2025 16:33:03] "OPTIONS /chat/start HTTP/1.1" 200 -
+2025-10-07 16:33:03,581 - INFO - 127.0.0.1 - - [07/Oct/2025 16:33:03] "POST /chat/start HTTP/1.1" 200 -
+2025-10-07 16:33:13,101 - INFO - 127.0.0.1 - - [07/Oct/2025 16:33:13] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-07 16:33:13,105 - INFO - Found 1 vector store(s) for category 'HR'
+2025-10-07 16:33:13,105 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\Thesis_Final
+2025-10-07 16:33:13,128 - INFO - Successfully loaded: Thesis_Final
+2025-10-07 16:33:13,128 - INFO - Using single vector store.
+2025-10-07 16:33:21,481 - INFO - Responded to question in 'HR'. Found 2 sources.
+2025-10-07 16:33:21,481 - INFO - HERE IS  ChestAidNet is a deep learning model that has been trained to detect various thoracic conditions, including diseases and abnormalities of the heart and lungs. The model uses a combination of convolutional neural networks (CNNs) and recurrent neural networks (RNNs) to analyze medical images and identify patterns associated with specific conditions. and HERE IS [{'source': 'Thesis_Final.pdf', 'page': 60, 'text': 'diomegaly, ChestAidNet confidently predicted it by focusing on the area where the\nheart is enlarged in the heatmap. That is consistent with clinical standards because\nthe AUC for Cardiomegaly is 0.99. The original disease labeled with the image was\nCardiomegaly proving that our model not only predicted the disease correctly but\nalso visualized the disease region, reinforcing its reliability in medical diagnostics.\n49'}, {'source': 'Thesis_Final.pdf', 'page': 58, 'text': 'for ChestAidNet reveals impressive performance across various thoracic conditions\nwith strong global metrics. The proposed model demonstrates the greatest overall\naccuracy performance compared to ResNet50, Xception, and InceptionV3.\nThis model achieved an impressive overall accuracy of 94% with precision, recall,\nand F1-score all at 93.62%. These consistent values represent that the model can\naccurately predict disease classes and avoid both false positives and false negatives\nwhich is important'}]
+2025-10-07 16:33:21,522 - INFO - 127.0.0.1 - - [07/Oct/2025 16:33:21] "POST /chat HTTP/1.1" 200 -
+2025-10-07 16:33:35,026 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\HR\Thesis_Final.pdf
+2025-10-07 16:33:35,026 - INFO - 127.0.0.1 - - [07/Oct/2025 16:33:35] "GET /pdf/HR/Thesis_Final.pdf HTTP/1.1" 200 -
+2025-10-07 16:34:21,478 - INFO - 127.0.0.1 - - [07/Oct/2025 16:34:21] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-07 16:34:21,479 - INFO - Found 1 vector store(s) for category 'HR'
+2025-10-07 16:34:21,479 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\Thesis_Final
+2025-10-07 16:34:21,483 - INFO - Successfully loaded: Thesis_Final
+2025-10-07 16:34:21,483 - INFO - Using single vector store.
+2025-10-07 16:34:34,974 - INFO - Responded to question in 'HR'. Found 2 sources.
+2025-10-07 16:34:34,974 - INFO - HERE IS  ChestAidNet is better than other models like ResNet or DenseNet because it has a more efficient architecture that allows for faster training and deployment. Additionally, ChestAidNet's design enables maximum reuse of features, which reduces the number of parameters required and makes the model more computationally efficient. and HERE IS [{'source': 'Thesis_Final.pdf', 'page': 69, 'text': 'Chapter 6\nDiscussion\n6.1\nKey Findings\nFor our targeted evaluation purposes, we have utilized all of the 15 Chest X-ray\nDataset categories. We have assessed the performance of InceptionV3, Xception,\nDenseNet, and ResNet50 alongside the custom CNN architecture during our eval-\nuation process. Our analysis shows that, except for ResNet50 and Xception all of\nthe other mentioned traditional models were able to achieve an accuracy of 94%.\nOur custom model ChestAidNet surpassed all other tested models,'}, {'source': 'Thesis_Final.pdf', 'page': 29, 'text': 'additional 1x1 convolution to recover the inputs dimensionality. Through its specific\nlayer connections ResNet-50 combines depth with efficient processing performance.\nThe system works by feeding each layer output back into the same layer through\nnew shortcut paths. The design stops gradients from disappearing during backprop-\nagation which deep networks tend to experience. The network design includes five\nstages that use different numbers of residual blocks and improves results through\nbatch no'}]
+2025-10-07 16:34:35,018 - INFO - 127.0.0.1 - - [07/Oct/2025 16:34:35] "POST /chat HTTP/1.1" 200 -
+2025-10-07 16:35:27,854 - INFO - 127.0.0.1 - - [07/Oct/2025 16:35:27] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-07 16:35:27,857 - INFO - Found 1 vector store(s) for category 'HR'
+2025-10-07 16:35:27,857 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\Thesis_Final
+2025-10-07 16:35:27,859 - INFO - Successfully loaded: Thesis_Final
+2025-10-07 16:35:27,859 - INFO - Using single vector store.
+2025-10-07 16:35:35,461 - INFO - Responded to question in 'HR'. Found 2 sources.
+2025-10-07 16:35:35,461 - INFO - HERE IS  ChestAidNet tackles 15 different classes of diseases.  and HERE IS [{'source': 'Thesis_Final.pdf', 'page': 60, 'text': 'diomegaly, ChestAidNet confidently predicted it by focusing on the area where the\nheart is enlarged in the heatmap. That is consistent with clinical standards because\nthe AUC for Cardiomegaly is 0.99. The original disease labeled with the image was\nCardiomegaly proving that our model not only predicted the disease correctly but\nalso visualized the disease region, reinforcing its reliability in medical diagnostics.\n49'}, {'source': 'Thesis_Final.pdf', 'page': 67, 'text': 'Our model ChestAidNet uses fewer parameters when compared to the traditional\nmodels that we have run. ChestAidNet uses 5.09M parameters, while the closest\nmodel in terms of parameter count to ours is DenseNet-121, which still employs\n7.97M parameters. This is 34.14% higher than ours, making our model significantly\nmore lightweight. Furthermore, all of the tested models, including ChestAidNet,\nachieved an accuracy of 94%, except XceptionV3, which had an accuracy of 93%.\nMoreover, among all the te'}]
+2025-10-07 16:35:35,502 - INFO - 127.0.0.1 - - [07/Oct/2025 16:35:35] "POST /chat HTTP/1.1" 200 -
+2025-10-07 16:35:41,780 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\HR\Thesis_Final.pdf
+2025-10-07 16:35:41,781 - INFO - 127.0.0.1 - - [07/Oct/2025 16:35:41] "[36mGET /pdf/HR/Thesis_Final.pdf HTTP/1.1[0m" 304 -
+2025-10-07 16:35:54,967 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\HR\Thesis_Final.pdf
+2025-10-07 16:35:54,967 - INFO - 127.0.0.1 - - [07/Oct/2025 16:35:54] "[36mGET /pdf/HR/Thesis_Final.pdf HTTP/1.1[0m" 304 -
+2025-10-07 16:36:14,327 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\HR\Thesis_Final.pdf
+2025-10-07 16:36:14,328 - INFO - 127.0.0.1 - - [07/Oct/2025 16:36:14] "[36mGET /pdf/HR/Thesis_Final.pdf HTTP/1.1[0m" 304 -
+2025-10-07 16:36:48,925 - INFO - 127.0.0.1 - - [07/Oct/2025 16:36:48] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-07 16:36:48,927 - INFO - Found 1 vector store(s) for category 'HR'
+2025-10-07 16:36:48,927 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\Thesis_Final
+2025-10-07 16:36:48,927 - INFO - Successfully loaded: Thesis_Final
+2025-10-07 16:36:48,927 - INFO - Using single vector store.
+2025-10-07 16:37:01,040 - INFO - Responded to question in 'HR'. Found 2 sources.
+2025-10-07 16:37:01,043 - INFO - HERE IS  The model is lightweight because it uses a dense connectivity architecture, which reduces the number of parameters required compared to traditional architectures. This results in a more efficient and computationally lighter model. and HERE IS [{'source': 'Thesis_Final.pdf', 'page': 49, 'text': '5.1.2\nAccuracy\nAccuracy helps us to understand how often our models predictions are actually\ncorrect. Using this we can assess our models over all performance.\nAccuracy =\nTP + TN\nTP + TN + FP + FN × 100%\n5.1.3\nPrecision\nThe precision utilizes the true positive and total number of positive cases predicted\nby the model to give us a ratio that tells us how much our model is able to correctly\nidentify the true positive cases. A model having high precision means that it has\nvery little number of fals'}, {'source': 'Thesis_Final.pdf', 'page': 29, 'text': 'additional 1x1 convolution to recover the inputs dimensionality. Through its specific\nlayer connections ResNet-50 combines depth with efficient processing performance.\nThe system works by feeding each layer output back into the same layer through\nnew shortcut paths. The design stops gradients from disappearing during backprop-\nagation which deep networks tend to experience. The network design includes five\nstages that use different numbers of residual blocks and improves results through\nbatch no'}]
+2025-10-07 16:37:01,084 - INFO - 127.0.0.1 - - [07/Oct/2025 16:37:01] "POST /chat HTTP/1.1" 200 -
+2025-10-07 16:38:03,253 - INFO - 127.0.0.1 - - [07/Oct/2025 16:38:03] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-07 16:38:03,255 - INFO - Found 1 vector store(s) for category 'HR'
+2025-10-07 16:38:03,255 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\Thesis_Final
+2025-10-07 16:38:03,255 - INFO - Successfully loaded: Thesis_Final
+2025-10-07 16:38:03,255 - INFO - Using single vector store.
+2025-10-07 16:38:14,880 - INFO - Responded to question in 'HR'. Found 2 sources.
+2025-10-07 16:38:14,880 - INFO - HERE IS  Yes, you can integrate this model into your healthcare company. and HERE IS [{'source': 'Thesis_Final.pdf', 'page': 21, 'text': 'ray im- ages. To train their dataset, transfer learning has been used along with\nrecently mentioned CNN models. As the initial dataset was not much sufficient, data\naugmentation was also applied by flipping and rotating images to expand the set with\na total of 5800 chest X- ray images which can handle both pneumonia-affected and\nnon-affected cases. Since the dataset has expanded with more detailed information\nthe model is evaluated by accuracy, recall, specificity, precision and f1 score. In\nter'}, {'source': 'Thesis_Final.pdf', 'page': 46, 'text': '4.3.3\nRegularization and Overfitting Control\nThe strategic use of batch normalization and dropout helps prevent the model\nfrom overfitting without increasing its size. Dropout layers are added in the fully\nconnected part to avoid the neurons becoming too similar and being able to classify\ndifferent inputs just as well.\n4.3.4\nHyperparameter Optimizations\nTo save resources and stop unnecessary training, During the training period we\nused a reduced learning rate and learning rate scheduling. In add'}]
+2025-10-07 16:38:14,912 - INFO - 127.0.0.1 - - [07/Oct/2025 16:38:14] "POST /chat HTTP/1.1" 200 -
+2025-10-07 16:38:18,222 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\HR\Thesis_Final.pdf
+2025-10-07 16:38:18,223 - INFO - 127.0.0.1 - - [07/Oct/2025 16:38:18] "[36mGET /pdf/HR/Thesis_Final.pdf HTTP/1.1[0m" 304 -
+2025-10-07 16:39:38,861 - INFO - 127.0.0.1 - - [07/Oct/2025 16:39:38] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-07 16:39:38,863 - INFO - Found 1 vector store(s) for category 'HR'
+2025-10-07 16:39:38,863 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\Thesis_Final
+2025-10-07 16:39:38,863 - INFO - Successfully loaded: Thesis_Final
+2025-10-07 16:39:38,863 - INFO - Using single vector store.
+2025-10-07 16:39:49,463 - INFO - Responded to question in 'HR'. Found 2 sources.
+2025-10-07 16:39:49,463 - INFO - HERE IS  No, you don't need any healthcare experts for integrating this in your company. Just a few software developers will be ok. and HERE IS [{'source': 'Thesis_Final.pdf', 'page': 38, 'text': 'unseen data and its ability to adapt. Part of the augmentation pipeline are rotation\n(by up to ±15 degrees), spatial shifts of 10% on width and height, zoom operations\nbetween 15% and 85%, horizontal effect, variation of brightness by 90%-110% and\nshifting the RGB channels by ±10%. The augmentation tool keeps an image proper\nby removing and replacing each pixel several times with the same values during\ntransformations.\nImages are coded in batches of 16 for learning and 32 for validation to impro'}, {'source': 'Thesis_Final.pdf', 'page': 50, 'text': '5.2\nExperimental Setup\nHardware Configuration\nThe experiments were conducted on the following Computers:\n• PC 1: AMD Ryzen 5600, 32 GB 3200 MHz RAM, NVIDIA RTX 3060 (12\nGB VRAM)\n• PC 2: AMD Ryzen 3600, 16 GB 3200 MHz RAM, NVIDIA RTX 3060 (12\nGB VRAM)\n• PC 3: AMD Ryzen 3600, 16 GB 3200 MHz RAM, NVIDIA GTX 1660 Super\n(6 GB VRAM)\n• PC 4: AMD Ryzen 3600, 16 GB 3200 MHz RAM, NVIDIA GTX 1660 Super\n(6 GB VRAM)\nSoftware and Libraries\nThe research software required Windows-11 for the operating system alo'}]
+2025-10-07 16:39:49,506 - INFO - 127.0.0.1 - - [07/Oct/2025 16:39:49] "POST /chat HTTP/1.1" 200 -
+2025-10-07 16:39:54,334 - INFO - Serving PDF: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\uploads\HR\Thesis_Final.pdf
+2025-10-07 16:39:54,334 - INFO - 127.0.0.1 - - [07/Oct/2025 16:39:54] "[36mGET /pdf/HR/Thesis_Final.pdf HTTP/1.1[0m" 304 -
+2025-10-07 16:41:48,044 - INFO - 127.0.0.1 - - [07/Oct/2025 16:41:48] "OPTIONS /chat HTTP/1.1" 200 -
+2025-10-07 16:41:48,047 - INFO - Found 1 vector store(s) for category 'HR'
+2025-10-07 16:41:48,047 - INFO - Loading vector store from: C:\Users\BS 23- Desktop-00014\Documents\ChatWithPDFs\backend\vector_stores\HR\Thesis_Final
+2025-10-07 16:41:48,049 - INFO - Successfully loaded: Thesis_Final
+2025-10-07 16:41:48,049 - INFO - Using single vector store.
+2025-10-07 16:42:07,853 - INFO - Responded to question in 'HR'. Found 2 sources.
+2025-10-07 16:42:07,853 - INFO - HERE IS  To integrate ChestAidNet in your healthcare company, follow these steps:
+1.  **Familiarize yourself with the model**: Understand how ChestAidNet works, its architecture, and what it can do.
+2.  **Prepare your data**: Ensure that you have a dataset that is suitable for training and testing ChestAidNet.
+3.  **Train the model**: Use your prepared data to train ChestAidNet. You may need to adjust hyperparameters or experiment with different architectures.
+4.  **Test the model**: Once you've trained ChestAidNet, test it on a separate dataset to evaluate its performance.
+5.  **Integrate the model into your healthcare company's systems**: After testing and evaluating the performance of ChestAidNet, integrate it into your healthcare company's systems for use in clinical decision-making. and HERE IS [{'source': 'Thesis_Final.pdf', 'page': 46, 'text': '4.3.3\nRegularization and Overfitting Control\nThe strategic use of batch normalization and dropout helps prevent the model\nfrom overfitting without increasing its size. Dropout layers are added in the fully\nconnected part to avoid the neurons becoming too similar and being able to classify\ndifferent inputs just as well.\n4.3.4\nHyperparameter Optimizations\nTo save resources and stop unnecessary training, During the training period we\nused a reduced learning rate and learning rate scheduling. In add'}, {'source': 'Thesis_Final.pdf', 'page': 58, 'text': 'for ChestAidNet reveals impressive performance across various thoracic conditions\nwith strong global metrics. The proposed model demonstrates the greatest overall\naccuracy performance compared to ResNet50, Xception, and InceptionV3.\nThis model achieved an impressive overall accuracy of 94% with precision, recall,\nand F1-score all at 93.62%. These consistent values represent that the model can\naccurately predict disease classes and avoid both false positives and false negatives\nwhich is important'}]
+2025-10-07 16:42:07,887 - INFO - 127.0.0.1 - - [07/Oct/2025 16:42:07] "POST /chat HTTP/1.1" 200 -
