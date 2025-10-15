@@ -63,6 +63,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  position: relative; /* Enable relative positioning for absolute children */
 }
 
 .chat-messages {
@@ -73,6 +74,17 @@
   flex-direction: column;
   gap: 1rem;
   scroll-behavior: smooth;
+
+  /* Responsive padding */
+  @media (max-width: 768px) {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.75rem;
+    gap: 0.5rem;
+  }
 }
 
 .message {
@@ -80,6 +92,20 @@
   border-radius: 18px;
   max-width: 80%;
   line-height: 1.6;
+
+  /* Responsive message sizing */
+  @media (max-width: 768px) {
+    max-width: 85%;
+    padding: 0.7rem 1rem;
+    border-radius: 16px;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 90%;
+    padding: 0.6rem 0.8rem;
+    border-radius: 14px;
+    font-size: 0.9rem;
+  }
 }
 
 .user-message {
@@ -133,6 +159,15 @@
   padding: 1rem 1.5rem;
   border-top: 1px solid #dee2e6;
   background-color: #F1F5F9;
+
+  /* Responsive input wrapper */
+  @media (max-width: 768px) {
+    padding: 0.75rem 1rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.5rem 0.75rem;
+  }
 }
 
 .chat-input-area {
@@ -210,33 +245,58 @@
 
 .scroll-to-bottom-btn {
   position: absolute;
-  bottom: 200px; /* Adjust as needed to place it above the input area */
-  right: 700px;
-  width: 20px;
-  height: 20px;
+  bottom: 110px; /* Position higher above the input area */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  background-color:transparent;
-  color: rgb(0, 0, 0);
-  border: none;
-  font-size: 10px;
-  line-height: 8px;
+  background-color: rgb(125, 122, 122);
+  color: white;
+  border: 1px solid rgba(108, 117, 125, 0.3);
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, transform 0.2s;
+  transition: all 0.3s ease;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Responsive positioning and sizing */
+  @media (max-width: 768px) {
+    bottom: 100px;
+    width: 26px;
+    height: 26px;
+    font-size: 11px;
+  }
+
+  @media (max-width: 480px) {
+    bottom: 90px;
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
 }
 
 .scroll-to-bottom-btn:hover {
-  background-color: #000000;
-  transform: scale(1.1);
-  color: #ffffff;
+  background-color: rgba(30, 34, 37, 0.1);
+  color: #495057;
+  border-color: rgba(108, 117, 125, 0.5);
+  transform: translateX(-50%) scale(1.1);
+}
+
+.scroll-to-bottom-btn:active {
+  transform: translateX(-50%) scale(0.95);
 }
 
 // The keyframes define the "bounce" animation for the dots
 @keyframes bounce {
   0%, 80%, 100% {
     transform: scale(0);
+    
   }
   40% {
     transform: scale(1.0);

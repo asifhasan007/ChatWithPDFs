@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { ChatMessage } from '../../core/models/chat.model';
 import { ChatService } from '../../core/services/chat';
+import { marked } from 'marked';
 
 
 @Component({
@@ -32,6 +33,12 @@ export class AiChat implements OnDestroy, AfterViewChecked {
     });
     // Focus input after component initializes
     setTimeout(() => this.focusInput(), 100);
+    
+    // Configure marked options for better security and formatting
+    marked.setOptions({
+      breaks: true, // Convert line breaks to <br>
+      gfm: true,    // GitHub Flavored Markdown
+    });
   }
 
   ngAfterViewChecked(): void {
@@ -122,6 +129,16 @@ export class AiChat implements OnDestroy, AfterViewChecked {
   onInputClick(event: Event): void {
     // Prevent event bubbling
     event.stopPropagation();
+  }
+
+  // Convert markdown text to HTML
+  parseMarkdown(text: string): string {
+    try {
+      return marked(text) as string;
+    } catch (error) {
+      console.error('Error parsing markdown:', error);
+      return text; // Return original text if parsing fails
+    }
   }
 
   ngOnDestroy(): void {

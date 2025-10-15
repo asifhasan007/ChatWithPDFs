@@ -10,7 +10,7 @@
 
   <div class="main-layout">
     <!-- File Manager Sidebar -->
-    <app-file-manager></app-file-manager>
+    <app-file-manager (categorySelected)="onCategorySelected($event)"></app-file-manager>
 
     <!-- Main Content Area -->
     <main class="content-area">

@@ -71,6 +71,18 @@ export class FileManager implements OnInit {
     this.chatService.deletePdf(categoryId, pdfId);
   }
 
+  onUploadClick(event: MouseEvent, categoryId: string): void {
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+    event.preventDefault();
+    
+    // Find and click the corresponding file input
+    const fileInput = document.getElementById(`fileInput-${categoryId}`) as HTMLInputElement;
+    if (fileInput) {
+      fileInput.click();
+    }
+  }
+
   // FIX 6: Add event parameter and call stopPropagation()
   deleteFolder(event: MouseEvent, categoryId: string): void {
     event.stopPropagation();

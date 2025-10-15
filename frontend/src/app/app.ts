@@ -20,21 +20,24 @@ export class App {
 
   constructor() {} // Inject ChatService
   
-    onCategorySelected(categoryId: string): void {
-    if (this.pdfChatComponent) {
-      // Switch to PDF chat if not already active
-      this.isAiChatActive = false;
-      // Call the method on the child component to load its history
-      this.pdfChatComponent.loadChatForCategory(categoryId);
-    }
+  onCategorySelected(categoryId: string): void {
+    // Switch to PDF chat mode
+    this.isAiChatActive = false;
+    
+    // Wait for the PDF chat component to be rendered, then load the category
+    setTimeout(() => {
+      if (this.pdfChatComponent) {
+        this.pdfChatComponent.loadChatForCategory(categoryId);
+      }
+    }, 100);
   }
 
-  switchToAiChat(isActive: boolean): void {
-    if (isActive) {
-     
+  switchToAiChat(shouldActivateAiChat: boolean): void {
+    // If switching to AI chat and currently in PDF chat, clear PDF session
+    if (shouldActivateAiChat && !this.isAiChatActive) {
       this.pdfChatComponent.clearSession();
     }
     
-    this.isAiChatActive = isActive;
+    this.isAiChatActive = shouldActivateAiChat;
   }
 }

@@ -12,8 +12,11 @@ export class Header {
   @Input() isPdfChatActive: boolean = false;
   @Output() chatModeChange = new EventEmitter<boolean>();
 
-  onSwitchToAiChat(): void {
-    // Emit 'true' to signal that we should switch to AI chat
-    this.chatModeChange.emit(true);
+  onToggleChatMode(): void {
+    // Emit the desired isAiChatActive state
+    // If currently in PDF chat (isPdfChatActive = true), switch to AI chat (emit true)
+    // If currently in AI chat (isPdfChatActive = false), switch to PDF chat (emit false)
+    const shouldActivateAiChat = this.isPdfChatActive;
+    this.chatModeChange.emit(shouldActivateAiChat);
   }
 }

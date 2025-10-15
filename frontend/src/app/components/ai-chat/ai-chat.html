@@ -10,7 +10,7 @@
       <!-- Loop through and display messages -->
       <div *ngFor="let msg of messages" class="message-wrapper">
         <div class="message" [ngClass]="{'user-message': msg.sender === 'user', 'ai-message': msg.sender === 'ai'}">
-          <p>{{ msg.text }}</p>
+          <div [innerHTML]="msg.sender === 'ai' ? parseMarkdown(msg.text) : msg.text"></div>
         </div>
       </div>
       <!-- Typing indicator while AI is responding -->

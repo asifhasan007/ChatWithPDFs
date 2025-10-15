@@ -51,6 +51,12 @@
       <p>Folder is Empty</p>
     </div>
 
+    <!-- Hidden File Inputs (outside of clickable areas) -->
+    <div *ngFor="let category of categories$ | async" style="display: none;">
+      <input type="file" #fileInput (change)="onFileSelected($event, category.id)" accept=".pdf" 
+             id="fileInput-{{category.id}}">
+    </div>
+
     <!-- Projects Grid -->
     <div class="bs23-projects-grid">
       <div *ngFor="let category of categories$ | async" class="bs23-project-card"
@@ -77,8 +83,7 @@
 
           <!-- Action Buttons -->
           <div class="bs23-card-actions">
-            <input type="file" #fileInput (change)="onFileSelected($event, category.id)" hidden accept=".pdf">
-            <button class="bs23-action-btn bs23-upload-btn" (click)="fileInput.click(); $event.stopPropagation()"
+            <button class="bs23-action-btn bs23-upload-btn" (click)="onUploadClick($event, category.id)"
               [disabled]="category.isUploading" title="Upload Document">
               <img src="assets/images/upload-icon.png" alt="Upload Icon" />
             </button>

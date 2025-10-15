@@ -11,11 +11,21 @@ from langchain.memory import ConversationBufferMemory
 from langchain_core.messages import HumanMessage, AIMessage
 from database import init_db, DATABASE_NAME
 import uuid
+import sys
+import io
+
+# force UTF-8 encoding for stdout/stderr on Windows
+if sys.platform == "win32":
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
 
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[logging.FileHandler("app.log"), logging.StreamHandler()]
+    handlers=[
+        logging.FileHandler("app.log", encoding='utf-8'),
+        logging.StreamHandler()
+    ]
 )
 SESSIONS = {}
 init_db()
@@ -23,7 +33,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 CORS(app)
 
-#generalo chat API Endpoint 
+#general chat API Endpoint 
 @app.route('/ai-solution', methods=['POST'])
 def ai_solution_handler():
     data = request.json
@@ -217,8 +227,18 @@ def chat_handler():
             "question": question,
             "chat_history": chat_history_for_chain
         })
-        
-        answer = result.get("answer", "Error: The model failed to generate an answer.")
+
+      
+        raw_answer = result.get("answer", "Error: The model failed to generate an answer.")
+
+        # If it's an AIMessage object, extract the content
+        if hasattr(raw_answer, 'content'):
+            answer = raw_answer.content
+        elif isinstance(raw_answer, str):
+            answer = raw_answer
+        else:
+            answer = str(raw_answer)
+
         source_documents = result.get("docs", [])
 
         # save AI answer to DB
@@ -226,6 +246,7 @@ def chat_handler():
             "INSERT INTO chat_history (category, sender, message) VALUES (?, ?, ?)",
             (category, 'ai', answer)
         )
+
         conn.commit()
         conn.close() 
         
@@ -243,7 +264,7 @@ def chat_handler():
                 unique_sources[source_key] = {
                     "source": os.path.basename(source_file),
                     "page": page_label,
-                    "text": source_text[:500]  # Limit text length to avoid huge responses
+                    "text": source_text  # Limit text length to avoid huge responses
                 }
         sources = list(unique_sources.values())
         
@@ -298,23 +319,34 @@ def delete_chat_session_handler(category):
 # PDF serving API Endpoint
 @app.route('/pdf/<string:category>/<string:filename>', methods=['GET'])
 def serve_pdf(category, filename):
-    """Serve PDF files for viewing in the frontend"""
     try:
         pdf_path = os.path.join(UPLOADS_FOLDER, category, filename)
-       
+        pdf_path = pdf_path if pdf_path.lower().endswith('.pdf') else pdf_path + '.pdf'
+        logger.info(f"Attempting to serve PDF: {pdf_path}")
+        
+        
         if not os.path.exists(pdf_path):
-            logger.warning(f"PDF file not found: {pdf_path}")
-            return jsonify({"error": "PDF file not found"}), 404
+            logger.error(f"PDF not found at path: {pdf_path}")
+            
            
-        if not filename.lower().endswith('.pdf'):
-            return jsonify({"error": "Invalid file type"}), 400
-           
-        logger.info(f"Serving PDF: {pdf_path}")
-        return send_file(pdf_path, mimetype='application/pdf')
+            category_path = os.path.join(UPLOADS_FOLDER, category)
+            if os.path.exists(category_path):
+                available_files = os.listdir(category_path)
+                logger.error(f"Available files in {category}: {available_files}")
+            
+            return jsonify({'error': 'PDF file not found', 'path': pdf_path}), 404
+        
+        logger.info(f"Successfully serving PDF: {filename}")
+        return send_file(
+            pdf_path,
+            mimetype='application/pdf',
+            as_attachment=False,
+            download_name=filename
+        )
        
     except Exception as e:
-        logger.error(f"Error serving PDF {filename} from category {category}: {e}")
-        return jsonify({"error": "Failed to serve PDF"}), 500
+        logger.error(f"Error serving PDF {filename}: {str(e)}")
+        return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
     logger.info("Starting Flask application")

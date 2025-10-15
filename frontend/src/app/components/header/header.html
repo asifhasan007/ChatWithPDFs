@@ -8,12 +8,11 @@
     </div>
   </div>
   <nav class="navigation">
-    <!-- The button is now here -->
+    <!-- Toggle button that changes text based on current mode -->
     <button 
-      *ngIf="isPdfChatActive"
-      class="finish-btn" 
-      (click)="onSwitchToAiChat()">
-      Switch to General AI Chat
+      class="toggle-chat-btn" 
+      (click)="onToggleChatMode()">
+      {{ isPdfChatActive ? 'Switch to General AI Chat' : 'Switch to PDF Chat' }}
     </button>
   </nav>
 </header>

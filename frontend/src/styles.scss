@@ -15,3 +15,80 @@ html, body {
 * {
   box-sizing: border-box;
 }
+
+/* Markdown Content Styles */
+.ai-message, .message {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0.5em 0;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  h1 { font-size: 1.8em; color: #2c3e50; }
+  h2 { font-size: 1.6em; color: #34495e; }
+  h3 { font-size: 1.4em; color: #5d6d7e; }
+  h4 { font-size: 1.2em; color: #6c757d; }
+  h5 { font-size: 1.1em; color: #6c757d; }
+  h6 { font-size: 1em; color: #6c757d; }
+  
+  p {
+    margin: 0.8em 0;
+    line-height: 1.6;
+  }
+  
+  ul, ol {
+    margin: 0.8em 0;
+    padding-left: 1.5em;
+    
+    li {
+      margin: 0.3em 0;
+      line-height: 1.5;
+    }
+  }
+  
+  code {
+    background-color: #f8f9fa;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    border: 1px solid #e9ecef;
+  }
+  
+  pre {
+    background-color: #f8f9fa;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+    border: 1px solid #e9ecef;
+    margin: 1em 0;
+    
+    code {
+      background: none;
+      padding: 0;
+      border: none;
+    }
+  }
+  
+  blockquote {
+    border-left: 4px solid #007bff;
+    margin: 1em 0;
+    padding-left: 1em;
+    color: #6c757d;
+    font-style: italic;
+  }
+  
+  strong, b {
+    font-weight: 600;
+  }
+  
+  em, i {
+    font-style: italic;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #dee2e6;
+    margin: 1.5em 0;
+  }
+}

@@ -7,6 +7,7 @@ import { ChatMessage, ChatSource } from '../../core/models/chat.model';
 import { ChatService } from '../../core/services/chat';
 import { PdfViewerComponent } from '../shared/pdf-viewer/pdf-viewer';
 import Swal from 'sweetalert2';
+import { marked } from 'marked';
 
 @Component({
   selector: 'app-pdf-chat',
@@ -36,9 +37,16 @@ export class PdfChat implements OnInit, OnDestroy, AfterViewChecked {
   ngOnInit(): void {
     this.categories$ = this.chatService.categories$;
     this.isSessionActive$ = this.chatService.isPdfSessionActive$;
+    
+    // Configure marked options for better security and formatting
+    marked.setOptions({
+      breaks: true, // Convert line breaks to <br>
+      gfm: true,    // GitHub Flavored Markdown
+    });
   }
   
-  loadChatForCategory(_categoryId: string): void {
+  loadChatForCategory(categoryId: string): void {
+    this.selectedCategoryId = categoryId;
     this.onCategoryChange();
   }
 
@@ -121,6 +129,16 @@ export class PdfChat implements OnInit, OnDestroy, AfterViewChecked {
         this.chatInput.nativeElement.focus();
       }
     }, 50); // Slightly longer delay to ensure DOM updates are complete
+  }
+
+  // Convert markdown text to HTML
+  parseMarkdown(text: string): string {
+    try {
+      return marked(text) as string;
+    } catch (error) {
+      console.error('Error parsing markdown:', error);
+      return text; // Return original text if parsing fails
+    }
   }
 
   onContainerClick(event: Event): void {

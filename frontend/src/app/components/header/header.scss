@@ -22,8 +22,8 @@
   }
 }
 
-/* Add the button styles here */
-.finish-btn {
+/* Toggle chat button styles */
+.toggle-chat-btn {
   padding: 0.6rem 1.2rem;
   font-size: 0.9rem;
   border: none;
@@ -32,9 +32,18 @@
   background-color: #188fc6; /* Using Brain Station 23 blue */
   color: white;
   font-weight: 500;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
+  min-width: 200px; /* Ensure consistent width for both states */
+  text-align: center;
 }
 
-.finish-btn:hover {
+.toggle-chat-btn:hover {
   background-color: #1782b0; /* A darker shade for hover */
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(24, 143, 198, 0.3);
+}
+
+.toggle-chat-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(24, 143, 198, 0.2);
 }

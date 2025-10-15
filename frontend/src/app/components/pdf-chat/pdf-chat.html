@@ -24,7 +24,7 @@
     <div class="chat-messages" #chatMessagesContainer (scroll)="onChatScroll($event)">
       <!-- Message Loop -->
       <div *ngFor="let msg of messages" class="message" [ngClass]="{'user-message': msg.sender === 'user', 'ai-message': msg.sender === 'ai'}">
-        <p [innerHTML]="msg.text"></p>
+        <div [innerHTML]="msg.sender === 'ai' ? parseMarkdown(msg.text) : msg.text"></div>
         <button *ngIf="msg.sender === 'ai' && msg.source" 
                 class="source-circle-btn" 
                 (click)="viewSource(msg.source)"
