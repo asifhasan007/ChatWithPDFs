@@ -228,18 +228,27 @@ def chat_handler():
             "chat_history": chat_history_for_chain
         })
 
-      
+        source_documents = result.get("docs", [])
         raw_answer = result.get("answer", "Error: The model failed to generate an answer.")
 
         # If it's an AIMessage object, extract the content
         if hasattr(raw_answer, 'content'):
-            answer = raw_answer.content
+            answer_text = raw_answer.content
         elif isinstance(raw_answer, str):
-            answer = raw_answer
+            answer_text = raw_answer
         else:
-            answer = str(raw_answer)
+            answer_text = str(raw_answer)
 
-        source_documents = result.get("docs", [])
+        # Parse citations from answer
+        import re
+        citation_match = re.search(r'SOURCES:\s*\[([\d,\s]+)\]', answer_text)
+        
+        if citation_match:
+            cited_nums = [int(n.strip()) for n in citation_match.group(1).split(',')]
+            answer = re.sub(r'\n?SOURCES:.*$', '', answer_text).strip()
+        else:
+            cited_nums = list(range(1, len(source_documents) + 1))
+            answer = answer_text
 
         # save AI answer to DB
         cursor.execute(
@@ -252,24 +261,23 @@ def chat_handler():
         
         # send to the frontend
         sources = []
-        unique_sources = {}
-        for doc in source_documents:
-            source_file = doc.metadata.get("source", "Unknown")
-            page_num = doc.metadata.get("page", -1)
-            page_label = page_num + 1 if page_num != -1 else "N/A"
-            source_key = f"{source_file}-p{page_label}"
-            if source_key not in unique_sources:
-                     # Include the actual text content from the document for highlighting
+        for doc_num in cited_nums:
+            if 0 < doc_num <= len(source_documents):
+                doc = source_documents[doc_num - 1]  # Convert to 0-based index
+                source_file = doc.metadata.get("source", "Unknown")
+                page_num = doc.metadata.get("page", -1)
+                page_label = page_num + 1 if page_num != -1 else "N/A"
                 source_text = doc.page_content if hasattr(doc, 'page_content') else ""
-                unique_sources[source_key] = {
+                
+                sources.append({
                     "source": os.path.basename(source_file),
                     "page": page_label,
-                    "text": source_text  # Limit text length to avoid huge responses
-                }
-        sources = list(unique_sources.values())
+                    "text": source_text,
+                    "citation_number": doc_num
+                })
         
-        logger.info(f"Responded to question in '{category}'. Found {len(sources)} sources.")
-        logger.info(f"HERE IS {answer} and HERE IS {sources}")
+        logger.info(f"Responded to question in '{category}'. Cited {len(sources)} sources: {cited_nums}")
+        logger.info(f"Answer: {answer[:100]}... | Sources: {sources}")
         return jsonify({"answer": answer, "sources": sources})
 
     except Exception as e:

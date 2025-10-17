@@ -139,10 +139,17 @@ def get_conversational_chain(category):
         5. Make your answer as complete as possible and precise and don't answer out of context.
         6. If the user asks for an explanation, provide a brief one based on the text in the same language as the question.
         7. Output ONLY the answer in the appropriate language. Do not add conversational filler.
-        
+        8. After your answer, cite which documents you used by adding: SOURCES: [1, 2, 3] (use document numbers)
+        9. Only cite documents that directly contributed to your answer.
+        10. Make your answer complete and precise.
+         
         Examples:
-        - English question → English answer
-        - বাংলা প্রশ্ন → বাংলা উত্তর"""),
+        - English question → English answer + SOURCES: [1, 3]
+        - বাংলা প্রশ্ন → বাংলা উত্তর + SOURCES: [1, 2]
+        
+        Format:
+        [Your answer here]
+        SOURCES: [document numbers]"""),
         ("user", "Text: {context}\n\nQuestion: {question}\n\nDirect Answer:"),
     ])
 
@@ -178,14 +185,27 @@ def get_conversational_chain(category):
         
         return docs
 
-    def format_docs(docs):
-        return "\n\n".join(doc.page_content for doc in docs)
+    def format_docs_with_numbers(docs):
+        formatted = []
+        for i, doc in enumerate(docs, 1):
+            source = doc.metadata.get('source', 'Unknown')
+            page = doc.metadata.get('page', 'N/A')
+            page_label = page + 1 if isinstance(page, int) else page
+            
+            formatted.append(
+                f"[Document {i}]\n"
+                f"Source: {source}\n"
+                f"Page: {page_label}\n"
+                f"Content: {doc.page_content}\n"
+                f"---"
+            )
+        return "\n\n".join(formatted)
 
     rag_chain = (
         RunnablePassthrough.assign(
             docs=itemgetter("question") | compression_retriever | log_retrieved_docs
         ).assign(
-            context=lambda x: format_docs(x["docs"])
+            context=lambda x: format_docs_with_numbers(x["docs"])
         ).assign(
             answer=(
                 prompt
